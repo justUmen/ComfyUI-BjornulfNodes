@@ -19,25 +19,36 @@ class ResizeImage:
     CATEGORY = "Bjornulf"
 
     def resize_image(self, image, width=256, height=256):
-        # Convert the image from ComfyUI format to PIL Image
-        i = 255. * image.cpu().numpy()
-
-        # Reshape the image if it's not in the expected format, remove any leading dimensions of size 1
-        if i.ndim > 3:
-            i = np.squeeze(i)
-        # Ensure the image is 3D (height, width, channels)
-        if i.ndim == 2:
-            i = i[:, :, np.newaxis]  # Add a channel dimension if it's missing
-
-        img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
-
-        # Resize the image
-        img_resized = img.resize((width, height), Image.LANCZOS)
-
-        # Convert the PIL image back to numpy array
-        img_resized_np = np.array(img_resized).astype(np.float32) / 255.0
-
-        # Assuming ComfyUI format needs the image back in tensor format, convert it back
-        img_resized_tensor = torch.tensor(img_resized_np)
-
-        return (img_resized_tensor, )
+        # Ensure the input image is on CPU and convert to numpy array
+        image_np = image.cpu().numpy()
+        
+        # Check if the image is in the format [batch, height, width, channel]
+        if image_np.ndim == 4:
+            # If so, we'll process each image in the batch
+            resized_images = []
+            for img in image_np:
+                # Convert to PIL Image
+                pil_img = Image.fromarray((img * 255).astype(np.uint8))
+                # Resize
+                resized_pil = pil_img.resize((width, height), Image.LANCZOS)
+                # Convert back to numpy and normalize
+                resized_np = np.array(resized_pil).astype(np.float32) / 255.0
+                resized_images.append(resized_np)
+            
+            # Stack the resized images back into a batch
+            resized_batch = np.stack(resized_images)
+            # Convert to torch tensor
+            return (torch.from_numpy(resized_batch),)
+        else:
+            # If it's a single image, process it directly
+            # Convert to PIL Image
+            pil_img = Image.fromarray((image_np * 255).astype(np.uint8))
+            # Resize
+            resized_pil = pil_img.resize((width, height), Image.LANCZOS)
+            # Convert back to numpy and normalize
+            resized_np = np.array(resized_pil).astype(np.float32) / 255.0
+            # Add batch dimension if it was originally present
+            if image.dim() == 4:
+                resized_np = np.expand_dims(resized_np, axis=0)
+            # Convert to torch tensor
+            return (torch.from_numpy(resized_np),)
