@@ -64,9 +64,9 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_ShowInt": "👁 Show (Int)",
     "Bjornulf_ShowFloat": "👁 Show (Float)",
     "Bjornulf_ResizeImage": "📏 Resize Image",
-    "Bjornulf_SaveImagePath": "🖼 Save Image (exact path, exact name)",
-    "Bjornulf_SaveTmpImage": "🖼 Save Image (tmp_api.png)",
-    "Bjornulf_SaveApiImage": "🖼 Save Image (API_IMAGES/00001.png...)",
+    "Bjornulf_SaveImagePath": "🖼 Save Image (exact path, exact name) ⚠️💣",
+    "Bjornulf_SaveTmpImage": "🖼 Save Image (tmp_api.png) ⚠️💣",
+    "Bjornulf_SaveApiImage": "🖼 Save Image (./output/api_00001.png...)",
     "Bjornulf_SaveText": "💾 Save Text", #Make SaveCharacter, SaveLocation, SaveCamera, SaveAction, SaveClothes, SaveEmotion...
     "Bjornulf_LoadText": "📥 Load Text", #Make LoadCharacter, LoadLocation, LoadCamera, LoadAction, LoadClothes, LoadEmotion...
     "Bjornulf_WriteText": "✒ Write Text",
