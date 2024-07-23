@@ -3,26 +3,41 @@ from ollama import Client  # pip install ollama
 
 class ollamaLoader:
     @classmethod
+    def get_available_models(cls):
+        try:
+            list_models = ollama.list()
+            return [model['name'] for model in list_models['models']]
+        except Exception as e:
+            print(f"Error fetching models: {e}")
+            return ["dolphin-llama3"]  # Return a default model if fetching fails
+
+    @classmethod
     def INPUT_TYPES(cls):
+        default_system_prompt = "Describe a specific example of an object, animal, person, or landscape based on a given general idea. Start with a clear and concise overall description in the first sentence. Then, provide a detailed depiction of its physical features, focusing on colors, size, clothing, eyes, and other distinguishing characteristics. Use commas to separate each detail and avoid listing them. Ensure each description is vivid, precise, and specific to one unique instance of the subject. Refrain from using poetic language and giving it a name.\nExample input: man\n Example output: \nAn overweight old man sitting on a bench, wearing a blue hat, yellow pants, orange jacket and black shirt, sunglasses, very long beard, very pale skin, long white hair, very large nose."
         return {
             "required": {
                 "user_prompt": ("STRING", {"multiline": True}),
-                # "selected_model": ((), {}),
+                "selected_model": (cls.get_available_models(),),
+                "system_prompt": ("STRING", {
+                    "multiline": True,
+                    "default": default_system_prompt
+                }),
             }
         }
 
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("ollama_response",)
     FUNCTION = "connect_2_ollama"
-    # INPUT_NODE = True  # Changed from OUTPUT_NODE to INPUT_NODE
     CATEGORY = "Bjornulf"
 
-    # @classmethod
-    def connect_2_ollama(self, user_prompt):
+    def connect_2_ollama(self, user_prompt, selected_model, system_prompt):
         keep_alive = 0
-        list_models=ollama.list() #{'models': [{'name': 'dolphin-llama3:latest', 'model': 'dolphin-llama3:latest', 'modified_at': '2024-04-24T06:56:57.498527412+02:00', 'size': 4661235994, 'digest': '613f068e29f863bb900e568f920401b42678efca873d7a7c87b0d6ef4945fadd', 'details': {'parent_model': '', 'format': 'gguf', 'family': 'llama', 'families': ['llama'], 'parameter_size': '8B', 'quantization_level': 'Q4_0'}}]}
-        print(list_models)
         client = Client(host="http://127.0.0.1:11434")
-        response = client.generate(model="dolphin-llama3", system="I will give you an object, animal, person or landscape, just create details about it : colors, size, clothes, eyes and other physical details or features in 1 sentence.", prompt=user_prompt, keep_alive=str(keep_alive) + "m")
+        response = client.generate(
+            model=selected_model,
+            system=system_prompt,
+            prompt=user_prompt,
+            keep_alive=str(keep_alive) + "m"
+        )
         print("Ollama response : ", response['response'])
         return (response['response'],)
