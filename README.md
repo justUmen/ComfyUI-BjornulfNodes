@@ -108,7 +108,7 @@ The name will start at `api_00001.png`, then `api_00002.png`, etc...
 Save image for short-term use : ./output/tmp_api.png ⚠️💣
 
 
-## 18 - 🖼 Save image to a chosen folder name
+## 18 - 🖼📁 Save image to a chosen folder name
 ![Save Temporary API](screenshots/save_image_to_folder.png)
 
 **Description:**  
