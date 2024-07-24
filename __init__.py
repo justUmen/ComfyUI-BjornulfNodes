@@ -22,6 +22,7 @@ from .save_text import SaveText
 from .save_tmp_image import SaveTmpImage
 from .save_image_path import SaveImagePath
 from .save_api_image import SaveApiImage
+from .save_img_to_folder import SaveImageToFolder
 from .resize_image import ResizeImage
 from .loop_my_combos_samplers_schedulers import LoopCombosSamplersSchedulers
 
@@ -40,6 +41,7 @@ NODE_CLASS_MAPPINGS = {
     "Bjornulf_ShowFloat": ShowFloat,
     "Bjornulf_SaveText": SaveText,
     "Bjornulf_ResizeImage": ResizeImage,
+    "Bjornulf_SaveImageToFolder": SaveImageToFolder,
     "Bjornulf_SaveTmpImage": SaveTmpImage,
     "Bjornulf_SaveImagePath": SaveImagePath,
     "Bjornulf_SaveApiImage": SaveApiImage,
@@ -65,6 +67,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_ShowFloat": "👁 Show (Float)",
     "Bjornulf_ResizeImage": "📏 Resize Image",
     "Bjornulf_SaveImagePath": "🖼 Save Image (exact path, exact name) ⚠️💣",
+    "Bjornulf_SaveImageToFolder": "🖼📁 Save Image to a folder",
     "Bjornulf_SaveTmpImage": "🖼 Save Image (tmp_api.png) ⚠️💣",
     "Bjornulf_SaveApiImage": "🖼 Save Image (./output/api_00001.png...)",
     "Bjornulf_SaveText": "💾 Save Text", #Make SaveCharacter, SaveLocation, SaveCamera, SaveAction, SaveClothes, SaveEmotion...

@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.2 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.3 🔗
 
 # Dependencies
 
@@ -6,8 +6,9 @@
 
 # 📝 Changelog
 
-## v0.2
-- **Ollama**: Improve ollama node with system prompt + model selection.
+- **v0.2 Ollama**: Improve ollama node with system prompt + model selection.
+- **v0.3 Save Image to Folder**: Add a new node : Save image to a chosen folder.
+- **v0.3 Save Images**: Add comfyui Metadata / workflow to all my image-related nodes.
 
 # 📝 Nodes descriptions
 
@@ -106,7 +107,15 @@ The name will start at `api_00001.png`, then `api_00002.png`, etc...
 **Description:**  
 Save image for short-term use : ./output/tmp_api.png ⚠️💣
 
-## 18 - 🦙 Ollama
+
+## 18 - 🖼 Save image to a chosen folder name
+![Save Temporary API](screenshots/save_image_to_folder.png)
+
+**Description:**  
+Save image in a specific folder : `my_folder/00001.png`, `my_folder/00002.png`, etc...  
+Also allow multiple nested folders, like for example : `animal/dog/small`.
+
+## 19 - 🦙 Ollama
 ![Show Text](screenshots/ollama.png)
 
 **Description:**  
@@ -117,13 +126,13 @@ I recommend using `mistral-nemo` if you can run it, but it's up to you. (Might h
 **Description:**  
 Straight forward node to write and show text.
 
-## 18 - 📹 Video Ping Pong
+## 20 - 📹 Video Ping Pong
 ![Video Ping Pong](screenshots/video_pingpong.png)
 
 **Description:**  
 Create a ping-pong effect from a list of images (from a video) by reversing the playback direction when reaching the last frame. Good for an "infinity loop" effect.
 
-## 19 - 📹 Images to Video
+## 21 - 📹 Images to Video
 ![Images to Video](screenshots/imgs2video.png)
 
 **Description:**  

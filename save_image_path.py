@@ -1,6 +1,8 @@
 import os
 import numpy as np
 from PIL import Image
+import json
+from PIL.PngImagePlugin import PngInfo
 
 class SaveImagePath:
     @classmethod
@@ -8,8 +10,9 @@ class SaveImagePath:
         return {
             "required": {
                 "image": ("IMAGE", {"forceInput": True}),
-                "path": ("STRING", {"default":"./output/default.png"}),  # Add path input
-            }
+                "path": ("STRING", {"default": "./output/default.png"}),
+            },
+            "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"},
         }
 
     FUNCTION = "save_image_path"
@@ -17,7 +20,7 @@ class SaveImagePath:
     OUTPUT_NODE = True
     CATEGORY = "Bjornulf"
 
-    def save_image_path(self, image, path):
+    def save_image_path(self, image, path, prompt=None, extra_pnginfo=None):
         # Ensure the output directory exists
         os.makedirs(os.path.dirname(path), exist_ok=True)
 
@@ -33,7 +36,17 @@ class SaveImagePath:
 
         img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
 
-        # Save the image, overwriting if it exists
-        img.save(path, format="PNG")
+        # Create PngInfo object for metadata
+        metadata = PngInfo()
+        if prompt is not None:
+            metadata.add_text("prompt", json.dumps(prompt))
+        if extra_pnginfo is not None:
+            for k, v in extra_pnginfo.items():
+                metadata.add_text(k, json.dumps(v))
 
-        return ()
+        # Save the image with metadata, overwriting if it exists
+        img.save(path, format="PNG", pnginfo=metadata)
+
+        print(f"Image saved as: {path}")
+
+        return {"ui": {"images": [{"filename": path, "type": "output"}]}}

@@ -10,15 +10,16 @@ class ResizeImage:
                 "image": ("IMAGE", {}),
                 "width": ("INT", {"default": 256}),
                 "height": ("INT", {"default": 256}),
-            }
+            },
+            "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"},
         }
 
     FUNCTION = "resize_image"
-    RETURN_TYPES = ("IMAGE",)
+    RETURN_TYPES = ("IMAGE", "PROMPT", "EXTRA_PNGINFO")
     OUTPUT_NODE = True
     CATEGORY = "Bjornulf"
 
-    def resize_image(self, image, width=256, height=256):
+    def resize_image(self, image, width=256, height=256, prompt=None, extra_pnginfo=None):
         # Ensure the input image is on CPU and convert to numpy array
         image_np = image.cpu().numpy()
         
@@ -38,7 +39,7 @@ class ResizeImage:
             # Stack the resized images back into a batch
             resized_batch = np.stack(resized_images)
             # Convert to torch tensor
-            return (torch.from_numpy(resized_batch),)
+            resized_tensor = torch.from_numpy(resized_batch)
         else:
             # If it's a single image, process it directly
             # Convert to PIL Image
@@ -51,4 +52,11 @@ class ResizeImage:
             if image.dim() == 4:
                 resized_np = np.expand_dims(resized_np, axis=0)
             # Convert to torch tensor
-            return (torch.from_numpy(resized_np),)
+            resized_tensor = torch.from_numpy(resized_np)
+
+        # Update metadata if needed
+        if extra_pnginfo is not None:
+            extra_pnginfo["resized_width"] = width
+            extra_pnginfo["resized_height"] = height
+
+        return (resized_tensor, prompt, extra_pnginfo)
