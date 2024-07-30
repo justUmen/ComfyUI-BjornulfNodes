@@ -4,6 +4,7 @@ import torch
 import subprocess
 from PIL import Image
 import soundfile as sf
+import glob
 
 class imagesToVideo:
     @classmethod
@@ -30,10 +31,20 @@ class imagesToVideo:
     def image_to_video(self, images, fps, name_prefix, format, crf, audio=None):
         # Remove any existing extension
         name_prefix = os.path.splitext(name_prefix)[0]
-        # Add the correct extension
-        output_file = f"{name_prefix}.{format}"
+        
+        # Find the next available number
+        existing_files = glob.glob(f"{name_prefix}_*.{format}")
+        if existing_files:
+            max_num = max([int(f.split('_')[-1].split('.')[0]) for f in existing_files])
+            next_num = max_num + 1
+        else:
+            next_num = 1
+        
+        # Create the new filename with the incremented number
+        output_file = f"{name_prefix}_{next_num:04d}.{format}"
+        
         temp_dir = "temp_images_imgs2video"
-        #Clean up temp dir
+        # Clean up temp dir
         if os.path.exists(temp_dir) and os.path.isdir(temp_dir):
             for file in os.listdir(temp_dir):
                 os.remove(os.path.join(temp_dir, file))
@@ -78,8 +89,6 @@ class imagesToVideo:
             ])
             comment = "MP4 format: Widely compatible, efficient compression, no transparency support."
         elif format == "webm":
-            # Fake transparency bug/feature with Inspyre.
-            # Code to fix tat : creates a fully transparent background and then overlays your image on top of it, which forces the transparency to be preserved... wth is this guys?
             ffmpeg_cmd.extend([
                 "-filter_complex", "[0:v]scale=iw:ih,format=rgba,split[s0][s1];[s0]lutrgb=r=0:g=0:b=0:a=0[transparent];[transparent][s1]overlay",
                 "-c:v", "libvpx-vp9",
@@ -99,7 +108,7 @@ class imagesToVideo:
         try:
             subprocess.run(ffmpeg_cmd, check=True)
             print(f"Video created successfully: {output_file}")
-        except subprocess.CalledProcessCode as e:
+        except subprocess.CalledProcessError as e:
             print(f"Error creating video: {e}")
         finally:
             # Clean up temporary files
