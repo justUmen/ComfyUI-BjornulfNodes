@@ -1,4 +1,4 @@
-from .create_video import imgs2vid
+from .images_to_video import imagesToVideo
 from .write_text import WriteText
 from .write_image_environment import WriteImageEnvironment
 from .write_image_characters import WriteImageCharacters
@@ -49,7 +49,7 @@ NODE_CLASS_MAPPINGS = {
     "Bjornulf_LoopTexts": LoopTexts,
     "Bjornulf_RandomTexts": RandomTexts,
     "Bjornulf_RandomModelClipVae": RandomModelClipVae,
-    "Bjornulf_imgs2vid": imgs2vid,
+    "Bjornulf_imagesToVideo": imagesToVideo,
     "Bjornulf_VideoPingPong": VideoPingPong,
     "Bjornulf_LoopFloat": LoopFloat,
     "Bjornulf_LoopInteger": LoopInteger,
@@ -81,7 +81,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_LoopTexts": "♻ Loop (Texts)",
     "Bjornulf_RandomTexts": "🎲 Random (Texts)",
     "Bjornulf_RandomModelClipVae": "🎲 Random (Model+Clip+Vae)",
-    "Bjornulf_imgs2vid": "📹 imgs2vid (FFmpeg)",
+    "Bjornulf_imagesToVideo": "📹 images to video (FFmpeg)",
     "Bjornulf_VideoPingPong": "📹 video PingPong",
     "Bjornulf_LoopFloat": "♻ Loop (Float)",
     "Bjornulf_LoopInteger": "♻ Loop (Integer)",
