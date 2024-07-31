@@ -138,4 +138,5 @@ Create a ping-pong effect from a list of images (from a video) by reversing the 
 
 **Description:**  
 Combine a sequence of images into a video file.  
-❓ I made this node because it supports transparency with webm format. (Need for rembg)
+❓ I made this node because it supports transparency with webm format. (Needed for rembg)
+Temporary images are stored in the folder `ComfyUI/temp_images_imgs2video/` as well as the wav audio file.
