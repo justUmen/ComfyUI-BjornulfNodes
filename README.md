@@ -9,7 +9,7 @@
 - **v0.2 Ollama**: Improve ollama node with system prompt + model selection.
 - **v0.3 Save Image to Folder**: Add a new node : Save image to a chosen folder.
 - **v0.3 Save Images**: Add comfyui Metadata / workflow to all my image-related nodes.
-- **v0.3 Images to video**: Support transparency with webm format. As well as an audio stream.
+- **v0.4 Images to video**: Support transparency option with webm format, options encoders. As well as input for audio stream. 
 
 # 📝 Nodes descriptions
 
