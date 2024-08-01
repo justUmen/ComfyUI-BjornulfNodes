@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.4 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.5 🔗
 
 # Dependencies
 
@@ -6,10 +6,12 @@
 
 # 📝 Changelog
 
-- **v0.2 Ollama**: Improve ollama node with system prompt + model selection.
-- **v0.3 Save Image to Folder**: Add a new node : Save image to a chosen folder.
-- **v0.3 Save Images**: Add comfyui Metadata / workflow to all my image-related nodes.
-- **v0.4 Images to video**: Support transparency option with webm format, options encoders. As well as input for audio stream. 
+- **v0.2**: Improve ollama node with system prompt + model selection.
+- **v0.3**: Add a new node : Save image to a chosen folder.
+- **v0.3**: Add comfyui Metadata / workflow to all my image-related nodes.
+- **v0.4**: Support transparency option with webm format, options encoders. As well as input for audio stream. 
+- **v0.5**: New node : Remove image transparency (alpha) - Fill alpha channel with solid color.
+- **v0.5**: New node : Image to grayscale (black & white) - Convert an image to grayscale.
 
 # 📝 Nodes descriptions
 
@@ -138,5 +140,21 @@ Create a ping-pong effect from a list of images (from a video) by reversing the 
 
 **Description:**  
 Combine a sequence of images into a video file.  
-❓ I made this node because it supports transparency with webm format. (Needed for rembg)
+❓ I made this node because it supports transparency with webm format. (Needed for rembg)  
 Temporary images are stored in the folder `ComfyUI/temp_images_imgs2video/` as well as the wav audio file.
+
+## 22 - 🔲 Remove image Transparency (alpha)
+![Images to Video](screenshots/remove_alpha.png)
+
+**Description:**  
+Remove transparency from an image by filling the alpha channel with a solid color. (black, white or greenscreen)  
+Of course it takes in an image with transparency, liek from rembg nodes.  
+Necessary for some nodes that don't support transparency.  
+
+## 23 - 🔲 Image to grayscale (black & white)
+![Images to Video](screenshots/grayscale.png)
+
+**Description:**  
+Convert an image to grayscale (black & white)  
+Example : I sometimes use it with Ipadapter to disable color influence.  
+But you can sometimes also want a black and white image...  

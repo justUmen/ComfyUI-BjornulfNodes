@@ -25,6 +25,8 @@ from .save_api_image import SaveApiImage
 from .save_img_to_folder import SaveImageToFolder
 from .resize_image import ResizeImage
 from .loop_my_combos_samplers_schedulers import LoopCombosSamplersSchedulers
+from .remove_transparency import RemoveTransparency
+from .image_to_grayscale import GrayscaleTransform
 
 # from .CUSTOM_STRING import CustomStringType
 
@@ -32,6 +34,8 @@ NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
     "Bjornulf_WriteText": WriteText,
+    "Bjornulf_RemoveTransparency": RemoveTransparency,
+    "Bjornulf_GrayscaleTransform": GrayscaleTransform,
     # "Bjornulf_WriteImageEnvironment": WriteImageEnvironment,
     # "Bjornulf_WriteImageCharacters": WriteImageCharacters,
     # "Bjornulf_WriteImageCharacter": WriteImageCharacter,
@@ -65,6 +69,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_ShowText": "👁 Show (Text)",
     "Bjornulf_ShowInt": "👁 Show (Int)",
     "Bjornulf_ShowFloat": "👁 Show (Float)",
+    "Bjornulf_GrayscaleTransform": "🔲 Image to grayscale (black & white)",
+    "Bjornulf_RemoveTransparency": "🔲 Remove image Transparency (alpha)",
     "Bjornulf_ResizeImage": "📏 Resize Image",
     "Bjornulf_SaveImagePath": "🖼 Save Image (exact path, exact name) ⚠️💣",
     "Bjornulf_SaveImageToFolder": "🖼📁 Save Image to a folder",
