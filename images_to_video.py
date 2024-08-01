@@ -29,7 +29,7 @@ class imagesToVideo:
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("comment",)
     FUNCTION = "image_to_video"
-    OUTPUT_NODE = False
+    OUTPUT_NODE = True
     CATEGORY = "Bjornulf"
     
     def image_to_video(self, images, fps, name_prefix, format, crf, force_transparency, mp4_encoder, webm_encoder, audio=None):

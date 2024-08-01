@@ -148,7 +148,7 @@ Temporary images are stored in the folder `ComfyUI/temp_images_imgs2video/` as w
 
 **Description:**  
 Remove transparency from an image by filling the alpha channel with a solid color. (black, white or greenscreen)  
-Of course it takes in an image with transparency, liek from rembg nodes.  
+Of course it takes in an image with transparency, like from rembg nodes.  
 Necessary for some nodes that don't support transparency.  
 
 ## 23 - 🔲 Image to grayscale (black & white)
