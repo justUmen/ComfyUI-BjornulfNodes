@@ -4,7 +4,7 @@
   "nodes": [
     {
       "id": 27,
-      "type": "workflow/Generate with Flow",
+      "type": "workflow/Generate with Flux",
       "pos": [
         654,
         309
@@ -55,7 +55,7 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "workflow/Generate with Flow"
+        "Node name for S&R": "workflow/Generate with Flux"
       },
       "widgets_values": [
         "euler",
@@ -205,7 +205,7 @@
     },
     {
       "id": 26,
-      "type": "workflow/Load FLOW",
+      "type": "workflow/Load FLUX",
       "pos": [
         -323,
         320
@@ -245,7 +245,7 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "workflow/Load FLOW"
+        "Node name for S&R": "workflow/Load FLUX"
       },
       "widgets_values": [
         "t5xxl_fp16.safetensors",
@@ -334,7 +334,7 @@
       ]
     },
     "groupNodes": {
-      "Load FLOW": {
+      "Load FLUX": {
         "nodes": [
           {
             "type": "DualCLIPLoader",
@@ -449,7 +449,7 @@
           ]
         ]
       },
-      "Generate with Flow": {
+      "Generate with Flux": {
         "nodes": [
           {
             "type": "KSamplerSelect",
