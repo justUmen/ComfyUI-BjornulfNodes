@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.5 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.6 🔗
 
 # Dependencies
 
@@ -12,6 +12,7 @@
 - **v0.4**: Support transparency option with webm format, options encoders. As well as input for audio stream. 
 - **v0.5**: New node : Remove image transparency (alpha) - Fill alpha channel with solid color.
 - **v0.5**: New node : Image to grayscale (black & white) - Convert an image to grayscale.
+- **v0.6**: New node : Combine images (Background + Overlay) - Combine two images into a single image.
 
 # 📝 Nodes descriptions
 
@@ -144,7 +145,7 @@ Combine a sequence of images into a video file.
 Temporary images are stored in the folder `ComfyUI/temp_images_imgs2video/` as well as the wav audio file.
 
 ## 22 - 🔲 Remove image Transparency (alpha)
-![Images to Video](screenshots/remove_alpha.png)
+![Remove Alpha](screenshots/remove_alpha.png)
 
 **Description:**  
 Remove transparency from an image by filling the alpha channel with a solid color. (black, white or greenscreen)  
@@ -152,9 +153,16 @@ Of course it takes in an image with transparency, like from rembg nodes.
 Necessary for some nodes that don't support transparency.  
 
 ## 23 - 🔲 Image to grayscale (black & white)
-![Images to Video](screenshots/grayscale.png)
+![Image to Grayscale](screenshots/grayscale.png)
 
 **Description:**  
 Convert an image to grayscale (black & white)  
 Example : I sometimes use it with Ipadapter to disable color influence.  
-But you can sometimes also want a black and white image...  
+But you can sometimes also want a black and white image... 
+
+## 24 - 🖼+🖼 Combine images (Background + Overlay)
+![Combine Images](screenshots/combine_background_overlay.png)
+
+**Description:**  
+Combine two images into a single image : a background and one (or several) transparent overlay. (allow for video frames.)  
+❗ Warning : For now, `background` is a static image. (I will allow video there later too.)  
