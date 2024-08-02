@@ -28,12 +28,14 @@ from .loop_my_combos_samplers_schedulers import LoopCombosSamplersSchedulers
 from .remove_transparency import RemoveTransparency
 from .image_to_grayscale import GrayscaleTransform
 from .combine_background_overlay import CombineBackgroundOverlay
+# from .clear_vram import ClearVRAM
 
 # from .CUSTOM_STRING import CustomStringType
 
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    # "Bjornulf_ClearVRAM": ClearVRAM,
     "Bjornulf_WriteText": WriteText,
     "Bjornulf_RemoveTransparency": RemoveTransparency,
     "Bjornulf_GrayscaleTransform": GrayscaleTransform,
@@ -68,6 +70,7 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
+    # "Bjornulf_ClearVRAM": "🧹 Clear VRAM",
     "Bjornulf_ShowText": "👁 Show (Text)",
     "Bjornulf_ShowInt": "👁 Show (Int)",
     "Bjornulf_ShowFloat": "👁 Show (Float)",
