@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.6 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.7 🔗
 
 # Dependencies
 
@@ -13,6 +13,7 @@
 - **v0.5**: New node : Remove image transparency (alpha) - Fill alpha channel with solid color.
 - **v0.5**: New node : Image to grayscale (black & white) - Convert an image to grayscale.
 - **v0.6**: New node : Combine images (Background + Overlay) - Combine two images into a single image.
+- **v0.7**: Replace Save API node with Save Bjornulf Lobechat node. (For my custom lobe-chat)
 
 # 📝 Nodes descriptions
 
@@ -97,20 +98,21 @@ Resize an image to exact dimensions. The other node will save the image to the e
 **Description:**  
 Save the given text input to a file. Useful for logging and storing text data.
 
-## 16 - 🖼 Save image for API (❗For my custom [lobe-chat](https://github.com/justUmen/lobe-chat)❗)
-![Save API](screenshots/save_api.png)
+## 16 - 🖼💬 Save image for Bjornulf LobeChat (❗For my custom [lobe-chat](https://github.com/justUmen/Bjornulf_lobe-chat)❗)
+![Save Bjornulf Lobechat](screenshots/save_bjornulf_lobechat.png)
 
 **Description:**  
-It will save the image with the name of `api_next_image.txt`, which will be incremented each time you run the node.  
+❓ I made that node for my custom lobe-chat to send+receive images from Comfyui API : [lobe-chat](https://github.com/justUmen/Bjornulf_lobe-chat)  
+It will save the image in the folder `output/BJORNULF_LOBECHAT/`. 
 The name will start at `api_00001.png`, then `api_00002.png`, etc...  
-❓ I made that for my custom lobe-chat to send+receive images from Comfyui API : [lobe-chat](https://github.com/justUmen/lobe-chat)
+It will also create a link to the last generated image at the location `output/BJORNULF_API_LAST_IMAGE.png`.  
+This link will be used by my custom lobe-chat to copy the image inside the lobe-chat project.  
 
 ## 17 - 🖼 Save image as `tmp_api.png` Temporary API ⚠️💣
 ![Save Temporary API](screenshots/save_tmp_api.png)
 
 **Description:**  
-Save image for short-term use : ./output/tmp_api.png ⚠️💣
-
+Save image for short-term use : ./output/tmp_api.png ⚠️💣  
 
 ## 18 - 🖼📁 Save image to a chosen folder name
 ![Save Temporary API](screenshots/save_image_to_folder.png)

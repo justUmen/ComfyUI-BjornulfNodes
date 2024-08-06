@@ -21,13 +21,15 @@ from .show_float import ShowFloat
 from .save_text import SaveText
 from .save_tmp_image import SaveTmpImage
 from .save_image_path import SaveImagePath
-from .save_api_image import SaveApiImage
+# from .save_api_image import SaveApiImage
 from .save_img_to_folder import SaveImageToFolder
 from .resize_image import ResizeImage
 from .loop_my_combos_samplers_schedulers import LoopCombosSamplersSchedulers
 from .remove_transparency import RemoveTransparency
 from .image_to_grayscale import GrayscaleTransform
 from .combine_background_overlay import CombineBackgroundOverlay
+from .save_bjornulf_lobechat import SaveBjornulfLobeChat
+# from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
 
 # from .CUSTOM_STRING import CustomStringType
@@ -35,7 +37,9 @@ from .combine_background_overlay import CombineBackgroundOverlay
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    # "Bjornulf_CheckBlackImage": CheckBlackImage,
     # "Bjornulf_ClearVRAM": ClearVRAM,
+    "Bjornulf_SaveBjornulfLobeChat": SaveBjornulfLobeChat,
     "Bjornulf_WriteText": WriteText,
     "Bjornulf_RemoveTransparency": RemoveTransparency,
     "Bjornulf_GrayscaleTransform": GrayscaleTransform,
@@ -52,7 +56,7 @@ NODE_CLASS_MAPPINGS = {
     "Bjornulf_SaveImageToFolder": SaveImageToFolder,
     "Bjornulf_SaveTmpImage": SaveTmpImage,
     "Bjornulf_SaveImagePath": SaveImagePath,
-    "Bjornulf_SaveApiImage": SaveApiImage,
+    # "Bjornulf_SaveApiImage": SaveApiImage,
     "Bjornulf_CombineTexts": CombineTexts,
     "Bjornulf_LoopTexts": LoopTexts,
     "Bjornulf_RandomTexts": RandomTexts,
@@ -70,6 +74,8 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
+    # "Bjornulf_CheckBlackImage": "🔲 Check Black Image (Empty mask)",
+    "Bjornulf_SaveBjornulfLobeChat": "🖼💬 Save image for Bjornulf LobeChat",
     # "Bjornulf_ClearVRAM": "🧹 Clear VRAM",
     "Bjornulf_ShowText": "👁 Show (Text)",
     "Bjornulf_ShowInt": "👁 Show (Int)",
@@ -81,7 +87,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_SaveImagePath": "🖼 Save Image (exact path, exact name) ⚠️💣",
     "Bjornulf_SaveImageToFolder": "🖼📁 Save Image to a folder",
     "Bjornulf_SaveTmpImage": "🖼 Save Image (tmp_api.png) ⚠️💣",
-    "Bjornulf_SaveApiImage": "🖼 Save Image (./output/api_00001.png...)",
+    # "Bjornulf_SaveApiImage": "🖼 Save Image (./output/api_00001.png...)",
     "Bjornulf_SaveText": "💾 Save Text", #Make SaveCharacter, SaveLocation, SaveCamera, SaveAction, SaveClothes, SaveEmotion...
     "Bjornulf_LoadText": "📥 Load Text", #Make LoadCharacter, LoadLocation, LoadCamera, LoadAction, LoadClothes, LoadEmotion...
     "Bjornulf_WriteText": "✒ Write Text",
