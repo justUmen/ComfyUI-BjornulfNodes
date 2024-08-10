@@ -251,9 +251,9 @@
         "t5xxl_fp16.safetensors",
         "clip_l.safetensors",
         "flux",
-        "flux1-schnell.sft",
+        "flux1-schnell.safetensors",
         "fp8_e5m2",
-        "ae.sft"
+        "ae.safetensors"
       ]
     }
   ],

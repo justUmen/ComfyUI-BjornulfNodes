@@ -29,6 +29,7 @@ from .remove_transparency import RemoveTransparency
 from .image_to_grayscale import GrayscaleTransform
 from .combine_background_overlay import CombineBackgroundOverlay
 from .save_bjornulf_lobechat import SaveBjornulfLobeChat
+from .green_to_transparency import GreenScreenToTransparency
 # from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
 
@@ -37,6 +38,7 @@ from .save_bjornulf_lobechat import SaveBjornulfLobeChat
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_GreenScreenToTransparency": GreenScreenToTransparency,
     # "Bjornulf_CheckBlackImage": CheckBlackImage,
     # "Bjornulf_ClearVRAM": ClearVRAM,
     "Bjornulf_SaveBjornulfLobeChat": SaveBjornulfLobeChat,
@@ -74,6 +76,7 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
+    "Bjornulf_GreenScreenToTransparency": "🟩➜▢ Green Screen to Transparency",
     # "Bjornulf_CheckBlackImage": "🔲 Check Black Image (Empty mask)",
     "Bjornulf_SaveBjornulfLobeChat": "🖼💬 Save image for Bjornulf LobeChat",
     # "Bjornulf_ClearVRAM": "🧹 Clear VRAM",
@@ -81,8 +84,9 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_ShowInt": "👁 Show (Int)",
     "Bjornulf_ShowFloat": "👁 Show (Float)",
     "Bjornulf_CombineBackgroundOverlay": "🖼+🖼 Combine images (Background+Overlay alpha)",
-    "Bjornulf_GrayscaleTransform": "🔲 Image to grayscale (black & white)",
-    "Bjornulf_RemoveTransparency": "🔲 Remove image Transparency (alpha)",
+    "Bjornulf_GrayscaleTransform": "🖼➜🔲 Image to grayscale (black & white)",
+    "Bjornulf_RemoveTransparency": "▢➜⬛ Remove image Transparency (alpha)",
+    # "🔲➜⬛ Transparency to color",
     "Bjornulf_ResizeImage": "📏 Resize Image",
     "Bjornulf_SaveImagePath": "🖼 Save Image (exact path, exact name) ⚠️💣",
     "Bjornulf_SaveImageToFolder": "🖼📁 Save Image to a folder",

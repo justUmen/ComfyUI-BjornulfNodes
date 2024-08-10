@@ -15,7 +15,7 @@ class ResizeImage:
         }
 
     FUNCTION = "resize_image"
-    RETURN_TYPES = ("IMAGE", "PROMPT", "EXTRA_PNGINFO")
+    RETURN_TYPES = ("IMAGE",)
     OUTPUT_NODE = True
     CATEGORY = "Bjornulf"
 

@@ -9,6 +9,7 @@ class CombineBackgroundOverlay:
             "required": {
                 "background": ("IMAGE",),
                 "overlay_alpha": ("IMAGE",),
+                "position": (["middle", "top", "bottom"],),
             },
         }
 
@@ -16,7 +17,7 @@ class CombineBackgroundOverlay:
     FUNCTION = "combine_background_overlay"
     CATEGORY = "Bjornulf"
 
-    def combine_background_overlay(self, background, overlay_alpha):
+    def combine_background_overlay(self, background, overlay_alpha, position):
         # Convert background from torch tensor to numpy array
         bg = background[0].numpy()
         bg = (bg * 255).astype(np.uint8)
@@ -36,9 +37,14 @@ class CombineBackgroundOverlay:
                 ov_img = Image.fromarray(ov, 'RGB')
                 ov_img = ov_img.convert('RGBA')
 
-            # Calculate position to center the overlay
+            # Calculate position based on user selection
             x = (bg_img.width - ov_img.width) // 2
-            y = (bg_img.height - ov_img.height) // 2
+            if position == "middle":
+                y = (bg_img.height - ov_img.height) // 2
+            elif position == "top":
+                y = 0
+            else:  # bottom
+                y = bg_img.height - ov_img.height
 
             # Create a new image for this overlay
             result = Image.new('RGBA', bg_img.size, (0, 0, 0, 0))
@@ -46,7 +52,7 @@ class CombineBackgroundOverlay:
             # Paste the background
             result.paste(bg_img, (0, 0))
 
-            # Paste the overlay in the center
+            # Paste the overlay in the selected position
             result.paste(ov_img, (x, y), ov_img)
 
             # Convert back to numpy array and then to torch tensor

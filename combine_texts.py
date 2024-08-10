@@ -4,7 +4,7 @@ class CombineTexts:
         return {
             "required": {
                 "number_of_inputs": ("INT", {"default": 2, "min": 2, "max": 10, "step": 1}),
-                "delimiter": (["newline", "comma", "space"], {"default": "newline"}),
+                "delimiter": (["newline", "comma", "space", "slash"], {"default": "newline"}),
                 "text_1": ("STRING", {"forceInput": True}),
                 "text_2": ("STRING", {"forceInput": True}),
             },
@@ -42,5 +42,7 @@ class CombineTexts:
             return ","
         elif delimiter == "space":
             return " "
+        elif delimiter == "slash":
+            return "/"
         else:
             return "\n"

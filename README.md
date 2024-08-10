@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.7 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.8 🔗
 
 # Dependencies
 
@@ -14,6 +14,9 @@
 - **v0.5**: New node : Image to grayscale (black & white) - Convert an image to grayscale.
 - **v0.6**: New node : Combine images (Background + Overlay) - Combine two images into a single image.
 - **v0.7**: Replace Save API node with Save Bjornulf Lobechat node. (For my custom lobe-chat)
+- **v0.8**: Combine images : add an option to put image top, bottom or center.
+- **v0.8**: Combine texts : add option for slashes /
+- **v0.8**: Add basic node to transform greenscreen in to transparency.
 
 # 📝 Nodes descriptions
 
@@ -167,4 +170,12 @@ But you can sometimes also want a black and white image...
 
 **Description:**  
 Combine two images into a single image : a background and one (or several) transparent overlay. (allow for video frames.)  
+Update 0.8 : Also have a option to put image top, bottom or center.
 ❗ Warning : For now, `background` is a static image. (I will allow video there later too.)  
+
+## 25 - 🟩➜▢ Green Screen to Transparency
+![Combine Images](screenshots/greeenscreen_to_transparency.png)
+
+**Description:**  
+Transform greenscreen into transparency.  
+Need clean greenscreen ofc. (Can adjust threshold but very basic node.)
