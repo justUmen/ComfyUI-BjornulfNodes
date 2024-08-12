@@ -32,6 +32,7 @@ from .save_bjornulf_lobechat import SaveBjornulfLobeChat
 from .green_to_transparency import GreenScreenToTransparency
 from .random_line_from_input import RandomLineFromInput
 from .loop_lines import LoopAllLines
+from .random_seed_with_text import TextToStringAndSeed
 # from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
 
@@ -41,6 +42,7 @@ NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
     "Bjornulf_LoopAllLines": LoopAllLines,
+    "Bjornulf_TextToStringAndSeed": TextToStringAndSeed,
     "Bjornulf_GreenScreenToTransparency": GreenScreenToTransparency,
     "Bjornulf_RandomLineFromInput": RandomLineFromInput,
     # "Bjornulf_CheckBlackImage": CheckBlackImage,
@@ -83,6 +85,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_GreenScreenToTransparency": "🟩➜▢ Green Screen to Transparency",
     # "Bjornulf_CheckBlackImage": "🔲 Check Black Image (Empty mask)",
     "Bjornulf_SaveBjornulfLobeChat": "🖼💬 Save image for Bjornulf LobeChat",
+    "Bjornulf_TextToStringAndSeed": "🔢 Text with random Seed",
     # "Bjornulf_ClearVRAM": "🧹 Clear VRAM",
     "Bjornulf_RandomLineFromInput": "🎲 Random line from input",
     "Bjornulf_ShowText": "👁 Show (Text)",

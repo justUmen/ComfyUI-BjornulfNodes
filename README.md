@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.10 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.11 🔗
 
 # Dependencies
 
@@ -19,6 +19,7 @@
 - **v0.8**: Add basic node to transform greenscreen in to transparency.
 - **v0.9**: Add a new node : Return one random line from input.
 - **v0.10**: Add a new node : Loop (All Lines from input) - Iterate over all lines from an input text.
+- **v0.11**: Add a new node : Text with random Seed - Generate a random seed, along with text.
 
 # 📝 Nodes descriptions
 
@@ -176,20 +177,45 @@ Update 0.8 : Also have a option to put image top, bottom or center.
 ❗ Warning : For now, `background` is a static image. (I will allow video there later too.)  
 
 ## 25 - 🟩➜▢ Green Screen to Transparency
-![Combine Images](screenshots/greeenscreen_to_transparency.png)
+![Greenscreen to Transparency](screenshots/greeenscreen_to_transparency.png)
 
 **Description:**  
 Transform greenscreen into transparency.  
 Need clean greenscreen ofc. (Can adjust threshold but very basic node.)
 
 ## 26 - 🎲 Random line from input
-![Combine Images](screenshots/random_line_from_input.png)
+![Random line from input](screenshots/random_line_from_input.png)
 
 **Description:**  
 Take a random line from an input text. (When using multiple "Write Text" nodes is annoying for example, you can use that and just copy/paste a list from outside.)
 
 ## 27 - ♻ Loop (All Lines from input)
-![Combine Images](screenshots/loop_all_lines.png)
+![Loop input](screenshots/loop_all_lines.png)
 
 **Description:**  
 Iterate over all lines from an input text. (Good for testing multiple lines of text.)
+
+## 28 - 🔢 Text with random Seed
+
+**Description:**  
+
+❗ This node is used to generate a random seed, along with text.  
+But what does that mean ???  
+When you use a loop, the loop will use the same seed for each iteration. (That is the point, it will keep the same seed to compare results.)  
+Simple example without using random seed node :  
+
+![Text with random Seed 1](screenshots/random_seed_1.png)
+
+But, if you want to force using another seed for each iteration, you can use this node in the middle.
+For example, if you want to generate a different image every time. (aka : You use loop nodes not to compare or test results but to generate multiple images.)  
+Use it like that for example :  
+
+![Text with random Seed 2](screenshots/random_seed_2.png)
+
+Here is an example of FLUX with different prompt (hood/helmet) but same seed :
+
+![Text with random Seed 3](screenshots/random_seed_3_flux.png)
+
+Here is an example of SDXL with different prompt (blue/red) but same seed :
+
+![Text with random Seed 4](screenshots/random_seed_4_sdxl.png)
