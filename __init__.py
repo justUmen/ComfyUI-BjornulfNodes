@@ -31,6 +31,7 @@ from .combine_background_overlay import CombineBackgroundOverlay
 from .save_bjornulf_lobechat import SaveBjornulfLobeChat
 from .green_to_transparency import GreenScreenToTransparency
 from .random_line_from_input import RandomLineFromInput
+from .loop_lines import LoopAllLines
 # from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
 
@@ -39,6 +40,7 @@ from .random_line_from_input import RandomLineFromInput
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_LoopAllLines": LoopAllLines,
     "Bjornulf_GreenScreenToTransparency": GreenScreenToTransparency,
     "Bjornulf_RandomLineFromInput": RandomLineFromInput,
     # "Bjornulf_CheckBlackImage": CheckBlackImage,
@@ -111,6 +113,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_LoopFloat": "♻ Loop (Float)",
     "Bjornulf_LoopInteger": "♻ Loop (Integer)",
     "Bjornulf_LoopBasicBatch": "♻ Loop",
+    "Bjornulf_LoopAllLines": "♻ Loop (All Lines from input)",
     "Bjornulf_LoopSamplers": "♻ Loop (All Samplers)",
     "Bjornulf_LoopSchedulers": "♻ Loop (All Schedulers)",
     "Bjornulf_LoopCombosSamplersSchedulers": "♻ Loop (My combos Sampler⚔Scheduler)",

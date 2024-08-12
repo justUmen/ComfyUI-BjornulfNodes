@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.9 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.10 🔗
 
 # Dependencies
 
@@ -17,7 +17,7 @@
 - **v0.8**: Combine images : add an option to put image top, bottom or center.
 - **v0.8**: Combine texts : add option for slashes /
 - **v0.8**: Add basic node to transform greenscreen in to transparency.
-- **v0.9**: Add a new node : Return one random line from input.
+- **v0.10**: Add a new node : Loop (All Lines from input) - Iterate over all lines from an input text.
 
 # 📝 Nodes descriptions
 
@@ -187,3 +187,8 @@ Need clean greenscreen ofc. (Can adjust threshold but very basic node.)
 **Description:**  
 Take a random line from an input text. (When using multiple "Write Text" nodes is annoying for example, you can use that and just copy/paste a list from outside.)
 
+## 27 - ♻ Loop (All Lines from input)
+![Combine Images](screenshots/loop_all_lines.png)
+
+**Description:**  
+Iterate over all lines from an input text. (Good for testing multiple lines of text.)
