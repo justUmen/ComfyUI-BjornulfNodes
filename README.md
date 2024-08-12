@@ -213,10 +213,10 @@ Use it like that for example : (Both images have different prompt AND different 
 
 ![Text with random Seed 2](screenshots/random_seed_2.png)
 
-Here is an example of FLUX with different prompt (hood/helmet) but same seed :
+Here is an example of what you want to avoid with FLUX with different prompt (hood/helmet) but same seed :
 
 ![Text with random Seed 3](screenshots/random_seed_3_flux.png)
 
-Here is an example of SDXL with different prompt (blue/red) but same seed :
+Here is an example of what you want to avoid with SDXL with different prompt (blue/red) but same seed :
 
 ![Text with random Seed 4](screenshots/random_seed_4_sdxl.png)
