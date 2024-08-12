@@ -41,9 +41,6 @@ class SaveBjornulfLobeChat:
                 break
             counter += 1
 
-        # Save the image with the determined filename
-        img.save(filename, format="PNG")
-
         # Prepare metadata
         metadata = PngInfo()
         if prompt is not None:
@@ -57,6 +54,9 @@ class SaveBjornulfLobeChat:
         if os.path.exists(link_path):
             os.remove(link_path)
         os.symlink(os.path.abspath(filename), link_path)
+
+        # Save the image with the determined filename
+        img.save(os.path.abspath(filename), format="PNG", pnginfo=metadata)
         
         print(f"Image saved as: {filename}")
 

@@ -47,4 +47,4 @@ class SaveImageToFolder:
             print(f"Image saved as: {filename}")
             results.append({"filename": filename})
 
-        return {"ui": {"images": results}}
+        return {"ui": {"images": [{"filename": filename, "type": "output"}]}}

@@ -30,6 +30,7 @@ from .image_to_grayscale import GrayscaleTransform
 from .combine_background_overlay import CombineBackgroundOverlay
 from .save_bjornulf_lobechat import SaveBjornulfLobeChat
 from .green_to_transparency import GreenScreenToTransparency
+from .random_line_from_input import RandomLineFromInput
 # from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
 
@@ -39,6 +40,7 @@ NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
     "Bjornulf_GreenScreenToTransparency": GreenScreenToTransparency,
+    "Bjornulf_RandomLineFromInput": RandomLineFromInput,
     # "Bjornulf_CheckBlackImage": CheckBlackImage,
     # "Bjornulf_ClearVRAM": ClearVRAM,
     "Bjornulf_SaveBjornulfLobeChat": SaveBjornulfLobeChat,
@@ -80,6 +82,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CheckBlackImage": "🔲 Check Black Image (Empty mask)",
     "Bjornulf_SaveBjornulfLobeChat": "🖼💬 Save image for Bjornulf LobeChat",
     # "Bjornulf_ClearVRAM": "🧹 Clear VRAM",
+    "Bjornulf_RandomLineFromInput": "🎲 Random line from input",
     "Bjornulf_ShowText": "👁 Show (Text)",
     "Bjornulf_ShowInt": "👁 Show (Int)",
     "Bjornulf_ShowFloat": "👁 Show (Float)",
@@ -89,7 +92,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     # "🔲➜⬛ Transparency to color",
     "Bjornulf_ResizeImage": "📏 Resize Image",
     "Bjornulf_SaveImagePath": "🖼 Save Image (exact path, exact name) ⚠️💣",
-    "Bjornulf_SaveImageToFolder": "🖼📁 Save Image to a folder",
+    "Bjornulf_SaveImageToFolder": "🖼📁 Save Image(s) to a folder",
     "Bjornulf_SaveTmpImage": "🖼 Save Image (tmp_api.png) ⚠️💣",
     # "Bjornulf_SaveApiImage": "🖼 Save Image (./output/api_00001.png...)",
     "Bjornulf_SaveText": "💾 Save Text", #Make SaveCharacter, SaveLocation, SaveCamera, SaveAction, SaveClothes, SaveEmotion...
