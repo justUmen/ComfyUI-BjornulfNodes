@@ -17,6 +17,7 @@
 - **v0.8**: Combine images : add an option to put image top, bottom or center.
 - **v0.8**: Combine texts : add option for slashes /
 - **v0.8**: Add basic node to transform greenscreen in to transparency.
+- **v0.9**: Add a new node : Return one random line from input.
 - **v0.10**: Add a new node : Loop (All Lines from input) - Iterate over all lines from an input text.
 
 # 📝 Nodes descriptions
