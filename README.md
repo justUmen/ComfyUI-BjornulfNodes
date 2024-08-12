@@ -203,13 +203,13 @@ Iterate over all lines from an input text. (Good for testing multiple lines of t
 But what does that mean ???  
 When you use a loop (♻), the loop will use the same seed for each iteration. (That is the point, it will keep the same seed to compare results.)  
 Even with `randomize` for `control_after_generate`, it is still keep the same seed for every loop, it will change it only when the workflow is done.  
-Simple example without using random seed node :  
+Simple example without using random seed node : (Both images have different prompt, but same seed)  
 
 ![Text with random Seed 1](screenshots/random_seed_1.png)
 
 So if you want to force using another seed for each iteration, you can use this node in the middle.
 For example, if you want to generate a different image every time. (aka : You use loop nodes not to compare or test results but to generate multiple images.)  
-Use it like that for example :  
+Use it like that for example : (Both images have different prompt AND different seed)  
 
 ![Text with random Seed 2](screenshots/random_seed_2.png)
 
