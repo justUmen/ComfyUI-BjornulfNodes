@@ -202,7 +202,7 @@ Iterate over all lines from an input text. (Good for testing multiple lines of t
 ❗ This node is used to force to generate a random seed, along with text.  
 But what does that mean ???  
 When you use a loop (♻), the loop will use the same seed for each iteration. (That is the point, it will keep the same seed to compare results.)  
-Even with `randomize` for `control_after_generate`, it is still keep the same seed for every loop, it will change it only when the workflow is done.  
+Even with `randomize` for `control_after_generate`, it is still using the same seed for every loop, it will change it only when the workflow is done.  
 Simple example without using random seed node : (Both images have different prompt, but same seed)  
 
 ![Text with random Seed 1](screenshots/random_seed_1.png)
