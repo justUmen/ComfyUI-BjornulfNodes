@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.11 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.12 🔗
 
 # Dependencies
 
@@ -20,6 +20,7 @@
 - **v0.9**: Add a new node : Return one random line from input.
 - **v0.10**: Add a new node : Loop (All Lines from input) - Iterate over all lines from an input text.
 - **v0.11**: Add a new node : Text with random Seed - Generate a random seed, along with text.
+- **v0.12**: Combine images : Add option to move vertically and horizontally. (from -50% to 150%)
 
 # 📝 Nodes descriptions
 
@@ -172,8 +173,8 @@ But you can sometimes also want a black and white image...
 ![Combine Images](screenshots/combine_background_overlay.png)
 
 **Description:**  
-Combine two images into a single image : a background and one (or several) transparent overlay. (allow for video frames.)  
-Update 0.8 : Also have a option to put image top, bottom or center.
+Combine two images into a single image : a background and one (or several) transparent overlay. (allow to have a video there, just send all the frames and recombine them after.)  
+Update 0.11 : Add option to move vertically and horizontally. (from -50% to 150%)  
 ❗ Warning : For now, `background` is a static image. (I will allow video there later too.)  
 
 ## 25 - 🟩➜▢ Green Screen to Transparency
