@@ -9,6 +9,6 @@ Repository = "https://github.com/justUmen/Bjornulf_custom_nodes"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = "bjornulf2"
+PublisherId = "bjornulf"
 DisplayName = "Bjornulf_custom_nodes"
 Icon = ""
