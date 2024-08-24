@@ -34,6 +34,7 @@ from .random_line_from_input import RandomLineFromInput
 from .loop_lines import LoopAllLines
 from .random_seed_with_text import TextToStringAndSeed
 from .load_image_alpha import LoadImageWithTransparency
+from .image_mask_cutter import ImageMaskCutter
 # from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
 
@@ -42,6 +43,7 @@ from .load_image_alpha import LoadImageWithTransparency
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_ImageMaskCutter": ImageMaskCutter,
     "Bjornulf_LoadImageWithTransparency": LoadImageWithTransparency,
     "Bjornulf_LoopAllLines": LoopAllLines,
     "Bjornulf_TextToStringAndSeed": TextToStringAndSeed,
@@ -84,6 +86,7 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
+    "Bjornulf_ImageMaskCutter": "🖼✂ Cut Image with Mask",
     "Bjornulf_LoadImageWithTransparency": "🖼 Load Image with Transparency ▢",
     "Bjornulf_GreenScreenToTransparency": "🟩➜▢ Green Screen to Transparency",
     # "Bjornulf_CheckBlackImage": "🔲 Check Black Image (Empty mask)",

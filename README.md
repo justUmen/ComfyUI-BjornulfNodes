@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.13 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.14 🔗
 
 # Dependencies
 
@@ -22,6 +22,7 @@
 - **v0.11**: Add a new node : Text with random Seed - Generate a random seed, along with text.
 - **v0.12**: Combine images : Add option to move vertically and horizontally. (from -50% to 150%)
 - **v0.13**: Add a new node: Load image with transparency (alpha) - Load an image with transparency.
+- **v0.14**: Add a new node: Cut image from a mask
 
 # 📝 Nodes descriptions
 
@@ -234,3 +235,9 @@ FLUX : Here is an example of 4 images without Random Seed node on the left, and 
 **Description:**  
 Load an image with transparency.  
 The default `Load Image` node will not load the transparency.  
+
+## 30 - 🖼✂ Cut image with a mask
+![Cut image](screenshots/image_mask_cut.png)
+
+**Description:**  
+Cut an image from a mask.  

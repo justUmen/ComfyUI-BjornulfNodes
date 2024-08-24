@@ -8,7 +8,8 @@ class CombineBackgroundOverlay:
         return {
             "required": {
                 "background": ("IMAGE",),
-                "overlay_alpha": ("IMAGE",),
+                "overlay": ("IMAGE",),
+                "mask": ("MASK",),
                 "horizontal_position": ("FLOAT", {"default": 50, "min": -50, "max": 150, "step": 0.1}),
                 "vertical_position": ("FLOAT", {"default": 50, "min": -50, "max": 150, "step": 0.1}),
             },
@@ -18,7 +19,7 @@ class CombineBackgroundOverlay:
     FUNCTION = "combine_background_overlay"
     CATEGORY = "Bjornulf"
 
-    def combine_background_overlay(self, background, overlay_alpha, horizontal_position, vertical_position):
+    def combine_background_overlay(self, background, overlay, mask, horizontal_position, vertical_position):
         # Convert background from torch tensor to numpy array
         bg = background[0].numpy()
         bg = (bg * 255).astype(np.uint8)
@@ -26,17 +27,23 @@ class CombineBackgroundOverlay:
 
         results = []
 
-        for overlay in overlay_alpha:
+        for ov, m in zip(overlay, mask):
             # Convert overlay from torch tensor to numpy array
-            ov = overlay.numpy()
+            ov = ov.numpy()
             ov = (ov * 255).astype(np.uint8)
 
+            # Convert mask from torch tensor to numpy array
+            m = m.numpy()
+            m = (m * 255).astype(np.uint8)
+
             # Create PIL Image for overlay
-            if ov.shape[2] == 4:
-                ov_img = Image.fromarray(ov, 'RGBA')
-            else:
-                ov_img = Image.fromarray(ov, 'RGB')
-                ov_img = ov_img.convert('RGBA')
+            ov_img = Image.fromarray(ov, 'RGB')
+            
+            # Create alpha channel from mask
+            alpha = Image.fromarray(m, 'L')
+            
+            # Combine RGB overlay with alpha mask
+            ov_img.putalpha(alpha)
 
             # Calculate horizontal position
             x = int((horizontal_position / 100) * (bg_img.width - ov_img.width))
@@ -56,9 +63,8 @@ class CombineBackgroundOverlay:
             # Convert back to numpy array and then to torch tensor
             result_np = np.array(result)
             
-            # If the result is RGBA, convert to RGB
-            if result_np.shape[2] == 4:
-                result_np = result_np[:,:,:3]
+            # Convert RGBA to RGB
+            result_np = result_np[:,:,:3]
 
             result_tensor = torch.from_numpy(result_np).float() / 255.0
 
