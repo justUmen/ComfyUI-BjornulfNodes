@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.12 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.13 🔗
 
 # Dependencies
 
@@ -21,6 +21,7 @@
 - **v0.10**: Add a new node : Loop (All Lines from input) - Iterate over all lines from an input text.
 - **v0.11**: Add a new node : Text with random Seed - Generate a random seed, along with text.
 - **v0.12**: Combine images : Add option to move vertically and horizontally. (from -50% to 150%)
+- **v0.13**: Add a new node: Load image with transparency (alpha) - Load an image with transparency.
 
 # 📝 Nodes descriptions
 
@@ -176,6 +177,7 @@ But you can sometimes also want a black and white image...
 Combine two images into a single image : a background and one (or several) transparent overlay. (allow to have a video there, just send all the frames and recombine them after.)  
 Update 0.11 : Add option to move vertically and horizontally. (from -50% to 150%)  
 ❗ Warning : For now, `background` is a static image. (I will allow video there later too.)  
+⚠️ Warning : If you want to directly load the image with transparency, use my node `🖼 Load Image with Transparency ▢` instead of the `Load Image` node.  
 
 ## 25 - 🟩➜▢ Green Screen to Transparency
 ![Greenscreen to Transparency](screenshots/greeenscreen_to_transparency.png)
@@ -225,3 +227,10 @@ Here is an example of the similarities that you want to avoid with SDXL with dif
 FLUX : Here is an example of 4 images without Random Seed node on the left, and on the right 4 images with Random Seed node :
 
 ![Text with random Seed 5](screenshots/result_random_seed.png)
+
+## 29 - 🖼 Load Image with Transparency ▢
+![Load image Alpha](screenshots/load_image_alpha.png)
+
+**Description:**  
+Load an image with transparency.  
+The default `Load Image` node will not load the transparency.  

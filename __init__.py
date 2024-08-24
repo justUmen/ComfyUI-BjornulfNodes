@@ -33,6 +33,7 @@ from .green_to_transparency import GreenScreenToTransparency
 from .random_line_from_input import RandomLineFromInput
 from .loop_lines import LoopAllLines
 from .random_seed_with_text import TextToStringAndSeed
+from .load_image_alpha import LoadImageWithTransparency
 # from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
 
@@ -41,6 +42,7 @@ from .random_seed_with_text import TextToStringAndSeed
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_LoadImageWithTransparency": LoadImageWithTransparency,
     "Bjornulf_LoopAllLines": LoopAllLines,
     "Bjornulf_TextToStringAndSeed": TextToStringAndSeed,
     "Bjornulf_GreenScreenToTransparency": GreenScreenToTransparency,
@@ -82,6 +84,7 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
+    "Bjornulf_LoadImageWithTransparency": "🖼 Load Image with Transparency ▢",
     "Bjornulf_GreenScreenToTransparency": "🟩➜▢ Green Screen to Transparency",
     # "Bjornulf_CheckBlackImage": "🔲 Check Black Image (Empty mask)",
     "Bjornulf_SaveBjornulfLobeChat": "🖼💬 Save image for Bjornulf LobeChat",
