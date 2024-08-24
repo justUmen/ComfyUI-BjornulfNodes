@@ -1,7 +1,7 @@
 [project]
 name = "bjornulf_custom_nodes"
 description = "Nodes: Ollama, Green Screen to Transparency, Save image for Bjornulf LobeChat, Text with random Seed, Random line from input, Combine images (Background+Overlay alpha), Image to grayscale (black & white), Remove image Transparency (alpha), Resize Image, ..."
-version = "1.0.0"
+version = "0.13"
 license = {file = "LICENSE"}
 
 [project.urls]
