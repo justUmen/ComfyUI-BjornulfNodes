@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.16 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.17 🔗
 
 # Dependencies
 
@@ -26,6 +26,7 @@
 - **v0.14**: Add a new node: Cut image from a mask
 - **v0.15**: Add two new nodes: TTS - Text to Speech and Character Description Generator
 - **v0.16**: Big changes on Character Description Generator
+- **v0.17**: New loop node, combine by lines.
 
 # 📝 Nodes descriptions
 
@@ -264,3 +265,11 @@ Generate a character description based on a json file in the folder `characters`
 Make your own json file with your own characters, and use this node to generate a description.  
 ❗ For now it's very basic node, a lot of things are going to be added and changed !!!  
 Some details are unusable for some checkpoints, very much a work in progress, the json structure isn't set in stone either.  
+
+### 33 - ♻ Loop (All Lines from input 🔗 combine by lines)
+
+![loop combined](screenshots/loop_combined.png)
+
+**Description:**  
+Sometimes you want to loop over several inputs but you also want to separate different lines of your output.  
+So with this node, you can have the number of inputs and outputs you want. See example for usage.  

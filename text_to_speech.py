@@ -40,7 +40,7 @@ class TextToSpeech:
 
     RETURN_TYPES = ("AUDIO",)
     FUNCTION = "generate_audio"
-    CATEGORY = "audio"
+    CATEGORY = "Bjornulf"
 
     def generate_audio(self, text, language, speaker_wav):
         # Check if a valid speaker_wav was selected
