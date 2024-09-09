@@ -1,0 +1,35 @@
+{
+    "name": "Marcel",
+    "nationality": "French",
+    "age": 78,
+    "gender": "Male",
+    "height": "170 cm",
+    "weight": "70 kg",
+    "face": {
+      "shape": "Oval",
+      "complexion": "Pale with age spots",
+      "eyes": {
+        "color": "Grey",
+        "shape": "Hooded",
+        "feature": "Soft wrinkles around the eyes"
+      },
+      "nose": "Long and slightly hooked",
+      "lips": "Thin with a gentle expression",
+      "cheekbones": "Moderately prominent",
+      "jawline": "Soft with slight sagging, more pronounced than the female counterpart"
+    },
+    "hair": {
+      "color": "Silver grey",
+      "length": "Short",
+      "texture": "Straight",
+      "style": "Neatly styled, side-parted with a bit of thinning at the top"
+    },
+    "body_type": {
+      "build": "Lean but slightly frail due to age",
+      "figure": "Rectangle-shaped",
+      "shoulders": "Narrow and slightly stooped",
+      "waist": "Undefined due to age",
+      "hips": "Slim with slightly bowed legs"
+    }
+  }
+  

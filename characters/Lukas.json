@@ -1,0 +1,35 @@
+{
+    "name": "Lukas",
+    "nationality": "Swedish",
+    "age": 8,
+    "gender": "Male",
+    "height": "125 cm",
+    "weight": "27 kg",
+    "face": {
+      "shape": "Round",
+      "complexion": "Light with a few freckles",
+      "eyes": {
+        "color": "Blue",
+        "shape": "Big and round",
+        "feature": "Bright and inquisitive"
+      },
+      "nose": "Small and rounded",
+      "lips": "Thin and slightly pink",
+      "cheekbones": "Soft and subtle",
+      "jawline": "Rounded"
+    },
+    "hair": {
+      "color": "Blonde",
+      "length": "Short",
+      "texture": "Straight",
+      "style": "Neatly trimmed or with a bit of tousle"
+    },
+    "body_type": {
+      "build": "Petite",
+      "figure": "Childlike",
+      "shoulders": "Small and narrow",
+      "waist": "Slightly chubby",
+      "hips": "Not yet developed"
+    }
+  }
+  

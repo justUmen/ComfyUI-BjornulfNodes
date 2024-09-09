@@ -1,0 +1,34 @@
+{
+    "name": "Jessica",
+    "nationality": "Irish",
+    "age": 28,
+    "gender": "Female",
+    "height": "170 cm",
+    "weight": "59 kg",
+    "face": {
+      "shape": "Oval",
+      "complexion": "Fair with a light tan",
+      "eyes": {
+        "color": "Hazel",
+        "shape": "Almond-shaped",
+        "feature": "Long eyelashes"
+      },
+      "nose": "Small and slightly upturned",
+      "lips": "Full and naturally pink",
+      "cheekbones": "High and defined",
+      "jawline": "Softly defined"
+    },
+    "hair": {
+      "color": "Auburn",
+      "length": "Shoulder-length",
+      "texture": "Wavy",
+      "style": "Usually worn in loose curls or a messy bun"
+    },
+    "body_type": {
+      "build": "Athletic and toned",
+      "figure": "Hourglass",
+      "shoulders": "Broad but feminine",
+      "waist": "Narrow",
+      "hips": "Curvy"
+    }
+  }

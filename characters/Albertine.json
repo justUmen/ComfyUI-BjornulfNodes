@@ -1,0 +1,34 @@
+{
+  "name": "Albertine",
+  "nationality": "French",
+  "age": 78,
+  "gender": "Female",
+  "height": "158 cm",
+  "weight": "62 kg",
+  "face": {
+    "shape": "Oval",
+    "complexion": "Pale with age spots",
+    "eyes": {
+      "color": "Grey",
+      "shape": "Hooded",
+      "feature": "Soft wrinkles around the eyes"
+    },
+    "nose": "Long and slender",
+    "lips": "Thin with a gentle smile",
+    "cheekbones": "Prominent",
+    "jawline": "Soft and slightly sagging"
+  },
+  "hair": {
+    "color": "Silver grey",
+    "length": "Short",
+    "texture": "Straight",
+    "style": "Neatly styled in a classic bob"
+  },
+  "body_type": {
+    "build": "Slender but frail",
+    "figure": "Rectangle-shaped",
+    "shoulders": "Narrow and slightly stooped",
+    "waist": "Less defined due to age",
+    "hips": "Slim"
+  }
+}

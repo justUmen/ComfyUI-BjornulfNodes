@@ -1,0 +1,35 @@
+{
+    "name": "Chinedu",
+    "nationality": "Nigerian",
+    "age": 22,
+    "gender": "Male",
+    "height": "175 cm",
+    "weight": "68 kg",
+    "face": {
+      "shape": "Oval",
+      "complexion": "Dark with warm undertones",
+      "eyes": {
+        "color": "Brown",
+        "shape": "Almond-shaped",
+        "feature": "Bright and sharp, with a confident gaze"
+      },
+      "nose": "Wide and slightly rounded",
+      "lips": "Full with a natural matte finish",
+      "cheekbones": "High and subtly defined",
+      "jawline": "Defined with a slight roundness"
+    },
+    "hair": {
+      "color": "Dark Brown",
+      "length": "Short",
+      "texture": "Coily",
+      "style": "Close-cut or short fade, neatly trimmed"
+    },
+    "body_type": {
+      "build": "Athletic and fit",
+      "figure": "Lean",
+      "shoulders": "Broad",
+      "waist": "Moderately defined",
+      "hips": "Narrow"
+    }
+  }
+  

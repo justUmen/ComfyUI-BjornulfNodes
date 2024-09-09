@@ -1,0 +1,35 @@
+{
+    "name": "Sean",
+    "nationality": "Irish",
+    "age": 28,
+    "gender": "Male",
+    "height": "180 cm",
+    "weight": "78 kg",
+    "face": {
+      "shape": "Oval",
+      "complexion": "Fair with a light tan",
+      "eyes": {
+        "color": "Hazel",
+        "shape": "Almond-shaped",
+        "feature": "Defined eyebrows and a friendly gaze"
+      },
+      "nose": "Straight and slightly prominent",
+      "lips": "Full with a natural pink hue",
+      "cheekbones": "High and chiseled",
+      "jawline": "Strong and defined"
+    },
+    "hair": {
+      "color": "Auburn",
+      "length": "Short",
+      "texture": "Wavy",
+      "style": "Neatly styled with a bit of wave, often kept short and tidy"
+    },
+    "body_type": {
+      "build": "Athletic and toned",
+      "figure": "V-shaped",
+      "shoulders": "Broad and strong",
+      "waist": "Defined",
+      "hips": "Moderate"
+    }
+  }
+  

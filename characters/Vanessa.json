@@ -1,0 +1,34 @@
+{
+  "name": "Vanessa",
+  "nationality": "French",
+  "age": 25,
+  "gender": "Female",
+  "height": "165 cm",
+  "weight": "54 kg",
+  "face": {
+    "shape": "Heart",
+    "complexion": "Medium with warm undertones",
+    "eyes": {
+      "color": "Green",
+      "shape": "Round",
+      "feature": "Thick eyebrows"
+    },
+    "nose": "Straight and narrow",
+    "lips": "Slightly thin with a defined cupid's bow",
+    "cheekbones": "Subtle and rounded",
+    "jawline": "Sharp and angular"
+  },
+  "hair": {
+    "color": "Black",
+    "length": "Long",
+    "texture": "Straight",
+    "style": "Often worn in a sleek ponytail or braided"
+  },
+  "body_type": {
+    "build": "Slim and petite",
+    "figure": "Pear-shaped",
+    "shoulders": "Narrow",
+    "waist": "Defined",
+    "hips": "Broader and rounded"
+  }
+}

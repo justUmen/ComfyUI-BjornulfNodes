@@ -1,8 +1,9 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.14 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.15 🔗
 
 # Dependencies
 
 - `pip install ollama` (you can also install ollama if you want :  https://ollama.com/download) - You don't need to really install it if you don't want to use my ollama node. (BUT you need to run `pip install ollama`)
+- `pip install pydub` (for TTS node)
 
 # 📝 Changelog
 
@@ -23,6 +24,7 @@
 - **v0.12**: Combine images : Add option to move vertically and horizontally. (from -50% to 150%)
 - **v0.13**: Add a new node: Load image with transparency (alpha) - Load an image with transparency.
 - **v0.14**: Add a new node: Cut image from a mask
+- **v0.15**: Add two new nodes: TTS - Text to Speech and Character Description Generator
 
 # 📝 Nodes descriptions
 
@@ -241,3 +243,21 @@ The default `Load Image` node will not load the transparency.
 
 **Description:**  
 Cut an image from a mask.  
+
+## 31 - 🔊 TTS - Text to Speech
+![Cut image](screenshots/tts.png)
+
+**Description:**  
+Use my TTS server to generate speech from text.  
+❗ Of course you need to use my TTS server : <https://github.com/justUmen/Bjornulf_XTTS>  
+After having that installed, you NEED to create a link in my Comfyui custom node folder called `speakers` : `ComfyUI/custom_nodes/Bjornulf_custom_nodes/speakers`  
+That link must must be a link to the folder where you store the voice samples you use for my TTS, like `default.wav`.  
+If my TTS server is running on port 8020 (You can test in browser with the link <http://localhost:8020/tts_stream?language=en&speaker_wav=default&text=Hello>) and voice samples are good, you can use this node to generate speech from text.  
+
+### 32 - 🧑📝 Character Description Generator
+![Cut image](screenshots/characters.png)
+
+**Description:**  
+Generate a character description based on a json file in the folder `characters` : `ComfyUI/custom_nodes/Bjornulf_custom_nodes/characters`  
+Make your own json file with your own characters, and use this node to generate a description.  
+❗ For now it's very basic node, a lot of things are going to be added.  

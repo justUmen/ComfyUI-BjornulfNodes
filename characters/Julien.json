@@ -1,0 +1,35 @@
+{
+    "name": "Julien",
+    "nationality": "French",
+    "age": 25,
+    "gender": "Male",
+    "height": "175 cm",
+    "weight": "68 kg",
+    "face": {
+      "shape": "Heart",
+      "complexion": "Medium with warm undertones",
+      "eyes": {
+        "color": "Green",
+        "shape": "Round",
+        "feature": "Defined eyebrows"
+      },
+      "nose": "Straight and narrow",
+      "lips": "Slightly full with a well-defined cupid's bow",
+      "cheekbones": "Subtle and rounded",
+      "jawline": "Sharp and angular"
+    },
+    "hair": {
+      "color": "Black",
+      "length": "Short",
+      "texture": "Straight",
+      "style": "Neatly styled, often with a side part or slightly tousled"
+    },
+    "body_type": {
+      "build": "Slim and athletic",
+      "figure": "V-shaped",
+      "shoulders": "Broad",
+      "waist": "Defined",
+      "hips": "Moderately rounded"
+    }
+  }
+  

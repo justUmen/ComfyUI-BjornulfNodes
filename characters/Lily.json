@@ -1,0 +1,34 @@
+{
+  "name": "Lily",
+  "nationality": "Swedish",
+  "age": 8,
+  "gender": "Female",
+  "height": "120 cm",
+  "weight": "25 kg",
+  "face": {
+    "shape": "Round",
+    "complexion": "Light with freckles",
+    "eyes": {
+      "color": "Blue",
+      "shape": "Big and round",
+      "feature": "Sparkly and curious"
+    },
+    "nose": "Small and button-like",
+    "lips": "Thin and rosy",
+    "cheekbones": "Soft and subtle",
+    "jawline": "Rounded"
+  },
+  "hair": {
+    "color": "Blonde",
+    "length": "Medium-length",
+    "texture": "Straight",
+    "style": "Usually in pigtails or a simple headband"
+  },
+  "body_type": {
+    "build": "Petite",
+    "figure": "Childlike",
+    "shoulders": "Small and narrow",
+    "waist": "Slightly chubby",
+    "hips": "Not yet developed"
+  }
+}

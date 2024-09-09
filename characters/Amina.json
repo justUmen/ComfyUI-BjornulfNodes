@@ -1,0 +1,34 @@
+{
+  "name": "Amina",
+  "nationality": "Nigerian",
+  "age": 22,
+  "gender": "Female",
+  "height": "160 cm",
+  "weight": "52 kg",
+  "face": {
+    "shape": "Round",
+    "complexion": "Dark with warm undertones",
+    "eyes": {
+      "color": "Brown",
+      "shape": "Almond-shaped",
+      "feature": "Bright and expressive"
+    },
+    "nose": "Wide and flat",
+    "lips": "Full and glossy",
+    "cheekbones": "High and prominent",
+    "jawline": "Softly rounded"
+  },
+  "hair": {
+    "color": "Dark Brown",
+    "length": "Short",
+    "texture": "Coily",
+    "style": "Natural afro or styled in twists"
+  },
+  "body_type": {
+    "build": "Slender and fit",
+    "figure": "Straight",
+    "shoulders": "Narrow",
+    "waist": "Slightly defined",
+    "hips": "Moderate"
+  }
+}

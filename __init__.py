@@ -35,6 +35,8 @@ from .loop_lines import LoopAllLines
 from .random_seed_with_text import TextToStringAndSeed
 from .load_image_alpha import LoadImageWithTransparency
 from .image_mask_cutter import ImageMaskCutter
+from .character_description import CharacterDescriptionGenerator
+from .text_to_speech import TextToSpeech
 # from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
 
@@ -43,6 +45,8 @@ from .image_mask_cutter import ImageMaskCutter
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_TextToSpeech": TextToSpeech,
+    "Bjornulf_CharacterDescriptionGenerator": CharacterDescriptionGenerator,
     "Bjornulf_ImageMaskCutter": ImageMaskCutter,
     "Bjornulf_LoadImageWithTransparency": LoadImageWithTransparency,
     "Bjornulf_LoopAllLines": LoopAllLines,
@@ -86,6 +90,8 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
+    "Bjornulf_TextToSpeech": "🔊 TTS - Text to Speech",
+    "Bjornulf_CharacterDescriptionGenerator": "🧑📝 Character Description Generator",
     "Bjornulf_ImageMaskCutter": "🖼✂ Cut Image with Mask",
     "Bjornulf_LoadImageWithTransparency": "🖼 Load Image with Transparency ▢",
     "Bjornulf_GreenScreenToTransparency": "🟩➜▢ Green Screen to Transparency",
