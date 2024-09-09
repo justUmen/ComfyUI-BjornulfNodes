@@ -27,96 +27,79 @@ class CharacterDescriptionGenerator:
     def generate_descriptions(self, character_file):
         current_dir = os.path.dirname(os.path.realpath(__file__))
         file_path = os.path.join(current_dir, "characters", character_file)
-        
+
         if not os.path.exists(file_path):
             return (f"Error: File {character_file} not found.", "")
-        
+
         try:
             with open(file_path, 'r') as file:
                 data = json.load(file)
-            
+
             name = data.get('name', 'Unknown')
+            nationality = data.get('nationality', 'Unknown')
             age = data.get('age', 'Unknown')
             gender = data.get('gender', 'Unknown').lower()
             height = data.get('height', 'Unknown')
             weight = data.get('weight', 'Unknown')
-
+            body_type = data.get('body_type', {})
             face = data.get('face', {})
             eyes = face.get('eyes', {})
-            hair = face.get('hair', {})
-            body_type = face.get('body_type', {})
+            hair = data.get('hair', {})
 
-            # Define pronouns based on gender
+            pronouns = {
+                'subject': 'They',
+                'object': 'them',
+                'possessive': 'their'
+            }
             if gender in ['female', 'f']:
-                pronouns = {
-                    'subject': 'She',
-                    'object': 'her',
-                    'possessive': 'her'
-                }
+                pronouns = {'subject': 'She', 'object': 'her', 'possessive': 'her'}
             elif gender in ['male', 'm']:
-                pronouns = {
-                    'subject': 'He',
-                    'object': 'him',
-                    'possessive': 'his'
-                }
-            else:
-                pronouns = {
-                    'subject': 'They',
-                    'object': 'them',
-                    'possessive': 'their'
-                }
+                pronouns = {'subject': 'He', 'object': 'him', 'possessive': 'his'}
 
-            # Generate sentences description
-            sentences = f"{name} is a {age}-year-old {gender} standing {height} tall and weighing {weight}. "
+            body_desc = f"{body_type.get('build', '')} and {body_type.get('figure', '')}"
+            eyes_desc = f"{eyes.get('color', '')} {eyes.get('shape', '')} eyes that appear {eyes.get('feature', '')}"
+            hair_desc = f"{hair.get('length', '')} {hair.get('color', '')} {hair.get('texture', '')} hair"
 
-            if face:
-                sentences += f"{pronouns['subject']} has an {face.get('shape', 'unknown').lower()} face with a {face.get('complexion', 'unknown').lower()} complexion. "
-                
-                if eyes:
-                    sentences += f"{pronouns['possessive'].capitalize()} {eyes.get('color', 'unknown').lower()} eyes are {eyes.get('shape', 'unknown').lower()} "
-                    sentences += f"with {eyes.get('feature', 'unknown').lower()}. "
-                
-                sentences += f"{pronouns['possessive'].capitalize()} nose is {face.get('nose', 'unknown').lower()}, and {pronouns['possessive']} lips are {face.get('lips', 'unknown').lower()}. "
-                sentences += f"{pronouns['subject']} has {face.get('cheekbones', 'unknown').lower()} cheekbones and a {face.get('jawline', 'unknown').lower()} jawline. "
-
-            if hair:
-                sentences += f"{name}'s {hair.get('color', 'unknown')} hair is {hair.get('length', 'unknown').lower()} and {hair.get('texture', 'unknown').lower()}, "
-                sentences += f"{hair.get('style', 'unknown').lower()}. "
-
-            if body_type:
-                sentences += f"{pronouns['subject']} has a {body_type.get('build', 'unknown').lower()} body type with a {body_type.get('figure', 'unknown').lower()} figure, "
-                sentences += f"{body_type.get('shoulders', 'unknown').lower()} shoulders, a {body_type.get('waist', 'unknown').lower()} waist, "
-                sentences += f"and {body_type.get('hips', 'unknown').lower()} hips."
-
+            sentences = (
+                f"{name} is a {age}-year-old {nationality} {gender.lower()}. "
+                f"{pronouns['subject']} stands at {height} and weighs {weight}. "
+                f"{pronouns['subject']} has a {body_desc} build, with {body_type.get('shoulders', '')} shoulders, "
+                f"a {body_type.get('waist', '')} waist, and {body_type.get('hips', '')} hips. "
+                f"{pronouns['possessive'].capitalize()} face is characterized by {eyes_desc}, complemented by {hair_desc} "
+                f"that {pronouns['subject'].lower()} usually styles {hair.get('style', '')}. "
+                f"{name}'s complexion is {face.get('complexion', '')}, with a {face.get('shape', '')} face shape, "
+                f"a {face.get('nose', '')} nose, {face.get('lips', '')} lips, {face.get('cheekbones', '')} cheekbones, "
+                f"and a {face.get('jawline', '')} jawline."
+            )
             
-            # Generate words description
             words_list = [
                 f"{age} years old",
-                gender,
+                f"{nationality}",
+                f"{gender}",
                 f"{height} tall",
-                f"{weight} weight",
-                face.get('shape', 'unknown').lower() + " face",
-                face.get('complexion', 'unknown').lower() + " complexion",
-                eyes.get('color', 'unknown').lower() + " eyes",
-                eyes.get('shape', 'unknown').lower() + " eyes",
-                eyes.get('feature', 'unknown').lower() + " eyelashes",
-                face.get('nose', 'unknown').lower() + " nose",
-                face.get('lips', 'unknown').lower() + " lips",
-                face.get('cheekbones', 'unknown').lower() + " cheekbones",
-                face.get('jawline', 'unknown').lower() + " jawline",
-                hair.get('color', 'unknown') + " hair",
-                hair.get('length', 'unknown').lower() + " hair",
-                hair.get('texture', 'unknown').lower() + " hair",
-                hair.get('style', 'unknown').lower() + " hairstyle",
-                body_type.get('build', 'unknown').lower() + " build",
-                body_type.get('figure', 'unknown').lower() + " figure",
-                body_type.get('shoulders', 'unknown').lower() + " shoulders",
-                body_type.get('waist', 'unknown').lower() + " waist",
-                body_type.get('hips', 'unknown').lower() + " hips"
+                f"{weight}",
+                f"{body_type.get('build', '')} build",
+                f"{body_type.get('figure', '')} figure",
+                f"{body_type.get('shoulders', '')} shoulders",
+                f"{body_type.get('waist', '')} waist",
+                f"{body_type.get('hips', '')} hips",
+                f"{eyes.get('color', '')} eyes",
+                f"{eyes.get('shape', '')} eyes",
+                f"{eyes.get('feature', '')} eyes",
+                f"{hair.get('length', '')} hair",
+                f"{hair.get('color', '')} hair",
+                f"{hair.get('texture', '')} hair",
+                f"{hair.get('style', '')}",
+                f"{face.get('complexion', '')} complexion",
+                f"{face.get('shape', '')} face",
+                f"{face.get('nose', '')} nose",
+                f"{face.get('lips', '')} lips",
+                f"{face.get('cheekbones', '')} cheekbones",
+                f"{face.get('jawline', '')} jawline"
             ]
             words = ", ".join(words_list)
-            
+
             return (sentences, words, character_file.replace('.json', ''))
-        
+
         except Exception as e:
             return (f"Error processing {character_file}: {str(e)}", "")

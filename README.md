@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.15 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.16 🔗
 
 # Dependencies
 
@@ -25,6 +25,7 @@
 - **v0.13**: Add a new node: Load image with transparency (alpha) - Load an image with transparency.
 - **v0.14**: Add a new node: Cut image from a mask
 - **v0.15**: Add two new nodes: TTS - Text to Speech and Character Description Generator
+- **v0.16**: Big changes on Character Description Generator
 
 # 📝 Nodes descriptions
 
@@ -245,7 +246,7 @@ The default `Load Image` node will not load the transparency.
 Cut an image from a mask.  
 
 ## 31 - 🔊 TTS - Text to Speech
-![Cut image](screenshots/tts.png)
+![TTS](screenshots/tts.png)
 
 **Description:**  
 Use my TTS server to generate speech from text.  
@@ -255,9 +256,11 @@ That link must must be a link to the folder where you store the voice samples yo
 If my TTS server is running on port 8020 (You can test in browser with the link <http://localhost:8020/tts_stream?language=en&speaker_wav=default&text=Hello>) and voice samples are good, you can use this node to generate speech from text.  
 
 ### 32 - 🧑📝 Character Description Generator
-![Cut image](screenshots/characters.png)
+![characters](screenshots/characters.png)
+![characters](screenshots/characters2.png)
 
 **Description:**  
 Generate a character description based on a json file in the folder `characters` : `ComfyUI/custom_nodes/Bjornulf_custom_nodes/characters`  
 Make your own json file with your own characters, and use this node to generate a description.  
-❗ For now it's very basic node, a lot of things are going to be added.  
+❗ For now it's very basic node, a lot of things are going to be added and changed !!!  
+Some details are unusable for some checkpoints, very much a work in progress, the json structure isn't set in stone either.  
