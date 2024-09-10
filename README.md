@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.19 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.21 🔗
 
 # Dependencies
 
@@ -29,16 +29,19 @@
 - **v0.17**: New loop node, combine by lines.
 - **v0.18**: New loop node, Free VRAM hack
 - **v0.19**: Changes for save to folder node : ignore missing images filenames, will use the highest number found + 1.
+- **v0.20**: Changes for lobechat save image : include the code of free VRAM hack + ignore missing images filenames
+- **v0.21**: Add a write text node that also display the text in the comfyui console (good for debugging)
 
 # 📝 Nodes descriptions
 
 ## 1/2 - 👁 + ✒ Show/Write Text 
 ![Show Text](screenshots/write+show_text.png)
+![Show Text](screenshots/write_in_console.png)
 
 **Description:**  
-Two simple nodes to write and show text.
+Three simple nodes to write and show text.  
 Write node is a textarea where you can write your text.  
-The show text node will only display the text. (That's why I made it a different color : green, uneditable, display only.)
+The show text node will only display the text. (That's why I made it a different color : green, uneditable, display only.)   
 
 ## 3 - 🔗 Combine Texts
 ![Combine Texts](screenshots/combine_texts.png)
@@ -287,3 +290,4 @@ I don't think there is a clean way to do that, so I'm using a hacky way.
 So, not perfect but better than being stuck at 6GB of VRAM used if I know I won't be using it again...  
 Just connect this node with your workflow, it takes an image as input and return the same image without any changes.  
 ❗ Comfyui is using cache to run faster (like not reloading checkpoints), so only use this free VRAM node when you need it.  
+❗ For this node to work properly, you need to enable the dev/api mode in ComfyUI. (You can do that in the settings)  

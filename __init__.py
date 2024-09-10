@@ -1,5 +1,6 @@
 from .images_to_video import imagesToVideo
 from .write_text import WriteText
+from .write_text_console import WriteTextInConsole
 from .write_image_environment import WriteImageEnvironment
 from .write_image_characters import WriteImageCharacters
 from .write_image_character import WriteImageCharacter
@@ -61,6 +62,7 @@ NODE_CLASS_MAPPINGS = {
     # "Bjornulf_ClearVRAM": ClearVRAM,
     "Bjornulf_SaveBjornulfLobeChat": SaveBjornulfLobeChat,
     "Bjornulf_WriteText": WriteText,
+    "Bjornulf_WriteTextInConsole": WriteTextInConsole,
     "Bjornulf_RemoveTransparency": RemoveTransparency,
     "Bjornulf_GrayscaleTransform": GrayscaleTransform,
     "Bjornulf_CombineBackgroundOverlay": CombineBackgroundOverlay,
@@ -121,6 +123,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_SaveText": "💾 Save Text", #Make SaveCharacter, SaveLocation, SaveCamera, SaveAction, SaveClothes, SaveEmotion...
     "Bjornulf_LoadText": "📥 Load Text", #Make LoadCharacter, LoadLocation, LoadCamera, LoadAction, LoadClothes, LoadEmotion...
     "Bjornulf_WriteText": "✒ Write Text",
+    "Bjornulf_WriteTextInConsole": "✒🗔 Write Text (Console too) ",
     # "Bjornulf_WriteImageEnvironment": "✒ Write Image Environment",
     # "Bjornulf_WriteImageCharacters": "✒ Write Image Characters",
     # "Bjornulf_WriteImageCharacter": "✒ Write Image Character",
