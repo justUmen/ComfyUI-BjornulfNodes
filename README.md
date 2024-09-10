@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.18 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.19 🔗
 
 # Dependencies
 
@@ -28,6 +28,7 @@
 - **v0.16**: Big changes on Character Description Generator
 - **v0.17**: New loop node, combine by lines.
 - **v0.18**: New loop node, Free VRAM hack
+- **v0.19**: Changes for save to folder node : ignore missing images filenames, will use the highest number found + 1.
 
 # 📝 Nodes descriptions
 

@@ -25,6 +25,15 @@ class SaveImageToFolder:
         os.makedirs(output_dir, exist_ok=True)
 
         results = []
+        
+        # Find the highest existing file number
+        existing_files = [f for f in os.listdir(output_dir) if f.endswith('.png') and f[:5].isdigit()]
+        if existing_files:
+            highest_num = max(int(f[:5]) for f in existing_files)
+            counter = highest_num + 1
+        else:
+            counter = 1
+
         for image in images:
             i = 255. * image.cpu().numpy()
             img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
@@ -36,15 +45,10 @@ class SaveImageToFolder:
                 for k, v in extra_pnginfo.items():
                     metadata.add_text(k, json.dumps(v))
 
-            counter = 1
-            while True:
-                filename = os.path.join(output_dir, f"{counter:05d}.png")
-                if not os.path.exists(filename):
-                    break
-                counter += 1
-
+            filename = os.path.join(output_dir, f"{counter:05d}.png")
             img.save(filename, format="PNG", pnginfo=metadata)
             print(f"Image saved as: {filename}")
             results.append({"filename": filename})
+            counter += 1
 
         return {"ui": {"images": [{"filename": filename, "type": "output"}]}}
