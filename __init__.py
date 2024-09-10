@@ -38,6 +38,7 @@ from .image_mask_cutter import ImageMaskCutter
 from .character_description import CharacterDescriptionGenerator
 from .text_to_speech import TextToSpeech
 from .loop_combine_texts_by_lines import CombineTextsByLines
+from .free_vram_hack import FreeVRAMNode
 # from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
 
@@ -46,6 +47,7 @@ from .loop_combine_texts_by_lines import CombineTextsByLines
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_FreeVRAM": FreeVRAMNode,
     "Bjornulf_CombineTextsByLines": CombineTextsByLines,
     "Bjornulf_TextToSpeech": TextToSpeech,
     "Bjornulf_CharacterDescriptionGenerator": CharacterDescriptionGenerator,
@@ -92,6 +94,7 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
+    "Bjornulf_FreeVRAM": "🧹 Free VRAM hack",
     "Bjornulf_CombineTextsByLines": "♻ Loop (All Lines from input 🔗 combine by lines)",
     "Bjornulf_TextToSpeech": "🔊 TTS - Text to Speech",
     "Bjornulf_CharacterDescriptionGenerator": "🧑📝 Character Description Generator",

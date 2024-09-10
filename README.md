@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.17 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.18 🔗
 
 # Dependencies
 
@@ -27,6 +27,7 @@
 - **v0.15**: Add two new nodes: TTS - Text to Speech and Character Description Generator
 - **v0.16**: Big changes on Character Description Generator
 - **v0.17**: New loop node, combine by lines.
+- **v0.18**: New loop node, Free VRAM hack
 
 # 📝 Nodes descriptions
 
@@ -273,3 +274,15 @@ Some details are unusable for some checkpoints, very much a work in progress, th
 **Description:**  
 Sometimes you want to loop over several inputs but you also want to separate different lines of your output.  
 So with this node, you can have the number of inputs and outputs you want. See example for usage.  
+
+### 34 - 🧹 Free VRAM hack
+![free vram](screenshots/free_vram_hack1.png)
+![free vram](screenshots/free_vram_hack2.png)
+
+**Description:**  
+So this is my attempt at freeing up VRAM after usage, I will try to improve that.  
+For me, on launch ComfyUI is using 180MB of VRAM, after my clean up VRAM node it can go back down to 376MB.  
+I don't think there is a clean way to do that, so I'm using a hacky way.  
+So, not perfect but better than being stuck at 6GB of VRAM used if I know I won't be using it again...  
+Just connect this node with your workflow, it takes an image as input and return the same image without any changes.  
+❗ Comfyui is using cache to run faster (like not reloading checkpoints), so only use this free VRAM node when you need it.  
