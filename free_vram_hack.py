@@ -3,14 +3,14 @@ import gc
 import requests
 import json
 
-class FreeVRAMNode:
+class FreeVRAM:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": {"image": ("IMAGE",)}}
     
     RETURN_TYPES = ("IMAGE",)
     FUNCTION = "free_vram"
-    CATEGORY = "memory_management"
+    CATEGORY = "Bjornulf"
 
     def free_vram(self, image):
         print("Attempting to free VRAM...")
