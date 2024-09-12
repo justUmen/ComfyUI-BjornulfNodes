@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.21 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.22 🔗
 
 # ☁ Usage in cloud : 
 
@@ -63,7 +63,8 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.18**: New loop node, Free VRAM hack
 - **v0.19**: Changes for save to folder node : ignore missing images filenames, will use the highest number found + 1.
 - **v0.20**: Changes for lobechat save image : include the code of free VRAM hack + ignore missing images filenames
-- **v0.21**: Add a write text node that also display the text in the comfyui console (good for debugging)
+- **v0.21**: Add a new write text node that also display the text in the comfyui console (good for debugging)
+- **v0.22**: Allow write text node to use random selection like this {hood|helmet} will randomly choose between hood or helmet.
 
 # 📝 Nodes descriptions
 
@@ -75,6 +76,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 Three simple nodes to write and show text.  
 Write node is a textarea where you can write your text.  
 The show text node will only display the text. (That's why I made it a different color : green, uneditable, display only.)   
+Write text node now allow for special syntax to accept random variants, like `{hood|helmet}` will randomly choose between hood or helmet.  
 
 ## 3 - 🔗 Combine Texts
 ![Combine Texts](screenshots/combine_texts.png)
