@@ -4,18 +4,18 @@
 
 If you want to use my nodes and comfyui in the cloud, I'm managing an optimized template on runpod : <https://runpod.io/console/deploy?template=r32dtr35u1&ref=tkowk7g5>  
 Template name : `bjornulf-comfyui-allin-workspace`, can be operational in ~3 minutes. (Depending on your pod)  
-⚠️ You need to open a terminal in browser (After clicking on `connect` from your pod) and use this to launch ComfyUI manually : `cd /workspace/ComfyUI && python main.py --listen 0.0.0.0 --port 3000` (Much better to control it with a terminal, check logs, etc...)  
+You need to create and select a network volume before using that, size is up to you, i have 50Gb Storage because i use cloud only for Flux or lora training on a 4090. (~0.7$/hour)  
+⚠️ When pod is ready, you need to open a terminal in browser (After clicking on `connect` from your pod) and use this to launch ComfyUI manually : `cd /workspace/ComfyUI && python main.py --listen 0.0.0.0 --port 3000` (Much better to control it with a terminal, check logs, etc...)  
 After that you can just click on the `Connect to port 3000` button.  
-For file manager, you can use the included `JupyterLab` on port 8888.  
+As file manager, you can use the included `JupyterLab` on port 8888.  
 If you have any issues with it, please let me know.  
-You need to create and select a network volume, size is up to you, i have 50Gb Storage because i use cloud only for Flux or lora training on a 4090. (~0.7$/hour)  
-For me : I have a 4070 super with 12Gb and flux fp8 simple wokflow is about ~40 seconds. With a 4090 in the cloud I can even run fp16 in ~12 seconds.  
+For me : I have a computer with 4070 super with 12Gb and flux fp8 simple wokflow is about ~40 seconds. With a 4090 in the cloud I can run flux fp16 in ~12 seconds.  
 It will manage everything in Runpod network storage (`/workspace/ComfyUI`), so you can stop and start the cloud GPU without losing anything, change GPU or whatever.  
 Zone : I recommend `EU-RO-1`, but up to you.  
 Top-up your Runpod account with minimum 10$ to start.  
 ⚠️ Warning, you will pay by the minute, so not recommended for testing or learning comfyui. Do that locally !!!  
 Run cloud GPU only when you already have your workflow ready to run.  
-Advice : take a cheap GPU for testing, downloading models or so one.  
+Advice : take a cheap GPU for testing, downloading models or settings things up.  
 To download checkpoint or anything else, you need to use the terminal, here is all you need for flux as an example :
 
 For downloading from Huggingface (get token here <https://huggingface.co/settings/tokens>), Here is example for everything you need for flux :  
