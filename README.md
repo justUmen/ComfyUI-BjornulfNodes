@@ -1,5 +1,9 @@
 # 🔗 Comfyui : Bjornulf_custom_nodes v0.25 🔗
 
+# ❤️ Coffee : ☕☕☕☕☕ 5/5
+
+https://ko-fi.com/bjornulf
+
 # ☁ Usage in cloud : 
 
 If you want to use my nodes and comfyui in the cloud, I'm managing an optimized template on runpod : <https://runpod.io/console/deploy?template=r32dtr35u1&ref=tkowk7g5>  
