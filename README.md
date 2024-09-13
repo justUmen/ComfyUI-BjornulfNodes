@@ -16,9 +16,9 @@ Top-up your Runpod account with minimum 10$ to start.
 ⚠️ Warning, you will pay by the minute, so not recommended for testing or learning comfyui. Do that locally !!!  
 Run cloud GPU only when you already have your workflow ready to run.  
 Advice : take a cheap GPU for testing, downloading models or settings things up.  
-To download checkpoint or anything else, you need to use the terminal, here is all you need for flux as an example :
-
-For downloading from Huggingface (get token here <https://huggingface.co/settings/tokens>), Here is example for everything you need for flux :  
+To download checkpoint or anything else, you need to use the terminal.  
+For downloading from Huggingface (get token here <https://huggingface.co/settings/tokens>).  
+Here is example for everything you need for flux dev :  
 ```
 huggingface-cli login --token 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
 huggingface-cli download black-forest-labs/FLUX.1-dev flux1-dev.safetensors --local-dir /workspace/ComfyUI/models/unet
@@ -26,6 +26,7 @@ huggingface-cli download comfyanonymous/flux_text_encoders clip_l.safetensors --
 huggingface-cli download comfyanonymous/flux_text_encoders t5xxl_fp16.safetensors --local-dir /workspace/ComfyUI/models/clip
 huggingface-cli download black-forest-labs/FLUX.1-dev ae.safetensors --local-dir /workspace/ComfyUI/models/vae
 ```
+To use Flux you can just drag and drop in your browser the .json from my github repo : `workflows/FLUX_dev_troll.json`, direct link : <https://github.com/justUmen/ComfyUI-BjornulfNodes/blob/main/workflows/FLUX_dev_troll.json>.  
 
 For downloading from civitai (get token here <https://civitai.com/user/account>), just copy/paste the link of checkpoint you want to download and use something like that, with your token in URL :  
 ```
@@ -65,8 +66,8 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.20**: Changes for lobechat save image : include the code of free VRAM hack + ignore missing images filenames
 - **v0.21**: Add a new write text node that also display the text in the comfyui console (good for debugging)
 - **v0.22**: Allow write text node to use random selection like this {hood|helmet} will randomly choose between hood or helmet.
-- **v0.23**: And a new node: Pause, resume or stop workflow.
-- **v0.24**: And a new node: Pause, select input, pick one.
+- **v0.23**: Add a new node: Pause, resume or stop workflow.
+- **v0.24**: Add a new node: Pause, select input, pick one.
 
 # 📝 Nodes descriptions
 
@@ -103,7 +104,7 @@ General-purpose loop node.
 ![Loop Texts](screenshots/loop_texts.png)
 
 **Description:**  
-Cycle through a list of text inputs. Great for creating dynamic text-based presentations.
+Cycle through a list of text inputs.  
 
 ## 7 - ♻ Loop Integer
 ![Loop Integer](screenshots/loop_integer.png)
@@ -184,9 +185,6 @@ Also allow multiple nested folders, like for example : `animal/dog/small`.
 Will generate detailed text based of what you give it.  
 I recommend using `mistral-nemo` if you can run it, but it's up to you. (Might have to tweak the system prompt a bit)  
 ⚠️ Warning : Having an ollama node that will run for each generation might be a bit heavy on your VRAM. Think about if you really need it or not.
-
-**Description:**  
-Straight forward node to write and show text.
 
 ## 20 - 📹 Video Ping Pong
 ![Video Ping Pong](screenshots/video_pingpong.png)
@@ -296,7 +294,7 @@ Cut an image from a mask.
 Use my TTS server to generate speech from text.  
 ❗ Of course you need to use my TTS server : <https://github.com/justUmen/Bjornulf_XTTS>  
 After having that installed, you NEED to create a link in my Comfyui custom node folder called `speakers` : `ComfyUI/custom_nodes/Bjornulf_custom_nodes/speakers`  
-That link must must be a link to the folder where you store the voice samples you use for my TTS, like `default.wav`.  
+That link must be a link to the folder where you store the voice samples you use for my TTS, like `default.wav`.  
 If my TTS server is running on port 8020 (You can test in browser with the link <http://localhost:8020/tts_stream?language=en&speaker_wav=default&text=Hello>) and voice samples are good, you can use this node to generate speech from text.  
 
 ### 32 - 🧑📝 Character Description Generator
@@ -308,6 +306,7 @@ Generate a character description based on a json file in the folder `characters`
 Make your own json file with your own characters, and use this node to generate a description.  
 ❗ For now it's very basic node, a lot of things are going to be added and changed !!!  
 Some details are unusable for some checkpoints, very much a work in progress, the json structure isn't set in stone either.  
+Some characters are included.  
 
 ### 33 - ♻ Loop (All Lines from input 🔗 combine by lines)
 
@@ -336,7 +335,7 @@ Just connect this node with your workflow, it takes an image as input and return
 ![pause resume stop](screenshots/pause2.png)
 ![pause resume stop](screenshots/pause3.png)
 
-**Description:**
+**Description:**  
 Automatically pause the workflow, and rings a bell when it does. (play the audio `bell.m4a` file provided)  
 You can then manually resume or stop the workflow by clicking on the node's buttons.  
 I do that let's say for example if I have a very long upscaling process, I can check if the input is good before continuing. Sometimes I might stop the workflow and restart it with another seed.  
@@ -346,7 +345,7 @@ You can connect any type of node to the pause node, above is an example with tex
 
 ![pick input](screenshots/pick.png)
 
-**Description:**
+**Description:**  
 Automatically pause the workflow, and rings a bell when it does. (play the audio `bell.m4a` file provided)  
 You can then manually select the input you want to use, and resume the workflow with it.  
 You can connect this node to anything you want, above is an example with IMAGE. But you can pick whatever you want, in the node `input = output`.  
