@@ -17,7 +17,8 @@ class LoadImageWithTransparency:
 
     CATEGORY = "image"
 
-    RETURN_TYPES = ("IMAGE",)
+    RETURN_TYPES = ("IMAGE", "MASK", "STRING")  # Added "STRING" for the image path
+    RETURN_NAMES = ("image", "mask", "image_path")
     FUNCTION = "load_image_alpha"
 
     def load_image_alpha(self, image):
@@ -62,7 +63,7 @@ class LoadImageWithTransparency:
             output_image = output_images[0]
             output_mask = output_masks[0]
 
-        return (output_image, output_mask)
+        return (output_image, output_mask, image_path)  # Added image_path to the return tuple
 
     @classmethod
     def IS_CHANGED(s, image):

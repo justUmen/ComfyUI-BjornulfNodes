@@ -42,7 +42,6 @@ class PauseResume:
         if PauseResume.should_stop:
             PauseResume.should_stop = False  # Reset for next run
             PauseResume.is_paused = True
-            PauseResume.should_stop = False
             raise Exception("Workflow stopped by user")
         
         PauseResume.is_paused = True

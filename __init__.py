@@ -41,6 +41,8 @@ from .text_to_speech import TextToSpeech
 from .loop_combine_texts_by_lines import CombineTextsByLines
 from .free_vram_hack import FreeVRAM
 from .pause_resume_stop import PauseResume
+from .pick_input import PickInput
+# from .pass_preview_image import PassPreviewImage
 # from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
 
@@ -49,6 +51,8 @@ from .pause_resume_stop import PauseResume
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    # "Bjornulf_PassPreviewImage": PassPreviewImage,
+    "Bjornulf_PickInput": PickInput,
     "Bjornulf_PauseResume": PauseResume,
     "Bjornulf_FreeVRAM": FreeVRAM,
     "Bjornulf_CombineTextsByLines": CombineTextsByLines,
@@ -98,6 +102,8 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
+    # "Bjornulf_PassPreviewImage": "🖼⮕ Pass Preview Image",
+    "Bjornulf_PickInput": "⏸️🔍 Paused. Select input, Pick one",
     "Bjornulf_PauseResume": "⏸️ Paused. Resume or Stop ?",
     "Bjornulf_FreeVRAM": "🧹 Free VRAM hack",
     "Bjornulf_CombineTextsByLines": "♻ Loop (All Lines from input 🔗 combine by lines)",

@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.23 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.24 🔗
 
 # ☁ Usage in cloud : 
 
@@ -66,6 +66,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.21**: Add a new write text node that also display the text in the comfyui console (good for debugging)
 - **v0.22**: Allow write text node to use random selection like this {hood|helmet} will randomly choose between hood or helmet.
 - **v0.23**: And a new node: Pause, resume or stop workflow.
+- **v0.24**: And a new node: Pause, select input, pick one.
 
 # 📝 Nodes descriptions
 
@@ -339,3 +340,12 @@ Automatically pause the workflow, and rings a bell when it does. (play the audio
 You can then manually resume or stop the workflow by clicking on the node's buttons.  
 I do that let's say for example if I have a very long upscaling process, I can check if the input is good before continuing. Sometimes I might stop the workflow and restart it with another seed.  
 You can connect any type of node to the pause node, above is an example with text, but you can send an IMAGE or whatever else, in the node `input = output`. (Of course you need to send the output to something that has the correct format...)  
+
+### 36 - ⏸️🔍 Paused. Select input, Pick one
+
+![pick input](screenshots/pick.png)
+
+**Description:**
+Automatically pause the workflow, and rings a bell when it does. (play the audio `bell.m4a` file provided)  
+You can then manually select the input you want to use, and resume the workflow with it.  
+You can connect this node to anything you want, above is an example with IMAGE. But you can pick whatever you want, in the node `input = output`.  
