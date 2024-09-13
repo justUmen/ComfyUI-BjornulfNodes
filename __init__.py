@@ -42,6 +42,9 @@ from .loop_combine_texts_by_lines import CombineTextsByLines
 from .free_vram_hack import FreeVRAM
 from .pause_resume_stop import PauseResume
 from .pick_input import PickInput
+from .loop_images import LoopImages
+from .random_image import RandomImage
+
 # from .pass_preview_image import PassPreviewImage
 # from .check_black_image import CheckBlackImage
 # from .clear_vram import ClearVRAM
@@ -51,6 +54,8 @@ from .pick_input import PickInput
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_LoopImages": LoopImages,
+    "Bjornulf_RandomImage": RandomImage,
     # "Bjornulf_PassPreviewImage": PassPreviewImage,
     "Bjornulf_PickInput": PickInput,
     "Bjornulf_PauseResume": PauseResume,
@@ -102,6 +107,8 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
+    "Bjornulf_LoopImages": "♻🖼 Loop (Images)",
+    "Bjornulf_RandomImage": "🎲🖼 Random Image",
     # "Bjornulf_PassPreviewImage": "🖼⮕ Pass Preview Image",
     "Bjornulf_PickInput": "⏸️🔍 Paused. Select input, Pick one",
     "Bjornulf_PauseResume": "⏸️ Paused. Resume or Stop ?",

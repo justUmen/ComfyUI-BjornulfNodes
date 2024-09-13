@@ -68,6 +68,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.22**: Allow write text node to use random selection like this {hood|helmet} will randomly choose between hood or helmet.
 - **v0.23**: Add a new node: Pause, resume or stop workflow.
 - **v0.24**: Add a new node: Pause, select input, pick one.
+- **v0.25**: Two new nodes: Loop Images and Random image.
 
 # 📝 Nodes descriptions
 
@@ -349,3 +350,19 @@ You can connect any type of node to the pause node, above is an example with tex
 Automatically pause the workflow, and rings a bell when it does. (play the audio `bell.m4a` file provided)  
 You can then manually select the input you want to use, and resume the workflow with it.  
 You can connect this node to anything you want, above is an example with IMAGE. But you can pick whatever you want, in the node `input = output`.  
+
+### 37 - 🎲🖼 Random Image
+
+![pick input](screenshots/random_image.png)
+
+**Description:**  
+Just take a random image from a list of images.  
+
+### 38 - ♻🖼 Loop (Images)
+
+![pick input](screenshots/loop_images.png)
+
+**Description:**  
+Loop over a list of images.  
+Usage example : You have a list of images, and you want to apply the same process to all of them.  
+Above is an example of the loop images node sending them to an Ipadapter style transfer workflow. (Same seed of course.)  
