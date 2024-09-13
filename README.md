@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.24 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.25 🔗
 
 # ☁ Usage in cloud : 
 
