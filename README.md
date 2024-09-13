@@ -73,6 +73,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 ## 1/2 - 👁 + ✒ Show/Write Text 
 ![Show Text](screenshots/write+show_text.png)
 ![Show Text](screenshots/write_in_console.png)
+![Show Text](screenshots/write_text_select.png)
 
 **Description:**  
 Three simple nodes to write and show text.  
