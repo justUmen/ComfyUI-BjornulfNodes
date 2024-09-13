@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.22 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.23 🔗
 
 # ☁ Usage in cloud : 
 
@@ -65,6 +65,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.20**: Changes for lobechat save image : include the code of free VRAM hack + ignore missing images filenames
 - **v0.21**: Add a new write text node that also display the text in the comfyui console (good for debugging)
 - **v0.22**: Allow write text node to use random selection like this {hood|helmet} will randomly choose between hood or helmet.
+- **v0.23**: And a new node: Pause, resume or stop workflow.
 
 # 📝 Nodes descriptions
 
@@ -326,3 +327,15 @@ So, not perfect but better than being stuck at 6GB of VRAM used if I know I won'
 Just connect this node with your workflow, it takes an image as input and return the same image without any changes.  
 ❗ Comfyui is using cache to run faster (like not reloading checkpoints), so only use this free VRAM node when you need it.  
 ❗ For this node to work properly, you need to enable the dev/api mode in ComfyUI. (You can do that in the settings)  
+
+### 35 - ⏸️ Paused. Resume or Stop ?
+
+![pause resume stop](screenshots/pause1.png)
+![pause resume stop](screenshots/pause2.png)
+![pause resume stop](screenshots/pause3.png)
+
+**Description:**
+Automatically pause the workflow, and rings a bell when it does. (play the audio `bell.m4a` file provided)  
+You can then manually resume or stop the workflow by clicking on the node's buttons.  
+I do that let's say for example if I have a very long upscaling process, I can check if the input is good before continuing. Sometimes I might stop the workflow and restart it with another seed.  
+You can connect any type of node to the pause node, above is an example with text, but you can send an IMAGE or whatever else, in the node `input = output`. (Of course you need to send the output to something that has the correct format...)  
