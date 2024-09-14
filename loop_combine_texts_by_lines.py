@@ -12,7 +12,7 @@ class CombineTextsByLines:
     RETURN_NAMES = tuple([f"line_{i+1}" for i in range(50)])
     FUNCTION = "extract_lines"
     OUTPUT_NODE = True
-    CATEGORY = "text"
+    CATEGORY = "Bjornulf"
     OUTPUT_IS_LIST = tuple([True] * 50)  # Indicate that all outputs are lists
 
     def extract_lines(self, number_of_inputs, number_of_lines, **kwargs):

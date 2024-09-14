@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.26 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.28 🔗
 
 # ❤️ Coffee : ☕☕☕☕☕ 5/5
 
@@ -74,10 +74,12 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.24**: Add a new node: Pause, select input, pick one.
 - **v0.25**: Two new nodes: Loop Images and Random image.
 - **v0.26**: New node : Loop write Text. Also increase nb of inputs allowed for most nodes. (+ update some breaking changes)
+- **v0.27**: Two new nodes : Loop (Model+Clip+Vae) and Random (Model+Clip+Vae) - aka Checkpoint / Model
+- **v0.28**: Fix random texts and add a lot of screenshots examples for several nodes.
 
 # 📝 Nodes descriptions
 
-## 1/2 - 👁 + ✒ Show/Write Text 
+## 1/1b/2 - 👁 + ✒ Show/Write Text 
 ![Show Text](screenshots/write+show_text.png)
 ![Show Text](screenshots/write_in_console.png)
 ![Show Text](screenshots/write_text_select.png)
@@ -98,7 +100,8 @@ Combine multiple text inputs into a single output. (can have separation with : c
 ![Random Text](screenshots/random_text.png)
 
 **Description:**  
-Generate and display random text from a predefined list. Great for creating random prompts.
+Generate and display random text from a predefined list. Great for creating random prompts.  
+You can change fixed/randomize for `control_after_generate` to have a different text each time you run the workflow. (or not)  
 
 ## 5 - ♻ Loop
 ![Loop](screenshots/loop.png)
@@ -112,6 +115,8 @@ General-purpose loop node.
 **Description:**  
 Cycle through a list of text inputs.  
 
+Here is an example of usage with combine texts and flux :  
+![Loop Texts example](screenshots/loop_text_example.png)
 
 ## 7 - ♻ Loop Integer
 ![Loop Integer](screenshots/loop_integer.png)
@@ -120,31 +125,36 @@ Cycle through a list of text inputs.
 **Description:**  
 Iterate through a range of integer values, good for `steps` in ksampler, etc...
 
-❗ Don't forget that you can convert ksampler widgets to input by right-clicking the ksampler node :
+❗ Don't forget that you can convert ksampler widgets to input by right-clicking the ksampler node :  
 ![Widget to Input](screenshots/widget-to-input.png)
 
-Here is an example of usage with ksampler (Notice that it isn't optimized, but good enough for testing) :  
+Here is an example of usage with ksampler (Notice that with "steps" this node isn't optimized, but good enough for quick testing.) :  
 ![Widget to Input](screenshots/example_loop_integer.png)
-
 
 ## 8 - ♻ Loop Float
 ![Loop Float](screenshots/loop_float.png)
 ![Loop Float + Show Text](screenshots/loop_float+show_text.png)
 
 **Description:**  
-Loop through a range of floating-point numbers, good for `cfg`, `denoise`, etc...
+Loop through a range of floating-point numbers, good for `cfg`, `denoise`, etc...  
+
+Here is an example with controlnet, trying to make a red cat based on a blue rabbit :  
+![Loop All Samplers](screenshots/loop_float_example.png)
 
 ## 10 - ♻ Loop All Samplers
 ![Loop All Samplers](screenshots/loop_all_samplers.png)
 
 **Description:**  
-Iterate over all available samplers to apply them sequentially. Ideal for testing.
+Iterate over all available samplers to apply them sequentially. Ideal for testing.  
+
+Here is an example of looping over all the samplers with the normal scheduler :  
+![Loop All Samplers](screenshots/example_loop_all_samplers.png)
 
 ## 11 - ♻ Loop All Schedulers
 ![Loop All Schedulers](screenshots/loop_all_schedulers.png)
 
 **Description:**  
-Iterate over all available schedulers to apply them sequentially. Ideal for testing.
+Iterate over all available schedulers to apply them sequentially. Ideal for testing. (same idea as sampler above, but for schedulers)  
 
 ## 12 - ♻ Loop Combos
 ![Loop Combos](screenshots/loop_combos.png)
@@ -152,6 +162,9 @@ Iterate over all available schedulers to apply them sequentially. Ideal for test
 **Description:**  
 Generate a loop from a list of my own custom combinations (scheduler+sampler), or select one combo manually.  
 Good for testing.
+
+Example of usage to see the differences between different combinations :    
+![example combos](screenshots/example_combos.png)
 
 ## 13/14 - 📏 + 🖼 Resize and Save Exact name ⚠️💣
 ![Resize and Save Exact](screenshots/resize_save_exact.png)
@@ -247,7 +260,8 @@ Need clean greenscreen ofc. (Can adjust threshold but very basic node.)
 ![Random line from input](screenshots/random_line_from_input.png)
 
 **Description:**  
-Take a random line from an input text. (When using multiple "Write Text" nodes is annoying for example, you can use that and just copy/paste a list from outside.)
+Take a random line from an input text. (When using multiple "Write Text" nodes is annoying for example, you can use that and just copy/paste a list from outside.)  
+You can change fixed/randomize for `control_after_generate` to have a different text each time you run the workflow. (or not)  
 
 ## 27 - ♻ Loop (All Lines from input)
 ![Loop input](screenshots/loop_all_lines.png)
@@ -363,14 +377,14 @@ You can connect this node to anything you want, above is an example with IMAGE. 
 
 ### 37 - 🎲🖼 Random Image
 
-![pick input](screenshots/random_image.png)
+![random image](screenshots/random_image.png)
 
 **Description:**  
 Just take a random image from a list of images.  
 
 ### 38 - ♻🖼 Loop (Images)
 
-![pick input](screenshots/loop_images.png)
+![loop images](screenshots/loop_images.png)
 
 **Description:**  
 Loop over a list of images.  
@@ -379,8 +393,22 @@ Above is an example of the loop images node sending them to an Ipadapter style t
 
 ### 39 - ♻ Loop (✒ Write Text)
 
-![pick input](screenshots/loop_write_text.png)
+![loop write text](screenshots/loop_write_text.png)
 
 **Description:**  
 If you need a quick loop but you don't want something too complex with a loop node, you can use this combined write text + loop.  
 It will take the same special syntax as the write text node `{blue|red}`, but it will loop over ALL the possibilities instead of taking one at random.  
+
+### 40 - 🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model
+
+![pick input](screenshots/random_checkpoint.png)
+
+**Description:**  
+Just take a trio at random from a load checkpoint node.  
+
+### 41 - ♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model
+
+![pick input](screenshots/loop_checkpoint.png)
+
+**Description:**  
+Loop over all the trios from several checkpoint node.  
