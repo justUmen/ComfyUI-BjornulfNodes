@@ -3,17 +3,17 @@ class CombineTextsByLines:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "number_of_inputs": ("INT", {"default": 2, "min": 1, "max": 10, "step": 1}),
-                "number_of_lines": ("INT", {"default": 3, "min": 1, "max": 20, "step": 1}),
+                "number_of_inputs": ("INT", {"default": 2, "min": 1, "max": 50, "step": 1}),
+                "number_of_lines": ("INT", {"default": 3, "min": 1, "max": 50, "step": 1}),
             }
         }
 
-    RETURN_TYPES = tuple(["STRING"] * 20)  # Maximum 20 lines
-    RETURN_NAMES = tuple([f"line_{i+1}" for i in range(20)])
+    RETURN_TYPES = tuple(["STRING"] * 50)  # Maximum 50 lines
+    RETURN_NAMES = tuple([f"line_{i+1}" for i in range(50)])
     FUNCTION = "extract_lines"
     OUTPUT_NODE = True
     CATEGORY = "text"
-    OUTPUT_IS_LIST = tuple([True] * 20)  # Indicate that all outputs are lists
+    OUTPUT_IS_LIST = tuple([True] * 50)  # Indicate that all outputs are lists
 
     def extract_lines(self, number_of_inputs, number_of_lines, **kwargs):
         grouped_lines = [[] for _ in range(number_of_lines)]
@@ -31,8 +31,8 @@ class CombineTextsByLines:
             # Instead of joining the lines, keep them as a list
             outputs.append(group)
 
-        # Pad the output to always return 20 items
-        outputs.extend([[] for _ in range(20 - len(outputs))])
+        # Pad the output to always return 50 items
+        outputs.extend([[] for _ in range(50 - len(outputs))])
 
         return tuple(outputs)
 
@@ -42,8 +42,8 @@ class CombineTextsByLines:
 
     @classmethod
     def VALIDATE_INPUTS(cls, number_of_inputs, number_of_lines, **kwargs):
-        if number_of_lines < 1 or number_of_lines > 20:
-            return "Number of lines must be between 1 and 20"
-        if number_of_inputs < 1 or number_of_inputs > 10:
-            return "Number of inputs must be between 1 and 10"
+        if number_of_lines < 1 or number_of_lines > 50:
+            return "Number of lines must be between 1 and 50"
+        if number_of_inputs < 1 or number_of_inputs > 50:
+            return "Number of inputs must be between 1 and 50"
         return True

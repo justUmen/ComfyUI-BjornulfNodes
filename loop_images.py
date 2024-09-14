@@ -3,7 +3,7 @@ class LoopImages:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "number_of_images": ("INT", {"default": 2, "min": 1, "max": 10, "step": 1}),
+                "number_of_images": ("INT", {"default": 2, "min": 1, "max": 30, "step": 1}),
             },
         }
 

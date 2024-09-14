@@ -7,12 +7,12 @@ class RandomTexts:
             "required": {
                 "number_of_inputs": ("INT", {"default": 2, "min": 2, "max": 30, "step": 1}),
                 "number_of_random": ("INT", {"default": 1, "min": 1, "max": 30, "step": 1}),
-                "text_1": ("STRING", {"forceInput": "True"}),
-                "text_2": ("STRING", {"forceInput": "True"}),
+                # "text_1": ("STRING", {"forceInput": "True"}),
+                # "text_2": ("STRING", {"forceInput": "True"}),
                 "seed": ("INT", {"default": "1"}), #Used with control_after_generate,
             },
             "hidden": {
-                **{f"text_{i}": ("STRING", {"forceInput": "True"}) for i in range(3, 31)}
+                **{f"text_{i}": ("STRING", {"forceInput": "True"}) for i in range(1, 31)}
             }
         }
 

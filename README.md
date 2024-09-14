@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.25 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.26 🔗
 
 # ❤️ Coffee : ☕☕☕☕☕ 5/5
 
@@ -73,6 +73,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.23**: Add a new node: Pause, resume or stop workflow.
 - **v0.24**: Add a new node: Pause, select input, pick one.
 - **v0.25**: Two new nodes: Loop Images and Random image.
+- **v0.26**: New node : Loop write Text. Also increase nb of inputs allowed for most nodes. (+ update some breaking changes)
 
 # 📝 Nodes descriptions
 
@@ -111,6 +112,7 @@ General-purpose loop node.
 **Description:**  
 Cycle through a list of text inputs.  
 
+
 ## 7 - ♻ Loop Integer
 ![Loop Integer](screenshots/loop_integer.png)
 ![Loop Int + Show Text](screenshots/loop_int+show_text.png)
@@ -120,6 +122,10 @@ Iterate through a range of integer values, good for `steps` in ksampler, etc...
 
 ❗ Don't forget that you can convert ksampler widgets to input by right-clicking the ksampler node :
 ![Widget to Input](screenshots/widget-to-input.png)
+
+Here is an example of usage with ksampler (Notice that it isn't optimized, but good enough for testing) :  
+![Widget to Input](screenshots/example_loop_integer.png)
+
 
 ## 8 - ♻ Loop Float
 ![Loop Float](screenshots/loop_float.png)
@@ -370,3 +376,11 @@ Just take a random image from a list of images.
 Loop over a list of images.  
 Usage example : You have a list of images, and you want to apply the same process to all of them.  
 Above is an example of the loop images node sending them to an Ipadapter style transfer workflow. (Same seed of course.)  
+
+### 39 - ♻ Loop (✒ Write Text)
+
+![pick input](screenshots/loop_write_text.png)
+
+**Description:**  
+If you need a quick loop but you don't want something too complex with a loop node, you can use this combined write text + loop.  
+It will take the same special syntax as the write text node `{blue|red}`, but it will loop over ALL the possibilities instead of taking one at random.  

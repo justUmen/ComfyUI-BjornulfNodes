@@ -44,6 +44,8 @@ from .pause_resume_stop import PauseResume
 from .pick_input import PickInput
 from .loop_images import LoopImages
 from .random_image import RandomImage
+from .loop_write_text import LoopWriteText
+# from .random_checkpoint import RandomCheckpoint
 
 # from .pass_preview_image import PassPreviewImage
 # from .check_black_image import CheckBlackImage
@@ -54,6 +56,8 @@ from .random_image import RandomImage
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    # "Bjoenulf_RandomCheckpoint": RandomCheckpoint,
+    "Bjornulf_LoopWriteText": LoopWriteText,
     "Bjornulf_LoopImages": LoopImages,
     "Bjornulf_RandomImage": RandomImage,
     # "Bjornulf_PassPreviewImage": PassPreviewImage,
@@ -107,6 +111,8 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
+    # "Bjoenulf_RandomCheckpoint": "🎲 Random Checkpoint",
+    "Bjornulf_LoopWriteText": "♻ Loop (✒ Write Text)",
     "Bjornulf_LoopImages": "♻🖼 Loop (Images)",
     "Bjornulf_RandomImage": "🎲🖼 Random Image",
     # "Bjornulf_PassPreviewImage": "🖼⮕ Pass Preview Image",
