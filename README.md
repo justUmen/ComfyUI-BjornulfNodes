@@ -79,37 +79,37 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 
 # 📝 Nodes descriptions
 
-## 1/1b/2 - 👁 + ✒ Show/Write Text 
+## 1/2/3 - 👁 + ✒ Show/Write Text 
 ![Show Text](screenshots/write+show_text.png)
 ![Show Text](screenshots/write_in_console.png)
 ![Show Text](screenshots/write_text_select.png)
 
 **Description:**  
-Three simple nodes to write and show text.  
-Write node is a textarea where you can write your text.  
+Three simple nodes, two to write and one to show text.  
+Write nodes is a textarea where you can write your text.  
 The show text node will only display the text. (That's why I made it a different color : green, uneditable, display only.)   
-Write text node now allow for special syntax to accept random variants, like `{hood|helmet}` will randomly choose between hood or helmet.  
+Write text nodes now allow for special syntax to accept random variants, like `{hood|helmet}` will randomly choose between hood or helmet.  
 
-## 3 - 🔗 Combine Texts
+## 4 - 🔗 Combine Texts
 ![Combine Texts](screenshots/combine_texts.png)
 
 **Description:**  
 Combine multiple text inputs into a single output. (can have separation with : comma, space, new line.)
 
-## 4 - 🎲 Random Text
+## 5 - 🎲 Random (Texts)
 ![Random Text](screenshots/random_text.png)
 
 **Description:**  
 Generate and display random text from a predefined list. Great for creating random prompts.  
 You can change fixed/randomize for `control_after_generate` to have a different text each time you run the workflow. (or not)  
 
-## 5 - ♻ Loop
+## 6 - ♻ Loop
 ![Loop](screenshots/loop.png)
 
 **Description:**  
 General-purpose loop node.
 
-## 6 - ♻ Loop Texts
+## 7 - ♻ Loop Texts
 ![Loop Texts](screenshots/loop_texts.png)
 
 **Description:**  
@@ -118,7 +118,7 @@ Cycle through a list of text inputs.
 Here is an example of usage with combine texts and flux :  
 ![Loop Texts example](screenshots/loop_text_example.png)
 
-## 7 - ♻ Loop Integer
+## 8 - ♻ Loop Integer
 ![Loop Integer](screenshots/loop_integer.png)
 ![Loop Int + Show Text](screenshots/loop_int+show_text.png)
 
@@ -131,7 +131,7 @@ Iterate through a range of integer values, good for `steps` in ksampler, etc...
 Here is an example of usage with ksampler (Notice that with "steps" this node isn't optimized, but good enough for quick testing.) :  
 ![Widget to Input](screenshots/example_loop_integer.png)
 
-## 8 - ♻ Loop Float
+## 9 - ♻ Loop Float
 ![Loop Float](screenshots/loop_float.png)
 ![Loop Float + Show Text](screenshots/loop_float+show_text.png)
 
