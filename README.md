@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.28 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.29 🔗
 
 # ❤️ Coffee : ☕☕☕☕☕ 5/5
 
@@ -76,6 +76,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.26**: New node : Loop write Text. Also increase nb of inputs allowed for most nodes. (+ update some breaking changes)
 - **v0.27**: Two new nodes : Loop (Model+Clip+Vae) and Random (Model+Clip+Vae) - aka Checkpoint / Model
 - **v0.28**: Fix random texts and add a lot of screenshots examples for several nodes.
+- **v0.29**: Fix floating points issues with loop float node.
 
 # 📝 Nodes descriptions
 

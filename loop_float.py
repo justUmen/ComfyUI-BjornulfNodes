@@ -1,3 +1,4 @@
+from decimal import Decimal, ROUND_HALF_UP
 class LoopFloat:
 
     @classmethod
@@ -17,8 +18,12 @@ class LoopFloat:
 
     def create_loop_float(self, from_this, to_that, jump):
         range_values = []
-        current_value = from_this
+        current_value = Decimal(str(from_this))
+        to_that = Decimal(str(to_that))
+        jump = Decimal(str(jump))
+        
         while current_value <= to_that:
-            range_values.append(round(current_value, 2))  # Round to two decimal places
+            range_values.append(float(current_value.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)))
             current_value += jump
+        
         return (range_values,)
