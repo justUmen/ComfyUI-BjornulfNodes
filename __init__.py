@@ -43,10 +43,10 @@ from .pause_resume_stop import PauseResume
 from .pick_input import PickInput
 from .loop_images import LoopImages
 from .random_image import RandomImage
-from .loop_write_text import LoopWriteText
 # from .random_checkpoint import RandomCheckpoint
 from .loop_model_clip_vae import LoopModelClipVae
 from .write_text_advanced import WriteTextAdvanced
+from .loop_write_text import LoopWriteText
 # from .show import ShowWhatever
 
 # from .pass_preview_image import PassPreviewImage
@@ -115,7 +115,7 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_WriteText": "✒ Write Text",
     "Bjornulf_WriteTextAdvanced": "✒🗔 Advanced Write Text",
-    "Bjornulf_LoopWriteTextAdvanced": "♻ Loop (✒🗔 Advanced Write Text)",
+    "Bjornulf_LoopWriteText": "♻ Loop (✒🗔 Advanced Write Text)",
     "Bjornulf_LoopModelClipVae": "♻ Loop (Model+Clip+Vae)",
     "Bjornulf_LoopImages": "♻🖼 Loop (Images)",
     "Bjornulf_CombineTextsByLines": "♻ Loop (All Lines from input 🔗 combine by lines)",
