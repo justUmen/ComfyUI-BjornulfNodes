@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.29 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.31 🔗
 
 # ❤️ Coffee : ☕☕☕☕☕ 5/5
 
@@ -77,19 +77,39 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.27**: Two new nodes : Loop (Model+Clip+Vae) and Random (Model+Clip+Vae) - aka Checkpoint / Model
 - **v0.28**: Fix random texts and add a lot of screenshots examples for several nodes.
 - **v0.29**: Fix floating points issues with loop float node.
+- **v0.30**: Update the basic Loop node with optional input.
+- **v0.31**: ❗Sorry, Breaking changes for Write/Show text nodes, cleaner system : 1 simple write text and the other is 1 advanced with console and special syntax. Also Show can now manage INT, FLOAT, TEXT.
 
 # 📝 Nodes descriptions
 
-## 1/2/3 - 👁 + ✒ Show/Write Text 
-![Show Text](screenshots/write+show_text.png)
-![Show Text](screenshots/write_in_console.png)
-![Show Text](screenshots/write_text_select.png)
+## 1 - 👁 Show (Text, Int, Float)
+
+![Show Text](screenshots/show.png)
 
 **Description:**  
-Three simple nodes, two to write and one to show text.  
-Write nodes is a textarea where you can write your text.  
-The show text node will only display the text. (That's why I made it a different color : green, uneditable, display only.)   
-Write text nodes now allow for special syntax to accept random variants, like `{hood|helmet}` will randomly choose between hood or helmet.  
+The show node will only display text, or a list of several texts. (read only node)  
+3 types are managed : Green is for STRING type, Orange is for FLOAT type and blue is for INT type.  
+
+## 2 - ✒ Write Text
+
+![write Text](screenshots/write.png)
+
+**Description:**  
+Simple node to write text.  
+
+## 3 - ✒🗔 Advanced Write Text
+
+![write Text Advanced](screenshots/write_advanced.png)
+
+**Description:**  
+Advanced Write Text node allows for special syntax to accept random variants, like `{hood|helmet}` will randomly choose between hood or helmet.  
+You also have `seed` and `control_after_generate` to manage the randomness.  
+It is also displaying the text in the comfyui console. (Useful for debugging)  
+Example of console logs :  
+```
+Raw text: photo of a {green|blue|red|orange|yellow} {cat|rat|house}
+Picked text: photo of a green house
+```
 
 ## 4 - 🔗 Combine Texts
 ![Combine Texts](screenshots/combine_texts.png)
@@ -102,13 +122,19 @@ Combine multiple text inputs into a single output. (can have separation with : c
 
 **Description:**  
 Generate and display random text from a predefined list. Great for creating random prompts.  
-You can change fixed/randomize for `control_after_generate` to have a different text each time you run the workflow. (or not)  
+You also have `control_after_generate` to manage the randomness.  
 
 ## 6 - ♻ Loop
 ![Loop](screenshots/loop.png)
 
 **Description:**  
-General-purpose loop node.
+General-purpose loop node, you can connect that in between anything.  
+It has an optional input, if no input is given, it will loop over the value of the STRING "if_no_input" (take you can edit).  
+❗ Careful this node accept everything as input and output, so you can use it with texts, integers, images, mask, segs etc... but be consistent with your inputs/outputs.  
+Do not use this Loop if you can do otherwise.  
+
+This is an example together with my node 28, to force a different seed for each iteration :   
+![Loop](screenshots/loop4.png)
 
 ## 7 - ♻ Loop Texts
 ![Loop Texts](screenshots/loop_texts.png)
@@ -392,7 +418,7 @@ Loop over a list of images.
 Usage example : You have a list of images, and you want to apply the same process to all of them.  
 Above is an example of the loop images node sending them to an Ipadapter style transfer workflow. (Same seed of course.)  
 
-### 39 - ♻ Loop (✒ Write Text)
+### 39 - ♻ Loop (✒🗔 Advanced Write Text)
 
 ![loop write text](screenshots/loop_write_text.png)
 

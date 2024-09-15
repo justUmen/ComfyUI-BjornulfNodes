@@ -5,7 +5,8 @@ import { ComfyWidgets } from "../../../scripts/widgets.js";
 const textAreaStyles = {
     readOnly: true,
     opacity: 1,
-    padding: '10px',
+    padding: '4px',
+    paddingLeft: '7px',
     border: '1px solid #ccc',
     borderRadius: '5px',
     backgroundColor: '#222',
@@ -13,7 +14,7 @@ const textAreaStyles = {
     fontFamily: 'Arial, sans-serif',
     fontSize: '14px',
     lineHeight: '1.4',
-    resize: 'vertical',
+    resize: 'none',
     overflowY: 'auto',
 };
 
@@ -22,32 +23,36 @@ app.registerExtension({
     name: "Bjornulf.ShowText",
     async beforeRegisterNodeDef(nodeType, nodeData, app) {
         if (nodeData.name === "Bjornulf_ShowText") {
-            function createStyledTextArea(text) {
-                const widget = ComfyWidgets["STRING"](this, "text", ["STRING", { multiline: true }], app).widget;
-                widget.inputEl.readOnly = true;
-                const textArea = widget.inputEl;
-
-                Object.assign(textArea.style, textAreaStyles);
-                textArea.classList.add('bjornulf-show-text');
-                widget.value = text;
-                return widget;
-            }
-
             function populate(text) {
                 if (this.widgets) {
-                    for (let i = 1; i < this.widgets.length; i++) {
-                        this.widgets[i].onRemove?.();
-                    }
-                    this.widgets.length = 1;
-                }
-
-                const v = Array.isArray(text) ? text : [text];
-                for (const list of v) {
-                    if (list) {
-                        createStyledTextArea.call(this, list);
+                    const pos = this.widgets.findIndex((w) => w.name === "text");
+                    if (pos !== -1) {
+                        for (let i = pos; i < this.widgets.length; i++) {
+                            this.widgets[i].onRemove?.();
+                        }
+                        this.widgets.length = pos;
                     }
                 }
-
+            
+                for (const list of text) {
+                    const w = ComfyWidgets["STRING"](this, "text", ["STRING", { multiline: true }], app).widget;
+                    w.inputEl.readOnly = true;
+                    Object.assign(w.inputEl.style, textAreaStyles);
+            
+                    // Improved type detection
+                    let color = 'Lime'; // Default color for strings
+                    const value = list.toString().trim();
+                    
+                    if (/^-?\d+$/.test(value)) {
+                        color = '#0096FF'; // Integer
+                    } else if (/^-?\d*\.?\d+$/.test(value)) {
+                        color = 'orange'; // Float
+                    }
+                    
+                    w.inputEl.style.color = color;
+                    w.value = list;
+                }                
+            
                 requestAnimationFrame(() => {
                     const sz = this.computeSize();
                     if (sz[0] < this.size[0]) sz[0] = this.size[0];

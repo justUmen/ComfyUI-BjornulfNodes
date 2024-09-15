@@ -1,6 +1,5 @@
 from .images_to_video import imagesToVideo
 from .write_text import WriteText
-from .write_text_console import WriteTextInConsole
 from .write_image_environment import WriteImageEnvironment
 from .write_image_characters import WriteImageCharacters
 from .write_image_character import WriteImageCharacter
@@ -17,8 +16,8 @@ from .loop_samplers import LoopSamplers
 from .loop_schedulers import LoopSchedulers
 from .ollama import ollamaLoader
 from .show_text import ShowText
-from .show_int import ShowInt
-from .show_float import ShowFloat
+# from .show_int import ShowInt
+# from .show_float import ShowFloat
 from .save_text import SaveText
 from .save_tmp_image import SaveTmpImage
 from .save_image_path import SaveImagePath
@@ -47,6 +46,8 @@ from .random_image import RandomImage
 from .loop_write_text import LoopWriteText
 # from .random_checkpoint import RandomCheckpoint
 from .loop_model_clip_vae import LoopModelClipVae
+from .write_text_advanced import WriteTextAdvanced
+# from .show import ShowWhatever
 
 # from .pass_preview_image import PassPreviewImage
 # from .check_black_image import CheckBlackImage
@@ -57,6 +58,8 @@ from .loop_model_clip_vae import LoopModelClipVae
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_WriteText": WriteText,
+    # "Bjornulf_ShowWhatever": ShowWhatever,
     "Bjornulf_LoopModelClipVae": LoopModelClipVae,
     # "Bjoenulf_RandomCheckpoint": RandomCheckpoint,
     "Bjornulf_LoopWriteText": LoopWriteText,
@@ -78,8 +81,7 @@ NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CheckBlackImage": CheckBlackImage,
     # "Bjornulf_ClearVRAM": ClearVRAM,
     "Bjornulf_SaveBjornulfLobeChat": SaveBjornulfLobeChat,
-    "Bjornulf_WriteText": WriteText,
-    "Bjornulf_WriteTextInConsole": WriteTextInConsole,
+    "Bjornulf_WriteTextAdvanced": WriteTextAdvanced,
     "Bjornulf_RemoveTransparency": RemoveTransparency,
     "Bjornulf_GrayscaleTransform": GrayscaleTransform,
     "Bjornulf_CombineBackgroundOverlay": CombineBackgroundOverlay,
@@ -88,8 +90,8 @@ NODE_CLASS_MAPPINGS = {
     # "Bjornulf_WriteImageCharacter": WriteImageCharacter,
     # "Bjornulf_WriteImageAllInOne": WriteImageAllInOne,
     "Bjornulf_ShowText": ShowText,
-    "Bjornulf_ShowInt": ShowInt,
-    "Bjornulf_ShowFloat": ShowFloat,
+    # "Bjornulf_ShowInt": ShowInt,
+    # "Bjornulf_ShowFloat": ShowFloat,
     "Bjornulf_SaveText": SaveText,
     "Bjornulf_ResizeImage": ResizeImage,
     "Bjornulf_SaveImageToFolder": SaveImageToFolder,
@@ -111,10 +113,9 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    # "Bjornulf_CustomStringType": "!!! CUSTOM STRING TYPE !!!",
     "Bjornulf_WriteText": "✒ Write Text",
-    "Bjornulf_WriteTextInConsole": "✒🗔 Write Text (Console too) ",
-    "Bjornulf_LoopWriteText": "♻ Loop (✒ Write Text)",
+    "Bjornulf_WriteTextAdvanced": "✒🗔 Advanced Write Text",
+    "Bjornulf_LoopWriteTextAdvanced": "♻ Loop (✒🗔 Advanced Write Text)",
     "Bjornulf_LoopModelClipVae": "♻ Loop (Model+Clip+Vae)",
     "Bjornulf_LoopImages": "♻🖼 Loop (Images)",
     "Bjornulf_CombineTextsByLines": "♻ Loop (All Lines from input 🔗 combine by lines)",
@@ -137,9 +138,10 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_SaveBjornulfLobeChat": "🖼💬 Save image for Bjornulf LobeChat",
     "Bjornulf_TextToStringAndSeed": "🔢 Text with random Seed",
     # "Bjornulf_ClearVRAM": "🧹 Clear VRAM",
-    "Bjornulf_ShowText": "👁 Show (Text)",
-    "Bjornulf_ShowInt": "👁 Show (Int)",
-    "Bjornulf_ShowFloat": "👁 Show (Float)",
+    # "Bjornulf_ShowWhatever": "👁 Show Anything",
+    "Bjornulf_ShowText": "👁 Show (Text, Int, Float)",
+    # "Bjornulf_ShowInt": "👁 Show (Int)",
+    # "Bjornulf_ShowFloat": "👁 Show (Float)",
     "Bjornulf_ImageMaskCutter": "🖼✂ Cut Image with Mask",
     "Bjornulf_LoadImageWithTransparency": "🖼 Load Image with Transparency ▢",
     "Bjornulf_CombineBackgroundOverlay": "🖼+🖼 Combine images (Background+Overlay alpha)",
