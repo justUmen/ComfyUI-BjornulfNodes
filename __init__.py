@@ -47,6 +47,7 @@ from .random_image import RandomImage
 from .loop_model_clip_vae import LoopModelClipVae
 from .write_text_advanced import WriteTextAdvanced
 from .loop_write_text import LoopWriteText
+# from .load_images_from_folder import LoadImagesFromSelectedFolder
 # from .show import ShowWhatever
 
 # from .pass_preview_image import PassPreviewImage
@@ -59,6 +60,7 @@ NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
     "Bjornulf_WriteText": WriteText,
+    # "Bjornulf_LoadImagesFromSelectedFolder": LoadImagesFromSelectedFolder,
     # "Bjornulf_ShowWhatever": ShowWhatever,
     "Bjornulf_LoopModelClipVae": LoopModelClipVae,
     # "Bjoenulf_RandomCheckpoint": RandomCheckpoint,
@@ -162,6 +164,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_TextToSpeech": "🔊 TTS - Text to Speech",
     "Bjornulf_PickInput": "⏸️🔍 Paused. Select input, Pick one",
     "Bjornulf_PauseResume": "⏸️ Paused. Resume or Stop ?",
+    # "Bjornulf_LoadImagesFromSelectedFolder": "📂🖼 Load Images from folder",
 }
 
 WEB_DIRECTORY = "./web"

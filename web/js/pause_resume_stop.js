@@ -22,16 +22,12 @@ app.registerExtension({
                     })
                     .catch(error => console.error('Error:', error));
             });
+
+            // Set seed widget to hidden input
+            const seedWidget = node.widgets.find((w) => w.name === "seed");
+            if (seedWidget) {
+              seedWidget.type = "HIDDEN";
+            }
         }
     }
 });
-
-// BASIC BUTTON
-// app.registerExtension({
-//     name: "Bjornulf.PauseResume",
-//     async nodeCreated(node) {
-//         if (node.comfyClass === "Bjornulf_PauseResume") {
-//             node.addWidget("button","Resume","Resume", (...args) => { console.log("lol"); } )
-//         }
-//     }
-// });

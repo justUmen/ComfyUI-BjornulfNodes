@@ -36,10 +36,10 @@ app.registerExtension({
             };
 
             // Set seed widget to hidden input
-            const seedWidget = node.widgets.find(w => w.name === "seed");
-            if (seedWidget) {
-                seedWidget.type = "HIDDEN";
-            }
+            // const seedWidget = node.widgets.find(w => w.name === "seed");
+            // if (seedWidget) {
+            //     seedWidget.type = "HIDDEN";
+            // }
 
             // Move number_of_images to the top initially
             const numInputsWidget = node.widgets.find(w => w.name === "number_of_images");

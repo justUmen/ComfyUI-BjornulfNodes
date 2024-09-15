@@ -80,6 +80,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.30**: Update the basic Loop node with optional input.
 - **v0.31**: ❗Sorry, Breaking changes for Write/Show text nodes, cleaner system : 1 simple write text and the other is 1 advanced with console and special syntax. Also Show can now manage INT, FLOAT, TEXT.
 - **v0.32**: Quick rename to avoid breaking loop_text node.
+- **v0.33**: Control random on paused nodes, fix pydub sound bug permissions on Windows.
 
 # 📝 Nodes descriptions
 

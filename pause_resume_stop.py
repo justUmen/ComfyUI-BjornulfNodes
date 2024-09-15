@@ -5,6 +5,9 @@ import logging
 from pydub import AudioSegment
 from pydub.playback import play
 import os
+import io
+import sys
+import random
 
 class Everything(str):
     def __ne__(self, __value: object) -> bool:
@@ -18,7 +21,8 @@ class PauseResume:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "input": (Everything("*"), {"forceInput": True})
+                "input": (Everything("*"), {"forceInput": True}),
+                "seed": ("INT", {"default": 1}),
             }
         }
 
@@ -28,11 +32,32 @@ class PauseResume:
     CATEGORY = "Bjornulf"
     
     def play_audio(self):
-        audio_file = os.path.join(os.path.dirname(__file__), 'bell.m4a')
-        sound = AudioSegment.from_file(audio_file, format="m4a")
-        play(sound)
+        # Check if the operating system is Windows
+        if sys.platform.startswith('win'):
+            try:
+                # Load the audio file into memory
+                audio_file = os.path.join(os.path.dirname(__file__), 'bell.m4a')
+                
+                # Load the audio segment without writing to any temp files
+                sound = AudioSegment.from_file(audio_file, format="m4a")
+                
+                # Export the AudioSegment to a WAV file in memory
+                wav_io = io.BytesIO()
+                sound.export(wav_io, format='wav')
+                wav_data = wav_io.getvalue()
+                
+                # Play the WAV data using winsound
+                import winsound
+                winsound.PlaySound(wav_data, winsound.SND_MEMORY)
+            except Exception as e:
+                print(f"An error occurred: {e}")
+        else:
+            audio_file = os.path.join(os.path.dirname(__file__), 'bell.m4a')
+            sound = AudioSegment.from_file(audio_file, format="m4a")
+            play(sound)
 
-    def loop_resume_or_stop(self, input):
+    def loop_resume_or_stop(self, input, seed):
+        random.seed(seed)
         self.play_audio()
         self.input = input
         while PauseResume.is_paused and not PauseResume.should_stop:
