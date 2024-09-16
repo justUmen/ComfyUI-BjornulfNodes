@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.32 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.34 🔗
 
 # ❤️ Coffee : ☕☕☕☕☕ 5/5
 
@@ -81,6 +81,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.31**: ❗Sorry, Breaking changes for Write/Show text nodes, cleaner system : 1 simple write text and the other is 1 advanced with console and special syntax. Also Show can now manage INT, FLOAT, TEXT.
 - **v0.32**: Quick rename to avoid breaking loop_text node.
 - **v0.33**: Control random on paused nodes, fix pydub sound bug permissions on Windows.
+- **v0.34**: Two new nodes : Load Images from output folder and Select an Image, Pick.
 
 # 📝 Nodes descriptions
 
@@ -441,3 +442,36 @@ Just take a trio at random from a load checkpoint node.
 
 **Description:**  
 Loop over all the trios from several checkpoint node.  
+
+### 42 - 📂🖼 Load Images from output folder
+
+![pick input](screenshots/load_images_folder.png)
+
+**Description:**  
+Quickly select all images from a folder inside the output folder. (Not recursively.)  
+So... As you can see from the screenshot the images are split based on their resolution.  
+It is not a choice I made, it is something that is part of the comfyui environment.  
+It's also not possible to edit dynamically the number of outputs, so I just picked a number : 4.  
+The node will separate the images based on their resolution, so with this node you can have 4 different resolutions per folder. (If you have more than that, maybe you should have another folder...)  
+To avoid error or crash if you have less than 4 resolutions in a folder, the node will just output white tensors. (white square image.)  
+So this node is a little hacky for now, but i can select my different characters in less than a second.  
+If you want to know how i personnaly save my images for a specific character, here is part of my workflow (Notice that i personnaly use / for folders because I'm on linux) :  
+![pick input](screenshots/character_save.png)  
+In this example I put "character/" as a string and then combine with "nothing". But it's the same if you do "character" and then combine with "/". (I just like having a / at the end of my folder's name...)  
+
+If you are satisfied with this logic, you can then select all these nodes, right click and `Convert to Group Node`, you can then have you own customized "save character node" :  
+![pick input](screenshots/bjornulf_save_character_group.png)
+
+Here is another example of the same thing but excluding the save folder node :  
+![pick input](screenshots/bjornulf_save_character_group2.png)
+
+### 43 - 🖼🔍 Select an Image, Pick
+
+![pick input](screenshots/select_image.png)
+
+**Description:**  
+Select an image from a list of images.  
+Useful in combination with my Load images from folder and preview image nodes.  
+
+You can also of course make a group node, like this one, which is the same as the screenshot above :  
+![pick input](screenshots/select_image_group.png)
