@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.34 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.35 🔗
 
 # ❤️ Coffee : ☕☕☕☕☕ 5/5
 
@@ -82,6 +82,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.32**: Quick rename to avoid breaking loop_text node.
 - **v0.33**: Control random on paused nodes, fix pydub sound bug permissions on Windows.
 - **v0.34**: Two new nodes : Load Images from output folder and Select an Image, Pick.
+- **v0.35**: Great improvements of the TTS node 31. It will also save the audio file in the "ComfyUI/Bjornulf_TTS/" folder. - Not tested on windows yet -
 
 # 📝 Nodes descriptions
 
@@ -91,7 +92,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 
 **Description:**  
 The show node will only display text, or a list of several texts. (read only node)  
-3 types are managed : Green is for STRING type, Orange is for FLOAT type and blue is for INT type.  
+3 types are managed : Green is for STRING type, Orange is for FLOAT type and blue is for INT type. I put colors so I/you don't try to edit them. 🤣  
 
 ## 2 - ✒ Write Text
 
@@ -118,7 +119,7 @@ Picked text: photo of a green house
 ![Combine Texts](screenshots/combine_texts.png)
 
 **Description:**  
-Combine multiple text inputs into a single output. (can have separation with : comma, space, new line.)
+Combine multiple text inputs into a single output. (can have separation with : comma, space, new line or nothing.)
 
 ## 5 - 🎲 Random (Texts)
 ![Random Text](screenshots/random_text.png)
@@ -162,8 +163,8 @@ Here is an example of usage with ksampler (Notice that with "steps" this node is
 ![Widget to Input](screenshots/example_loop_integer.png)
 
 ## 9 - ♻ Loop Float
-![Loop Float](screenshots/loop_float.png)
 ![Loop Float + Show Text](screenshots/loop_float+show_text.png)
+![Loop Float](screenshots/loop_float.png)
 
 **Description:**  
 Loop through a range of floating-point numbers, good for `cfg`, `denoise`, etc...  
@@ -342,15 +343,42 @@ The default `Load Image` node will not load the transparency.
 **Description:**  
 Cut an image from a mask.  
 
-## 31 - 🔊 TTS - Text to Speech
+## 31 - 🔊 TTS - Text to Speech (100% local, any voice you want, any language)
 ![TTS](screenshots/tts.png)
 
 **Description:**  
-Use my TTS server to generate speech from text.  
-❗ Of course you need to use my TTS server : <https://github.com/justUmen/Bjornulf_XTTS>  
-After having that installed, you NEED to create a link in my Comfyui custom node folder called `speakers` : `ComfyUI/custom_nodes/Bjornulf_custom_nodes/speakers`  
-That link must be a link to the folder where you store the voice samples you use for my TTS, like `default.wav`.  
+[Listen to the audio example](./example_tts.wav)  
+
+❗ Node never tested on windows, only on linux for now. ❗  
+
+Use my TTS server to generate speech from text, based on XTTS v2.  
+❗ Of course to use this comfyui node (frontend) you need to use my TTS server (backend) : <https://github.com/justUmen/Bjornulf_XTTS>  
+I made this backend for <https://github.com/justUmen/Bjornulf_lobe-chat>, but you can use it with comfyui too with this node.  
+After having `Bjornulf_XTTS` installed, you NEED to create a link in my Comfyui custom node folder called `speakers` : `ComfyUI/custom_nodes/Bjornulf_custom_nodes/speakers`  
+That link must be a link to the folder where you installed/stored the voice samples you use for my TTS, like `default.wav`.  
 If my TTS server is running on port 8020 (You can test in browser with the link <http://localhost:8020/tts_stream?language=en&speaker_wav=default&text=Hello>) and voice samples are good, you can use this node to generate speech from text.  
+
+**Details**  
+This node should always be connected to a core node : `Preview audio`.  
+
+My node will generate and save the audio files in the `ComfyUI/Bjornulf_TTS/` folder, followed by the language selected, the name of the voice sample, and the text.  
+Example of audio file from the screenshot above : `ComfyUI/Bjornulf_TTS/Chinese/default.wav/你吃了吗.wav`  
+You can notice that you don't NEED to select a chinese voice to speak chinese. Yes it will work, you can record yourself and make yourself speak whatever language you want.  
+Also, when you select a voice with this format `fr/fake_Bjornulf.wav`, it will create an extra folder `fr` of course. : `ComfyUI/Bjornulf_TTS/English/fr/fake_Bjornulf.wav/hello_im_me.wav`. Easy to see that you are using a french voice sample for an english recording.  
+
+`control_after_generate` as usual, it is used to force the node to rerun for every workflow run. (Even if there is no modification of the node or its inputs.)  
+`overwrite` is used to overwrite the audio file if it already exists. (For example if you don't like the generation, just set overwrite to True and run the workflow again, until you have a good result. After you can set it to back to False. (Paraphrasing : without overwrite set to True, It won't generate the audio file again if it already exists in the `Bjornulf_TTS` folder.)  
+`autoplay` is used to play the audio file inside the node when it is executed. (Manual replay or save is done in the `preview audio` node.)  
+
+So... note that if you know you have an audio file ready to play, you can still use my node but you do NOT need my TTS server to be running.
+My node will just play the audio file if it can find it, won't try to connect th backend TTS server.  
+Let's say you already use this node to create an audio file saying `workflow is done` with the Attenborough voice  :
+![TTS](screenshots/tts_end.png)  
+
+As long as you keep exactly the same settings, it will not use my server to play the audio file! You can safely turn in off, so it won't use your precious VRAM Duh. (TTS server should be using ~3GB of VRAM.)  
+
+Also input is optional, it means that you can make a workflow with ONLY my TTS node to pre-generate the audio files with the sentences you want to maybe use later, example :  
+![TTS](screenshots/tts_generate.png)  
 
 ### 32 - 🧑📝 Character Description Generator
 ![characters](screenshots/characters.png)
@@ -419,7 +447,7 @@ Just take a random image from a list of images.
 **Description:**  
 Loop over a list of images.  
 Usage example : You have a list of images, and you want to apply the same process to all of them.  
-Above is an example of the loop images node sending them to an Ipadapter style transfer workflow. (Same seed of course.)  
+Above is an example of the loop images node sending them to an Ipadapter workflow. (Same seed of course.)  
 
 ### 39 - ♻ Loop (✒🗔 Advanced Write Text)
 
@@ -427,7 +455,7 @@ Above is an example of the loop images node sending them to an Ipadapter style t
 
 **Description:**  
 If you need a quick loop but you don't want something too complex with a loop node, you can use this combined write text + loop.  
-It will take the same special syntax as the write text node `{blue|red}`, but it will loop over ALL the possibilities instead of taking one at random.  
+It will take the same special syntax as the Advanced write text node `{blue|red}`, but it will loop over ALL the possibilities instead of taking one at random.  
 
 ### 40 - 🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model
 
@@ -459,7 +487,7 @@ If you want to know how i personnaly save my images for a specific character, he
 ![pick input](screenshots/character_save.png)  
 In this example I put "character/" as a string and then combine with "nothing". But it's the same if you do "character" and then combine with "/". (I just like having a / at the end of my folder's name...)  
 
-If you are satisfied with this logic, you can then select all these nodes, right click and `Convert to Group Node`, you can then have you own customized "save character node" :  
+If you are satisfied with this logic, you can then select all these nodes, right click and `Convert to Group Node`, you can then have your own customized "save character node" :  
 ![pick input](screenshots/bjornulf_save_character_group.png)
 
 Here is another example of the same thing but excluding the save folder node :  
