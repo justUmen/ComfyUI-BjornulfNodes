@@ -347,7 +347,7 @@ Cut an image from a mask.
 ![TTS](screenshots/tts.png)
 
 **Description:**  
-[Listen to the audio example](./example_tts.wav)  
+[Listen to the audio example](https://github.com/user-attachments/assets/5a4a67ff-cf70-4092-8f3b-1ccc8023d8c6)
 
 ❗ Node never tested on windows, only on linux for now. ❗  
 
