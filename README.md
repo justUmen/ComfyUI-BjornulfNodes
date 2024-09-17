@@ -6,14 +6,17 @@ https://ko-fi.com/bjornulf
 
 # ☁ Usage in cloud : 
 
-If you want to use my nodes and comfyui in the cloud, I'm managing an optimized template on runpod : <https://runpod.io/console/deploy?template=r32dtr35u1&ref=tkowk7g5>  
-Template name : `bjornulf-comfyui-allin-workspace`, can be operational in ~3 minutes. (Depending on your pod)  
+Comfyui is great for local usage, but even me I sometimes need more power...  
+I have a computer with a 4070 super with 12GB and flux fp8 simple wokflow take about ~40 seconds. With a 4090 in the cloud I can run flux fp16 in ~12 seconds.  
+
+My referal link for Runpod : <https://comfy.moa.party/?ref=5f3b6c> (If you use that i will have a commission, at no extra cost for you.)  
+If you want to use my nodes and comfyui in the cloud (and can install more stuff), I'm managing an optimized ready-to-use template on runpod : <https://runpod.io/console/deploy?template=r32dtr35u1&ref=tkowk7g5>  
+Template name : `bjornulf-comfyui-allin-workspace`, can be operational in ~3 minutes. (Depending on your pod, setup and download of extra models or whatever not included.)  
 You need to create and select a network volume before using that, size is up to you, i have 50Gb Storage because i use cloud only for Flux or lora training on a 4090. (~0.7$/hour)  
 ⚠️ When pod is ready, you need to open a terminal in browser (After clicking on `connect` from your pod) and use this to launch ComfyUI manually : `cd /workspace/ComfyUI && python main.py --listen 0.0.0.0 --port 3000` (Much better to control it with a terminal, check logs, etc...)  
 After that you can just click on the `Connect to port 3000` button.  
 As file manager, you can use the included `JupyterLab` on port 8888.  
 If you have any issues with it, please let me know.  
-For me : I have a computer with 4070 super with 12Gb and flux fp8 simple wokflow is about ~40 seconds. With a 4090 in the cloud I can run flux fp16 in ~12 seconds.  
 It will manage everything in Runpod network storage (`/workspace/ComfyUI`), so you can stop and start the cloud GPU without losing anything, change GPU or whatever.  
 Zone : I recommend `EU-RO-1`, but up to you.  
 Top-up your Runpod account with minimum 10$ to start.  
@@ -37,6 +40,7 @@ For downloading from civitai (get token here <https://civitai.com/user/account>)
 CIVITAI="8b275fada679ba5812b3da2bf35016f6"
 wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civitai.com/api/download/models/272376?type=Model&format=SafeTensor&size=pruned&fp=fp16&token=$CIVITAI"
 ```
+If you have any issues with this template from Runpod, please let me know, I'm here to help. 😊   
 
 # Dependencies
 
