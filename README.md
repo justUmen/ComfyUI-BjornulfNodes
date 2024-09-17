@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.35 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.36 🔗
 
 # ❤️ Coffee : ☕☕☕☕☕ 5/5
 
@@ -83,6 +83,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.33**: Control random on paused nodes, fix pydub sound bug permissions on Windows.
 - **v0.34**: Two new nodes : Load Images from output folder and Select an Image, Pick.
 - **v0.35**: Great improvements of the TTS node 31. It will also save the audio file in the "ComfyUI/Bjornulf_TTS/" folder. - Not tested on windows yet -
+- **v0.36**: Fix random model.
 
 # 📝 Nodes descriptions
 

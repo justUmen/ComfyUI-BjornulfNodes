@@ -58,6 +58,12 @@ app.registerExtension({
                 };
             }
 
+            // Set seed widget to hidden input
+            const seedWidget = node.widgets.find((w) => w.name === "seed");
+            if (seedWidget) {
+              seedWidget.type = "HIDDEN";
+            }
+
             // Delay the initial update to ensure node is fully initialized
             setTimeout(updateInputs, 0);
         }

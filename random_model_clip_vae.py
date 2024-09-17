@@ -1,4 +1,5 @@
 import random
+import json
 
 class RandomModelClipVae:
     @classmethod
@@ -12,11 +13,12 @@ class RandomModelClipVae:
                 "model_2": ("MODEL", {"forceInput": True}),
                 "clip_2": ("CLIP", {"forceInput": True}),
                 "vae_2": ("VAE", {"forceInput": True}),
+                "seed": ("INT", {"default": 0}),
             },
             "hidden": {
                 **{f"model_{i}": ("MODEL", {"forceInput": True}) for i in range(3, 11)},
                 **{f"clip_{i}": ("CLIP", {"forceInput": True}) for i in range(3, 11)},
-                **{f"vae_{i}": ("VAE", {"forceInput": True}) for i in range(3, 11)}
+                **{f"vae_{i}": ("VAE", {"forceInput": True}) for i in range(3, 11)},
             }
         }
 
@@ -24,6 +26,7 @@ class RandomModelClipVae:
     FUNCTION = "random_select"
 
     def random_select(self, number_of_inputs, **kwargs):
+        random.seed(kwargs.get('seed', 0))
         selected_index = random.randint(1, number_of_inputs)
         
         selected_model = kwargs[f"model_{selected_index}"]
