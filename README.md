@@ -9,7 +9,7 @@
 Comfyui is great for local usage, but even me I sometimes need more power...  
 I have a computer with a 4070 super with 12GB and flux fp8 simple wokflow take about ~40 seconds. With a 4090 in the cloud I can run flux fp16 in ~12 seconds.  
 
-My referal link for Runpod : <https://comfy.moa.party/?ref=5f3b6c> (If you use that i will have a commission, at no extra cost for you.)  
+My referal link for Runpod : <https://runpod.io?ref=tkowk7g5> (If you use that i will have a commission, at no extra cost for you.)  
 If you want to use my nodes and comfyui in the cloud (and can install more stuff), I'm managing an optimized ready-to-use template on runpod : <https://runpod.io/console/deploy?template=r32dtr35u1&ref=tkowk7g5>  
 Template name : `bjornulf-comfyui-allin-workspace`, can be operational in ~3 minutes. (Depending on your pod, setup and download of extra models or whatever not included.)  
 You need to create and select a network volume before using that, size is up to you, i have 50Gb Storage because i use cloud only for Flux or lora training on a 4090. (~0.7$/hour)  
