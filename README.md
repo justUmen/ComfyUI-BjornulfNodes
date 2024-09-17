@@ -1,8 +1,8 @@
 # 🔗 Comfyui : Bjornulf_custom_nodes v0.39 🔗
 
-# ❤️ Coffee : ☕☕☕☕☕ 5/5
+# Coffee : ☕☕☕☕☕ 5/5
 
-https://ko-fi.com/bjornulf
+❤️ <https://ko-fi.com/bjornulf> ❤️
 
 # ☁ Usage in cloud : 
 
