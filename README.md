@@ -49,11 +49,11 @@ If you have any issues with this template from Runpod, please let me know, I'm h
 
 # Nodes menu
 
-1. [👁 Show (Text, Int, Float)](#1----show-text-int-float)
-2. [✒ Write Text](#2----write-text)
+1. [👁 Show (Text, Int, Float)](#1--show-text-int-float)
+2. [✒ Write Text](#2--write-text)
 3. [✒🗔 Advanced Write Text (random selection and variables)](#3--advanced-write-text-random-selection-and-variables)
-4. [🔗 Combine Texts](#4---combine-texts)
-5. [🎲 Random (Texts)](#5---random-texts)
+4. [🔗 Combine Texts](#4--combine-texts)
+5. [🎲 Random (Texts)](#5--random-texts)
 6. [♻ Loop](#6--loop)
 7. [♻ Loop Texts](#7--loop-texts)
 8. [♻ Loop Integer](#8--loop-integer)
