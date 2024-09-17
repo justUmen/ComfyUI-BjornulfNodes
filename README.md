@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.38 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.39 🔗
 
 # ❤️ Coffee : ☕☕☕☕☕ 5/5
 
@@ -90,6 +90,7 @@ If you have any issues with this template from Runpod, please let me know, I'm h
 - **v0.36**: Fix random model.
 - **v0.37**: New node : Random Load checkpoint (Model Selector). Alternative to the random checkpoint node. (Not preloading all checkpoints in memory, slower to switch between checkpoints, but more outputs to decide where to store your results.)
 - **v0.38**: New node : If-Else logic. (input == compare_with), examples with different latent space size. +fix some deserialization issues.
+- **v0.39**: Add variables management to Advanced Write Text node.
 
 # 📝 Nodes descriptions
 
@@ -108,7 +109,7 @@ The show node will only display text, or a list of several texts. (read only nod
 **Description:**  
 Simple node to write text.  
 
-## 3 - ✒🗔 Advanced Write Text
+## 3 - ✒🗔 Advanced Write Text (random selection and variables)
 
 ![write Text Advanced](screenshots/write_advanced.png)
 
@@ -121,6 +122,11 @@ Example of console logs :
 Raw text: photo of a {green|blue|red|orange|yellow} {cat|rat|house}
 Picked text: photo of a green house
 ```
+
+You can also create and reuse variables with this syntax : `<name>`.
+Usage example : 
+
+![variables](screenshots/variables.png)
 
 ## 4 - 🔗 Combine Texts
 ![Combine Texts](screenshots/combine_texts.png)
