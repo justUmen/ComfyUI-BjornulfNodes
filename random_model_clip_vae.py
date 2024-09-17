@@ -24,6 +24,7 @@ class RandomModelClipVae:
 
     RETURN_TYPES = ("MODEL", "CLIP", "VAE")
     FUNCTION = "random_select"
+    CATEGORY = "Bjornulf"
 
     def random_select(self, number_of_inputs, **kwargs):
         random.seed(kwargs.get('seed', 0))

@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.36 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.37 🔗
 
 # ❤️ Coffee : ☕☕☕☕☕ 5/5
 
@@ -84,6 +84,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.34**: Two new nodes : Load Images from output folder and Select an Image, Pick.
 - **v0.35**: Great improvements of the TTS node 31. It will also save the audio file in the "ComfyUI/Bjornulf_TTS/" folder. - Not tested on windows yet -
 - **v0.36**: Fix random model.
+- **v0.37**: New node : Random Load checkpoint (Model Selector). Alternative to the random checkpoint node. (Not preloading all checkpoints in memory, slower to switch between checkpoints, but more outputs to decide where to store your results.)
 
 # 📝 Nodes descriptions
 
@@ -460,19 +461,41 @@ It will take the same special syntax as the Advanced write text node `{blue|red}
 
 ### 40 - 🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model
 
-![pick input](screenshots/random_checkpoint.png)
+![random checkpoint](screenshots/random_checkpoint.png)
 
 **Description:**  
-Just take a trio at random from a load checkpoint node.  
+Just simply take a trio at random from a load checkpoint node.  
+Notice that it is using the core Load checkpoint node. It means that all checkpoint will be preloaded in memory.  
 
-### 41 - ♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model
+Details :  
+- It will take more VRAM, but it will be faster to switch between checkpoints.  
+- It can't give you the currently loaded checkpoint name's.  
+
+Check node number 41 before deciding which one to use.
+
+### 41 - 🎲 Random Load checkpoint (Model Selector)
+
+![pick input](screenshots/random_load_checkpoint.png)
+
+**Description:**  
+This is another way to select a load checkpoint node randomly.  
+It will not preload all the checkpoints in memory, so it will be slower to switch between checkpoints.  
+But you can use more outputs to decide where to store your results. (`model_folder` is returning the last folder name of the checkpoint.)  
+I always store my checkpoints in a folder with the type of the model like `SD1.5`, `SDXL`, etc... So it's a good way for me to recover that information quickly.  
+
+Details :  
+- Note that compared to node 40, you can't have separate configuration depending of the selected checkpoint. (For example `CLIP Set Last Layer` node set at -2 for a specific model, or a separate vae or clip.) Aka : All models are going to share the exact same workflow.  
+
+Check node number 40 before deciding which one to use.
+
+### 42 - ♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model
 
 ![pick input](screenshots/loop_checkpoint.png)
 
 **Description:**  
 Loop over all the trios from several checkpoint node.  
 
-### 42 - 📂🖼 Load Images from output folder
+### 43 - 📂🖼 Load Images from output folder
 
 ![pick input](screenshots/load_images_folder.png)
 
@@ -494,7 +517,7 @@ If you are satisfied with this logic, you can then select all these nodes, right
 Here is another example of the same thing but excluding the save folder node :  
 ![pick input](screenshots/bjornulf_save_character_group2.png)
 
-### 43 - 🖼🔍 Select an Image, Pick
+### 44 - 🖼🔍 Select an Image, Pick
 
 ![pick input](screenshots/select_image.png)
 

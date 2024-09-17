@@ -43,29 +43,27 @@ from .pause_resume_stop import PauseResume
 from .pick_input import PickInput
 from .loop_images import LoopImages
 from .random_image import RandomImage
-# from .random_checkpoint import RandomCheckpoint
 from .loop_model_clip_vae import LoopModelClipVae
 from .write_text_advanced import WriteTextAdvanced
 from .loop_write_text import LoopWriteText
 from .load_images_from_folder import LoadImagesFromSelectedFolder
-# from .show import ShowWhatever
 from .select_image_from_list import SelectImageFromList
+from .random_model_selector import RandomModelSelector
 
 # from .pass_preview_image import PassPreviewImage
 # from .check_black_image import CheckBlackImage
-# from .clear_vram import ClearVRAM
 
 # from .CUSTOM_STRING import CustomStringType
 
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_RandomModelSelector": RandomModelSelector,
     "Bjornulf_SelectImageFromList": SelectImageFromList,
     "Bjornulf_WriteText": WriteText,
     "Bjornulf_LoadImagesFromSelectedFolder": LoadImagesFromSelectedFolder,
     # "Bjornulf_ShowWhatever": ShowWhatever,
     "Bjornulf_LoopModelClipVae": LoopModelClipVae,
-    # "Bjoenulf_RandomCheckpoint": RandomCheckpoint,
     "Bjornulf_LoopWriteText": LoopWriteText,
     "Bjornulf_LoopImages": LoopImages,
     "Bjornulf_RandomImage": RandomImage,
@@ -135,6 +133,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_RandomLineFromInput": "🎲 Random line from input",
     "Bjornulf_RandomTexts": "🎲 Random (Texts)",
     "Bjornulf_RandomModelClipVae": "🎲 Random (Model+Clip+Vae)",
+    "Bjornulf_RandomModelSelector": "🎲 Random Load checkpoint (Model Selector)",
     # "Bjornulf_PassPreviewImage": "🖼⮕ Pass Preview Image",
     "Bjornulf_CharacterDescriptionGenerator": "🧑📝 Character Description Generator",
     "Bjornulf_GreenScreenToTransparency": "🟩➜▢ Green Screen to Transparency",

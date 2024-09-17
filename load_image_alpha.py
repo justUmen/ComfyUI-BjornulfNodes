@@ -15,11 +15,10 @@ class LoadImageWithTransparency:
                     {"image": (sorted(files), {"image_upload": True})},
                 }
 
-    CATEGORY = "image"
-
     RETURN_TYPES = ("IMAGE", "MASK", "STRING")  # Added "STRING" for the image path
     RETURN_NAMES = ("image", "mask", "image_path")
     FUNCTION = "load_image_alpha"
+    CATEGORY = "Bjornulf"
 
     def load_image_alpha(self, image):
         image_path = folder_paths.get_annotated_filepath(image)
