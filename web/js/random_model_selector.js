@@ -49,11 +49,47 @@ app.registerExtension({
                 };
             }
 
-            // Set seed widget to hidden input
+            // Set seed widget to integer input
             const seedWidget = node.widgets.find((w) => w.name === "seed");
             if (seedWidget) {
-              seedWidget.type = "HIDDEN";
+                seedWidget.type = "HIDDEN"; // Hide seed widget after restoring saved state
             }
+
+            // Handle deserialization
+            const originalOnConfigure = node.onConfigure;
+            node.onConfigure = function(info) {
+                if (originalOnConfigure) {
+                    originalOnConfigure.call(this, info);
+                }
+                
+                // Restore model widgets based on saved properties
+                const savedProperties = info.properties;
+                if (savedProperties) {
+                    Object.keys(savedProperties).forEach(key => {
+                        if (key.startsWith("model_")) {
+                            const widgetName = key;
+                            const widgetValue = savedProperties[key];
+                            const existingWidget = node.widgets.find(w => w.name === widgetName);
+                            if (existingWidget) {
+                                existingWidget.value = widgetValue;
+                            } else {
+                                node.addWidget("combo", widgetName, widgetValue, () => {}, { 
+                                    values: node.widgets.find(w => w.name === "model_1").options.values
+                                });
+                            }
+                        }
+                    });
+                }
+                
+                // Ensure seed is a valid integer
+                const seedWidget = node.widgets.find(w => w.name === "seed");
+                if (seedWidget && isNaN(parseInt(seedWidget.value))) {
+                    seedWidget.value = 0; // Set a default value if invalid
+                }
+                
+                // Update model inputs after restoring saved state
+                updateModelInputs();
+            };
 
             // Initial update
             updateModelInputs();

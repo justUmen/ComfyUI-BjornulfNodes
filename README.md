@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.37 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.38 🔗
 
 # ❤️ Coffee : ☕☕☕☕☕ 5/5
 
@@ -85,6 +85,7 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 - **v0.35**: Great improvements of the TTS node 31. It will also save the audio file in the "ComfyUI/Bjornulf_TTS/" folder. - Not tested on windows yet -
 - **v0.36**: Fix random model.
 - **v0.37**: New node : Random Load checkpoint (Model Selector). Alternative to the random checkpoint node. (Not preloading all checkpoints in memory, slower to switch between checkpoints, but more outputs to decide where to store your results.)
+- **v0.38**: New node : If-Else logic. (input == compare_with), examples with different latent space size. +fix some deserialization issues.
 
 # 📝 Nodes descriptions
 
@@ -527,3 +528,30 @@ Useful in combination with my Load images from folder and preview image nodes.
 
 You can also of course make a group node, like this one, which is the same as the screenshot above :  
 ![pick input](screenshots/select_image_group.png)
+
+### 45 - 🔀 If-Else (input == compare_with)
+
+![if else](screenshots/if1.png)
+
+**Description:**  
+If the `input` given is equal to the `compare_with` given in the widget, it will forward `send_if_true`, otherwise it will forward `send_if_false`.  
+You can forward anything, below is an example of forwarding a different size of latent space depending if it's SDXL or not.  
+
+![if else](screenshots/if2.png)
+
+If-Else are chainables, just connect `output` to `send_if_false`.  
+⚠️ Always simply test `input` with `compare_with`, and connect the desired value to `send_if_true`. ⚠️  
+Here a simple example with 2 If-Else nodes (choose between 3 different resolutions). ❗ Notice the same write text node is connected to both If-Else nodes input :  
+
+![if else](screenshots/if3.png)
+
+Let's take a similar example but let's use my Write loop text node to display all 3 types once :  
+
+![if else](screenshots/if4.png)
+
+If you understood the previous examples, here is a complete example that will create 3 images, landscape, portrait and normal :  
+
+![if else](screenshots/if5.png)
+
+Workflow is hidden for simplicity, but is very basic, just connect latent to Ksampler, nothing special.)  
+You can also connect the same advanced loop write text node with my save folder node to save the images (landscape/portrait/normal) in separate folders, but you do you...  

@@ -49,6 +49,7 @@ from .loop_write_text import LoopWriteText
 from .load_images_from_folder import LoadImagesFromSelectedFolder
 from .select_image_from_list import SelectImageFromList
 from .random_model_selector import RandomModelSelector
+from .if_else import IfElse
 
 # from .pass_preview_image import PassPreviewImage
 # from .check_black_image import CheckBlackImage
@@ -58,6 +59,7 @@ from .random_model_selector import RandomModelSelector
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_IfElse": IfElse,
     "Bjornulf_RandomModelSelector": RandomModelSelector,
     "Bjornulf_SelectImageFromList": SelectImageFromList,
     "Bjornulf_WriteText": WriteText,
@@ -167,6 +169,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_PauseResume": "⏸️ Paused. Resume or Stop, Pick 👇",
     "Bjornulf_LoadImagesFromSelectedFolder": "📂🖼 Load Images from output folder",
     "Bjornulf_SelectImageFromList": "🖼🔍 Select an Image, Pick",
+    "Bjornulf_IfElse": "🔀 If-Else (input == compare_with)",
 }
 
 WEB_DIRECTORY = "./web"
