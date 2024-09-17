@@ -47,6 +47,54 @@ If you have any issues with this template from Runpod, please let me know, I'm h
 - `pip install ollama` (you can also install ollama if you want :  https://ollama.com/download) - You don't need to really install it if you don't want to use my ollama node. (BUT you need to run `pip install ollama`)
 - `pip install pydub` (for TTS node)
 
+# Nodes menu
+
+1. [👁 Show (Text, Int, Float)](#1---👁-show-text-int-float)
+2. [✒ Write Text](#2---✒-write-text)
+3. [✒🗔 Advanced Write Text (random selection and variables)](#3---✒🗔-advanced-write-text-random-selection-and-variables)
+4. [🔗 Combine Texts](#4---🔗-combine-texts)
+5. [🎲 Random (Texts)](#5---🎲-random-texts)
+6. [♻ Loop](#6---♻-loop)
+7. [♻ Loop Texts](#7---♻-loop-texts)
+8. [♻ Loop Integer](#8---♻-loop-integer)
+9. [♻ Loop Float](#9---♻-loop-float)
+10. [♻ Loop All Samplers](#10---♻-loop-all-samplers)
+11. [♻ Loop All Schedulers](#11---♻-loop-all-schedulers)
+12. [♻ Loop Combos](#12---♻-loop-combos)
+13. [📏 Resize Exact](#13---📏-resize-exact)
+14. [🖼 Save Exact name](#14---🖼-save-exact-name)
+15. [💾 Save Text](#15---💾-save-text)
+16. [🖼💬 Save image for Bjornulf LobeChat](#16---🖼💬-save-image-for-bjornulf-lobechat)
+17. [🖼 Save image as `tmp_api.png` Temporary API](#17---🖼-save-image-as-tmp_apipng-temporary-api)
+18. [🖼📁 Save image to a chosen folder name](#18---🖼📁-save-image-to-a-chosen-folder-name)
+19. [🦙 Ollama](#19---🦙-ollama)
+20. [📹 Video Ping Pong](#20---📹-video-ping-pong)
+21. [📹 Images to Video](#21---📹-images-to-video)
+22. [🔲 Remove image Transparency (alpha)](#22---🔲-remove-image-transparency-alpha)
+23. [🔲 Image to grayscale (black & white)](#23---🔲-image-to-grayscale-black--white)
+24. [🖼+🖼 Combine images (Background + Overlay)](#24---🖼🖼-combine-images-background--overlay)
+25. [🟩➜▢ Green Screen to Transparency](#25---🟩➜▢-green-screen-to-transparency)
+26. [🎲 Random line from input](#26---🎲-random-line-from-input)
+27. [♻ Loop (All Lines from input)](#27---♻-loop-all-lines-from-input)
+28. [🔢 Text with random Seed](#28---🔢-text-with-random-seed)
+29. [🖼 Load Image with Transparency ▢](#29---🖼-load-image-with-transparency-▢)
+30. [🖼✂ Cut image with a mask](#30---🖼✂-cut-image-with-a-mask)
+31. [🔊 TTS - Text to Speech](#31---🔊-tts---text-to-speech)
+32. [🧑📝 Character Description Generator](#32---🧑📝-character-description-generator)
+33. [♻ Loop (All Lines from input 🔗 combine by lines)](#33---♻-loop-all-lines-from-input-🔗-combine-by-lines)
+34. [🧹 Free VRAM hack](#34---🧹-free-vram-hack)
+35. [⏸️ Paused. Resume or Stop ?](#35---⏸️-paused-resume-or-stop-)
+36. [⏸️🔍 Paused. Select input, Pick one](#36---⏸️🔍-paused-select-input-pick-one)
+37. [🎲🖼 Random Image](#37---🎲🖼-random-image)
+38. [♻🖼 Loop (Images)](#38---♻🖼-loop-images)
+39. [♻ Loop (✒🗔 Advanced Write Text)](#39---♻-loop-✒🗔-advanced-write-text)
+40. [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40---🎲-random-modelclipvae---aka-checkpoint--model)
+41. [🎲 Random Load checkpoint (Model Selector)](#41---🎲-random-load-checkpoint-model-selector)
+42. [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42---♻-loop-modelclipvae---aka-checkpoint--model)
+43. [📂🖼 Load Images from output folder](#43---📂🖼-load-images-from-output-folder)
+44. [🖼🔍 Select an Image, Pick](#44---🖼🔍-select-an-image-pick)
+45. [🔀 If-Else (input == compare_with)](#45---🔀-if-else-input--compare_with)
+
 # 📝 Changelog
 
 - **v0.2**: Improve ollama node with system prompt + model selection.
@@ -91,6 +139,7 @@ If you have any issues with this template from Runpod, please let me know, I'm h
 - **v0.37**: New node : Random Load checkpoint (Model Selector). Alternative to the random checkpoint node. (Not preloading all checkpoints in memory, slower to switch between checkpoints, but more outputs to decide where to store your results.)
 - **v0.38**: New node : If-Else logic. (input == compare_with), examples with different latent space size. +fix some deserialization issues.
 - **v0.39**: Add variables management to Advanced Write Text node.
+- **v0.40**: Add variables management to Loop Advanced Write Text node. Add menu for all nodes to the README.
 
 # 📝 Nodes descriptions
 
@@ -469,6 +518,7 @@ Above is an example of the loop images node sending them to an Ipadapter workflo
 **Description:**  
 If you need a quick loop but you don't want something too complex with a loop node, you can use this combined write text + loop.  
 It will take the same special syntax as the Advanced write text node `{blue|red}`, but it will loop over ALL the possibilities instead of taking one at random.  
+0.40 : You can also use variables `<name>` in the loop.  
 
 ### 40 - 🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model
 

@@ -8,6 +8,9 @@ class LoopWriteText:
             "required": {
                 "text": ("STRING", {"multiline": True}),
             },
+            "optional": {
+                "variables": ("STRING", {"forceInput": True}),
+            }
         }
 
     RETURN_TYPES = ("STRING",)
@@ -17,7 +20,18 @@ class LoopWriteText:
     OUTPUT_IS_LIST = (True,)
     CATEGORY = "Bjornulf"
     
-    def loop_write_text(self, text):
+    def loop_write_text(self, text, variables=""):
+        # Parse variables
+        var_dict = {}
+        for line in variables.split('\n'):
+            if '=' in line:
+                key, value = line.strip().split('=', 1)
+                var_dict[key.strip()] = value.strip()
+
+        # Replace variables in the text
+        for key, value in var_dict.items():
+            text = text.replace(f"<{key}>", value)
+
         pattern = r'\{([^}]+)\}'
         matches = re.findall(pattern, text)
         
@@ -37,5 +51,5 @@ class LoopWriteText:
         return (results,)
 
     @classmethod
-    def IS_CHANGED(s, text):
+    def IS_CHANGED(s, text, variables=""):
         return float("nan")  # Always re-execute to ensure consistency
