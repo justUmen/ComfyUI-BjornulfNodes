@@ -99,9 +99,9 @@ cd /where/you/installed/ComfyUI && python main.py
 13. [📏 Resize Exact](#1314------resize-and-save-exact-name-%EF%B8%8F)
 14. [🖼 Save Exact name](#1314------resize-and-save-exact-name-%EF%B8%8F)
 15. [💾 Save Text](#15----save-text)
-16. [💾🖼💬 Save image for Bjornulf LobeChat](#16-----save-image-for-bjornulf-lobechat-for-my-custom-lobe-chat)
-17. [💾🖼 Save image as `tmp_api.png` Temporary API](#17-----save-image-as-tmp_apipng-temporary-api-%EF%B8%8F)
-18. [💾🖼📁 Save image to a chosen folder name](#18-----save-image-to-a-chosen-folder-name)
+16. [💾🖼💬 Save image for Bjornulf LobeChat](#16----save-image-for-bjornulf-lobechat-for-my-custom-lobe-chat)
+17. [💾🖼 Save image as `tmp_api.png` Temporary API](#17----save-image-as-tmp_apipng-temporary-api-%EF%B8%8F)
+18. [💾🖼📁 Save image to a chosen folder name](#18----save-image-to-a-chosen-folder-name)
 19. [🦙 Ollama](#19----ollama)
 20. [📹 Video Ping Pong](#20----video-ping-pong)
 21. [📹 Images to Video](#21----images-to-video)
@@ -129,6 +129,8 @@ cd /where/you/installed/ComfyUI && python main.py
 43. [📂🖼 Load Images from output folder](#43----load-images-from-output-folder)
 44. [🖼🔍 Select an Image, Pick](#44----select-an-image-pick)
 45. [🔀 If-Else (input / compare_with)](#45----if-else-input--compare_with)
+46. [📏 Image Details](#46----image-details
+47. [🖼 Combine Images](#47----combine-images)
 
 # 📝 Changelog
 
