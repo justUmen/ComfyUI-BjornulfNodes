@@ -50,6 +50,8 @@ from .load_images_from_folder import LoadImagesFromSelectedFolder
 from .select_image_from_list import SelectImageFromList
 from .random_model_selector import RandomModelSelector
 from .if_else import IfElse
+from .image_details import ImageDetails
+from .combine_images import CombineImages
 
 # from .pass_preview_image import PassPreviewImage
 # from .check_black_image import CheckBlackImage
@@ -59,6 +61,8 @@ from .if_else import IfElse
 NODE_CLASS_MAPPINGS = {
     # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_CombineImages": CombineImages,
+    "Bjornulf_ImageDetails": ImageDetails,
     "Bjornulf_IfElse": IfElse,
     "Bjornulf_RandomModelSelector": RandomModelSelector,
     "Bjornulf_SelectImageFromList": SelectImageFromList,
@@ -149,14 +153,13 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_ShowFloat": "👁 Show (Float)",
     "Bjornulf_ImageMaskCutter": "🖼✂ Cut Image with Mask",
     "Bjornulf_LoadImageWithTransparency": "🖼 Load Image with Transparency ▢",
-    "Bjornulf_CombineBackgroundOverlay": "🖼+🖼 Combine images (Background+Overlay alpha)",
+    "Bjornulf_CombineBackgroundOverlay": "🖼+🖼 Stack two images (Background+Overlay alpha)",
     "Bjornulf_GrayscaleTransform": "🖼➜🔲 Image to grayscale (black & white)",
     "Bjornulf_RemoveTransparency": "▢➜⬛ Remove image Transparency (alpha)",
     "Bjornulf_ResizeImage": "📏 Resize Image",
-    "Bjornulf_SaveImagePath": "🖼 Save Image (exact path, exact name) ⚠️💣",
-    "Bjornulf_SaveImageToFolder": "🖼📁 Save Image(s) to a folder",
-    "Bjornulf_SaveTmpImage": "🖼 Save Image (tmp_api.png) ⚠️💣",
-    # "Bjornulf_SaveApiImage": "🖼 Save Image (./output/api_00001.png...)",
+    "Bjornulf_SaveImagePath": "💾🖼 Save Image (exact path, exact name) ⚠️💣",
+    "Bjornulf_SaveImageToFolder": "💾🖼📁 Save Image(s) to a folder",
+    "Bjornulf_SaveTmpImage": "💾🖼 Save Image (tmp_api.png) ⚠️💣",
     "Bjornulf_SaveText": "💾 Save Text",
     # "Bjornulf_LoadText": "📥 Load Text",
     "Bjornulf_CombineTexts": "🔗 Combine (Texts)",
@@ -169,7 +172,9 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_PauseResume": "⏸️ Paused. Resume or Stop, Pick 👇",
     "Bjornulf_LoadImagesFromSelectedFolder": "📂🖼 Load Images from output folder",
     "Bjornulf_SelectImageFromList": "🖼🔍 Select an Image, Pick",
-    "Bjornulf_IfElse": "🔀 If-Else (input == compare_with)",
+    "Bjornulf_IfElse": "🔀 If-Else (input / compare_with)",
+    "Bjornulf_ImageDetails": "🖼🔍 Image Details",
+    "Bjornulf_CombineImages": "🖼🔗 Combine Images",
 }
 
 WEB_DIRECTORY = "./web"

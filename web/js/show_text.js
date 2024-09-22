@@ -47,6 +47,10 @@ app.registerExtension({
                         color = '#0096FF'; // Integer
                     } else if (/^-?\d*\.?\d+$/.test(value)) {
                         color = 'orange'; // Float
+                    } else if (value.startsWith("If-Else ERROR: ")) {
+                        color = 'red'; // If-Else ERROR lines
+                    } else if (value.startsWith("tensor(")) {
+                        color = '#0096FF'; // Lines starting with "tensor("
                     }
                     
                     w.inputEl.style.color = color;

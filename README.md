@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.39 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.41 🔗
 
 # Coffee : ☕☕☕☕☕ 5/5
 
@@ -33,7 +33,7 @@ huggingface-cli download comfyanonymous/flux_text_encoders clip_l.safetensors --
 huggingface-cli download comfyanonymous/flux_text_encoders t5xxl_fp16.safetensors --local-dir /workspace/ComfyUI/models/clip
 huggingface-cli download black-forest-labs/FLUX.1-dev ae.safetensors --local-dir /workspace/ComfyUI/models/vae
 ```
-To use Flux you can just drag and drop in your browser the .json from my github repo : `workflows/FLUX_dev_troll.json`, direct link : <https://github.com/justUmen/ComfyUI-BjornulfNodes/blob/main/workflows/FLUX_dev_troll.json>.  
+To use Flux you can just drag and drop in your browser comfyui interface the .json from my github repo : `workflows/FLUX_dev_troll.json`, direct link : <https://github.com/justUmen/ComfyUI-BjornulfNodes/blob/main/workflows/FLUX_dev_troll.json>.  
 
 For downloading from civitai (get token here <https://civitai.com/user/account>), just copy/paste the link of checkpoint you want to download and use something like that, with your token in URL :  
 ```
@@ -42,11 +42,46 @@ wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civ
 ```
 If you have any issues with this template from Runpod, please let me know, I'm here to help. 😊   
 
-# Dependencies
+# 🏗 Dependencies (nothing to do for runpod ☁)
+
+## 🪟🐍 Windows : Install dependencies on windows with embedded python (portable version)
+
+First you need to find this python_embedded `python.exe`, then you can right click or shift + right click inside the folder in your file manager to open a terminal there.  
+
+This is where I have it, with the command you need :  
+`H:\ComfyUI_windows_portable\python_embeded> .\python.exe -m pip install pydub ollama`  
+
+When you have to install something you can retake the same code and install the dependency you want :  
+`.\python.exe -m pip install whateveryouwant`  
+
+You can then run comfyui.  
+
+## 🐧🐍 Linux : Install dependencies (without venv, not recommended)
 
 - `pip install ollama` (you can also install ollama if you want :  https://ollama.com/download) - You don't need to really install it if you don't want to use my ollama node. (BUT you need to run `pip install ollama`)
 - `pip install pydub` (for TTS node)
 
+## 🐧🐍 Linux : Install dependencies with python virtual environment (venv)
+
+If you want to use a python virtual environment only for comfyUI, which I recommended, you can do that for example (also pre-install pip) :  
+
+```
+sudo apt-get install python3-venv python3-pip
+python3 -m venv /the/path/you/want/venv/bjornulf_comfyui
+```
+
+Once you have your environment in this new folder, you can activate it with and install dependencies inside :  
+
+```
+source /the/path/you/want/venv/bjornulf_comfyui/bin/activate
+pip install ollama pydub
+```
+
+Then you can start comfyui with this environment (notice that you need to re-activate it each time you want to launch comfyui) :  
+
+```
+cd /where/you/installed/ComfyUI && python main.py
+```
 # Nodes menu
 
 1. [👁 Show (Text, Int, Float)](#1----show-text-int-float)
@@ -64,15 +99,15 @@ If you have any issues with this template from Runpod, please let me know, I'm h
 13. [📏 Resize Exact](#1314------resize-and-save-exact-name-%EF%B8%8F)
 14. [🖼 Save Exact name](#1314------resize-and-save-exact-name-%EF%B8%8F)
 15. [💾 Save Text](#15----save-text)
-16. [🖼💬 Save image for Bjornulf LobeChat](#16----save-image-for-bjornulf-lobechat-for-my-custom-lobe-chat)
-17. [🖼 Save image as `tmp_api.png` Temporary API](#17----save-image-as-tmp_apipng-temporary-api-%EF%B8%8F)
-18. [🖼📁 Save image to a chosen folder name](#18----save-image-to-a-chosen-folder-name)
+16. [💾🖼💬 Save image for Bjornulf LobeChat](#16-----save-image-for-bjornulf-lobechat-for-my-custom-lobe-chat)
+17. [💾🖼 Save image as `tmp_api.png` Temporary API](#17-----save-image-as-tmp_apipng-temporary-api-%EF%B8%8F)
+18. [💾🖼📁 Save image to a chosen folder name](#18-----save-image-to-a-chosen-folder-name)
 19. [🦙 Ollama](#19----ollama)
 20. [📹 Video Ping Pong](#20----video-ping-pong)
 21. [📹 Images to Video](#21----images-to-video)
 22. [🔲 Remove image Transparency (alpha)](#22----remove-image-transparency-alpha)
 23. [🔲 Image to grayscale (black & white)](#23----image-to-grayscale-black--white)
-24. [🖼+🖼 Combine images (Background + Overlay)](#24----combine-images-background--overlay)
+24. [🖼+🖼 Stack two images (Background + Overlay)](#24----combine-images-background--overlay)
 25. [🟩➜▢ Green Screen to Transparency](#25----green-screen-to-transparency)
 26. [🎲 Random line from input](#26----random-line-from-input)
 27. [♻ Loop (All Lines from input)](#27----loop-all-lines-from-input)
@@ -93,7 +128,7 @@ If you have any issues with this template from Runpod, please let me know, I'm h
 42. [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)
 43. [📂🖼 Load Images from output folder](#43----load-images-from-output-folder)
 44. [🖼🔍 Select an Image, Pick](#44----select-an-image-pick)
-45. [🔀 If-Else (input == compare_with)](#45----if-else-input--compare_with)
+45. [🔀 If-Else (input / compare_with)](#45----if-else-input--compare_with)
 
 # 📝 Changelog
 
@@ -140,6 +175,7 @@ If you have any issues with this template from Runpod, please let me know, I'm h
 - **v0.38**: New node : If-Else logic. (input == compare_with), examples with different latent space size. +fix some deserialization issues.
 - **v0.39**: Add variables management to Advanced Write Text node.
 - **v0.40**: Add variables management to Loop Advanced Write Text node. Add menu for all nodes to the README.
+- **v0.41**: Two new nodes : image details and combine images. Also ❗ Big changes to the If-Else node. (+many minor changes)
 
 # 📝 Nodes descriptions
 
@@ -272,7 +308,7 @@ Resize an image to exact dimensions. The other node will save the image to the e
 **Description:**  
 Save the given text input to a file. Useful for logging and storing text data.
 
-## 16 - 🖼💬 Save image for Bjornulf LobeChat (❗For my custom [lobe-chat](https://github.com/justUmen/Bjornulf_lobe-chat)❗)
+## 16 - 💾🖼💬 Save image for Bjornulf LobeChat (❗For my custom [lobe-chat](https://github.com/justUmen/Bjornulf_lobe-chat)❗)
 ![Save Bjornulf Lobechat](screenshots/save_bjornulf_lobechat.png)
 
 **Description:**  
@@ -282,13 +318,13 @@ The name will start at `api_00001.png`, then `api_00002.png`, etc...
 It will also create a link to the last generated image at the location `output/BJORNULF_API_LAST_IMAGE.png`.  
 This link will be used by my custom lobe-chat to copy the image inside the lobe-chat project.  
 
-## 17 - 🖼 Save image as `tmp_api.png` Temporary API ⚠️💣
+## 17 - 💾🖼 Save image as `tmp_api.png` Temporary API ⚠️💣
 ![Save Temporary API](screenshots/save_tmp_api.png)
 
 **Description:**  
 Save image for short-term use : ./output/tmp_api.png ⚠️💣  
 
-## 18 - 🖼📁 Save image to a chosen folder name
+## 18 - 💾🖼📁 Save image to a chosen folder name
 ![Save Temporary API](screenshots/save_image_to_folder.png)
 
 **Description:**  
@@ -333,11 +369,11 @@ Convert an image to grayscale (black & white)
 Example : I sometimes use it with Ipadapter to disable color influence.  
 But you can sometimes also want a black and white image... 
 
-## 24 - 🖼+🖼 Combine images (Background + Overlay)
-![Combine Images](screenshots/combine_background_overlay.png)
+## 24 - 🖼+🖼 Stack two images (Background + Overlay)
+![Superpose Images](screenshots/combine_background_overlay.png)
 
 **Description:**  
-Combine two images into a single image : a background and one (or several) transparent overlay. (allow to have a video there, just send all the frames and recombine them after.)  
+Stack two images into a single image : a background and one (or several) transparent overlay. (allow to have a video there, just send all the frames and recombine them after.)  
 Update 0.11 : Add option to move vertically and horizontally. (from -50% to 150%)  
 ❗ Warning : For now, `background` is a static image. (I will allow video there later too.)  
 ⚠️ Warning : If you want to directly load the image with transparency, use my node `🖼 Load Image with Transparency ▢` instead of the `Load Image` node.  
@@ -563,7 +599,6 @@ Loop over all the trios from several checkpoint node.
 **Description:**  
 Quickly select all images from a folder inside the output folder. (Not recursively.)  
 So... As you can see from the screenshot the images are split based on their resolution.  
-It is not a choice I made, it is something that is part of the comfyui environment.  
 It's also not possible to edit dynamically the number of outputs, so I just picked a number : 4.  
 The node will separate the images based on their resolution, so with this node you can have 4 different resolutions per folder. (If you have more than that, maybe you should have another folder...)  
 To avoid error or crash if you have less than 4 resolutions in a folder, the node will just output white tensors. (white square image.)  
@@ -578,6 +613,8 @@ If you are satisfied with this logic, you can then select all these nodes, right
 Here is another example of the same thing but excluding the save folder node :  
 ![pick input](screenshots/bjornulf_save_character_group2.png)
 
+⚠️ If you really want to regroup all the images in one flow, you can use my node 47 `Combine images` to put them all together.  
+
 ### 44 - 🖼🔍 Select an Image, Pick
 
 ![pick input](screenshots/select_image.png)
@@ -589,29 +626,71 @@ Useful in combination with my Load images from folder and preview image nodes.
 You can also of course make a group node, like this one, which is the same as the screenshot above :  
 ![pick input](screenshots/select_image_group.png)
 
-### 45 - 🔀 If-Else (input == compare_with)
+### 45 - 🔀 If-Else (input / compare_with)
 
-![if else](screenshots/if1.png)
+![if else](screenshots/if_0.png)
+
 
 **Description:**  
-If the `input` given is equal to the `compare_with` given in the widget, it will forward `send_if_true`, otherwise it will forward `send_if_false`.  
+If the `input` given is equal to the `compare_with` given in the widget, it will forward `send_if_true`, otherwise it will forward `send_if_false`. (If no `send_if_false` it will return `None`.)  
 You can forward anything, below is an example of forwarding a different size of latent space depending if it's SDXL or not.  
 
-![if else](screenshots/if2.png)
+![if else](screenshots/if_0_1.png)
+
+Here is an example of the node with all outputs displayed with Show text nodes :  
+
+![if else](screenshots/if_1.png)
+
+`send_if_false` is optional, if not connected, it will be replaced by `None`.  
+
+![if else](screenshots/if_2.png)
 
 If-Else are chainables, just connect `output` to `send_if_false`.  
 ⚠️ Always simply test `input` with `compare_with`, and connect the desired value to `send_if_true`. ⚠️  
-Here a simple example with 2 If-Else nodes (choose between 3 different resolutions). ❗ Notice the same write text node is connected to both If-Else nodes input :  
+Here a simple example with 2 If-Else nodes (choose between 3 different resolutions).  
+❗ Notice that the same write text node is connected to both If-Else nodes input :  
 
-![if else](screenshots/if3.png)
+![if else](screenshots/if_3.png)
 
 Let's take a similar example but let's use my Write loop text node to display all 3 types once :  
 
-![if else](screenshots/if4.png)
+![if else](screenshots/if_4.png)
 
-If you understood the previous examples, here is a complete example that will create 3 images, landscape, portrait and normal :  
+If you understood the previous examples, here is a complete example that will create 3 images, landscape, portrait and square :  
 
-![if else](screenshots/if5.png)
+![if else](screenshots/if_5.png)
 
 Workflow is hidden for simplicity, but is very basic, just connect latent to Ksampler, nothing special.)  
-You can also connect the same advanced loop write text node with my save folder node to save the images (landscape/portrait/normal) in separate folders, but you do you...  
+You can also connect the same advanced loop write text node with my save folder node to save the images (landscape/portrait/square) in separate folders, but you do you...  
+
+### 46 - 🖼🔍 Image Details
+
+**Description:**  
+Display the details of an image. (width, height, has_transparency, orientation, type)  
+`RGBA` is considered as having transparency, `RGB` is not.  
+`orientation` can be `landscape`, `portrait` or `square`.  
+
+![image details](screenshots/image_details_1.png)
+
+### 47 - 🖼🔗 Combine Images
+
+**Description:**  
+Combine multiple images (A single image or a list of images.)  
+
+There are two types of logic to "combine images". With "all_in_one" enabled, it will combine all the images into one tensor.  
+Otherwise it will send the images one by one. (check examples below) :  
+
+This is an example of the "all_in_one" option disabled :  
+
+![combine images](screenshots/combine_images_1.png)
+
+But for example, if you want to use my node `select an image, pick`, you need to enable `all_in_one` and the images must all have the same resolution.  
+
+![combine images](screenshots/combine_images_2.png)
+
+You can notice that there is no visible difference when you use `all_in_one` with `preview image` node. (this is why I added the `show text` node, not that show text will make it blue, because it's an image/tensor.)  
+
+When you use `combine image` node, you can actually also send many images at once, it will combine them all.  
+Here is an example with `Load images from folder` node, `Image details` node and `Combine images` node. (Of course it can't have `all_in_one` set to True in this situation because the images have different resolutions) :  
+
+![combine images](screenshots/combine_images_3.png)

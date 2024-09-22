@@ -28,29 +28,32 @@ class RandomModelSelector:
 
     def random_select_model(self, number_of_models, seed, **kwargs):
         random.seed(seed)
+
+        # Collect available models from kwargs
+        available_models = [
+            kwargs[f"model_{i}"] for i in range(1, number_of_models + 1) if f"model_{i}" in kwargs and kwargs[f"model_{i}"]
+        ]
         
-        available_models = [kwargs[f"model_{i}"] for i in range(1, number_of_models + 1) if f"model_{i}" in kwargs]
-        
+        # Raise an error if no models are available
         if not available_models:
             raise ValueError("No models selected")
         
+        # Randomly select a model
         selected_model = random.choice(available_models)
         
-        # Extract just the name of the model (no folders and no extensions)
+        # Get the model name (without folders or extensions)
         model_name = os.path.splitext(os.path.basename(selected_model))[0]
         
-        # Get the full path of the selected model
+        # Get the full path to the selected model
         model_path = get_full_path("checkpoints", selected_model)
         
-        # Get the folder of the selected model (Hopefully people use that to organize their models...)
+        # Get the folder name where the model is located
         model_folder = os.path.basename(os.path.dirname(model_path))
         
-        # Load the model
+        # Load the model using ComfyUI's checkpoint loader
         loaded_objects = comfy.sd.load_checkpoint_guess_config(model_path)
         
         # Unpack only the values we need
-        model = loaded_objects[0]
-        clip = loaded_objects[1]
-        vae = loaded_objects[2]
+        model, clip, vae = loaded_objects[:3]
         
-        return (model, clip, vae, model_path, model_name, model_folder)
+        return model, clip, vae, model_path, model_name, model_folder

@@ -11,7 +11,7 @@ class WriteTextAdvanced:
                 "text": ("STRING", {"multiline": True, "lines": 10}),
             },
             "optional": {
-                "variables": ("STRING", {"multiline": True, "lines": 5}),
+                "variables": ("STRING", {"multiline": True, "forceInput": True}),
                 "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff}),
             },
         }
