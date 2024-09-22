@@ -129,7 +129,7 @@ cd /where/you/installed/ComfyUI && python main.py
 43. [📂🖼 Load Images from output folder](#43----load-images-from-output-folder)
 44. [🖼🔍 Select an Image, Pick](#44----select-an-image-pick)
 45. [🔀 If-Else (input / compare_with)](#45----if-else-input--compare_with)
-46. [📏 Image Details](#46----image-details
+46. [📏 Image Details](#46----image-details)
 47. [🖼 Combine Images](#47----combine-images)
 
 # 📝 Changelog
