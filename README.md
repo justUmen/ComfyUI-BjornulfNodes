@@ -4,7 +4,7 @@
 
 ❤️ <https://ko-fi.com/bjornulf> ❤️
 
-# 📋 Nodes menu
+# 📋 Nodes menu by categeories
 
 ## 👁 Display and Show 👁
 1. [👁 Show (Text, Int, Float)](#1----show-text-int-float)
@@ -45,17 +45,21 @@
 18. [💾🖼📁 Save image to a chosen folder name](#18----save-image-to-a-chosen-folder-name)
 14. [💾🖼 Save Exact name](#1314------resize-and-save-exact-name-%EF%B8%8F)
 
-## 🖼 Image 🖼
-13. [📏 Resize Exact](#1314------resize-and-save-exact-name-%EF%B8%8F)
+## 🖼📥 Image Load 📥🖼
+29. [📥🖼 Load Image with Transparency ▢](#29----load-image-with-transparency-)
+43. [📥🖼📂 Load Images from output folder](#43----load-images-from-output-folder)
+
+## 🖼 Image - others 🖼
+13. [📏 Resize Image](#1314------resize-and-save-exact-name-%EF%B8%8F)
 22. [🔲 Remove image Transparency (alpha)](#22----remove-image-transparency-alpha)
 23. [🔲 Image to grayscale (black & white)](#23----image-to-grayscale-black--white)
 24. [🖼+🖼 Stack two images (Background + Overlay)](#24----combine-images-background--overlay)
 25. [🟩➜▢ Green Screen to Transparency](#25----green-screen-to-transparency)
-29. [🖼 Load Image with Transparency ▢](#29----load-image-with-transparency-)
+29. [⬇️🖼 Load Image with Transparency ▢](#29----load-image-with-transparency-)
 30. [🖼✂ Cut image with a mask](#30----cut-image-with-a-mask)
 37. [🎲🖼 Random Image](#37----random-image)
 38. [♻🖼 Loop (Images)](#38----loop-images)
-43. [📂🖼 Load Images from output folder](#43----load-images-from-output-folder)
+43. [⬇️📂🖼 Load Images from output folder](#43----load-images-from-output-folder)
 44. [🖼👈 Select an Image, Pick](#44----select-an-image-pick)
 46. [🖼🔍 Image Details](#46----image-details)
 47. [🖼 Combine Images](#47----combine-images)
@@ -621,7 +625,7 @@ Check node number 40 before deciding which one to use.
 **Description:**  
 Loop over all the trios from several checkpoint node.  
 
-### 43 - 📂🖼 Load Images from output folder
+### 43 - 📥🖼📂 Load Images from output folder
 
 ![pick input](screenshots/load_images_folder.png)
 
