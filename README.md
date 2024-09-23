@@ -7,7 +7,7 @@
 # 📋 Nodes menu by category
 
 ## 👁 Display and Show 👁
-`1.` [👁 Show (Text, Int, Float)](#1----show-text-int-float)
+`1.` [👁 Show (Text, Int, Float)](#1----show-text-int-float)  
 
 ## ✒ Text ✒
 `2.` [✒ Write Text](#2----write-text)  
@@ -16,7 +16,7 @@
 `15.` [💾 Save Text](#15----save-text)  
 `26.` [🎲 Random line from input](#26----random-line-from-input)  
 `28.` [🔢 Text with random Seed](#28----text-with-random-seed)  
-`32.` [🧑📝 Character Description Generator](#32----character-description-generator)
+`32.` [🧑📝 Character Description Generator](#32----character-description-generator)  
 
 ## ♻ Loop ♻
 `6.` [♻ Loop](#6----loop)  
@@ -30,7 +30,7 @@
 `33.` [♻ Loop (All Lines from input 🔗 combine by lines)](#33----loop-all-lines-from-input--combine-by-lines)  
 `38.` [♻🖼 Loop (Images)](#38----loop-images)  
 `39.` [♻ Loop (✒🗔 Advanced Write Text)](#39----loop--advanced-write-text)  
-`42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)
+`42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
 
 ## 🎲 Randomization 🎲
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
@@ -38,17 +38,17 @@
 `26.` [🎲 Random line from input](#26----random-line-from-input)  
 `37.` [🎲🖼 Random Image](#37----random-image)  
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
-`41.` [🎲 Random Load checkpoint (Model Selector)](#41----random-load-checkpoint-model-selector)
+`41.` [🎲 Random Load checkpoint (Model Selector)](#41----random-load-checkpoint-model-selector)  
 
 ## 🖼💾 Image Save 💾🖼
 `16.` [💾🖼💬 Save image for Bjornulf LobeChat](#16----save-image-for-bjornulf-lobechat-for-my-custom-lobe-chat)  
 `17.` [💾🖼 Save image as `tmp_api.png` Temporary API](#17----save-image-as-tmp_apipng-temporary-api-%EF%B8%8F)  
 `18.` [💾🖼📁 Save image to a chosen folder name](#18----save-image-to-a-chosen-folder-name)  
-`14.` [💾🖼 Save Exact name](#1314------resize-and-save-exact-name-%EF%B8%8F)
+`14.` [💾🖼 Save Exact name](#1314------resize-and-save-exact-name-%EF%B8%8F)  
 
 ## 🖼📥 Image Load 📥🖼
 `29.` [📥🖼 Load Image with Transparency ▢](#29----load-image-with-transparency-)  
-`43.` [📥🖼📂 Load Images from output folder](#43----load-images-from-output-folder)
+`43.` [📥🖼📂 Load Images from output folder](#43----load-images-from-output-folder)  
 
 ## 🖼 Image - others 🖼
 `13.` [📏 Resize Image](#1314------resize-and-save-exact-name-%EF%B8%8F)  
@@ -63,28 +63,28 @@
 `43.` [⬇️📂🖼 Load Images from output folder](#43----load-images-from-output-folder)  
 `44.` [🖼👈 Select an Image, Pick](#44----select-an-image-pick)  
 `46.` [🖼🔍 Image Details](#46----image-details)  
-`47.` [🖼 Combine Images](#47----combine-images)
+`47.` [🖼 Combine Images](#47----combine-images)  
 
 ## 📹 Video 📹
 `20.` [📹 Video Ping Pong](#20----video-ping-pong)  
-`21.` [📹 Images to Video](#21----images-to-video)
+`21.` [📹 Images to Video](#21----images-to-video)  
 
 ## 🦙 AI 🦙
-`19.` [🦙 Ollama](#19----ollama)
-`31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)
+`19.` [🦙 Ollama](#19----ollama)  
+`31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
 
 ## 🔊 Audio 🔊
-`31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)
+`31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
 
 ## 💻 System 💻
-`34.` [🧹 Free VRAM hack](#34----free-vram-hack)
+`34.` [🧹 Free VRAM hack](#34----free-vram-hack)  
 
 ## 🧍 Manual user Control 🧍
 `35.` [⏸️ Paused. Resume or Stop ?](#35---%EF%B8%8F-paused-resume-or-stop-)  
-`36.` [⏸️🔍 Paused. Select input, Pick one](#36---%EF%B8%8F-paused-select-input-pick-one)
+`36.` [⏸️🔍 Paused. Select input, Pick one](#36---%EF%B8%8F-paused-select-input-pick-one)  
 
 ## 🧠 Logic / Conditional Operations 🧠
-`45.` [🔀 If-Else (input / compare_with)](#45----if-else-input--compare_with)
+`45.` [🔀 If-Else (input / compare_with)](#45----if-else-input--compare_with)  
 
 # ☁ Usage in cloud : 
 
