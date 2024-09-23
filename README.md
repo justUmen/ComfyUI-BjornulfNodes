@@ -54,7 +54,7 @@
 `13.` [📏 Resize Image](#1314------resize-and-save-exact-name-%EF%B8%8F)  
 `22.` [🔲 Remove image Transparency (alpha)](#22----remove-image-transparency-alpha)  
 `23.` [🔲 Image to grayscale (black & white)](#23----image-to-grayscale-black--white)  
-`24.` [🖼+🖼 Stack two images (Background + Overlay)](#24----combine-images-background--overlay)  
+`24.` [🖼+🖼 Stack two images (Background + Overlay)](#24----stack-two-images-background--overlay)  
 `25.` [🟩➜▢ Green Screen to Transparency](#25----green-screen-to-transparency)  
 `29.` [⬇️🖼 Load Image with Transparency ▢](#29----load-image-with-transparency-)  
 `30.` [🖼✂ Cut image with a mask](#30----cut-image-with-a-mask)  
