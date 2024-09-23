@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.42 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.43 🔗
 
 # Coffee : ☕☕☕☕☕ 5/5
 
@@ -71,6 +71,7 @@
 
 ## 🦙 AI 🦙
 `19.` [🦙 Ollama](#19----ollama)
+`31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)
 
 ## 🔊 Audio 🔊
 `31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)
@@ -211,6 +212,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.40**: Add variables management to Loop Advanced Write Text node. Add menu for all nodes to the README.
 - **v0.41**: Two new nodes : image details and combine images. Also ❗ Big changes to the If-Else node. (+many minor changes)
 - **v0.42**: Better README with category nodes, changes some node titles
+- **v0.43**: Add control_after_generate to Ollama and allow to keep in VRAM for 1 minute if needed. (For chaining quick generations.) Add fallback to 0.0.0.0
 
 # 📝 Nodes descriptions
 
@@ -367,12 +369,20 @@ Save image in a specific folder : `my_folder/00001.png`, `my_folder/00002.png`, 
 Also allow multiple nested folders, like for example : `animal/dog/small`.
 
 ## 19 - 🦙 Ollama
-![Show Text](screenshots/ollama.png)
+![Ollama](screenshots/ollama_1.png)
 
 **Description:**  
 Will generate detailed text based of what you give it.  
 I recommend using `mistral-nemo` if you can run it, but it's up to you. (Might have to tweak the system prompt a bit)  
-⚠️ Warning : Having an ollama node that will run for each generation might be a bit heavy on your VRAM. Think about if you really need it or not.
+
+You also have `control_after_generate` to force the node to rerun for every workflow run. (Even if there is no modification of the node or its inputs.)  
+
+You have the option to keep in in you VRAM for a minute with `keep_1min_in_vram`. (If you plan having to generate many times with the same prompt)  
+Each run will be significantly faster, but not free your VRAM for something else.  
+
+![Ollama](screenshots/ollama_2.png) 
+
+⚠️ Warning : Using `keep_1min_in_vram` might be a bit heavy on your VRAM. Think about if you really need it or not. Most of the time, when using `keep_1min_in_vram`, you don't want to have also a generation of image or anything else in the same time.  
 
 ## 20 - 📹 Video Ping Pong
 ![Video Ping Pong](screenshots/video_pingpong.png)
