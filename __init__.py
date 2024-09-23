@@ -16,12 +16,9 @@ from .loop_samplers import LoopSamplers
 from .loop_schedulers import LoopSchedulers
 from .ollama import ollamaLoader
 from .show_text import ShowText
-# from .show_int import ShowInt
-# from .show_float import ShowFloat
 from .save_text import SaveText
 from .save_tmp_image import SaveTmpImage
 from .save_image_path import SaveImagePath
-# from .save_api_image import SaveApiImage
 from .save_img_to_folder import SaveImageToFolder
 from .resize_image import ResizeImage
 from .loop_my_combos_samplers_schedulers import LoopCombosSamplersSchedulers
@@ -52,14 +49,9 @@ from .random_model_selector import RandomModelSelector
 from .if_else import IfElse
 from .image_details import ImageDetails
 from .combine_images import CombineImages
-
 # from .pass_preview_image import PassPreviewImage
-# from .check_black_image import CheckBlackImage
-
-# from .CUSTOM_STRING import CustomStringType
 
 NODE_CLASS_MAPPINGS = {
-    # "Bjornulf_CustomStringType": CustomStringType,
     "Bjornulf_ollamaLoader": ollamaLoader,
     "Bjornulf_CombineImages": CombineImages,
     "Bjornulf_ImageDetails": ImageDetails,
@@ -68,7 +60,6 @@ NODE_CLASS_MAPPINGS = {
     "Bjornulf_SelectImageFromList": SelectImageFromList,
     "Bjornulf_WriteText": WriteText,
     "Bjornulf_LoadImagesFromSelectedFolder": LoadImagesFromSelectedFolder,
-    # "Bjornulf_ShowWhatever": ShowWhatever,
     "Bjornulf_LoopModelClipVae": LoopModelClipVae,
     "Bjornulf_LoopWriteText": LoopWriteText,
     "Bjornulf_LoopImages": LoopImages,
@@ -86,26 +77,17 @@ NODE_CLASS_MAPPINGS = {
     "Bjornulf_TextToStringAndSeed": TextToStringAndSeed,
     "Bjornulf_GreenScreenToTransparency": GreenScreenToTransparency,
     "Bjornulf_RandomLineFromInput": RandomLineFromInput,
-    # "Bjornulf_CheckBlackImage": CheckBlackImage,
-    # "Bjornulf_ClearVRAM": ClearVRAM,
     "Bjornulf_SaveBjornulfLobeChat": SaveBjornulfLobeChat,
     "Bjornulf_WriteTextAdvanced": WriteTextAdvanced,
     "Bjornulf_RemoveTransparency": RemoveTransparency,
     "Bjornulf_GrayscaleTransform": GrayscaleTransform,
     "Bjornulf_CombineBackgroundOverlay": CombineBackgroundOverlay,
-    # "Bjornulf_WriteImageEnvironment": WriteImageEnvironment,
-    # "Bjornulf_WriteImageCharacters": WriteImageCharacters,
-    # "Bjornulf_WriteImageCharacter": WriteImageCharacter,
-    # "Bjornulf_WriteImageAllInOne": WriteImageAllInOne,
     "Bjornulf_ShowText": ShowText,
-    # "Bjornulf_ShowInt": ShowInt,
-    # "Bjornulf_ShowFloat": ShowFloat,
     "Bjornulf_SaveText": SaveText,
     "Bjornulf_ResizeImage": ResizeImage,
     "Bjornulf_SaveImageToFolder": SaveImageToFolder,
     "Bjornulf_SaveTmpImage": SaveTmpImage,
     "Bjornulf_SaveImagePath": SaveImagePath,
-    # "Bjornulf_SaveApiImage": SaveApiImage,
     "Bjornulf_CombineTexts": CombineTexts,
     "Bjornulf_LoopTexts": LoopTexts,
     "Bjornulf_RandomTexts": RandomTexts,
@@ -143,14 +125,9 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     # "Bjornulf_PassPreviewImage": "🖼⮕ Pass Preview Image",
     "Bjornulf_CharacterDescriptionGenerator": "🧑📝 Character Description Generator",
     "Bjornulf_GreenScreenToTransparency": "🟩➜▢ Green Screen to Transparency",
-    # "Bjornulf_CheckBlackImage": "🔲 Check Black Image (Empty mask)",
     "Bjornulf_SaveBjornulfLobeChat": "🖼💬 Save image for Bjornulf LobeChat",
     "Bjornulf_TextToStringAndSeed": "🔢 Text with random Seed",
-    # "Bjornulf_ClearVRAM": "🧹 Clear VRAM",
-    # "Bjornulf_ShowWhatever": "👁 Show Anything",
     "Bjornulf_ShowText": "👁 Show (Text, Int, Float)",
-    # "Bjornulf_ShowInt": "👁 Show (Int)",
-    # "Bjornulf_ShowFloat": "👁 Show (Float)",
     "Bjornulf_ImageMaskCutter": "🖼✂ Cut Image with Mask",
     "Bjornulf_LoadImageWithTransparency": "📥🖼 Load Image with Transparency ▢",
     "Bjornulf_CombineBackgroundOverlay": "🖼+🖼 Stack two images (Background+Overlay alpha)",

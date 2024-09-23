@@ -11,7 +11,7 @@
 
 ## ✒ Text ✒
 `2.` [✒ Write Text](#2----write-text)  
-`3.` [✒🗔 Advanced Write Text (random selection and variables)](#3----advanced-write-text-random-selection-and-variables)  
+`3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text-random-selection-and-variables)  
 `4.` [🔗 Combine Texts](#4----combine-texts)  
 `15.` [💾 Save Text](#15----save-text)  
 `26.` [🎲 Random line from input](#26----random-line-from-input)  
@@ -33,6 +33,7 @@
 `42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)
 
 ## 🎲 Randomization 🎲
+`3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text-random-selection-and-variables)  
 `5.` [🎲 Random (Texts)](#5----random-texts)  
 `26.` [🎲 Random line from input](#26----random-line-from-input)  
 `37.` [🎲🖼 Random Image](#37----random-image)  
@@ -228,7 +229,7 @@ The show node will only display text, or a list of several texts. (read only nod
 **Description:**  
 Simple node to write text.  
 
-## 3 - ✒🗔 Advanced Write Text (random selection and variables)
+## 3 - ✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)
 
 ![write Text Advanced](screenshots/write_advanced.png)
 
