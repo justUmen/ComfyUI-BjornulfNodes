@@ -171,7 +171,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_PickInput": "⏸️ Paused. Select input, Pick 👇",
     "Bjornulf_PauseResume": "⏸️ Paused. Resume or Stop, Pick 👇",
     "Bjornulf_LoadImagesFromSelectedFolder": "📂🖼 Load Images from output folder",
-    "Bjornulf_SelectImageFromList": "🖼🔍 Select an Image, Pick",
+    "Bjornulf_SelectImageFromList": "🖼👈 Select an Image, Pick",
     "Bjornulf_IfElse": "🔀 If-Else (input / compare_with)",
     "Bjornulf_ImageDetails": "🖼🔍 Image Details",
     "Bjornulf_CombineImages": "🖼🔗 Combine Images",

@@ -56,8 +56,8 @@
 37. [🎲🖼 Random Image](#37----random-image)
 38. [♻🖼 Loop (Images)](#38----loop-images)
 43. [📂🖼 Load Images from output folder](#43----load-images-from-output-folder)
-44. [🖼🔍 Select an Image, Pick](#44----select-an-image-pick)
-46. [📏 Image Details](#46----image-details)
+44. [🖼👈 Select an Image, Pick](#44----select-an-image-pick)
+46. [🖼🔍 Image Details](#46----image-details)
 47. [🖼 Combine Images](#47----combine-images)
 
 ## 📹 Video 📹
@@ -644,7 +644,7 @@ Here is another example of the same thing but excluding the save folder node :
 
 ⚠️ If you really want to regroup all the images in one flow, you can use my node 47 `Combine images` to put them all together.  
 
-### 44 - 🖼🔍 Select an Image, Pick
+### 44 - 🖼👈 Select an Image, Pick
 
 ![pick input](screenshots/select_image.png)
 
