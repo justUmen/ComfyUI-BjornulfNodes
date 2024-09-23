@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.41 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.42 🔗
 
 # Coffee : ☕☕☕☕☕ 5/5
 
@@ -209,6 +209,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.39**: Add variables management to Advanced Write Text node.
 - **v0.40**: Add variables management to Loop Advanced Write Text node. Add menu for all nodes to the README.
 - **v0.41**: Two new nodes : image details and combine images. Also ❗ Big changes to the If-Else node. (+many minor changes)
+- **v0.42**: Better README with category nodes, changes some node titles
 
 # 📝 Nodes descriptions
 
