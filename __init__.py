@@ -50,9 +50,11 @@ from .if_else import IfElse
 from .image_details import ImageDetails
 from .combine_images import CombineImages
 # from .pass_preview_image import PassPreviewImage
+from .text_scramble_character import ScramblerCharacter
 
 NODE_CLASS_MAPPINGS = {
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_ScramblerCharacter": ScramblerCharacter,
     "Bjornulf_CombineImages": CombineImages,
     "Bjornulf_ImageDetails": ImageDetails,
     "Bjornulf_IfElse": IfElse,
@@ -104,6 +106,7 @@ NODE_CLASS_MAPPINGS = {
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_WriteText": "✒ Write Text",
+    "Bjornulf_ScramblerCharacter": "🔀🎲 Text scrambler (🧑 Character)",
     "Bjornulf_WriteTextAdvanced": "✒🗔 Advanced Write Text",
     "Bjornulf_LoopWriteText": "♻ Loop (✒🗔 Advanced Write Text)",
     "Bjornulf_LoopModelClipVae": "♻ Loop (Model+Clip+Vae)",

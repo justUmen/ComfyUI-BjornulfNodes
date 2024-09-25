@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.44 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.45 🔗
 
 # Coffee : ☕☕☕☕☕ 5/5
 
@@ -17,6 +17,7 @@
 `26.` [🎲 Random line from input](#26----random-line-from-input)  
 `28.` [🔢 Text with random Seed](#28----text-with-random-seed)  
 `32.` [🧑📝 Character Description Generator](#32----character-description-generator)  
+`48.` [🔀🎲 Text scrambler (🧑 Character)](#48)  
 
 ## ♻ Loop ♻
 `6.` [♻ Loop](#6----loop)  
@@ -39,6 +40,7 @@
 `37.` [🎲🖼 Random Image](#37----random-image)  
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
 `41.` [🎲 Random Load checkpoint (Model Selector)](#41----random-load-checkpoint-model-selector)  
+`48.` [🔀🎲 Text scrambler (🧑 Character)](#48)  
 
 ## 🖼💾 Image Save 💾🖼
 `16.` [💾🖼💬 Save image for Bjornulf LobeChat](#16----save-image-for-bjornulf-lobechat-for-my-custom-lobe-chat)  
@@ -214,6 +216,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.42**: Better README with category nodes, changes some node titles
 - **v0.43**: Add control_after_generate to Ollama and allow to keep in VRAM for 1 minute if needed. (For chaining quick generations.) Add fallback to 0.0.0.0
 - **v0.44**: Allow ollama to have a cusom url in the file `ollama_ip.txt` in the comfyui custom nodes folder. Minor changes, add details/updates to README.
+- **v0.45**: Add a new node : Text scrambler (Character), change text randomly using the file `scrambler/scrambler_character.json` in the comfyui custom nodes folder.
 
 # 📝 Nodes descriptions
 
@@ -746,3 +749,10 @@ Here is an example with `Load images from folder` node, `Image details` node and
 Here another simple example taking a few selected images from a folder and combining them (For later processing for example) :  
 
 ![combine images](screenshots/combine_images_4.png)
+
+### 48 - 🔀🎲 Text scrambler (🧑 Character)
+
+![scrambler character](screenshots/scrambler_character.png)
+
+**Description:**  
+Take text as input and scramble (randomize) the text by using the file `scrambler/character_scrambler.json` in the comfyui custom nodes folder.  
