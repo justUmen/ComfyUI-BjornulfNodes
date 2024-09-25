@@ -17,7 +17,7 @@
 `26.` [🎲 Random line from input](#26----random-line-from-input)  
 `28.` [🔢 Text with random Seed](#28----text-with-random-seed)  
 `32.` [🧑📝 Character Description Generator](#32----character-description-generator)  
-`48.` [🔀🎲 Text scrambler (🧑 Character)](#48)  
+`48.` [🔀🎲 Text scrambler (🧑 Character)](#48----text-scrambler--character)  
 
 ## ♻ Loop ♻
 `6.` [♻ Loop](#6----loop)  
@@ -40,7 +40,7 @@
 `37.` [🎲🖼 Random Image](#37----random-image)  
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
 `41.` [🎲 Random Load checkpoint (Model Selector)](#41----random-load-checkpoint-model-selector)  
-`48.` [🔀🎲 Text scrambler (🧑 Character)](#48)  
+`48.` [🔀🎲 Text scrambler (🧑 Character)](#48----text-scrambler--character)  
 
 ## 🖼💾 Image Save 💾🖼
 `16.` [💾🖼💬 Save image for Bjornulf LobeChat](#16----save-image-for-bjornulf-lobechat-for-my-custom-lobe-chat)  
