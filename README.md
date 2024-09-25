@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.43 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.44 🔗
 
 # Coffee : ☕☕☕☕☕ 5/5
 
@@ -29,7 +29,7 @@
 `27.` [♻ Loop (All Lines from input)](#27----loop-all-lines-from-input)  
 `33.` [♻ Loop (All Lines from input 🔗 combine by lines)](#33----loop-all-lines-from-input--combine-by-lines)  
 `38.` [♻🖼 Loop (Images)](#38----loop-images)  
-`39.` [♻ Loop (✒🗔 Advanced Write Text)](#39----loop--advanced-write-text)  
+`39.` [♻ Loop (✒🗔 Advanced Write Text + 🅰️ variables)](#39----loop--advanced-write-text)  
 `42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
 
 ## 🎲 Randomization 🎲
@@ -213,6 +213,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.41**: Two new nodes : image details and combine images. Also ❗ Big changes to the If-Else node. (+many minor changes)
 - **v0.42**: Better README with category nodes, changes some node titles
 - **v0.43**: Add control_after_generate to Ollama and allow to keep in VRAM for 1 minute if needed. (For chaining quick generations.) Add fallback to 0.0.0.0
+- **v0.44**: Allow ollama to have a cusom url in the file `ollama_ip.txt` in the comfyui custom nodes folder. Minor changes, add details/updates to README.
 
 # 📝 Nodes descriptions
 
@@ -383,6 +384,8 @@ Each run will be significantly faster, but not free your VRAM for something else
 ![Ollama](screenshots/ollama_2.png) 
 
 ⚠️ Warning : Using `keep_1min_in_vram` might be a bit heavy on your VRAM. Think about if you really need it or not. Most of the time, when using `keep_1min_in_vram`, you don't want to have also a generation of image or anything else in the same time.  
+
+⚠️ You can create a file called `ollama_ip.txt` in my comfyui custom node folder if you have a special IP for your ollama server, mine is : `http://192.168.1.37:11434`  
 
 ## 20 - 📹 Video Ping Pong
 ![Video Ping Pong](screenshots/video_pingpong.png)
@@ -733,9 +736,13 @@ But for example, if you want to use my node `select an image, pick`, you need to
 
 ![combine images](screenshots/combine_images_2.png)
 
-You can notice that there is no visible difference when you use `all_in_one` with `preview image` node. (this is why I added the `show text` node, not that show text will make it blue, because it's an image/tensor.)  
+You can notice that there is no visible difference when you use `all_in_one` with `preview image` node. (this is why I added the `show text` node, note that show text will make it blue, because it's an image/tensor.)  
 
 When you use `combine image` node, you can actually also send many images at once, it will combine them all.  
 Here is an example with `Load images from folder` node, `Image details` node and `Combine images` node. (Of course it can't have `all_in_one` set to True in this situation because the images have different resolutions) :  
 
 ![combine images](screenshots/combine_images_3.png)
+
+Here another simple example taking a few selected images from a folder and combining them (For later processing for example) :  
+
+![combine images](screenshots/combine_images_4.png)
