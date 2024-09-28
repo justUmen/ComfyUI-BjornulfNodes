@@ -8,7 +8,7 @@
 
 ## 👁 Display and Show 👁
 `1.` [👁 Show (Text, Int, Float)](#1----show-text-int-float)  
-`49.` [📹👁 Video Preview](#49)  
+`49.` [📹👁 Video Preview](#49----video-preview)  
 
 ## ✒ Text ✒
 `2.` [✒ Write Text](#2----write-text)  
@@ -72,10 +72,10 @@
 ## 📹 Video 📹
 `20.` [📹 Video Ping Pong](#20----video-ping-pong)  
 `21.` [📹 Images to Video (FFmpeg)](#21----images-to-video)  
-`49.` [📹👁 Video Preview](#49)  
-`50.` [🖼➜📹 Images to Video path (tmp video)](#50)  
-`51.` [📹➜🖼 Video Path to Images](#51)  
-`52.` [🔊📹 Audio Video Sync](#52)  
+`49.` [📹👁 Video Preview](#49----video-preview)  
+`50.` [🖼➜📹 Images to Video path (tmp video)](#50----images-to-video-path-tmp-video)  
+`51.` [📹➜🖼 Video Path to Images](#51----video-path-to-images)  
+`52.` [🔊📹 Audio Video Sync](#52----audio-video-sync)  
 
 ## 🦙 AI 🦙
 `19.` [🦙 Ollama](#19----ollama)  
@@ -83,7 +83,7 @@
 
 ## 🔊 Audio 🔊
 `31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
-`52.` [🔊📹 Audio Video Sync](#52)  
+`52.` [🔊📹 Audio Video Sync](#52----audio-video-sync)  
 
 ## 💻 System 💻
 `34.` [🧹 Free VRAM hack](#34----free-vram-hack)  
@@ -777,18 +777,23 @@ Take text as input and scramble (randomize) the text by using the file `scramble
 ![video preview](screenshots/video_preview.png)
 
 **Description:**  
+This node takes a video path as input and displays the video.  
 
 ### 50 - 🖼➜📹 Images to Video path (tmp video)
 
 ![image to video path](screenshots/image_to_video_path.png)
 
 **Description:**  
+This node will take a list of images and convert them to a temporary video file.  
 
 ### 51 - 📹➜🖼 Video Path to Images
 
 ![video path to image](screenshots/video_path_to_image.png)
 
 **Description:**  
+This node will take a video path as input and convert it to a list of images.  
+In the above example, I also take half of the frames by setting `frame_interval` to 2.  
+Note that i had 16 frames, on the top right preview you can see 8 images.  
 
 ### 52 - 🔊📹 Audio Video Sync
 
