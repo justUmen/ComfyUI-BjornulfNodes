@@ -12,7 +12,7 @@ class imagesToVideo:
         return {
             "required": {
                 "images": ("IMAGE",),
-                "fps": ("INT", {"default": 24, "min": 1, "max": 60}),
+                "fps": ("FLOAT", {"default": 24, "min": 1, "max": 120}),
                 "name_prefix": ("STRING", {"default": "output/imgs2video/me"}),
                 "format": (["mp4", "webm"], {"default": "mp4"}),
                 "mp4_encoder": (["libx264 (H.264)", "h264_nvenc (H.264 / NVIDIA GPU)", "libx265 (H.265)", "hevc_nvenc (H.265 / NVIDIA GPU)"], {"default": "h264_nvenc (H.264 / NVIDIA GPU)"}),
@@ -47,7 +47,7 @@ class imagesToVideo:
         # Create the new filename with the incremented number
         output_file = f"{name_prefix}_{next_num:04d}.{format}"
         
-        temp_dir = "temp_images_imgs2video"
+        temp_dir = "Bjornulf/temp_images_imgs2video"
         # Clean up temp dir
         if os.path.exists(temp_dir) and os.path.isdir(temp_dir):
             for file in os.listdir(temp_dir):

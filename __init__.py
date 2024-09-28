@@ -1,9 +1,9 @@
 from .images_to_video import imagesToVideo
 from .write_text import WriteText
-from .write_image_environment import WriteImageEnvironment
-from .write_image_characters import WriteImageCharacters
-from .write_image_character import WriteImageCharacter
-from .write_image_allinone import WriteImageAllInOne
+# from .write_image_environment import WriteImageEnvironment
+# from .write_image_characters import WriteImageCharacters
+# from .write_image_character import WriteImageCharacter
+# from .write_image_allinone import WriteImageAllInOne
 from .combine_texts import CombineTexts
 from .loop_texts import LoopTexts
 from .random_texts import RandomTexts
@@ -51,9 +51,17 @@ from .image_details import ImageDetails
 from .combine_images import CombineImages
 # from .pass_preview_image import PassPreviewImage
 from .text_scramble_character import ScramblerCharacter
+from .audio_video_sync import AudioVideoSync
+from .video_path_to_images import VideoToImagesList
+from .images_to_video_path import ImagesListToVideo
+from .video_preview import VideoPreview
 
 NODE_CLASS_MAPPINGS = {
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_VideoPreview": VideoPreview,
+    "Bjornulf_ImagesListToVideo": ImagesListToVideo,
+    "Bjornulf_VideoToImagesList": VideoToImagesList,
+    "Bjornulf_AudioVideoSync": AudioVideoSync,
     "Bjornulf_ScramblerCharacter": ScramblerCharacter,
     "Bjornulf_CombineImages": CombineImages,
     "Bjornulf_ImageDetails": ImageDetails,
@@ -106,6 +114,10 @@ NODE_CLASS_MAPPINGS = {
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_WriteText": "✒ Write Text",
+    "Bjornulf_VideoPreview": "📹👁 Video Preview",
+    "Bjornulf_ImagesListToVideo": "🖼➜📹 Images to Video path (tmp video)",
+    "Bjornulf_VideoToImagesList": "📹➜🖼 Video Path to Images",
+    "Bjornulf_AudioVideoSync": "🔊📹 Audio Video Sync",
     "Bjornulf_ScramblerCharacter": "🔀🎲 Text scrambler (🧑 Character)",
     "Bjornulf_WriteTextAdvanced": "✒🗔 Advanced Write Text",
     "Bjornulf_LoopWriteText": "♻ Loop (✒🗔 Advanced Write Text)",
@@ -129,7 +141,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_CharacterDescriptionGenerator": "🧑📝 Character Description Generator",
     "Bjornulf_GreenScreenToTransparency": "🟩➜▢ Green Screen to Transparency",
     "Bjornulf_SaveBjornulfLobeChat": "🖼💬 Save image for Bjornulf LobeChat",
-    "Bjornulf_TextToStringAndSeed": "🔢 Text with random Seed",
+    "Bjornulf_TextToStringAndSeed": "🔢🎲 Text with random Seed",
     "Bjornulf_ShowText": "👁 Show (Text, Int, Float)",
     "Bjornulf_ImageMaskCutter": "🖼✂ Cut Image with Mask",
     "Bjornulf_LoadImageWithTransparency": "📥🖼 Load Image with Transparency ▢",

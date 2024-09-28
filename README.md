@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.45 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.46 🔗
 
 # Coffee : ☕☕☕☕☕ 5/5
 
@@ -8,6 +8,7 @@
 
 ## 👁 Display and Show 👁
 `1.` [👁 Show (Text, Int, Float)](#1----show-text-int-float)  
+`49.` [📹👁 Video Preview](#49)  
 
 ## ✒ Text ✒
 `2.` [✒ Write Text](#2----write-text)  
@@ -15,7 +16,7 @@
 `4.` [🔗 Combine Texts](#4----combine-texts)  
 `15.` [💾 Save Text](#15----save-text)  
 `26.` [🎲 Random line from input](#26----random-line-from-input)  
-`28.` [🔢 Text with random Seed](#28----text-with-random-seed)  
+`28.` [🔢🎲 Text with random Seed](#28----text-with-random-seed)  
 `32.` [🧑📝 Character Description Generator](#32----character-description-generator)  
 `48.` [🔀🎲 Text scrambler (🧑 Character)](#48----text-scrambler--character)  
 
@@ -37,6 +38,7 @@
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
 `5.` [🎲 Random (Texts)](#5----random-texts)  
 `26.` [🎲 Random line from input](#26----random-line-from-input)  
+`28.` [🔢🎲 Text with random Seed](#28----text-with-random-seed)  
 `37.` [🎲🖼 Random Image](#37----random-image)  
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
 `41.` [🎲 Random Load checkpoint (Model Selector)](#41----random-load-checkpoint-model-selector)  
@@ -69,7 +71,11 @@
 
 ## 📹 Video 📹
 `20.` [📹 Video Ping Pong](#20----video-ping-pong)  
-`21.` [📹 Images to Video](#21----images-to-video)  
+`21.` [📹 Images to Video (FFmpeg)](#21----images-to-video)  
+`49.` [📹👁 Video Preview](#49)  
+`50.` [🖼➜📹 Images to Video path (tmp video)](#50)  
+`51.` [📹➜🖼 Video Path to Images](#51)  
+`52.` [🔊📹 Audio Video Sync](#52)  
 
 ## 🦙 AI 🦙
 `19.` [🦙 Ollama](#19----ollama)  
@@ -77,13 +83,14 @@
 
 ## 🔊 Audio 🔊
 `31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
+`52.` [🔊📹 Audio Video Sync](#52)  
 
 ## 💻 System 💻
 `34.` [🧹 Free VRAM hack](#34----free-vram-hack)  
 
 ## 🧍 Manual user Control 🧍
-`35.` [⏸️ Paused. Resume or Stop ?](#35---%EF%B8%8F-paused-resume-or-stop-)  
-`36.` [⏸️🔍 Paused. Select input, Pick one](#36---%EF%B8%8F-paused-select-input-pick-one)  
+`35.` [⏸️ Paused. Resume or Stop, Pick 👇](#35---%EF%B8%8F-paused-resume-or-stop-)  
+`36.` [⏸️ Paused. Select input, Pick 👇](#36---%EF%B8%8F-paused-select-input-pick-one)  
 
 ## 🧠 Logic / Conditional Operations 🧠
 `45.` [🔀 If-Else (input / compare_with)](#45----if-else-input--compare_with)  
@@ -217,6 +224,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.43**: Add control_after_generate to Ollama and allow to keep in VRAM for 1 minute if needed. (For chaining quick generations.) Add fallback to 0.0.0.0
 - **v0.44**: Allow ollama to have a cusom url in the file `ollama_ip.txt` in the comfyui custom nodes folder. Minor changes, add details/updates to README.
 - **v0.45**: Add a new node : Text scrambler (Character), change text randomly using the file `scrambler/scrambler_character.json` in the comfyui custom nodes folder.
+- **v0.46**: ❗ A lot of changes to Video nodes. Save to video is now using FLOAT for fps, not INT. (A lot of other custom nodes do that as well...) Add node to preview video, add node to convert a video path to a list of images. add node to convert a list of images to a temporary video + video_path. add node to synchronize duration of audio with video. (useful for MuseTalk) change TTS node with many new outputs ("audio_path", "full_path", "duration") to reuse with other nodes like MuseTalk, also TTS rename input to "connect_to_workflow", to avoid mistakes sending text to it.
 
 # 📝 Nodes descriptions
 
@@ -521,13 +529,20 @@ Also, when you select a voice with this format `fr/fake_Bjornulf.wav`, it will c
 
 So... note that if you know you have an audio file ready to play, you can still use my node but you do NOT need my TTS server to be running.
 My node will just play the audio file if it can find it, won't try to connect th backend TTS server.  
-Let's say you already use this node to create an audio file saying `workflow is done` with the Attenborough voice  :
+Let's say you already use this node to create an audio file saying `workflow is done` with the Attenborough voice  :  
+
 ![TTS](screenshots/tts_end.png)  
 
-As long as you keep exactly the same settings, it will not use my server to play the audio file! You can safely turn in off, so it won't use your precious VRAM Duh. (TTS server should be using ~3GB of VRAM.)  
+As long as you keep exactly the same settings, it will not use my server to play the audio file! You can safely turn the TTS server off, so it won't use your precious VRAM Duh. (TTS server should be using ~3GB of VRAM.)  
 
-Also input is optional, it means that you can make a workflow with ONLY my TTS node to pre-generate the audio files with the sentences you want to maybe use later, example :  
-![TTS](screenshots/tts_generate.png)  
+Also `connect_to_workflow` is optional, it means that you can make a workflow with ONLY my TTS node to pre-generate the audio files with the sentences you want to use later, example :  
+![TTS](screenshots/tts_preload.png)  
+
+If you want to run my TTS nodes along side image generation, i recommend you to use my PAUSE node so you can manually stop the TTS server after my TTS node. When the VRAM is freed, you can the click on the RESUME button to continue the workflow.  
+If you can afford to run both at the same time, good for you, but Locally I can't run my TTS server and FLUX at the same time, so I use this trick. :  
+
+![TTS](screenshots/tts_preload_2.png)  
+
 
 ### 32 - 🧑📝 Character Description Generator
 ![characters](screenshots/characters.png)
@@ -756,3 +771,36 @@ Here another simple example taking a few selected images from a folder and combi
 
 **Description:**  
 Take text as input and scramble (randomize) the text by using the file `scrambler/character_scrambler.json` in the comfyui custom nodes folder.  
+
+### 49 - 📹👁 Video Preview
+
+![video preview](screenshots/video_preview.png)
+
+**Description:**  
+
+### 50 - 🖼➜📹 Images to Video path (tmp video)
+
+![image to video path](screenshots/image_to_video_path.png)
+
+**Description:**  
+
+### 51 - 📹➜🖼 Video Path to Images
+
+![video path to image](screenshots/video_path_to_image.png)
+
+**Description:**  
+
+### 52 - 🔊📹 Audio Video Sync
+
+**Description:**  
+
+This node will basically synchronize the duration of an audio file with a video file by adding silence to the audio file if it's too short, or demultiply the video file if too long. (Video ideally need to be a loop, check my ping pong video node.)  
+It is good like for example with MuseTalk <https://github.com/chaojie/ComfyUI-MuseTalk>, If you want to chain up videos (Let's say sentence by sentence) it will always go back to the last frame. (Making the video transition smoother.)  
+
+Here is an example without `Audio Video Sync` node (The duration of the video is shorter than the audio, so after playing it will not go back to the last frame, ideally i want to have a loop where the first frame is the same as the last frame. -See my node loop video ping pong if needed-) :
+
+![audio sync video](screenshots/audio_sync_video_without.png)
+
+Here is an example with `Audio Video Sync` node, notice that it is also convenient to recover the frames per second of the video, and send that to other nodes. :
+
+![audio sync video](screenshots/audio_sync_video_with.png)
