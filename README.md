@@ -1,8 +1,17 @@
 # 🔗 Comfyui : Bjornulf_custom_nodes v0.46 🔗
 
+A list of 52 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, and more.  
+You can manage looping operations, generate randomized content, control your workflows an even work with external AI tools, like Ollama or Text To Speech.  
+
 # Coffee : ☕☕☕☕☕ 5/5
 
-❤️ <https://ko-fi.com/bjornulf> ❤️
+❤️❤️❤️ <https://ko-fi.com/bjornulf> ❤️❤️❤️
+
+# ☘ This project is a component of my integrated AI trio. ☘
+
+1 - 📝 Text/Chat AI generation : [Bjornulf Lobe Chat Fork](https://github.com/justUmen/Bjornulf_lobe-chat)  
+2 - 🔊 Speech AI generation : [Bjornulf Text To Speech](https://github.com/justUmen/Bjornulf_XTTS)  
+<u>**3 - 🎨 Image AI generation :** [Bjornulf Comfyui custom nodes](https://github.com/justUmen/ComfyUI-BjornulfNodes) (you are here)</u>  
 
 # 📋 Nodes menu by category
 
