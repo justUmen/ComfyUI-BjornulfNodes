@@ -43,7 +43,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `39.` [♻ Loop (✒🗔 Advanced Write Text + 🅰️ variables)](#39----loop--advanced-write-text)  
 `42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
 `53.` [♻ Loop Load checkpoint (Model Selector)](#53----loop-load-checkpoint-model-selector)  
-`54.` [♻ Loop Lora Selector](#54)  
+`54.` [♻ Loop Lora Selector](#54----loop-lora-selector)  
 
 ## 🎲 Randomization 🎲
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
@@ -54,7 +54,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
 `41.` [🎲 Random Load checkpoint (Model Selector)](#41----random-load-checkpoint-model-selector)  
 `48.` [🔀🎲 Text scrambler (🧑 Character)](#48----text-scrambler--character)  
-`55.` [🎲 Random Lora Selector](#55)  
+`55.` [🎲 Random Lora Selector](#55----random-lora-selector)  
 
 ## 🖼💾 Image Save 💾🖼
 `16.` [💾🖼💬 Save image for Bjornulf LobeChat](#16----save-image-for-bjornulf-lobechat-for-my-custom-lobe-chat)  
@@ -88,6 +88,8 @@ You can manage looping operations, generate randomized content, trigger logical 
 `53.` [♻ Loop Load checkpoint (Model Selector)](#53----loop-load-checkpoint-model-selector)
 
 ## 🚀 Load loras 🚀
+`54.` [♻ Loop Lora Selector](#54----loop-lora-selector)  
+`55.` [🎲 Random Lora Selector](#55----random-lora-selector)  
 
 ## 📹 Video 📹
 `20.` [📹 Video Ping Pong](#20----video-ping-pong)  
