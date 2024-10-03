@@ -55,9 +55,11 @@ from .audio_video_sync import AudioVideoSync
 from .video_path_to_images import VideoToImagesList
 from .images_to_video_path import ImagesListToVideo
 from .video_preview import VideoPreview
+from .loop_model_selector import LoopModelSelector
 
 NODE_CLASS_MAPPINGS = {
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_LoopModelSelector": LoopModelSelector,
     "Bjornulf_VideoPreview": VideoPreview,
     "Bjornulf_ImagesListToVideo": ImagesListToVideo,
     "Bjornulf_VideoToImagesList": VideoToImagesList,
@@ -114,6 +116,7 @@ NODE_CLASS_MAPPINGS = {
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_WriteText": "✒ Write Text",
+    "Bjornulf_LoopModelSelector": "♻ Loop Load checkpoint (Model Selector)",
     "Bjornulf_VideoPreview": "📹👁 Video Preview",
     "Bjornulf_ImagesListToVideo": "🖼➜📹 Images to Video path (tmp video)",
     "Bjornulf_VideoToImagesList": "📹➜🖼 Video Path to Images",

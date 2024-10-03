@@ -1,6 +1,6 @@
 # 🔗 Comfyui : Bjornulf_custom_nodes v0.46 🔗
 
-A list of 52 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, and more.  
+A list of 53 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
 
 # Coffee : ☕☕☕☕☕ 5/5
@@ -42,6 +42,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `38.` [♻🖼 Loop (Images)](#38----loop-images)  
 `39.` [♻ Loop (✒🗔 Advanced Write Text + 🅰️ variables)](#39----loop--advanced-write-text)  
 `42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
+`53.` [♻ Loop Load checkpoint (Model Selector)](#53)  
 
 ## 🎲 Randomization 🎲
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
@@ -234,6 +235,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.44**: Allow ollama to have a cusom url in the file `ollama_ip.txt` in the comfyui custom nodes folder. Minor changes, add details/updates to README.
 - **v0.45**: Add a new node : Text scrambler (Character), change text randomly using the file `scrambler/scrambler_character.json` in the comfyui custom nodes folder.
 - **v0.46**: ❗ A lot of changes to Video nodes. Save to video is now using FLOAT for fps, not INT. (A lot of other custom nodes do that as well...) Add node to preview video, add node to convert a video path to a list of images. add node to convert a list of images to a temporary video + video_path. add node to synchronize duration of audio with video. (useful for MuseTalk) change TTS node with many new outputs ("audio_path", "full_path", "duration") to reuse with other nodes like MuseTalk, also TTS rename input to "connect_to_workflow", to avoid mistakes sending text to it.
+- **v0.47**: New node : Loop Load checkpoint (Model Selector).
 
 # 📝 Nodes descriptions
 
@@ -643,7 +645,7 @@ Details :
 - It will take more VRAM, but it will be faster to switch between checkpoints.  
 - It can't give you the currently loaded checkpoint name's.  
 
-Check node number 41 before deciding which one to use.
+Check node number 41 before deciding which one to use.  
 
 ### 41 - 🎲 Random Load checkpoint (Model Selector)
 
@@ -658,7 +660,8 @@ I always store my checkpoints in a folder with the type of the model like `SD1.5
 Details :  
 - Note that compared to node 40, you can't have separate configuration depending of the selected checkpoint. (For example `CLIP Set Last Layer` node set at -2 for a specific model, or a separate vae or clip.) Aka : All models are going to share the exact same workflow.  
 
-Check node number 40 before deciding which one to use.
+Check node number 40 before deciding which one to use.  
+Node 53 is the loop version of this node.  
 
 ### 42 - ♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model
 
@@ -818,3 +821,14 @@ Here is an example without `Audio Video Sync` node (The duration of the video is
 Here is an example with `Audio Video Sync` node, notice that it is also convenient to recover the frames per second of the video, and send that to other nodes. :
 
 ![audio sync video](screenshots/audio_sync_video_with.png)
+
+### 53 - ♻ Loop Load checkpoint (Model Selector)
+
+![loop model selector](screenshots/loop_model_selector.png)
+
+**Description:**  
+This is the loop version of node 41. (check there for similar details)  
+It will loop over all the selected checkpoints.  
+
+❗ The big difference with 41 is that checkpoints are preloaded in memory. You can run them all faster all at once.  
+It is a good way to test multiple checkpoints quickly.  
