@@ -42,7 +42,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `38.` [♻🖼 Loop (Images)](#38----loop-images)  
 `39.` [♻ Loop (✒🗔 Advanced Write Text + 🅰️ variables)](#39----loop--advanced-write-text)  
 `42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
-`53.` [♻ Loop Load checkpoint (Model Selector)](#53)  
+`53.` [♻ Loop Load checkpoint (Model Selector)](53----loop-load-checkpoint-model-selector)  
 
 ## 🎲 Randomization 🎲
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
@@ -78,6 +78,12 @@ You can manage looping operations, generate randomized content, trigger logical 
 `44.` [🖼👈 Select an Image, Pick](#44----select-an-image-pick)  
 `46.` [🖼🔍 Image Details](#46----image-details)  
 `47.` [🖼 Combine Images](#47----combine-images)  
+
+## 🚀 Checkpoints / Models 🚀
+`40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
+`41.` [🎲 Random Load checkpoint (Model Selector)](#41----random-load-checkpoint-model-selector)  
+`42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
+`53.` [♻ Loop Load checkpoint (Model Selector)](53----loop-load-checkpoint-model-selector)
 
 ## 📹 Video 📹
 `20.` [📹 Video Ping Pong](#20----video-ping-pong)  
