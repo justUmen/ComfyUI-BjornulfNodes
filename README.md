@@ -1,6 +1,6 @@
 # 🔗 Comfyui : Bjornulf_custom_nodes v0.48 🔗
 
-A list of 55 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, and more.  
+A list of 55 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
 
 # Coffee : ☕☕☕☕☕ 5/5
