@@ -1,6 +1,6 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.46 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.48 🔗
 
-A list of 53 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, and more.  
+A list of 55 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
 
 # Coffee : ☕☕☕☕☕ 5/5
@@ -43,6 +43,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `39.` [♻ Loop (✒🗔 Advanced Write Text + 🅰️ variables)](#39----loop--advanced-write-text)  
 `42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
 `53.` [♻ Loop Load checkpoint (Model Selector)](#53----loop-load-checkpoint-model-selector)  
+`54.` [♻ Loop Lora Selector](#54)  
 
 ## 🎲 Randomization 🎲
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
@@ -53,6 +54,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
 `41.` [🎲 Random Load checkpoint (Model Selector)](#41----random-load-checkpoint-model-selector)  
 `48.` [🔀🎲 Text scrambler (🧑 Character)](#48----text-scrambler--character)  
+`55.` [🎲 Random Lora Selector](#55)  
 
 ## 🖼💾 Image Save 💾🖼
 `16.` [💾🖼💬 Save image for Bjornulf LobeChat](#16----save-image-for-bjornulf-lobechat-for-my-custom-lobe-chat)  
@@ -79,11 +81,13 @@ You can manage looping operations, generate randomized content, trigger logical 
 `46.` [🖼🔍 Image Details](#46----image-details)  
 `47.` [🖼 Combine Images](#47----combine-images)  
 
-## 🚀 Checkpoints / Models 🚀
+## 🚀 Load checkpoints 🚀
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
 `41.` [🎲 Random Load checkpoint (Model Selector)](#41----random-load-checkpoint-model-selector)  
 `42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
 `53.` [♻ Loop Load checkpoint (Model Selector)](#53----loop-load-checkpoint-model-selector)
+
+## 🚀 Load loras 🚀
 
 ## 📹 Video 📹
 `20.` [📹 Video Ping Pong](#20----video-ping-pong)  
@@ -93,7 +97,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `51.` [📹➜🖼 Video Path to Images](#51----video-path-to-images)  
 `52.` [🔊📹 Audio Video Sync](#52----audio-video-sync)  
 
-## 🦙 AI 🦙
+## 🤖 AI 🤖
 `19.` [🦙 Ollama](#19----ollama)  
 `31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
 
@@ -113,8 +117,8 @@ You can manage looping operations, generate randomized content, trigger logical 
 
 # ☁ Usage in cloud : 
 
-Comfyui is great for local usage, but even me I sometimes need more power...  
-I have a computer with a 4070 super with 12GB and flux fp8 simple wokflow take about ~40 seconds. With a 4090 in the cloud I can run flux fp16 in ~12 seconds.  
+Comfyui is great for local usage, but I sometimes need more power than what I have...  
+I have a computer with a 4070 super with 12GB and flux fp8 simple wokflow take about ~40 seconds. With a 4090 in the cloud I can run flux fp16 in ~12 seconds. (There are of course also some workflow that I can't even run locally.)  
 
 My referal link for Runpod : <https://runpod.io?ref=tkowk7g5> (If you use that i will have a commission, at no extra cost for you.)  
 If you want to use my nodes and comfyui in the cloud (and can install more stuff), I'm managing an optimized ready-to-use template on runpod : <https://runpod.io/console/deploy?template=r32dtr35u1&ref=tkowk7g5>  
@@ -242,6 +246,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.45**: Add a new node : Text scrambler (Character), change text randomly using the file `scrambler/scrambler_character.json` in the comfyui custom nodes folder.
 - **v0.46**: ❗ A lot of changes to Video nodes. Save to video is now using FLOAT for fps, not INT. (A lot of other custom nodes do that as well...) Add node to preview video, add node to convert a video path to a list of images. add node to convert a list of images to a temporary video + video_path. add node to synchronize duration of audio with video. (useful for MuseTalk) change TTS node with many new outputs ("audio_path", "full_path", "duration") to reuse with other nodes like MuseTalk, also TTS rename input to "connect_to_workflow", to avoid mistakes sending text to it.
 - **v0.47**: New node : Loop Load checkpoint (Model Selector).
+- **v0.48**: Two new nodes for loras : Random Lora Selector and Loop Lora Selector.
 
 # 📝 Nodes descriptions
 
@@ -838,3 +843,22 @@ It will loop over all the selected checkpoints.
 
 ❗ The big difference with 41 is that checkpoints are preloaded in memory. You can run them all faster all at once.  
 It is a good way to test multiple checkpoints quickly.  
+
+### 54 - ♻ Loop Lora Selector
+
+![loop lora selector](screenshots/loop_lora_selector.png)
+
+**Description:**  
+Loop over all the selected Loras.  
+Above is an example with Pony and several styles of Lora.  
+
+Below is another example, here with flux, to test if your Lora training was undertrained, overtrained or just right :  
+
+![loop lora selector](screenshots/loop_lora_selector_flux.png)
+
+### 55 - 🎲 Random Lora Selector
+
+![random lora selector](screenshots/random_lora_selector.png)
+
+**Description:**  
+Just take a single Lora at random from a list of Loras.  

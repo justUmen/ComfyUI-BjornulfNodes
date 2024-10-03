@@ -56,9 +56,13 @@ from .video_path_to_images import VideoToImagesList
 from .images_to_video_path import ImagesListToVideo
 from .video_preview import VideoPreview
 from .loop_model_selector import LoopModelSelector
+from .random_lora_selector import RandomLoraSelector
+from .loop_lora_selector import LoopLoraSelector
 
 NODE_CLASS_MAPPINGS = {
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_LoopLoraSelector": LoopLoraSelector,
+    "Bjornulf_RandomLoraSelector": RandomLoraSelector,
     "Bjornulf_LoopModelSelector": LoopModelSelector,
     "Bjornulf_VideoPreview": VideoPreview,
     "Bjornulf_ImagesListToVideo": ImagesListToVideo,
@@ -116,6 +120,8 @@ NODE_CLASS_MAPPINGS = {
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_WriteText": "✒ Write Text",
+    "Bjornulf_LoopLoraSelector": "♻ Loop Lora Selector",
+    "Bjornulf_RandomLoraSelector": "🎲 Random Lora Selector",
     "Bjornulf_LoopModelSelector": "♻ Loop Load checkpoint (Model Selector)",
     "Bjornulf_VideoPreview": "📹👁 Video Preview",
     "Bjornulf_ImagesListToVideo": "🖼➜📹 Images to Video path (tmp video)",
