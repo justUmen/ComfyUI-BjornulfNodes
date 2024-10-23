@@ -58,9 +58,11 @@ from .video_preview import VideoPreview
 from .loop_model_selector import LoopModelSelector
 from .random_lora_selector import RandomLoraSelector
 from .loop_lora_selector import LoopLoraSelector
+from .loop_sequential_integer import LoopIntegerSequential
 
 NODE_CLASS_MAPPINGS = {
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_LoopIntegerSequential": LoopIntegerSequential,
     "Bjornulf_LoopLoraSelector": LoopLoraSelector,
     "Bjornulf_RandomLoraSelector": RandomLoraSelector,
     "Bjornulf_LoopModelSelector": LoopModelSelector,
@@ -120,6 +122,7 @@ NODE_CLASS_MAPPINGS = {
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_WriteText": "✒ Write Text",
+    "Bjornulf_LoopIntegerSequential": "♻📝 Loop Sequential (Integer)",
     "Bjornulf_LoopLoraSelector": "♻ Loop Lora Selector",
     "Bjornulf_RandomLoraSelector": "🎲 Random Lora Selector",
     "Bjornulf_LoopModelSelector": "♻ Loop Load checkpoint (Model Selector)",

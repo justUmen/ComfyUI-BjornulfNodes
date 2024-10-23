@@ -2,17 +2,20 @@ import torch
 import gc
 import requests
 import json
-
+class Everything(str):
+    def __ne__(self, __value: object) -> bool:
+        return False
 class FreeVRAM:
     @classmethod
     def INPUT_TYPES(s):
-        return {"required": {"image": ("IMAGE",)}}
+        return {"required": {"anything": (Everything("*"),)}}
     
-    RETURN_TYPES = ("IMAGE",)
+    RETURN_TYPES = (Everything("*"),)
+    RETURN_NAME = ("anything",)
     FUNCTION = "free_vram"
     CATEGORY = "Bjornulf"
 
-    def free_vram(self, image):
+    def free_vram(self, anything):
         print("Attempting to free VRAM...")
         
         # Clear CUDA cache
@@ -28,7 +31,7 @@ class FreeVRAM:
         self.trigger_http_request()
         
         # Return the input image unchanged
-        return (image,)
+        return (anything,)
     
     def trigger_http_request(self):
         url = "http://localhost:8188/prompt"

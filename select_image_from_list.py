@@ -10,7 +10,7 @@ class SelectImageFromList:
         return {
             "required": {
                 "all_images": ("IMAGE", {}),
-                "selection": ("INT", {"default": 1, "min": 1, "max": 999, "step": 1}),
+                "selection": ("INT", {"default": 1, "min": -999999, "max": 999999, "step": 1}),  # Updated to allow negative values
             }
         }
 
@@ -20,12 +20,21 @@ class SelectImageFromList:
     CATEGORY = "Bjornulf"
 
     def select_an_image(self, all_images, selection):
-        # Ensure the selection is within bounds
-        selection = max(1, min(selection, all_images.shape[0]))
+        num_images = all_images.shape[0]
         
-        # Adjust selection to 0-based index
-        index = selection - 1
+        # Convert selection to 0-based index
+        if selection > 0:
+            index = selection - 1
+        else:
+            # Handle negative indices directly
+            index = selection
         
+        # Ensure the index is within bounds
+        if index >= num_images:
+            index = num_images - 1
+        elif index < -num_images:
+            index = 0
+            
         # Select the image at the specified index
         selected_image = all_images[index].unsqueeze(0)
         

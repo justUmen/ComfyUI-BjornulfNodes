@@ -1,6 +1,6 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.48 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.49 🔗
 
-A list of 55 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
+A list of 56 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
 
 # Coffee : ☕☕☕☕☕ 5/5
@@ -44,6 +44,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
 `53.` [♻ Loop Load checkpoint (Model Selector)](#53----loop-load-checkpoint-model-selector)  
 `54.` [♻ Loop Lora Selector](#54----loop-lora-selector)  
+`56.` [♻📝 Loop Sequential (Integer)]()  
 
 ## 🎲 Randomization 🎲
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
@@ -249,27 +250,26 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.46**: ❗ A lot of changes to Video nodes. Save to video is now using FLOAT for fps, not INT. (A lot of other custom nodes do that as well...) Add node to preview video, add node to convert a video path to a list of images. add node to convert a list of images to a temporary video + video_path. add node to synchronize duration of audio with video. (useful for MuseTalk) change TTS node with many new outputs ("audio_path", "full_path", "duration") to reuse with other nodes like MuseTalk, also TTS rename input to "connect_to_workflow", to avoid mistakes sending text to it.
 - **v0.47**: New node : Loop Load checkpoint (Model Selector).
 - **v0.48**: Two new nodes for loras : Random Lora Selector and Loop Lora Selector.
+- **v0.49**: New node : Loop Sequential (Integer) - Loop through a range of integer values. (But once per workflow run), audio sync is smarter and adapt the video duration to the audio duration. add requirements.txt
 
 # 📝 Nodes descriptions
 
 ## 1 - 👁 Show (Text, Int, Float)
 
-![Show Text](screenshots/show.png)
-
 **Description:**  
 The show node will only display text, or a list of several texts. (read only node)  
 3 types are managed : Green is for STRING type, Orange is for FLOAT type and blue is for INT type. I put colors so I/you don't try to edit them. 🤣  
 
-## 2 - ✒ Write Text
+![Show Text](screenshots/show.png)
 
-![write Text](screenshots/write.png)
+## 2 - ✒ Write Text
 
 **Description:**  
 Simple node to write text.  
 
-## 3 - ✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)
+![write Text](screenshots/write.png)
 
-![write Text Advanced](screenshots/write_advanced.png)
+## 3 - ✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)
 
 **Description:**  
 Advanced Write Text node allows for special syntax to accept random variants, like `{hood|helmet}` will randomly choose between hood or helmet.  
@@ -281,29 +281,36 @@ Raw text: photo of a {green|blue|red|orange|yellow} {cat|rat|house}
 Picked text: photo of a green house
 ```
 
+![write Text Advanced](screenshots/write_advanced.png)
+
 You can also create and reuse variables with this syntax : `<name>`.
 Usage example : 
 
 ![variables](screenshots/variables.png)
 
 ## 4 - 🔗 Combine Texts
-![Combine Texts](screenshots/combine_texts.png)
 
 **Description:**  
 Combine multiple text inputs into a single output. (can have separation with : comma, space, new line or nothing.)
 
+![Combine Texts](screenshots/combine_texts.png)
+
 ## 5 - 🎲 Random (Texts)
-![Random Text](screenshots/random_text.png)
 
 **Description:**  
 Generate and display random text from a predefined list. Great for creating random prompts.  
 You also have `control_after_generate` to manage the randomness.  
 
+![Random Text](screenshots/random_text.png)
+
+
 ## 6 - ♻ Loop
-![Loop](screenshots/loop.png)
 
 **Description:**  
 General-purpose loop node, you can connect that in between anything.  
+
+![Loop](screenshots/loop.png)
+
 It has an optional input, if no input is given, it will loop over the value of the STRING "if_no_input" (take you can edit).  
 ❗ Careful this node accept everything as input and output, so you can use it with texts, integers, images, mask, segs etc... but be consistent with your inputs/outputs.  
 Do not use this Loop if you can do otherwise.  
@@ -312,20 +319,22 @@ This is an example together with my node 28, to force a different seed for each 
 ![Loop](screenshots/loop4.png)
 
 ## 7 - ♻ Loop Texts
-![Loop Texts](screenshots/loop_texts.png)
 
 **Description:**  
 Cycle through a list of text inputs.  
+
+![Loop Texts](screenshots/loop_texts.png)
 
 Here is an example of usage with combine texts and flux :  
 ![Loop Texts example](screenshots/loop_text_example.png)
 
 ## 8 - ♻ Loop Integer
-![Loop Integer](screenshots/loop_integer.png)
-![Loop Int + Show Text](screenshots/loop_int+show_text.png)
 
 **Description:**  
 Iterate through a range of integer values, good for `steps` in ksampler, etc...
+
+![Loop Integer](screenshots/loop_integer.png)
+![Loop Int + Show Text](screenshots/loop_int+show_text.png)
 
 ❗ Don't forget that you can convert ksampler widgets to input by right-clicking the ksampler node :  
 ![Widget to Input](screenshots/widget-to-input.png)
@@ -334,55 +343,60 @@ Here is an example of usage with ksampler (Notice that with "steps" this node is
 ![Widget to Input](screenshots/example_loop_integer.png)
 
 ## 9 - ♻ Loop Float
-![Loop Float + Show Text](screenshots/loop_float+show_text.png)
-![Loop Float](screenshots/loop_float.png)
 
 **Description:**  
 Loop through a range of floating-point numbers, good for `cfg`, `denoise`, etc...  
+
+![Loop Float + Show Text](screenshots/loop_float+show_text.png)
+![Loop Float](screenshots/loop_float.png)
 
 Here is an example with controlnet, trying to make a red cat based on a blue rabbit :  
 ![Loop All Samplers](screenshots/loop_float_example.png)
 
 ## 10 - ♻ Loop All Samplers
-![Loop All Samplers](screenshots/loop_all_samplers.png)
 
 **Description:**  
 Iterate over all available samplers to apply them sequentially. Ideal for testing.  
+
+![Loop All Samplers](screenshots/loop_all_samplers.png)
 
 Here is an example of looping over all the samplers with the normal scheduler :  
 ![Loop All Samplers](screenshots/example_loop_all_samplers.png)
 
 ## 11 - ♻ Loop All Schedulers
-![Loop All Schedulers](screenshots/loop_all_schedulers.png)
 
 **Description:**  
 Iterate over all available schedulers to apply them sequentially. Ideal for testing. (same idea as sampler above, but for schedulers)  
 
+![Loop All Schedulers](screenshots/loop_all_schedulers.png)
+
 ## 12 - ♻ Loop Combos
-![Loop Combos](screenshots/loop_combos.png)
 
 **Description:**  
 Generate a loop from a list of my own custom combinations (scheduler+sampler), or select one combo manually.  
 Good for testing.
 
+![Loop Combos](screenshots/loop_combos.png)
+
 Example of usage to see the differences between different combinations :    
 ![example combos](screenshots/example_combos.png)
 
 ## 13/14 - 📏 + 🖼 Resize and Save Exact name ⚠️💣
-![Resize and Save Exact](screenshots/resize_save_exact.png)
 
 **Description:**  
 Resize an image to exact dimensions. The other node will save the image to the exact path.  
 ⚠️💣 Warning : The image will be overwritten if it already exists.
 
+![Resize and Save Exact](screenshots/resize_save_exact.png)
+
 ## 15 - 💾 Save Text
-![Save Text](screenshots/save_text.png)
 
 **Description:**  
 Save the given text input to a file. Useful for logging and storing text data.
 
+![Save Text](screenshots/save_text.png)
+
 ## 16 - 💾🖼💬 Save image for Bjornulf LobeChat (❗For my custom [lobe-chat](https://github.com/justUmen/Bjornulf_lobe-chat)❗)
-![Save Bjornulf Lobechat](screenshots/save_bjornulf_lobechat.png)
 
 **Description:**  
 ❓ I made that node for my custom lobe-chat to send+receive images from Comfyui API : [lobe-chat](https://github.com/justUmen/Bjornulf_lobe-chat)  
@@ -391,24 +405,30 @@ The name will start at `api_00001.png`, then `api_00002.png`, etc...
 It will also create a link to the last generated image at the location `output/BJORNULF_API_LAST_IMAGE.png`.  
 This link will be used by my custom lobe-chat to copy the image inside the lobe-chat project.  
 
+![Save Bjornulf Lobechat](screenshots/save_bjornulf_lobechat.png)
+
 ## 17 - 💾🖼 Save image as `tmp_api.png` Temporary API ⚠️💣
-![Save Temporary API](screenshots/save_tmp_api.png)
 
 **Description:**  
 Save image for short-term use : ./output/tmp_api.png ⚠️💣  
 
+![Save Temporary API](screenshots/save_tmp_api.png)
+
 ## 18 - 💾🖼📁 Save image to a chosen folder name
-![Save Temporary API](screenshots/save_image_to_folder.png)
 
 **Description:**  
 Save image in a specific folder : `my_folder/00001.png`, `my_folder/00002.png`, etc...  
 Also allow multiple nested folders, like for example : `animal/dog/small`.
 
+![Save Temporary API](screenshots/save_image_to_folder.png)
+
 ## 19 - 🦙 Ollama
-![Ollama](screenshots/ollama_1.png)
 
 **Description:**  
 Will generate detailed text based of what you give it.  
+
+![Ollama](screenshots/ollama_1.png)
+
 I recommend using `mistral-nemo` if you can run it, but it's up to you. (Might have to tweak the system prompt a bit)  
 
 You also have `control_after_generate` to force the node to rerun for every workflow run. (Even if there is no modification of the node or its inputs.)  
@@ -423,68 +443,78 @@ Each run will be significantly faster, but not free your VRAM for something else
 ⚠️ You can create a file called `ollama_ip.txt` in my comfyui custom node folder if you have a special IP for your ollama server, mine is : `http://192.168.1.37:11434`  
 
 ## 20 - 📹 Video Ping Pong
-![Video Ping Pong](screenshots/video_pingpong.png)
 
 **Description:**  
 Create a ping-pong effect from a list of images (from a video) by reversing the playback direction when reaching the last frame. Good for an "infinity loop" effect.
 
+![Video Ping Pong](screenshots/video_pingpong.png)
+
 ## 21 - 📹 Images to Video
-![Images to Video](screenshots/imgs2video.png)
 
 **Description:**  
 Combine a sequence of images into a video file.  
+
+![Images to Video](screenshots/imgs2video.png)
+
 ❓ I made this node because it supports transparency with webm format. (Needed for rembg)  
 Temporary images are stored in the folder `ComfyUI/temp_images_imgs2video/` as well as the wav audio file.
 
 ## 22 - 🔲 Remove image Transparency (alpha)
-![Remove Alpha](screenshots/remove_alpha.png)
 
 **Description:**  
 Remove transparency from an image by filling the alpha channel with a solid color. (black, white or greenscreen)  
 Of course it takes in an image with transparency, like from rembg nodes.  
 Necessary for some nodes that don't support transparency.  
 
+![Remove Alpha](screenshots/remove_alpha.png)
+
 ## 23 - 🔲 Image to grayscale (black & white)
-![Image to Grayscale](screenshots/grayscale.png)
 
 **Description:**  
 Convert an image to grayscale (black & white)  
+
+![Image to Grayscale](screenshots/grayscale.png)
+
 Example : I sometimes use it with Ipadapter to disable color influence.  
 But you can sometimes also want a black and white image... 
 
 ## 24 - 🖼+🖼 Stack two images (Background + Overlay)
-![Superpose Images](screenshots/combine_background_overlay.png)
 
 **Description:**  
 Stack two images into a single image : a background and one (or several) transparent overlay. (allow to have a video there, just send all the frames and recombine them after.)  
+
+![Superpose Images](screenshots/combine_background_overlay.png)
+
 Update 0.11 : Add option to move vertically and horizontally. (from -50% to 150%)  
 ❗ Warning : For now, `background` is a static image. (I will allow video there later too.)  
 ⚠️ Warning : If you want to directly load the image with transparency, use my node `🖼 Load Image with Transparency ▢` instead of the `Load Image` node.  
 
 ## 25 - 🟩➜▢ Green Screen to Transparency
-![Greenscreen to Transparency](screenshots/greeenscreen_to_transparency.png)
 
 **Description:**  
 Transform greenscreen into transparency.  
 Need clean greenscreen ofc. (Can adjust threshold but very basic node.)
 
+![Greenscreen to Transparency](screenshots/greeenscreen_to_transparency.png)
+
 ## 26 - 🎲 Random line from input
-![Random line from input](screenshots/random_line_from_input.png)
 
 **Description:**  
 Take a random line from an input text. (When using multiple "Write Text" nodes is annoying for example, you can use that and just copy/paste a list from outside.)  
 You can change fixed/randomize for `control_after_generate` to have a different text each time you run the workflow. (or not)  
 
+![Random line from input](screenshots/random_line_from_input.png)
+
 ## 27 - ♻ Loop (All Lines from input)
-![Loop input](screenshots/loop_all_lines.png)
 
 **Description:**  
 Iterate over all lines from an input text. (Good for testing multiple lines of text.)
 
+![Loop input](screenshots/loop_all_lines.png)
+
 ## 28 - 🔢 Text with random Seed
 
 **Description:**  
-
 ❗ This node is used to force to generate a random seed, along with text.  
 But what does that mean ???  
 When you use a loop (♻), the loop will use the same seed for each iteration. (That is the point, it will keep the same seed to compare results.)  
@@ -512,23 +542,27 @@ FLUX : Here is an example of 4 images without Random Seed node on the left, and 
 ![Text with random Seed 5](screenshots/result_random_seed.png)
 
 ## 29 - 🖼 Load Image with Transparency ▢
-![Load image Alpha](screenshots/load_image_alpha.png)
 
 **Description:**  
 Load an image with transparency.  
 The default `Load Image` node will not load the transparency.  
 
+![Load image Alpha](screenshots/load_image_alpha.png)
+
 ## 30 - 🖼✂ Cut image with a mask
-![Cut image](screenshots/image_mask_cut.png)
 
 **Description:**  
 Cut an image from a mask.  
 
+![Cut image](screenshots/image_mask_cut.png)
+
 ## 31 - 🔊 TTS - Text to Speech (100% local, any voice you want, any language)
-![TTS](screenshots/tts.png)
 
 **Description:**  
-[Listen to the audio example](https://github.com/user-attachments/assets/5a4a67ff-cf70-4092-8f3b-1ccc8023d8c6)
+Use my TTS server to generate high quality speech from text, with any voice you want, any language.  
+[Listen to the audio example](https://github.com/user-attachments/assets/5a4a67ff-cf70-4092-8f3b-1ccc8023d8c6)  
+
+![TTS](screenshots/tts.png)
 
 ❗ Node never tested on windows, only on linux for now. ❗  
 
@@ -567,91 +601,101 @@ If you can afford to run both at the same time, good for you, but Locally I can'
 
 ![TTS](screenshots/tts_preload_2.png)  
 
-
 ### 32 - 🧑📝 Character Description Generator
-![characters](screenshots/characters.png)
-![characters](screenshots/characters2.png)
 
 **Description:**  
 Generate a character description based on a json file in the folder `characters` : `ComfyUI/custom_nodes/Bjornulf_custom_nodes/characters`  
 Make your own json file with your own characters, and use this node to generate a description.  
+
+![characters](screenshots/characters.png)
+![characters](screenshots/characters2.png)
+
 ❗ For now it's very basic node, a lot of things are going to be added and changed !!!  
 Some details are unusable for some checkpoints, very much a work in progress, the json structure isn't set in stone either.  
 Some characters are included.  
 
 ### 33 - ♻ Loop (All Lines from input 🔗 combine by lines)
 
-![loop combined](screenshots/loop_combined.png)
-
 **Description:**  
 Sometimes you want to loop over several inputs but you also want to separate different lines of your output.  
 So with this node, you can have the number of inputs and outputs you want. See example for usage.  
 
+![loop combined](screenshots/loop_combined.png)
+
 ### 34 - 🧹 Free VRAM hack
-![free vram](screenshots/free_vram_hack1.png)
-![free vram](screenshots/free_vram_hack2.png)
 
 **Description:**  
 So this is my attempt at freeing up VRAM after usage, I will try to improve that.  
+
+![free vram](screenshots/free_vram_hack1.png)
+![free vram](screenshots/free_vram_hack2.png)
+
 For me, on launch ComfyUI is using 180MB of VRAM, after my clean up VRAM node it can go back down to 376MB.  
 I don't think there is a clean way to do that, so I'm using a hacky way.  
 So, not perfect but better than being stuck at 6GB of VRAM used if I know I won't be using it again...  
-Just connect this node with your workflow, it takes an image as input and return the same image without any changes.  
+Just connect this node with your workflow, it takes anything as input and return it as output.
+You can therefore put it anywhere you want.  
 ❗ Comfyui is using cache to run faster (like not reloading checkpoints), so only use this free VRAM node when you need it.  
 ❗ For this node to work properly, you need to enable the dev/api mode in ComfyUI. (You can do that in the settings)  
+It is also running an "empty/dummy" workflow to free up the VRAM, so it might take a few seconds to take effect after the end of the workflow.  
 
 ### 35 - ⏸️ Paused. Resume or Stop ?
+
+**Description:**  
+Automatically pause the workflow, and rings a bell when it does. (play the audio `bell.m4a` file provided)  
 
 ![pause resume stop](screenshots/pause1.png)
 ![pause resume stop](screenshots/pause2.png)
 ![pause resume stop](screenshots/pause3.png)
 
-**Description:**  
-Automatically pause the workflow, and rings a bell when it does. (play the audio `bell.m4a` file provided)  
 You can then manually resume or stop the workflow by clicking on the node's buttons.  
 I do that let's say for example if I have a very long upscaling process, I can check if the input is good before continuing. Sometimes I might stop the workflow and restart it with another seed.  
 You can connect any type of node to the pause node, above is an example with text, but you can send an IMAGE or whatever else, in the node `input = output`. (Of course you need to send the output to something that has the correct format...)  
 
 ### 36 - ⏸️🔍 Paused. Select input, Pick one
 
-![pick input](screenshots/pick.png)
-
 **Description:**  
 Automatically pause the workflow, and rings a bell when it does. (play the audio `bell.m4a` file provided)  
+
+![pick input](screenshots/pick.png)
+
 You can then manually select the input you want to use, and resume the workflow with it.  
 You can connect this node to anything you want, above is an example with IMAGE. But you can pick whatever you want, in the node `input = output`.  
 
 ### 37 - 🎲🖼 Random Image
 
-![random image](screenshots/random_image.png)
-
 **Description:**  
 Just take a random image from a list of images.  
 
-### 38 - ♻🖼 Loop (Images)
+![random image](screenshots/random_image.png)
 
-![loop images](screenshots/loop_images.png)
+### 38 - ♻🖼 Loop (Images)
 
 **Description:**  
 Loop over a list of images.  
+
+![loop images](screenshots/loop_images.png)
+
 Usage example : You have a list of images, and you want to apply the same process to all of them.  
 Above is an example of the loop images node sending them to an Ipadapter workflow. (Same seed of course.)  
 
 ### 39 - ♻ Loop (✒🗔 Advanced Write Text)
 
-![loop write text](screenshots/loop_write_text.png)
-
 **Description:**  
 If you need a quick loop but you don't want something too complex with a loop node, you can use this combined write text + loop.  
+
+![loop write text](screenshots/loop_write_text.png)
+
 It will take the same special syntax as the Advanced write text node `{blue|red}`, but it will loop over ALL the possibilities instead of taking one at random.  
 0.40 : You can also use variables `<name>` in the loop.  
 
 ### 40 - 🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model
 
-![random checkpoint](screenshots/random_checkpoint.png)
-
 **Description:**  
 Just simply take a trio at random from a load checkpoint node.  
+
+![random checkpoint](screenshots/random_checkpoint.png)
+
 Notice that it is using the core Load checkpoint node. It means that all checkpoint will be preloaded in memory.  
 
 Details :  
@@ -662,10 +706,11 @@ Check node number 41 before deciding which one to use.
 
 ### 41 - 🎲 Random Load checkpoint (Model Selector)
 
-![pick input](screenshots/random_load_checkpoint.png)
-
 **Description:**  
 This is another way to select a load checkpoint node randomly.  
+
+![pick input](screenshots/random_load_checkpoint.png)
+
 It will not preload all the checkpoints in memory, so it will be slower to switch between checkpoints.  
 But you can use more outputs to decide where to store your results. (`model_folder` is returning the last folder name of the checkpoint.)  
 I always store my checkpoints in a folder with the type of the model like `SD1.5`, `SDXL`, etc... So it's a good way for me to recover that information quickly.  
@@ -685,10 +730,11 @@ Loop over all the trios from several checkpoint node.
 
 ### 43 - 📥🖼📂 Load Images from output folder
 
-![pick input](screenshots/load_images_folder.png)
-
 **Description:**  
 Quickly select all images from a folder inside the output folder. (Not recursively.)  
+
+![pick input](screenshots/load_images_folder.png)
+
 So... As you can see from the screenshot the images are split based on their resolution.  
 It's also not possible to edit dynamically the number of outputs, so I just picked a number : 4.  
 The node will separate the images based on their resolution, so with this node you can have 4 different resolutions per folder. (If you have more than that, maybe you should have another folder...)  
@@ -708,10 +754,11 @@ Here is another example of the same thing but excluding the save folder node :
 
 ### 44 - 🖼👈 Select an Image, Pick
 
-![pick input](screenshots/select_image.png)
-
 **Description:**  
 Select an image from a list of images.  
+
+![pick input](screenshots/select_image.png)  
+
 Useful in combination with my Load images from folder and preview image nodes.  
 
 You can also of course make a group node, like this one, which is the same as the screenshot above :  
@@ -719,10 +766,11 @@ You can also of course make a group node, like this one, which is the same as th
 
 ### 45 - 🔀 If-Else (input / compare_with)
 
-![if else](screenshots/if_0.png)
-
-
 **Description:**  
+Complex logic node if/else system.  
+
+![if else](screenshots/if_0.png)  
+
 If the `input` given is equal to the `compare_with` given in the widget, it will forward `send_if_true`, otherwise it will forward `send_if_false`. (If no `send_if_false` it will return `None`.)  
 You can forward anything, below is an example of forwarding a different size of latent space depending if it's SDXL or not.  
 
@@ -792,31 +840,32 @@ Here another simple example taking a few selected images from a folder and combi
 
 ### 48 - 🔀🎲 Text scrambler (🧑 Character)
 
-![scrambler character](screenshots/scrambler_character.png)
-
 **Description:**  
 Take text as input and scramble (randomize) the text by using the file `scrambler/character_scrambler.json` in the comfyui custom nodes folder.  
 
-### 49 - 📹👁 Video Preview
+![scrambler character](screenshots/scrambler_character.png)
 
-![video preview](screenshots/video_preview.png)
+### 49 - 📹👁 Video Preview
 
 **Description:**  
 This node takes a video path as input and displays the video.  
 
-### 50 - 🖼➜📹 Images to Video path (tmp video)
+![video preview](screenshots/video_preview.png)
 
-![image to video path](screenshots/image_to_video_path.png)
+### 50 - 🖼➜📹 Images to Video path (tmp video)
 
 **Description:**  
 This node will take a list of images and convert them to a temporary video file.  
 
-### 51 - 📹➜🖼 Video Path to Images
+![image to video path](screenshots/image_to_video_path.png)
 
-![video path to image](screenshots/video_path_to_image.png)
+### 51 - 📹➜🖼 Video Path to Images
 
 **Description:**  
 This node will take a video path as input and convert it to a list of images.  
+
+![video path to image](screenshots/video_path_to_image.png)
+
 In the above example, I also take half of the frames by setting `frame_interval` to 2.  
 Note that i had 16 frames, on the top right preview you can see 8 images.  
 
@@ -824,20 +873,24 @@ Note that i had 16 frames, on the top right preview you can see 8 images.
 
 **Description:**  
 
-This node will basically synchronize the duration of an audio file with a video file by adding silence to the audio file if it's too short, or demultiply the video file if too long. (Video ideally need to be a loop, check my ping pong video node.)  
-It is good like for example with MuseTalk <https://github.com/chaojie/ComfyUI-MuseTalk>, If you want to chain up videos (Let's say sentence by sentence) it will always go back to the last frame. (Making the video transition smoother.)  
+This node is an overengineered node that will try to synchronize the duration of an audio file with a video file.  
+❗ Video ideally needs to be a loop, check my ping pong video node if needed.
+The main goal of this synchronization is to have a clean transition between the end and the beginning of the video. (same frame)  
+You can then chain up several video and they will transition smoothly.
 
-Here is an example without `Audio Video Sync` node (The duration of the video is shorter than the audio, so after playing it will not go back to the last frame, ideally i want to have a loop where the first frame is the same as the last frame. -See my node loop video ping pong if needed-) :
+Some details, this node will :  
+- If video slightly too long : add silence to the audio file.  
+- If video way too long : will slow down the video up to 0.50x the speed + add silence to the audio.  
+- If audio slightly too long : will speed up video up to 1.5x the speed.  
+- If video way too long : will speed up video up to 1.5x the speed + add silence to the audio.  
 
-![audio sync video](screenshots/audio_sync_video_without.png)
+It is good like for example with MuseTalk <https://github.com/chaojie/ComfyUI-MuseTalk>
 
-Here is an example with `Audio Video Sync` node, notice that it is also convenient to recover the frames per second of the video, and send that to other nodes. :
+Here is an example of the `Audio Video Sync` node, notice that it is also convenient to recover the frames per second of the video, and send that to other nodes. (Spaghettis..., deal with it. 😎 If you don't understand it, you can test it.) :  
 
-![audio sync video](screenshots/audio_sync_video_with.png)
+![audio sync video](screenshots/audio_sync_video.png)
 
 ### 53 - ♻ Loop Load checkpoint (Model Selector)
-
-![loop model selector](screenshots/loop_model_selector.png)
 
 **Description:**  
 This is the loop version of node 41. (check there for similar details)  
@@ -846,12 +899,15 @@ It will loop over all the selected checkpoints.
 ❗ The big difference with 41 is that checkpoints are preloaded in memory. You can run them all faster all at once.  
 It is a good way to test multiple checkpoints quickly.  
 
-### 54 - ♻ Loop Lora Selector
+![loop model selector](screenshots/loop_model_selector.png)
 
-![loop lora selector](screenshots/loop_lora_selector.png)
+### 54 - ♻ Loop Lora Selector
 
 **Description:**  
 Loop over all the selected Loras.  
+
+![loop lora selector](screenshots/loop_lora_selector.png)  
+
 Above is an example with Pony and several styles of Lora.  
 
 Below is another example, here with flux, to test if your Lora training was undertrained, overtrained or just right :  
@@ -860,7 +916,20 @@ Below is another example, here with flux, to test if your Lora training was unde
 
 ### 55 - 🎲 Random Lora Selector
 
-![random lora selector](screenshots/random_lora_selector.png)
-
 **Description:**  
 Just take a single Lora at random from a list of Loras.  
+
+![random lora selector](screenshots/random_lora_selector.png)
+
+### 56 - ♻📝 Loop Sequential (Integer)
+
+**Description:**  
+This loop works like a normal loop, BUT it is sequential : It will run only once for each workflow run !!!  
+The first time it will output the first integer, the second time the second integer, etc...  
+When the last is reached, the node will STOP the workflow, preventing anything else to run after it.  
+Under the hood it is using the file `counter_integer.txt` in the `ComfyUI/Bjornulf` folder.  
+
+![loop sequential integer](screenshots/loop_sequential_integer_1.png)  
+![loop sequential integer](screenshots/loop_sequential_integer_2.png)  
+![loop sequential integer](screenshots/loop_sequential_integer_3.png)  
+![loop sequential integer](screenshots/loop_sequential_integer_4.png)  
