@@ -44,7 +44,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
 `53.` [♻ Loop Load checkpoint (Model Selector)](#53----loop-load-checkpoint-model-selector)  
 `54.` [♻ Loop Lora Selector](#54----loop-lora-selector)  
-`56.` [♻📝 Loop Sequential (Integer)]()  
+`56.` [♻📝 Loop Sequential (Integer)](#56----loop-sequential-integer)  
 
 ## 🎲 Randomization 🎲
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
