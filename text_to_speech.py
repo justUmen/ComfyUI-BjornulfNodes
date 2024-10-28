@@ -55,7 +55,7 @@ class TextToSpeech:
         }
 
     RETURN_TYPES = ("AUDIO", "STRING", "STRING", "FLOAT")
-    RETURN_NAMES = ("AUDIO", "audio_path", "full_path", "duration")
+    RETURN_NAMES = ("AUDIO", "audio_path", "audio_full_path", "audio_duration")
     FUNCTION = "generate_audio"
     CATEGORY = "Bjornulf"
     

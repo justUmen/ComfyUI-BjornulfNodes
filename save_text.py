@@ -6,32 +6,32 @@ class SaveText:
         return {
             "required": {
                 "text": ("STRING", {"multiline": True, "forceInput": True}),
-                "filename": ("STRING", {"default": "001.txt"})
+                "filepath": ("STRING", {"default": "output/this_test.txt"}),
             }
         }
 
-    # INPUT_IS_LIST = True
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("text",)
     FUNCTION = "save_text"
     OUTPUT_NODE = True
     CATEGORY = "Bjornulf"
-    # OUTPUT_IS_LIST = (True,)
     
-    def save_text(self, text, filename):
-        directory = "custom_nodes/Bjornulf_custom_nodes/SaveText/"
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        
-        base, ext = os.path.splitext(filename)
-        counter = 1
-        new_filename = os.path.join(directory, filename)
-
-        while os.path.exists(new_filename):
-            new_filename = os.path.join(directory, f"{base}_{counter:03d}{ext}")
-            counter += 1
-
-        with open(new_filename, 'w') as file:
-            file.write(text)
-        
-        return {"ui": {"text": text}, "result": (text,)}
+    def save_text(self, text, filepath):
+        # Validate file extension
+        if not filepath.lower().endswith('.txt'):
+            raise ValueError("Output file must be a .txt file")
+            
+        try:
+            # Create directory if it doesn't exist
+            directory = os.path.dirname(filepath)
+            if directory and not os.path.exists(directory):
+                os.makedirs(directory)
+            
+            # Append text to file with a newline
+            with open(filepath, 'a', encoding='utf-8') as file:
+                file.write(text + '\n')
+            
+            return {"ui": {"text": text}, "result": (text,)}
+            
+        except (OSError, IOError) as e:
+            raise ValueError(f"Error saving file: {str(e)}")

@@ -1,6 +1,6 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.49 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.50 🔗
 
-A list of 56 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
+A list of 59 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
 
 # Coffee : ☕☕☕☕☕ 5/5
@@ -45,6 +45,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `53.` [♻ Loop Load checkpoint (Model Selector)](#53----loop-load-checkpoint-model-selector)  
 `54.` [♻ Loop Lora Selector](#54----loop-lora-selector)  
 `56.` [♻📝 Loop Sequential (Integer)](#56----loop-sequential-integer)  
+`57.` [♻📝 Loop Sequential (input Lines)](#57)  
 
 ## 🎲 Randomization 🎲
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
@@ -98,7 +99,10 @@ You can manage looping operations, generate randomized content, trigger logical 
 `49.` [📹👁 Video Preview](#49----video-preview)  
 `50.` [🖼➜📹 Images to Video path (tmp video)](#50----images-to-video-path-tmp-video)  
 `51.` [📹➜🖼 Video Path to Images](#51----video-path-to-images)  
-`52.` [🔊📹 Audio Video Sync](#52----audio-video-sync)  
+`52.` [🔊📹 Audio Video Sync](#52----audio-video-sync) 
+`58.` [📹🔗 Concat Videos](#58)  
+`59.` [📹🔊 Combine Video + Audio](#59)  
+
 
 ## 🤖 AI 🤖
 `19.` [🦙 Ollama](#19----ollama)  
@@ -107,6 +111,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 ## 🔊 Audio 🔊
 `31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
 `52.` [🔊📹 Audio Video Sync](#52----audio-video-sync)  
+`59.` [📹🔊 Combine Video + Audio](#59)  
 
 ## 💻 System 💻
 `34.` [🧹 Free VRAM hack](#34----free-vram-hack)  
@@ -251,6 +256,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.47**: New node : Loop Load checkpoint (Model Selector).
 - **v0.48**: Two new nodes for loras : Random Lora Selector and Loop Lora Selector.
 - **v0.49**: New node : Loop Sequential (Integer) - Loop through a range of integer values. (But once per workflow run), audio sync is smarter and adapt the video duration to the audio duration. add requirements.txt
+- **v0.50**: allow audio in Images to Video path (tmp video). Add three new nodes : Concat Videos, combine video/audio and Loop Sequential (input Lines). save text changes to write inside COmfyui folder. Fix random line from input outputing LIST. ❗ Breaking change to audio/video sync node, allowing different types as input.
 
 # 📝 Nodes descriptions
 
@@ -392,7 +398,8 @@ Resize an image to exact dimensions. The other node will save the image to the e
 ## 15 - 💾 Save Text
 
 **Description:**  
-Save the given text input to a file. Useful for logging and storing text data.
+Save the given text input to a file. Useful for logging and storing text data.  
+If the file already exist, it will add the text at the end of the file.  
 
 ![Save Text](screenshots/save_text.png)
 
@@ -721,6 +728,8 @@ Details :
 Check node number 40 before deciding which one to use.  
 Node 53 is the loop version of this node.  
 
+NOTE : If you want to load a single checkpoint but want to extract its folder name (To use the checkpoint name as a folder name for example, or with if/else node), you can use my node 41 with only one checkpoint. (It will take one at random, so... always the same one.)    
+
 ### 42 - ♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model
 
 ![pick input](screenshots/loop_checkpoint.png)
@@ -819,7 +828,7 @@ Combine multiple images (A single image or a list of images.)
 There are two types of logic to "combine images". With "all_in_one" enabled, it will combine all the images into one tensor.  
 Otherwise it will send the images one by one. (check examples below) :  
 
-This is an example of the "all_in_one" option disabled :  
+This is an example of the "all_in_one" option disabled (Note that there are 2 images, these are NOT side by side, they are combined in a list.) :  
 
 ![combine images](screenshots/combine_images_1.png)
 
@@ -856,6 +865,7 @@ This node takes a video path as input and displays the video.
 
 **Description:**  
 This node will take a list of images and convert them to a temporary video file.  
+❗ Update 0.50 : You can now send audio to the video. (audio_path OR audio TYPE)  
 
 ![image to video path](screenshots/image_to_video_path.png)
 
@@ -880,8 +890,8 @@ You can then chain up several video and they will transition smoothly.
 
 Some details, this node will :  
 - If video slightly too long : add silence to the audio file.  
-- If video way too long : will slow down the video up to 0.50x the speed + add silence to the audio.  
-- If audio slightly too long : will speed up video up to 1.5x the speed.  
+- If video way too long : will slow down the video up to 0.50x the speed + add silence to the audio. (now editable)  
+- If audio slightly too long : will speed up video up to 1.5x the speed. (now editable)  
 - If video way too long : will speed up video up to 1.5x the speed + add silence to the audio.  
 
 It is good like for example with MuseTalk <https://github.com/chaojie/ComfyUI-MuseTalk>
@@ -889,6 +899,13 @@ It is good like for example with MuseTalk <https://github.com/chaojie/ComfyUI-Mu
 Here is an example of the `Audio Video Sync` node, notice that it is also convenient to recover the frames per second of the video, and send that to other nodes. (Spaghettis..., deal with it. 😎 If you don't understand it, you can test it.) :  
 
 ![audio sync video](screenshots/audio_sync_video.png)
+
+❗ Update 0.50 : audio_duration is now optional, if not connected it will take it from the audio.  
+❗ Update 0.50 : You can now send the video with a list of images OR a video_path, same for audio : AUDIO or audio_path.  
+
+New v0.50 layout, same logic :  
+
+![audio sync video](screenshots/audio_sync_video_new.png)
 
 ### 53 - ♻ Loop Load checkpoint (Model Selector)
 
@@ -933,3 +950,32 @@ Under the hood it is using the file `counter_integer.txt` in the `ComfyUI/Bjornu
 ![loop sequential integer](screenshots/loop_sequential_integer_2.png)  
 ![loop sequential integer](screenshots/loop_sequential_integer_3.png)  
 ![loop sequential integer](screenshots/loop_sequential_integer_4.png)  
+
+### 57 - ♻📝 Loop Sequential (input Lines)
+
+**Description:**  
+This loop works like a normal loop, BUT it is sequential : It will run only once for each workflow run !!!  
+The first time it will output the first line, the second time the second line, etc...  
+You also have control of the line with +1 / -1 buttons.  
+When the last is reached, the node will STOP the workflow, preventing anything else to run after it.  
+Under the hood it is using the file `counter_lines.txt` in the `ComfyUI/Bjornulf` folder.  
+
+Here is an example of usage with my TTS node : when I have a list of sentences to process, if i don't like a version, I can just click on the -1 button, tick "overwrite" on TTS node and it will generate the same sentence again, repeat until good.  
+
+![loop sequential line](screenshots/loop_sequential_lines.png)  
+
+### 58 - 📹🔗 Concat Videos
+
+**Description:**  
+Take two videos and concatenate them. (One after the other in the same video.)  
+
+![concat video](screenshots/concat_video.png)  
+
+### 59 - 📹🔊 Combine Video + Audio
+
+**Description:**  
+Simply combine video and audio together.  
+Video : Use list of images or video path.   
+Audio : Use audio path or audio type.  
+
+![combine video audio](screenshots/combine_video_audio.png)  

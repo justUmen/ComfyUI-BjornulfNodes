@@ -31,4 +31,4 @@ class RandomLineFromInput:
         chosen_line = random.choice(lines)
         
         # Return as a list with one element
-        return ([chosen_line],)
+        return (chosen_line,)

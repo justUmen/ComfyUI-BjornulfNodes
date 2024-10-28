@@ -59,9 +59,15 @@ from .loop_model_selector import LoopModelSelector
 from .random_lora_selector import RandomLoraSelector
 from .loop_lora_selector import LoopLoraSelector
 from .loop_sequential_integer import LoopIntegerSequential
+from .loop_lines_sequential import LoopLinesSequential
+from .concat_videos import ConcatVideos
+from .combine_video_audio import CombineVideoAudio
 
 NODE_CLASS_MAPPINGS = {
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_CombineVideoAudio": CombineVideoAudio,
+    "Bjornulf_ConcatVideos": ConcatVideos,
+    "Bjornulf_LoopLinesSequential": LoopLinesSequential,
     "Bjornulf_LoopIntegerSequential": LoopIntegerSequential,
     "Bjornulf_LoopLoraSelector": LoopLoraSelector,
     "Bjornulf_RandomLoraSelector": RandomLoraSelector,
@@ -122,6 +128,9 @@ NODE_CLASS_MAPPINGS = {
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_WriteText": "✒ Write Text",
+    "Bjornulf_CombineVideoAudio": "📹🔊 Combine Video + Audio",
+    "Bjornulf_ConcatVideos": "📹🔗 Concat Videos",
+    "Bjornulf_LoopLinesSequential": "♻📝 Loop Sequential (input Lines)",
     "Bjornulf_LoopIntegerSequential": "♻📝 Loop Sequential (Integer)",
     "Bjornulf_LoopLoraSelector": "♻ Loop Lora Selector",
     "Bjornulf_RandomLoraSelector": "🎲 Random Lora Selector",
