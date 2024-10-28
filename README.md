@@ -45,7 +45,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `53.` [♻ Loop Load checkpoint (Model Selector)](#53----loop-load-checkpoint-model-selector)  
 `54.` [♻ Loop Lora Selector](#54----loop-lora-selector)  
 `56.` [♻📝 Loop Sequential (Integer)](#56----loop-sequential-integer)  
-`57.` [♻📝 Loop Sequential (input Lines)](#57)  
+`57.` [♻📝 Loop Sequential (input Lines)](#57----loop-sequential-input-lines)  
 
 ## 🎲 Randomization 🎲
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
@@ -100,9 +100,8 @@ You can manage looping operations, generate randomized content, trigger logical 
 `50.` [🖼➜📹 Images to Video path (tmp video)](#50----images-to-video-path-tmp-video)  
 `51.` [📹➜🖼 Video Path to Images](#51----video-path-to-images)  
 `52.` [🔊📹 Audio Video Sync](#52----audio-video-sync) 
-`58.` [📹🔗 Concat Videos](#58)  
-`59.` [📹🔊 Combine Video + Audio](#59)  
-
+`58.` [📹🔗 Concat Videos](#58----concat-videos)  
+`59.` [📹🔊 Combine Video + Audio](#59----combine-video--audio)  
 
 ## 🤖 AI 🤖
 `19.` [🦙 Ollama](#19----ollama)  
@@ -111,7 +110,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 ## 🔊 Audio 🔊
 `31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
 `52.` [🔊📹 Audio Video Sync](#52----audio-video-sync)  
-`59.` [📹🔊 Combine Video + Audio](#59)  
+`59.` [📹🔊 Combine Video + Audio](#59----combine-video--audio)  
 
 ## 💻 System 💻
 `34.` [🧹 Free VRAM hack](#34----free-vram-hack)  
