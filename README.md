@@ -992,7 +992,7 @@ Merge images or videos horizontally.
 
 ![merge images](screenshots/merge_images_h.png)  
 
-Here is on possible example for videos with node 60 and 61 :  
+Here is one possible example for videos with node 60 and 61 :  
 
 ![merge videos](screenshots/merge_videos.png)  
 
@@ -1003,6 +1003,6 @@ Merge images or videos vertically.
 
 ![merge images](screenshots/merge_images_v.png)  
 
-Here is on possible example for videos with node 60 and 61 :  
+Here is one possible example for videos with node 60 and 61 :  
 
 ![merge videos](screenshots/merge_videos.png)  
