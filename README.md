@@ -258,9 +258,9 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.46**: ❗ A lot of changes to Video nodes. Save to video is now using FLOAT for fps, not INT. (A lot of other custom nodes do that as well...) Add node to preview video, add node to convert a video path to a list of images. add node to convert a list of images to a temporary video + video_path. add node to synchronize duration of audio with video. (useful for MuseTalk) change TTS node with many new outputs ("audio_path", "full_path", "duration") to reuse with other nodes like MuseTalk, also TTS rename input to "connect_to_workflow", to avoid mistakes sending text to it.
 - **v0.47**: New node : Loop Load checkpoint (Model Selector).
 - **v0.48**: Two new nodes for loras : Random Lora Selector and Loop Lora Selector.
-- **v0.49**: New node : Loop Sequential (Integer) - Loop through a range of integer values. (But once per workflow run), audio sync is smarter and adapt the video duration to the audio duration. add requirements.txt
+- **v0.49**: New node : Loop Sequential (Integer) - Loop through a range of integer values. (But once per workflow run), audio sync is smarter and adapt the video duration to the audio duration.
 - **v0.50**: allow audio in Images to Video path (tmp video). Add three new nodes : Concat Videos, combine video/audio and Loop Sequential (input Lines). save text changes to write inside COmfyui folder. Fix random line from input outputing LIST. ❗ Breaking change to audio/video sync node, allowing different types as input.
-- **v0.50**: Fix some issues with audio/video sync node. Add two new nodes : merge images/videos vertical and horizontal.
+- **v0.51**: Fix some issues with audio/video sync node. Add two new nodes : merge images/videos vertical and horizontal. add requirements.txt and ollama_ip.txt
 
 # 📝 Nodes descriptions
 
