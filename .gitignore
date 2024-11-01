@@ -3,5 +3,5 @@ SaveText/
 API_example/
 clear_vram.py
 web/js/clear_vram.js
-*.txt
 speakers
+*.text

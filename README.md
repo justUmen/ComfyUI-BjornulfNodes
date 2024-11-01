@@ -1,6 +1,6 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.50 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.51 🔗
 
-A list of 59 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
+A list of 61 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
 
 # Coffee : ☕☕☕☕☕ 5/5
@@ -82,6 +82,8 @@ You can manage looping operations, generate randomized content, trigger logical 
 `44.` [🖼👈 Select an Image, Pick](#44----select-an-image-pick)  
 `46.` [🖼🔍 Image Details](#46----image-details)  
 `47.` [🖼 Combine Images](#47----combine-images)  
+`60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60)  
+`61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61)  
 
 ## 🚀 Load checkpoints 🚀
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
@@ -102,6 +104,8 @@ You can manage looping operations, generate randomized content, trigger logical 
 `52.` [🔊📹 Audio Video Sync](#52----audio-video-sync) 
 `58.` [📹🔗 Concat Videos](#58----concat-videos)  
 `59.` [📹🔊 Combine Video + Audio](#59----combine-video--audio)  
+`60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60)  
+`61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61)  
 
 ## 🤖 AI 🤖
 `19.` [🦙 Ollama](#19----ollama)  
@@ -256,6 +260,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.48**: Two new nodes for loras : Random Lora Selector and Loop Lora Selector.
 - **v0.49**: New node : Loop Sequential (Integer) - Loop through a range of integer values. (But once per workflow run), audio sync is smarter and adapt the video duration to the audio duration. add requirements.txt
 - **v0.50**: allow audio in Images to Video path (tmp video). Add three new nodes : Concat Videos, combine video/audio and Loop Sequential (input Lines). save text changes to write inside COmfyui folder. Fix random line from input outputing LIST. ❗ Breaking change to audio/video sync node, allowing different types as input.
+- **v0.50**: Fix some issues with audio/video sync node. Add two new nodes : merge images/videos vertical and horizontal.
 
 # 📝 Nodes descriptions
 
@@ -823,6 +828,7 @@ Display the details of an image. (width, height, has_transparency, orientation, 
 
 **Description:**  
 Combine multiple images (A single image or a list of images.)  
+If you want to merge several images into a single image, check node 60 or 61.  
 
 There are two types of logic to "combine images". With "all_in_one" enabled, it will combine all the images into one tensor.  
 Otherwise it will send the images one by one. (check examples below) :  
@@ -978,3 +984,21 @@ Video : Use list of images or video path.
 Audio : Use audio path or audio type.  
 
 ![combine video audio](screenshots/combine_video_audio.png)  
+
+### 60 - 🖼🖼 Merge Images/Videos 📹📹 (Horizontally)
+
+**Description:**  
+Merge images or videos horizontally.  
+
+![merge images](screenshots/merge_images_h.png)  
+
+Here is on possible example for videos with node 60 and 61 :  
+
+![merge videos](screenshots/merge_videos.png)  
+
+### 61 - 🖼🖼 Merge Images/Videos 📹📹 (Vertically)
+
+**Description:**  
+Merge images or videos vertically.  
+
+![merge images](screenshots/merge_images_v.png)  

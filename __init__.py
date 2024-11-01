@@ -62,9 +62,13 @@ from .loop_sequential_integer import LoopIntegerSequential
 from .loop_lines_sequential import LoopLinesSequential
 from .concat_videos import ConcatVideos
 from .combine_video_audio import CombineVideoAudio
+from .images_merger_horizontal import MergeImagesHorizontally
+from .images_merger_vertical import MergeImagesVertically
 
 NODE_CLASS_MAPPINGS = {
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_MergeImagesHorizontally": MergeImagesHorizontally,
+    "Bjornulf_MergeImagesVertically": MergeImagesVertically,
     "Bjornulf_CombineVideoAudio": CombineVideoAudio,
     "Bjornulf_ConcatVideos": ConcatVideos,
     "Bjornulf_LoopLinesSequential": LoopLinesSequential,
@@ -128,6 +132,8 @@ NODE_CLASS_MAPPINGS = {
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_WriteText": "✒ Write Text",
+    "Bjornulf_MergeImagesHorizontally": "🖼🖼 Merge Images/Videos 📹📹 (Horizontally)",
+    "Bjornulf_MergeImagesVertically": "🖼🖼 Merge Images/Videos 📹📹 (Vertically)",
     "Bjornulf_CombineVideoAudio": "📹🔊 Combine Video + Audio",
     "Bjornulf_ConcatVideos": "📹🔗 Concat Videos",
     "Bjornulf_LoopLinesSequential": "♻📝 Loop Sequential (input Lines)",
