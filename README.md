@@ -11,7 +11,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 
 1 - 📝 Text/Chat AI generation : [Bjornulf Lobe Chat Fork](https://github.com/justUmen/Bjornulf_lobe-chat)  
 2 - 🔊 Speech AI generation : [Bjornulf Text To Speech](https://github.com/justUmen/Bjornulf_XTTS)  
-<u>**3 - 🎨 Image AI generation :** [Bjornulf Comfyui custom nodes](https://github.com/justUmen/ComfyUI-BjornulfNodes) (you are here)</u>  
+<u>**3 - 🎨 Image AI generation :** [Bjornulf Comfyui custom nodes](https://github.com/justUmen/Bjornulf_custom_nodes) (you are here)</u>  
 
 # 📋 Nodes menu by category
 
