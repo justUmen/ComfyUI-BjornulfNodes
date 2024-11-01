@@ -82,8 +82,8 @@ You can manage looping operations, generate randomized content, trigger logical 
 `44.` [🖼👈 Select an Image, Pick](#44----select-an-image-pick)  
 `46.` [🖼🔍 Image Details](#46----image-details)  
 `47.` [🖼 Combine Images](#47----combine-images)  
-`60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60)  
-`61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61)  
+`60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60----merge-imagesvideos--horizontally)  
+`61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
 
 ## 🚀 Load checkpoints 🚀
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
@@ -104,8 +104,8 @@ You can manage looping operations, generate randomized content, trigger logical 
 `52.` [🔊📹 Audio Video Sync](#52----audio-video-sync) 
 `58.` [📹🔗 Concat Videos](#58----concat-videos)  
 `59.` [📹🔊 Combine Video + Audio](#59----combine-video--audio)  
-`60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60)  
-`61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61)  
+`60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60----merge-imagesvideos--horizontally)  
+`61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
 
 ## 🤖 AI 🤖
 `19.` [🦙 Ollama](#19----ollama)  
@@ -1002,3 +1002,7 @@ Here is on possible example for videos with node 60 and 61 :
 Merge images or videos vertically.  
 
 ![merge images](screenshots/merge_images_v.png)  
+
+Here is on possible example for videos with node 60 and 61 :  
+
+![merge videos](screenshots/merge_videos.png)  
