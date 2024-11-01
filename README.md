@@ -253,7 +253,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.41**: Two new nodes : image details and combine images. Also ❗ Big changes to the If-Else node. (+many minor changes)
 - **v0.42**: Better README with category nodes, changes some node titles
 - **v0.43**: Add control_after_generate to Ollama and allow to keep in VRAM for 1 minute if needed. (For chaining quick generations.) Add fallback to 0.0.0.0
-- **v0.44**: Allow ollama to have a cusom url in the file `ollama_ip.txt` in the comfyui custom nodes folder. Minor changes, add details/updates to README.
+- **v0.44**: Allow ollama to have a custom url in the file `ollama_ip.txt` in the comfyui custom nodes folder. Minor changes, add details/updates to README.
 - **v0.45**: Add a new node : Text scrambler (Character), change text randomly using the file `scrambler/scrambler_character.json` in the comfyui custom nodes folder.
 - **v0.46**: ❗ A lot of changes to Video nodes. Save to video is now using FLOAT for fps, not INT. (A lot of other custom nodes do that as well...) Add node to preview video, add node to convert a video path to a list of images. add node to convert a list of images to a temporary video + video_path. add node to synchronize duration of audio with video. (useful for MuseTalk) change TTS node with many new outputs ("audio_path", "full_path", "duration") to reuse with other nodes like MuseTalk, also TTS rename input to "connect_to_workflow", to avoid mistakes sending text to it.
 - **v0.47**: New node : Loop Load checkpoint (Model Selector).
