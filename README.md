@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.51 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.52 🔗
 
 A list of 61 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
@@ -261,6 +261,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.49**: New node : Loop Sequential (Integer) - Loop through a range of integer values. (But once per workflow run), audio sync is smarter and adapt the video duration to the audio duration.
 - **v0.50**: allow audio in Images to Video path (tmp video). Add three new nodes : Concat Videos, combine video/audio and Loop Sequential (input Lines). save text changes to write inside COmfyui folder. Fix random line from input outputing LIST. ❗ Breaking change to audio/video sync node, allowing different types as input.
 - **v0.51**: Fix some issues with audio/video sync node. Add two new nodes : merge images/videos vertical and horizontal. add requirements.txt and ollama_ip.txt
+- **v0.52**: update register name
 
 # 📝 Nodes descriptions
 

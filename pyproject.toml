@@ -5,7 +5,8 @@ version = "0.51"
 license = {file = "LICENSE"}
 
 [project.urls]
-Repository = "https://github.com/justUmen/Bjornulf_custom_nodes"
+# Repository = "https://github.com/justUmen/Bjornulf_custom_nodes"
+Repository = "https://github.com/justUmen/ComfyUI-BjornulfNodes"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
