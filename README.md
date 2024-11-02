@@ -260,10 +260,10 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.47**: New node : Loop Load checkpoint (Model Selector).
 - **v0.48**: Two new nodes for loras : Random Lora Selector and Loop Lora Selector.
 - **v0.49**: New node : Loop Sequential (Integer) - Loop through a range of integer values. (But once per workflow run), audio sync is smarter and adapt the video duration to the audio duration.
-- **v0.50**: allow audio in Images to Video path (tmp video). Add three new nodes : Concat Videos, combine video/audio and Loop Sequential (input Lines). save text changes to write inside COmfyui folder. Fix random line from input outputing LIST. ❗ Breaking change to audio/video sync node, allowing different types as input.
+- **v0.50**: allow audio in Images to Video path (tmp video). Add three new nodes : Concat Videos, combine video/audio and Loop Sequential (input Lines). save text changes to write inside Comfyui folder. Fix random line from input outputing LIST. ❗ Breaking change to audio/video sync node, allowing different types as input.
 - **v0.51**: Fix some issues with audio/video sync node. Add two new nodes : merge images/videos vertical and horizontal. add requirements.txt and ollama_ip.txt
 - **v0.52-53**: Rever name git to Bjornulf_custom_nodes, match registry comfy
-- **v0.54**: add cv2 to requirements.txt
+- **v0.54-55**: add opencv-python to requirements.txt
 
 # 📝 Nodes descriptions
 
