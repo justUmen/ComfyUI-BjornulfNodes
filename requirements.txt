@@ -1,2 +1,3 @@
 ollama
 pydub
+cv2

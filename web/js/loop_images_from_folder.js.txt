@@ -1,0 +1,9 @@
+// import { app } from "../../../scripts/app.js";
+
+// app.registerExtension({
+//   name: "Bjornulf.LoadImagesFromSelectedFolder",
+//   async beforeRegisterNodeDef(nodeType, nodeData, app) {
+//     if (nodeData.name === "Bjornulf_LoadImagesFromSelectedFolder") {
+//     }
+//   },
+// });

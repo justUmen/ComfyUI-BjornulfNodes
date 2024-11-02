@@ -1,0 +1,31 @@
+import random
+import hashlib
+
+class TextToStringAndSeed:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "text": ("STRING", {"forceInput": True}),
+            },
+        }
+
+    RETURN_NAMES = ("text","random_seed")
+    RETURN_TYPES = ("STRING", "INT")
+    FUNCTION = "process"
+    CATEGORY = "utils"
+
+    def process(self, text):
+        # Generate a hash from the input text
+        text_hash = hashlib.md5(text.encode()).hexdigest()
+
+        # Use the hash to seed the random number generator
+        random.seed(text_hash)
+
+        # Generate a random seed (integer)
+        random_seed = random.randint(0, 2**32 - 1)
+
+        # Reset the random seed to ensure randomness in subsequent calls
+        random.seed()
+
+        return (text, random_seed)

@@ -1,0 +1,72 @@
+import { app } from "../../../scripts/app.js";
+import { api } from "../../../scripts/api.js";
+
+app.registerExtension({
+    name: "Bjornulf.PassPreviewImage",
+    async nodeCreated(node) {
+        if (node.comfyClass === "Bjornulf_PassPreviewImage") {
+            const showImage = (name) => {
+                console.log("name:" + name);
+                const img = new Image();
+                img.onload = () => {
+                    node.imgs = [img];
+                    imageWidget.value = img.src;
+                    app.graph.setDirtyCanvas(true);
+                };
+                img.src = api.apiURL(`/view?filename=output/tmp_preview.png&type=output&rand=${Math.random()}`);
+                node.setSizeForImage?.();
+            };
+            showImage();
+            
+            // Set up a method to update the image
+            node.updatePreviewImage = showImage;
+
+            // Override the onExecuted method to update the image after each execution
+            const originalOnExecuted = node.onExecuted;
+            node.onExecuted = function(message) {
+                if (originalOnExecuted) {
+                    originalOnExecuted.call(this, message);
+                }
+                this.updatePreviewImage();
+            };
+        }
+    }
+});
+// app.registerExtension({
+//     name: "Bjornulf.PassPreviewImage",
+//     async nodeCreated(node) {
+//         if (node.comfyClass === "Bjornulf_PassPreviewImage") {
+//             const showImage = () => {
+//                 const img = new Image();
+//                 img.onload = () => {
+//                     node.imgs = [img];
+//                     if (node.widgets) {
+//                         const imageWidget = node.widgets.find(w => w.name === "image");
+//                         if (imageWidget) {
+//                             imageWidget.value = img.src;
+//                         }
+//                     }
+//                     app.graph.setDirtyCanvas(true);
+//                 };
+//                 // img.src = api.apiURL(`/view?filename=output/tmp_preview.png&rand=${Math.random()}`);
+//                 img.src = api.apiURL(`/view?filename=output/tmp_preview.png&type=output&rand=${Math.random()}`);
+//                 // node.setSizeForImage?.();
+//             };
+
+//             // Initial image load
+//             showImage();
+
+            // Set up a method to update the image
+            // node.updatePreviewImage = showImage;
+
+            // // Override the onExecuted method to update the image after each execution
+            // const originalOnExecuted = node.onExecuted;
+            // node.onExecuted = function(message) {
+            //     if (originalOnExecuted) {
+            //         originalOnExecuted.call(this, message);
+            //     }
+            //     this.updatePreviewImage();
+            // };
+//         }
+//     }
+// });

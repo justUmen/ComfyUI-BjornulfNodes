@@ -1,0 +1,34 @@
+import { app } from "../../../scripts/app.js";
+
+console.log("Bjornulf.CharacterDescriptionGenerator extension loaded");
+
+app.registerExtension({
+    name: "Bjornulf.CharacterDescriptionGenerator",
+    async nodeCreated(node) {
+        console.log("nodeCreated called for", node.comfyClass);
+        if (node.comfyClass === "Bjornulf_CharacterDescriptionGenerator") {
+            console.log("Creating custom UI for Bjornulf_CharacterDescriptionGenerator");
+            
+            // Create a simple text element instead of an image
+            const textElement = document.createElement("div");
+            textElement.textContent = "Custom UI Test";
+            textElement.style.padding = "10px";
+            textElement.style.backgroundColor = "red";
+            textElement.style.color = "white";
+            textElement.style.margin = "10px";
+
+            // Add the text element to the node's DOM
+            node.widgets.push({
+                type: "html",
+                name: "customUI",
+                element: textElement
+            });
+
+            console.log("Custom UI element added");
+
+            // Ensure the node is redrawn to show the new widget
+            node.setSize([node.size[0], node.size[1] + 50]);
+            console.log("Node size adjusted");
+        }
+    }
+});

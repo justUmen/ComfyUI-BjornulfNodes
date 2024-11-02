@@ -1,0 +1,29 @@
+import { app } from "../../../scripts/app.js";
+
+app.registerExtension({
+    name: "Bjornulf.CustomBjornulfType",
+    async beforeRegisterNodeDef(nodeType, nodeData, app) {
+        if (nodeData.name === "Bjornulf_WriteImageCharacters") {
+            const onNodeCreated = nodeType.prototype.onNodeCreated;
+            nodeType.prototype.onNodeCreated = function () {
+                onNodeCreated?.apply(this, arguments);
+                const myInput = this.inputs.find(input => input.name === "BJORNULF_CHARACTER");
+                if (myInput) {
+                    myInput.type = "BJORNULF_CHARACTER";
+                }
+            };
+        }
+        else if (nodeData.name === "Bjornulf_WriteImageCharacter") {
+            
+        }
+    },
+    async setup(app) {
+        app.registerCustomNodeType("BJORNULF_CHARACTER", (value) => {
+            return {
+                type: "BJORNULF_CHARACTER",
+                data: { value: value || "" },
+                name: "BJORNULF_CHARACTER"
+            };
+        });
+    }
+});
