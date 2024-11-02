@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.52 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.54 🔗
 
 A list of 61 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
@@ -171,7 +171,7 @@ If you have any issues with this template from Runpod, please let me know, I'm h
 First you need to find this python_embedded `python.exe`, then you can right click or shift + right click inside the folder in your file manager to open a terminal there.  
 
 This is where I have it, with the command you need :  
-`H:\ComfyUI_windows_portable\python_embeded> .\python.exe -m pip install pydub ollama`  
+`H:\ComfyUI_windows_portable\python_embeded> .\python.exe -m pip install pydub ollama opencv-python`  
 
 When you have to install something you can retake the same code and install the dependency you want :  
 `.\python.exe -m pip install whateveryouwant`  
@@ -182,6 +182,7 @@ You can then run comfyui.
 
 - `pip install ollama` (you can also install ollama if you want :  https://ollama.com/download) - You don't need to really install it if you don't want to use my ollama node. (BUT you need to run `pip install ollama`)
 - `pip install pydub` (for TTS node)
+- `pip install opencv-python`
 
 ## 🐧🐍 Linux : Install dependencies with python virtual environment (venv)
 
@@ -196,7 +197,7 @@ Once you have your environment in this new folder, you can activate it with and 
 
 ```
 source /the/path/you/want/venv/bjornulf_comfyui/bin/activate
-pip install ollama pydub
+pip install ollama pydub opencv-python
 ```
 
 Then you can start comfyui with this environment (notice that you need to re-activate it each time you want to launch comfyui) :  
@@ -261,7 +262,8 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.49**: New node : Loop Sequential (Integer) - Loop through a range of integer values. (But once per workflow run), audio sync is smarter and adapt the video duration to the audio duration.
 - **v0.50**: allow audio in Images to Video path (tmp video). Add three new nodes : Concat Videos, combine video/audio and Loop Sequential (input Lines). save text changes to write inside COmfyui folder. Fix random line from input outputing LIST. ❗ Breaking change to audio/video sync node, allowing different types as input.
 - **v0.51**: Fix some issues with audio/video sync node. Add two new nodes : merge images/videos vertical and horizontal. add requirements.txt and ollama_ip.txt
-- **v0.52**: update register name
+- **v0.52-53**: Rever name git to Bjornulf_custom_nodes, match registry comfy
+- **v0.54**: add cv2 to requirements.txt
 
 # 📝 Nodes descriptions
 

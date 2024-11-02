@@ -1,7 +1,7 @@
 [project]
 name = "bjornulf_custom_nodes"
 description = "61 ComfyUI nodes : Display, manipulate, and edit text, images, videos, loras and more. Manage looping operations, generate randomized content, use logical conditions and work with external AI tools, like Ollama or Text To Speech."
-version = "0.54"
+version = "0.54b"
 license = {file = "LICENSE"}
 
 [project.urls]
