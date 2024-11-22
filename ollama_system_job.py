@@ -47,7 +47,7 @@ IMPORTANT : DO NOT Include information about the overall style or artistic techn
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "selected_prompt": (list(cls.SYSTEM_JOBS.keys()), {"default": "Default Assistant"})
+                "selected_prompt": (list(cls.SYSTEM_JOBS.keys()), {"default": "None"})
             },
             "optional": {
                 "OLLAMA_PERSONA": ("OLLAMA_PERSONA", {
