@@ -1,4 +1,4 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.58 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.59 🔗
 
 A list of 68 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
@@ -284,6 +284,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **0.56**: ❗Breaking changes : ollama node simplified, no ollama_ip.txt needed, waiting for collection ollama nodes to be ready.
 - **0.57**: ❗❗Huge changes, new Ollama node "Ollama Chat" with real functionalities. 5 Ollama nodes total. (Model selector + Job selector + Persona selector + Ollama vision + Ollama Talk) Ollama talk use context and can use context file. Add number of lines / current counter + next to sequential nodes. Add new node STT. (+ faster_whisper dep) better management of empty loras/checkpoints on selectors. (list preset) Add "default_for_language" for TTS node, taking the default voice for a language (ex: fr/default.wav) Otherwise take the first wav with the selected language.
 - **0.58**: small fix in model selector default value. (Set to None by default)
+- **0.59**: A lot of Javascript fixing to avoid resizing and better properties mangement / recoveries
 
 # 📝 Nodes descriptions
 

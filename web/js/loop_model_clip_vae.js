@@ -5,6 +5,7 @@ app.registerExtension({
     async nodeCreated(node) {
         if (node.comfyClass === "Bjornulf_LoopModelClipVae") {
             const updateInputs = () => {
+                const initialWidth = node.size[0];
                 const numInputsWidget = node.widgets.find(w => w.name === "number_of_inputs");
                 if (!numInputsWidget) return;
 
@@ -46,6 +47,7 @@ app.registerExtension({
                 }
                 
                 node.setSize(node.computeSize());
+                node.size[0] = initialWidth; // Keep width fixed
             };
 
             // Move number_of_inputs to the top initially

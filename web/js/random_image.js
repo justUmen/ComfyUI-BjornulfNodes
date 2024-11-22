@@ -5,6 +5,7 @@ app.registerExtension({
     async nodeCreated(node) {
         if (node.comfyClass === "Bjornulf_RandomImage") {
             const updateInputs = () => {
+                const initialWidth = node.size[0];
                 const numInputsWidget = node.widgets.find(w => w.name === "number_of_images");
                 if (!numInputsWidget) return;
 
@@ -33,6 +34,7 @@ app.registerExtension({
                 }
 
                 node.setSize(node.computeSize());
+                node.size[0] = initialWidth; // Keep width fixed
             };
 
             // Set seed widget to hidden input
