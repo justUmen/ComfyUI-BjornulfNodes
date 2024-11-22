@@ -18,7 +18,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 ## 👁 Display and Show 👁
 `1.` [👁 Show (Text, Int, Float)](#1----show-text-int-float)  
 `49.` [📹👁 Video Preview](#49----video-preview)  
-`68.` [🔢 Add line numbers](#)  
+`68.` [🔢 Add line numbers](#68----add-line-numbers)  
 
 ## ✒ Text ✒
 `2.` [✒ Write Text](#2----write-text)  
@@ -29,6 +29,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `28.` [🔢🎲 Text with random Seed](#28----text-with-random-seed)  
 `32.` [🧑📝 Character Description Generator](#32----character-description-generator)  
 `48.` [🔀🎲 Text scrambler (🧑 Character)](#48----text-scrambler--character)  
+`67.` [📝➜✨ Text to Anything](67----text-to-anything)  
 
 ## ♻ Loop ♻
 `6.` [♻ Loop](#6----loop)  
@@ -85,7 +86,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `47.` [🖼 Combine Images](#47----combine-images)  
 `60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60----merge-imagesvideos--horizontally)  
 `61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
-`62.` [🦙👁 Ollama Vision](#)  
+`62.` [🦙👁 Ollama Vision](#62----ollama-vision)  
 
 ## 🚀 Load checkpoints 🚀
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
@@ -108,21 +109,21 @@ You can manage looping operations, generate randomized content, trigger logical 
 `59.` [📹🔊 Combine Video + Audio](#59----combine-video--audio)  
 `60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60----merge-imagesvideos--horizontally)  
 `61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
-`66.` [🔊➜📝 STT - Speech to Text](#)  
 
 ## 🤖 AI 🤖
-`19.` [🦙💬 Ollama Talk](#)  
-`62.` [🦙👁 Ollama Vision](#)  
-`63.` [🦙 Ollama Configuration ⚙](#)  
-`64.` [🦙 Ollama Job Selector 💼](#)  
-`65.` [🦙 Ollama Persona Selector 🧑](#)  
+`19.` [🦙💬 Ollama Talk](#19----ollama-talk)  
+`62.` [🦙👁 Ollama Vision](#62----ollama-vision)  
+`63.` [🦙 Ollama Configuration ⚙](#63----ollama-configuration-)  
+`64.` [🦙 Ollama Job Selector 💼](#64----ollama-job-selector-)  
+`65.` [🦙 Ollama Persona Selector 🧑](#65----ollama-persona-selector-)  
 `31.` [📝➜🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
-`66.` [🔊➜📝 STT - Speech to Text](#)  
+`66.` [🔊➜📝 STT - Speech to Text](#66----stt---speech-to-text)  
 
 ## 🔊 Audio 🔊
 `31.` [📝➜🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
 `52.` [🔊📹 Audio Video Sync](#52----audio-video-sync)  
 `59.` [📹🔊 Combine Video + Audio](#59----combine-video--audio)  
+`66.` [🔊➜📝 STT - Speech to Text](#66----stt---speech-to-text)  
 
 ## 💻 System 💻
 `34.` [🧹 Free VRAM hack](#34----free-vram-hack)  
