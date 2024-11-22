@@ -1,6 +1,6 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.56 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.57 🔗
 
-A list of 61 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
+A list of 68 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
 
 # Coffee : ☕☕☕☕☕ 5/5
@@ -18,6 +18,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 ## 👁 Display and Show 👁
 `1.` [👁 Show (Text, Int, Float)](#1----show-text-int-float)  
 `49.` [📹👁 Video Preview](#49----video-preview)  
+`68.` [🔢 Add line numbers](#)  
 
 ## ✒ Text ✒
 `2.` [✒ Write Text](#2----write-text)  
@@ -84,6 +85,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `47.` [🖼 Combine Images](#47----combine-images)  
 `60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60----merge-imagesvideos--horizontally)  
 `61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
+`62.` [🦙👁 Ollama Vision](#)  
 
 ## 🚀 Load checkpoints 🚀
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
@@ -106,13 +108,19 @@ You can manage looping operations, generate randomized content, trigger logical 
 `59.` [📹🔊 Combine Video + Audio](#59----combine-video--audio)  
 `60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60----merge-imagesvideos--horizontally)  
 `61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
+`66.` [🔊➜📝 STT - Speech to Text](#)  
 
 ## 🤖 AI 🤖
-`19.` [🦙 Ollama](#19----ollama)  
-`31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
+`19.` [🦙💬 Ollama Talk](#)  
+`62.` [🦙👁 Ollama Vision](#)  
+`63.` [🦙 Ollama Configuration ⚙](#)  
+`64.` [🦙 Ollama Job Selector 💼](#)  
+`65.` [🦙 Ollama Persona Selector 🧑](#)  
+`31.` [📝➜🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
+`66.` [🔊➜📝 STT - Speech to Text](#)  
 
 ## 🔊 Audio 🔊
-`31.` [🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
+`31.` [📝➜🔊 TTS - Text to Speech](#31----tts---text-to-speech-100-local-any-voice-you-want-any-language)  
 `52.` [🔊📹 Audio Video Sync](#52----audio-video-sync)  
 `59.` [📹🔊 Combine Video + Audio](#59----combine-video--audio)  
 
@@ -162,6 +170,14 @@ For downloading from civitai (get token here <https://civitai.com/user/account>)
 CIVITAI="8b275fada679ba5812b3da2bf35016f6"
 wget --content-disposition -P /workspace/ComfyUI/models/checkpoints "https://civitai.com/api/download/models/272376?type=Model&format=SafeTensor&size=pruned&fp=fp16&token=$CIVITAI"
 ```
+
+If you want to download for example the entire output folder, you can just compress it : 
+```
+cd /workspace/ComfyUI/output && tar -czvf /workspace/output.tar.gz .
+```
+
+Then you can download it from the file manager JupyterLab.  
+
 If you have any issues with this template from Runpod, please let me know, I'm here to help. 😊   
 
 # 🏗 Dependencies (nothing to do for runpod ☁)
@@ -265,6 +281,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **v0.52-53**: Revert name git to Bjornulf_custom_nodes, match registry comfy
 - **v0.54-55**: add opencv-python to requirements.txt
 - **0.56**: ❗Breaking changes : ollama node simplified, no ollama_ip.txt needed, waiting for collection ollama nodes to be ready.
+- **0.57**: ❗❗Huge changes, new Ollama node "Ollama Chat" with real functionalities. 5 Ollama nodes total. (Model selector + Job selector + Persona selector + Ollama vision + Ollama Talk) Ollama talk use context and can use context file. Add number of lines / current counter + next to sequential nodes. Add new node STT. (+ faster_whisper dep) better management of empty loras/checkpoints on selectors. (list preset) Add "default_for_language" for TTS node, taking the default voice for a language (ex: fr/default.wav) Otherwise take the first wav with the selected language.
 
 # 📝 Nodes descriptions
 
@@ -370,7 +387,7 @@ Here is an example with controlnet, trying to make a red cat based on a blue rab
 ## 10 - ♻ Loop All Samplers
 
 **Description:**  
-Iterate over all available samplers to apply them sequentially. Ideal for testing.  
+Iterate over all available samplers to apply them one by one. Ideal for testing.  
 
 ![Loop All Samplers](screenshots/loop_all_samplers.png)
 
@@ -380,7 +397,7 @@ Here is an example of looping over all the samplers with the normal scheduler :
 ## 11 - ♻ Loop All Schedulers
 
 **Description:**  
-Iterate over all available schedulers to apply them sequentially. Ideal for testing. (same idea as sampler above, but for schedulers)  
+Iterate over all available schedulers to apply them one by one. Ideal for testing. (same idea as sampler above, but for schedulers)  
 
 ![Loop All Schedulers](screenshots/loop_all_schedulers.png)
 
@@ -437,25 +454,55 @@ Also allow multiple nested folders, like for example : `animal/dog/small`.
 
 ![Save Temporary API](screenshots/save_image_to_folder.png)
 
-## 19 - 🦙 Ollama
+## 19 - 🦙💬 Ollama Talk
 
 **Description:**  
-Will generate detailed text based of what you give it.  
+Use Ollama inside Comfyui. (Require the backend Ollama to be installed and currently running.)  
+Use by default the model `llama3.2:3b` and the URL `http://0.0.0.0:11434`. (For custom configuration, use node 63)  
 
-![Ollama](screenshots/ollama_1.png)
+Example of basic usage :  
+![Ollama](screenshots/1_ollama_basic.png)  
 
-I recommend using `mistral-nemo` if you can run it, but it's up to you. (Might have to tweak the system prompt a bit)  
+Example of usage with context, notice that with context you can follow up a conversation, "there" is clearly understood as "Bucharest" :  
+![Ollama](screenshots/2_ollama_context.png)  
 
-You also have `control_after_generate` to force the node to rerun for every workflow run. (Even if there is no modification of the node or its inputs.)  
+You can also use `use_context_file` (set to True), this will save the context in a file : `ComfyUI/Bjornulf/ollama_context.txt`.  
+This way you can keep using the context without having to connect many nodes connected to each other, just run the same workflow several times.  
 
-You have the option to keep in in you VRAM for a minute with `keep_1min_in_vram`. (If you plan having to generate many times with the same prompt)  
-Each run will be significantly faster, but not free your VRAM for something else.  
+### Example in 3 steps of context file conversation
 
-![Ollama](screenshots/ollama_2.png) 
+Step 1 : Notice that for now context is empty, so it will be the first message in `ComfyUI/Bjornulf/ollama_context.txt` :  
+![Ollama](screenshots/3_ollama_contextFile_1.png)  
 
-⚠️ Warning : Using `keep_1min_in_vram` might be a bit heavy on your VRAM. Think about if you really need it or not. Most of the time, when using `keep_1min_in_vram`, you don't want to have also a generation of image or anything else in the same time.  
+Step 2 : Notice that now the number of lines in context file has changed (These are the same as the `updated_context`):  
+![Ollama](screenshots/3_ollama_contextFile_2.png)  
 
-⚠️ You can create a file called `ollama_ip.txt` in my comfyui custom node folder if you have a special IP for your ollama server, mine is : `http://192.168.1.37:11434`  
+Step 3 : Notice that the number of lines keep incrementing.  
+![Ollama](screenshots/3_ollama_contextFile_3.png)  
+
+When clicking the `reset Button`, it will also save the context in : `ComfyUI/Bjornulf/ollama_context_001.txt`, `ComfyUI/Bjornulf/ollama_context_002.txt`, etc...  
+
+⚠️ If you want to have an "interactive" conversation, you can enable the option `waiting_for_prompt`.  
+When set to True, it will create a `Resume` button, use this to unpause the node and process the prompt.  
+
+### Example in 3 steps of waiting_for_prompt interactive conversation
+
+Step 1: I run the workflow, notice that Show node is empty, the node is pausing the workflow and is waiting for you to edit the prompt. (Notice that at this moment, it is asking for the capital of France.)  
+![Ollama](screenshots/ollama_waiting_1.png)  
+
+Step 2: I edit the prompt to change France into China, but the node won't process the request until you click on Resume.    
+![Ollama](screenshots/ollama_waiting_2.png)  
+
+Step 3: I click on Resume button, this is when the request is done. Notice that it used China and not France.  
+![Ollama](screenshots/ollama_waiting_3.png)  
+
+Other options :  
+- You also have `control_after_generate` to force the node to rerun for every workflow run. (Even if there is no modification of the node or its inputs.)  
+- You can set `max_tokens` to reduce the size of the answer, a token is about 3 english characters.  
+- You can force the answer to be on a single line, can be useful.  
+- You have the option to keep the mode in VRAM. (If you plan having to generate many times with the same prompt) - Each run will be significantly faster, but not free your VRAM for something else.  
+
+⚠️ Warning : Using `vram_retention_minutes` might be a bit heavy on your VRAM. Think about if you really need it or not. Most of the time, when using `vram_retention_minutes`, you don't want to have also a generation of image or anything else in the same time.  
 
 ## 20 - 📹 Video Ping Pong
 
@@ -953,7 +1000,9 @@ Just take a single Lora at random from a list of Loras.
 This loop works like a normal loop, BUT it is sequential : It will run only once for each workflow run !!!  
 The first time it will output the first integer, the second time the second integer, etc...  
 When the last is reached, the node will STOP the workflow, preventing anything else to run after it.  
-Under the hood it is using the file `counter_integer.txt` in the `ComfyUI/Bjornulf` folder.  
+Under the hood it is using a single file `counter_integer.txt` in the `ComfyUI/Bjornulf` folder.  
+❗ Do not use more than one node like this one in a workflow, because they will share the same `counter_integer.txt` file. (unexpected behaviour.)
+Update 0.57: Now also contains the next counter in the reset button.  
 
 ![loop sequential integer](screenshots/loop_sequential_integer_1.png)  
 ![loop sequential integer](screenshots/loop_sequential_integer_2.png)  
@@ -970,8 +1019,12 @@ When the last is reached, the node will STOP the workflow, preventing anything e
 Under the hood it is using the file `counter_lines.txt` in the `ComfyUI/Bjornulf` folder.  
 
 Here is an example of usage with my TTS node : when I have a list of sentences to process, if i don't like a version, I can just click on the -1 button, tick "overwrite" on TTS node and it will generate the same sentence again, repeat until good.  
+❗ Do not use more than one node like this one in a workflow, because they will share the same `counter_lines.txt` file. (unexpected behaviour.)
 
 ![loop sequential line](screenshots/loop_sequential_lines.png)  
+
+Update 0.57: Now also contains the next counter in the reset button.  
+If you want to be able to predict the next line, you can use node 68, to Add line numbers.
 
 ### 58 - 📹🔗 Concat Videos
 
@@ -1010,3 +1063,64 @@ Merge images or videos vertically.
 Here is one possible example for videos with node 60 and 61 :  
 
 ![merge videos](screenshots/merge_videos.png)  
+
+### 62 - 🦙👁 Ollama Vision
+
+**Description:**  
+Take an image as input and will describe the image. Uses `moondream` by default, but can select anything with node 63.  
+
+![ollama vision](screenshots/ollama_vision.png)  
+
+### 63 - 🦙 Ollama Configuration ⚙
+
+**Description:**  
+Use custom configurations for Ollama Talk and Vision.  
+You can change the ollama Url and the model used.  
+Some vision models can also do text to a certain extent.  
+Example of a `Ollama Vision Node` and `Ollama Talk Node` using the same `Ollama Configuration Node` :  
+
+![ollama config](screenshots/ollama_config.png)  
+
+### 64 - 🦙 Ollama Job Selector 💼
+
+**Description:**  
+Select a personnality for your Ollama Talk Node, set it to `None` for just chat.  
+If you want to write your own, just set it to `None` and write your prompt as prefix.  
+
+![ollama job](screenshots/ollama_job.png)  
+
+### 65 - 🦙 Ollama Persona Selector 🧑
+
+**Description:**  
+Select a personnality for your Ollama Talk Node.  
+If you want to write your own, just set it to `None` and write your prompt as prefix.  
+Below, an example of a crazy scientist explaining gravity. (Notice that the LLM was smart enough to understand the typo) :  
+
+![ollama persona](screenshots/ollama_persona.png)  
+
+### 66 - 🔊➜📝 STT - Speech to Text
+
+**Description:**  
+Use `faster-whisper` to transform an AUDIO type or audio_path into text. (Autodetect language)  
+
+![stt](screenshots/stt_1.png)  
+![stt](screenshots/stt_2.png)  
+
+### 67 - 📝➜✨ Text to Anything
+
+**Description:**  
+Sometimes you want to force a node to accept a STRING.  
+You can't do that for example if the node is taking a LIST as input.  
+This node can be used in the middle to force a STRING to be used anyway.  
+Below is an example of that with my TTS node.  
+
+![text to anything](screenshots/text_to_anything.png)  
+
+### 68 - 🔢 Add line numbers
+
+**Description:**  
+
+This node will just add line numbers to text.  
+Useful when you want to use node 57 that will loop over input lines. (You can read/predict the next line.)  
+
+![add line numbers](screenshots/add_line_numbers.png)  

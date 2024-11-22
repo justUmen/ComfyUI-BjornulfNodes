@@ -9,9 +9,9 @@ class LoopIntegerSequential:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "from_this": ("INT", {"default": 0, "min": 0, "max": 50000, "step": 1}),
-                "to_that": ("INT", {"default": 10, "min": 0, "max": 50000, "step": 1}),
-                "jump": ("INT", {"default": 1, "min": 0, "max": 1000, "step": 1}),
+                "from_this": ("INT", {"default": 1, "min": 1, "max": 50000, "step": 1}),
+                "to_that": ("INT", {"default": 10, "min": 1, "max": 50000, "step": 1}),
+                "jump": ("INT", {"default": 1, "min": 1, "max": 1000, "step": 1}),
             },
         }
 
@@ -53,16 +53,18 @@ class LoopIntegerSequential:
         return (next_value, remaining_cycles - 1) # Subtract 1 to account for the current run
 
 # Server routes
-# @PromptServer.instance.routes.get("/get_counter_value")
-# async def get_counter_value(request):
-#     logging.info("Get counter value called")
-#     counter_file = os.path.join("Bjornulf", "counter_integer.txt")
-#     try:
-#         with open(counter_file, 'r') as f:
-#             value = int(f.read().strip())
-#         return web.json_response({"success": True, "value": value}, status=200)
-#     except (FileNotFoundError, ValueError):
-#         return web.json_response({"success": False, "error": "Counter not initialized"}, status=404)
+@PromptServer.instance.routes.post("/get_counter_value")
+async def get_counter_value(request):
+    # logging.info("Get counter value called")
+    counter_file = os.path.join("Bjornulf", "counter_integer.txt")
+    try:
+        with open(counter_file, 'r') as f:
+            current_index = int(f.read().strip())
+        return web.json_response({"success": True, "value": current_index + 1}, status=200)
+    except (FileNotFoundError, ValueError):
+        return web.json_response({"success": True, "value": 0}, status=200)
+    except Exception as e:
+        return web.json_response({"success": False, "error": str(e)}, status=500)
 
 @PromptServer.instance.routes.post("/reset_counter")
 async def reset_counter(request):

@@ -9,8 +9,12 @@ class LoopLoraSelector:
         lora_list = get_filename_list("loras")
         optional_inputs = {}
         
+        # Add a default value if lora_list is empty
+        if not lora_list:
+            lora_list = ["none"]
+            
         for i in range(1, 21):
-            optional_inputs[f"lora_{i}"] = (lora_list, {"default": lora_list[min(i-1, len(lora_list)-1)]})
+            optional_inputs[f"lora_{i}"] = (lora_list, {"default": lora_list[0]})
             optional_inputs[f"strength_model_{i}"] = ("FLOAT", {"default": 1.0, "min": -100.0, "max": 100.0, "step": 0.01})
             optional_inputs[f"strength_clip_{i}"] = ("FLOAT", {"default": 1.0, "min": -100.0, "max": 100.0, "step": 0.01})
 
@@ -39,13 +43,14 @@ class LoopLoraSelector:
             strength_model_key = f"strength_model_{i}"
             strength_clip_key = f"strength_clip_{i}"
 
-            if lora_key in kwargs and kwargs[lora_key]:
+            if lora_key in kwargs and kwargs[lora_key] and kwargs[lora_key] != "none":
                 available_loras.append(kwargs[lora_key])
                 strengths_model.append(kwargs.get(strength_model_key, 1.0))
                 strengths_clip.append(kwargs.get(strength_clip_key, 1.0))
         
         if not available_loras:
-            raise ValueError("No Loras selected")
+            # Return original model and clip if no valid LoRAs are selected
+            return ([model], [clip], [""], [""], [""])
         
         models = []
         clips = []

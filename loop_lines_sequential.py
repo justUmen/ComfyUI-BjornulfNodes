@@ -98,8 +98,8 @@ async def decrement_lines_counter(request):
     except Exception as e:
         return web.json_response({"success": False, "error": str(e)}, status=500)
 
-@PromptServer.instance.routes.get("/get_current_line")
-async def get_current_line(request):
+@PromptServer.instance.routes.post("/get_current_line_number")
+async def get_current_line_number(request):
     counter_file = os.path.join("Bjornulf", "counter_lines.txt")
     try:
         with open(counter_file, 'r') as f:

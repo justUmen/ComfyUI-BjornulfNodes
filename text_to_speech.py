@@ -27,9 +27,12 @@ class TextToSpeech:
     @classmethod
     def INPUT_TYPES(cls) -> Dict[str, Any]:
         speakers_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "speakers")
-        speaker_options = [os.path.relpath(os.path.join(root, file), speakers_dir)
-                           for root, _, files in os.walk(speakers_dir)
-                           for file in files if file.endswith(".wav")]
+        speaker_options = ["default_for_language"]  # Add default option
+        speaker_options.extend([
+            os.path.relpath(os.path.join(root, file), speakers_dir)
+            for root, _, files in os.walk(speakers_dir)
+            for file in files if file.endswith(".wav")
+        ])
         
         speaker_options = speaker_options or ["No WAV files found"]
         
@@ -41,7 +44,7 @@ class TextToSpeech:
                     "display": "dropdown"
                 }),
                 "speaker_wav": (speaker_options, {
-                    "default": speaker_options[0],
+                    "default": "default_for_language",
                     "display": "dropdown"
                 }),
                 "autoplay": ("BOOLEAN", {"default": True}),
@@ -66,11 +69,39 @@ class TextToSpeech:
     @staticmethod
     def sanitize_text(text: str) -> str:
         return re.sub(r'[^\w\s-]', '', text).replace(' ', '_')[:50]
+
+    def get_default_speaker(self, language_code: str) -> str:
+        speakers_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "speakers")
+        lang_dir = os.path.join(speakers_dir, language_code)
+        
+        # First try to find default.wav
+        default_path = os.path.join(language_code, "default.wav")
+        if os.path.exists(os.path.join(speakers_dir, default_path)):
+            return default_path
+        
+        # If default.wav doesn't exist, use the first .wav file in the language directory
+        if os.path.exists(lang_dir):
+            for file in os.listdir(lang_dir):
+                if file.endswith(".wav"):
+                    return os.path.join(language_code, file)
+        
+        # If no suitable file is found, return the first available .wav file
+        for root, _, files in os.walk(speakers_dir):
+            for file in files:
+                if file.endswith(".wav"):
+                    return os.path.relpath(os.path.join(root, file), speakers_dir)
+        
+        return "No WAV files found"
     
     def generate_audio(self, text: str, language: str, autoplay: bool, seed: int,
                        save_audio: bool, overwrite: bool, speaker_wav: str,
                        connect_to_workflow: Any = None) -> Tuple[Dict[str, Any], str, str, float]:
         language_code = self.get_language_code(language)
+        
+        # Handle default_for_language option
+        if speaker_wav == "default_for_language":
+            speaker_wav = self.get_default_speaker(language_code)
+        
         sanitized_text = self.sanitize_text(text)
 
         save_path = os.path.join("Bjornulf_TTS", language, speaker_wav, f"{sanitized_text}.wav")

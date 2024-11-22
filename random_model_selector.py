@@ -7,10 +7,20 @@ class RandomModelSelector:
     @classmethod
     def INPUT_TYPES(cls):
         model_list = get_filename_list("checkpoints")
+        # if not model_list:
+        #     raise ValueError("No checkpoint models found in the checkpoints directory")
+        
         optional_inputs = {}
         
+        # Safely get default model for each input
         for i in range(1, 11):
-            optional_inputs[f"model_{i}"] = (model_list, {"default": model_list[min(i-1, len(model_list)-1)]})
+            # If model_list is empty, use an empty default
+            if not model_list:
+                optional_inputs[f"model_{i}"] = (model_list, {})
+            else:
+                # Use modulo to wrap around to the start of the list if we exceed its length
+                default_index = (i - 1) % len(model_list)
+                optional_inputs[f"model_{i}"] = (model_list, {"default": model_list[default_index]})
         
         optional_inputs["seed"] = ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff})
 
@@ -31,12 +41,13 @@ class RandomModelSelector:
 
         # Collect available models from kwargs
         available_models = [
-            kwargs[f"model_{i}"] for i in range(1, number_of_models + 1) if f"model_{i}" in kwargs and kwargs[f"model_{i}"]
+            kwargs[f"model_{i}"] for i in range(1, number_of_models + 1) 
+            if f"model_{i}" in kwargs and kwargs[f"model_{i}"]
         ]
         
         # Raise an error if no models are available
         if not available_models:
-            raise ValueError("No models selected")
+            raise ValueError("No models selected. Please ensure at least one model is selected.")
         
         # Randomly select a model
         selected_model = random.choice(available_models)

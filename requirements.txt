@@ -1,3 +1,4 @@
 ollama
 pydub
 opencv-python
+faster_whisper

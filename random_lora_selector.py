@@ -10,8 +10,12 @@ class RandomLoraSelector:
         lora_list = get_filename_list("loras")
         optional_inputs = {}
         
+        # Add a default value if lora_list is empty
+        if not lora_list:
+            lora_list = ["none"]
+            
         for i in range(1, 11):
-            optional_inputs[f"lora_{i}"] = (lora_list, {"default": lora_list[min(i-1, len(lora_list)-1)]})
+            optional_inputs[f"lora_{i}"] = (lora_list, {"default": lora_list[0]})
         
         optional_inputs["seed"] = ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff})
 
@@ -34,14 +38,15 @@ class RandomLoraSelector:
     def random_select_lora(self, number_of_loras, model, clip, strength_model, strength_clip, seed, **kwargs):
         random.seed(seed)
 
-        # Collect available Loras from kwargs
+        # Collect available Loras from kwargs, excluding "none"
         available_loras = [
-            kwargs[f"lora_{i}"] for i in range(1, number_of_loras + 1) if f"lora_{i}" in kwargs and kwargs[f"lora_{i}"]
+            kwargs[f"lora_{i}"] for i in range(1, number_of_loras + 1) 
+            if f"lora_{i}" in kwargs and kwargs[f"lora_{i}"] and kwargs[f"lora_{i}"] != "none"
         ]
         
-        # Raise an error if no Loras are available
+        # Return original model and clip if no valid LoRAs are available
         if not available_loras:
-            raise ValueError("No Loras selected")
+            return (model, clip, "", "", "")
         
         # Randomly select a Lora
         selected_lora = random.choice(available_loras)

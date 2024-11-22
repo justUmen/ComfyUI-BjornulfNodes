@@ -64,9 +64,25 @@ from .concat_videos import ConcatVideos
 from .combine_video_audio import CombineVideoAudio
 from .images_merger_horizontal import MergeImagesHorizontally
 from .images_merger_vertical import MergeImagesVertically
+from .ollama_talk import OllamaTalk
+from .ollama_image_vision import OllamaImageVision
+from .ollama_config_selector import OllamaConfig
+from .ollama_system_persona import OllamaSystemPersonaSelector
+from .ollama_system_job import OllamaSystemJobSelector
+from .speech_to_text import SpeechToText
+from .text_to_anything import TextToAnything
+from .add_line_numbers import AddLineNumbers
 
 NODE_CLASS_MAPPINGS = {
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_AddLineNumbers": AddLineNumbers,
+    "Bjornulf_TextToAnything": TextToAnything,
+    "Bjornulf_SpeechToText": SpeechToText,
+    "Bjornulf_OllamaConfig": OllamaConfig,
+    "Bjornulf_OllamaSystemPersonaSelector": OllamaSystemPersonaSelector,
+    "Bjornulf_OllamaSystemJobSelector": OllamaSystemJobSelector,
+    "Bjornulf_OllamaImageVision": OllamaImageVision,
+    "Bjornulf_OllamaTalk": OllamaTalk,
     "Bjornulf_MergeImagesHorizontally": MergeImagesHorizontally,
     "Bjornulf_MergeImagesVertically": MergeImagesVertically,
     "Bjornulf_CombineVideoAudio": CombineVideoAudio,
@@ -131,6 +147,15 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
+    "Bjornulf_OllamaTalk": "🦙💬 Ollama Talk",
+    "Bjornulf_OllamaImageVision": "🦙👁 Ollama Vision",
+    "Bjornulf_OllamaConfig": "🦙 Ollama Configuration ⚙",
+    "Bjornulf_OllamaSystemJobSelector": "🦙 Ollama Job Selector 👇",
+    "Bjornulf_OllamaSystemPersonaSelector": "🦙 Ollama Persona Selector 👇",
+    "Bjornulf_SpeechToText": "🔊➜📝 STT - Speech to Text",
+    "Bjornulf_TextToSpeech": "📝➜🔊 TTS - Text to Speech",
+    "Bjornulf_TextToAnything": "📝➜✨ Text to Anything",
+    "Bjornulf_AddLineNumbers": "🔢 Add line numbers",
     "Bjornulf_WriteText": "✒ Write Text",
     "Bjornulf_MergeImagesHorizontally": "🖼🖼 Merge Images/Videos 📹📹 (Horizontally)",
     "Bjornulf_MergeImagesVertically": "🖼🖼 Merge Images/Videos 📹📹 (Vertically)",
@@ -186,7 +211,6 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_VideoPingPong": "📹 video PingPong",
     "Bjornulf_ollamaLoader": "🦙 Ollama (Description)",
     "Bjornulf_FreeVRAM": "🧹 Free VRAM hack",
-    "Bjornulf_TextToSpeech": "🔊 TTS - Text to Speech",
     "Bjornulf_PickInput": "⏸️ Paused. Select input, Pick 👇",
     "Bjornulf_PauseResume": "⏸️ Paused. Resume or Stop, Pick 👇",
     "Bjornulf_LoadImagesFromSelectedFolder": "📥🖼📂 Load Images from output folder",
