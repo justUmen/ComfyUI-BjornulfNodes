@@ -19,10 +19,10 @@ You can manage looping operations, generate randomized content, trigger logical 
 `1.` [👁 Show (Text, Int, Float)](#1----show-text-int-float)  
 `49.` [📹👁 Video Preview](#49----video-preview)  
 `68.` [🔢 Add line numbers](#68----add-line-numbers)  
-`71.` [👁 Show (Int)](#)  
-`72.` [👁 Show (Float)](#)  
-`73.` [👁 Show (String/Text)](#)  
-`74.` [👁 Show (JSON)](#)  
+`71.` [👁 Show (Int)](#71----show-int)  
+`72.` [👁 Show (Float)](#72----show-float)  
+`73.` [👁 Show (String/Text)](#73----show-stringtext)  
+`74.` [👁 Show (JSON)](#74----show-json)  
 
 ## ✒ Text ✒
 `2.` [✒ Write Text](#2----write-text)  
@@ -33,9 +33,9 @@ You can manage looping operations, generate randomized content, trigger logical 
 `28.` [🔢🎲 Text with random Seed](#28----text-with-random-seed)  
 `32.` [🧑📝 Character Description Generator](#32----character-description-generator)  
 `48.` [🔀🎲 Text scrambler (🧑 Character)](#48----text-scrambler--character)  
-`67.` [📝➜✨ Text to Anything](#)  
-`68.` [✨➜📝 Anything to Text](#)  
-`75.` [📝➜📝 Replace text](#)  
+`67.` [📝➜✨ Text to Anything](#67----text-to-anything)  
+`68.` [✨➜📝 Anything to Text](#68----anything-to-text)  
+`75.` [📝➜📝 Replace text](#75----replace-text)  
 
 ## ♻ Loop ♻
 `6.` [♻ Loop](#6----loop)  
@@ -93,7 +93,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60----merge-imagesvideos--horizontally)  
 `61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
 `62.` [🦙👁 Ollama Vision](#62----ollama-vision)  
-`69.` [📏 Resize Image Percentage](#69)  
+`70.` [📏 Resize Image Percentage](#70----resize-image-percentage)  
 
 ## 🚀 Load checkpoints 🚀
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
@@ -116,10 +116,10 @@ You can manage looping operations, generate randomized content, trigger logical 
 `59.` [📹🔊 Combine Video + Audio](#59----combine-video--audio)  
 `60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60----merge-imagesvideos--horizontally)  
 `61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
-`76.` [⚙📹 FFmpeg Configuration 📹⚙](#76)  
-`77.` [📹🔍 Video details ⚙](#77)  
-`78.` [📹➜📹 Convert Video](#78)  
-`79.` [📹🔗 Concat Videos from list](#79)  
+`76.` [⚙📹 FFmpeg Configuration 📹⚙](#76----ffmpeg-configuration-)  
+`77.` [📹🔍 Video details ⚙](#77----video-details-)  
+`78.` [📹➜📹 Convert Video](#78----convert-video)  
+`79.` [📹🔗 Concat Videos from list](#79----concat-videos-from-list)  
 
 ## 🤖 AI 🤖
 `19.` [🦙💬 Ollama Talk](#19----ollama-talk)  
@@ -1160,17 +1160,24 @@ Resize an image by percentage.
 ### 71 - 👁 Show (Int)
 
 **Description:**  
-Basic node, show an INT. (You can simply drag any INT node and it will be recommended.)
+Basic node, show an INT. (You can simply drag any INT node and it will be recommended.)  
+
+![show int](screenshots/show_int.png)  
 
 ### 72 - 👁 Show (Float)
 
 **Description:**  
-Basic node, show a FLOAT. (You can simply drag any FLOAT node and it will be recommended.)
+Basic node, show a FLOAT. (You can simply drag any FLOAT node and it will be recommended.)  
+
+![show float](screenshots/show_float.png)  
 
 ### 73 - 👁 Show (String/Text)
 
 **Description:**  
-Basic node, show a STRING. (You can simply drag any STRING node and it will be recommended.)
+Basic node, show a STRING. (You can simply drag any STRING node and it will be recommended.)  
+
+![show string](screenshots/show_string_1.png)  
+![show string](screenshots/show_string_2.png)  
 
 ### 74 - 👁 Show (JSON)
 
