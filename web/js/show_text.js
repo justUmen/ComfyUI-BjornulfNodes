@@ -24,6 +24,11 @@ app.registerExtension({
     async beforeRegisterNodeDef(nodeType, nodeData, app) {
         if (nodeData.name === "Bjornulf_ShowText") {
             function populate(text) {
+                if (!Array.isArray(text)) {
+                    console.warn("populate expects an array, got:", text);
+                    return;
+                }
+            
                 if (this.widgets) {
                     const pos = this.widgets.findIndex((w) => w.name === "text");
                     if (pos !== -1) {
@@ -32,30 +37,35 @@ app.registerExtension({
                         }
                         this.widgets.length = pos;
                     }
+                } else {
+                    this.widgets = [];
                 }
             
-                for (const list of text) {
-                    const w = ComfyWidgets["STRING"](this, "text", ["STRING", { multiline: true }], app).widget;
-                    w.inputEl.readOnly = true;
-                    Object.assign(w.inputEl.style, textAreaStyles);
+                text.forEach((list) => {
+                    const existingWidget = this.widgets.find(w => w.name === "text" && w.value === list);
+                    if (!existingWidget) {
+                        const w = ComfyWidgets["STRING"](this, "text", ["STRING", { multiline: true }], app).widget;
+                        w.inputEl.readOnly = true;
+                        Object.assign(w.inputEl.style, textAreaStyles);
             
-                    // Improved type detection
-                    let color = 'Lime'; // Default color for strings
-                    const value = list.toString().trim();
-                    
-                    if (/^-?\d+$/.test(value)) {
-                        color = '#0096FF'; // Integer
-                    } else if (/^-?\d*\.?\d+$/.test(value)) {
-                        color = 'orange'; // Float
-                    } else if (value.startsWith("If-Else ERROR: ")) {
-                        color = 'red'; // If-Else ERROR lines
-                    } else if (value.startsWith("tensor(")) {
-                        color = '#0096FF'; // Lines starting with "tensor("
+                        // Determine color based on type
+                        let color = 'Lime'; // Default color for strings
+                        const value = list.toString().trim();
+            
+                        if (/^-?\d+$/.test(value)) {
+                            color = '#0096FF'; // Integer
+                        } else if (/^-?\d*\.?\d+$/.test(value)) {
+                            color = 'orange'; // Float
+                        } else if (value.startsWith("If-Else ERROR: ")) {
+                            color = 'red'; // If-Else ERROR lines
+                        } else if (value.startsWith("tensor(")) {
+                            color = '#0096FF'; // Lines starting with "tensor("
+                        }
+            
+                        w.inputEl.style.color = color;
+                        w.value = list;
                     }
-                    
-                    w.inputEl.style.color = color;
-                    w.value = list;
-                }                
+                });
             
                 requestAnimationFrame(() => {
                     const sz = this.computeSize();
@@ -65,6 +75,7 @@ app.registerExtension({
                     app.graph.setDirtyCanvas(true, false);
                 });
             }
+            
 
             // When the node is executed we will be sent the input text, display this in the widget
             const onExecuted = nodeType.prototype.onExecuted;

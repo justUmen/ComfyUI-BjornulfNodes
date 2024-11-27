@@ -3,20 +3,17 @@ from pathlib import Path
 import os
 import json
 
-class ConcatVideos:
+class ConcatVideosFromList:
     @classmethod
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "number_of_videos": ("INT", {"default": 2, "min": 2, "max": 50, "step": 1}),
-                "output_filename": ("STRING", {"default": "concatenated.mp4"}),
+                "files": ("STRING", {"multiline": True, "forceInput": True}),
+                "output_filename": ("STRING", {"default": "output.mp4"}),
                 "use_python_ffmpeg": ("BOOLEAN", {"default": False}),
             },
             "optional": {
                 "FFMPEG_CONFIG_JSON": ("STRING", {"forceInput": True}),
-            },
-            "hidden": {
-                **{f"video_path_{i}": ("STRING", {"forceInput": True}) for i in range(1, 51)}
             }
         }
 
@@ -32,16 +29,15 @@ class ConcatVideos:
         os.makedirs(self.work_dir, exist_ok=True)
         os.makedirs(self.output_dir, exist_ok=True)
 
-    def concat_videos(self, number_of_videos: int, output_filename: str, 
-                     use_python_ffmpeg: bool = False, 
-                     FFMPEG_CONFIG_JSON: str = None, **kwargs):
+    def concat_videos(self, files: str, output_filename: str, 
+                    use_python_ffmpeg: bool = False, 
+                    FFMPEG_CONFIG_JSON: str = None):
         """
         Concatenate multiple videos using ffmpeg.
         Supports both subprocess and python-ffmpeg methods.
         """
-        # Get and validate video paths
-        video_paths = [kwargs[f"video_path_{i}"] for i in range(1, number_of_videos + 1) 
-                      if f"video_path_{i}" in kwargs]
+        # Split the multiline string into a list of video paths
+        video_paths = [path.strip() for path in files.split('\n') if path.strip()]
         
         video_paths = [os.path.abspath(path) for path in video_paths]
         for path in video_paths:
@@ -67,7 +63,6 @@ class ConcatVideos:
         if FFMPEG_CONFIG_JSON:
             try:
                 json_config = json.loads(FFMPEG_CONFIG_JSON)
-                # Merge JSON config, giving priority to use_python_ffmpeg from the node input
                 config = {**json_config, 'ffmpeg': {**json_config.get('ffmpeg', {}), 'use_python_ffmpeg': use_python_ffmpeg}}
             except json.JSONDecodeError:
                 raise ValueError("Invalid FFMPEG_CONFIG_JSON format")

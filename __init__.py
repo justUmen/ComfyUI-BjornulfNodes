@@ -1,10 +1,13 @@
+from .show_stuff import ShowFloat, ShowInt, ShowStringText, ShowJson
 from .images_to_video import imagesToVideo
 from .write_text import WriteText
+from .text_replace import TextReplace
 # from .write_image_environment import WriteImageEnvironment
 # from .write_image_characters import WriteImageCharacters
 # from .write_image_character import WriteImageCharacter
 # from .write_image_allinone import WriteImageAllInOne
 from .combine_texts import CombineTexts
+from .ffmpeg_configuration import FFmpegConfig
 from .loop_texts import LoopTexts
 from .random_texts import RandomTexts
 from .random_model_clip_vae import RandomModelClipVae
@@ -21,6 +24,7 @@ from .save_tmp_image import SaveTmpImage
 from .save_image_path import SaveImagePath
 from .save_img_to_folder import SaveImageToFolder
 from .resize_image import ResizeImage
+from .resize_image_percentage import ResizeImagePercentage
 from .loop_my_combos_samplers_schedulers import LoopCombosSamplersSchedulers
 from .remove_transparency import RemoveTransparency
 from .image_to_grayscale import GrayscaleTransform
@@ -48,6 +52,7 @@ from .select_image_from_list import SelectImageFromList
 from .random_model_selector import RandomModelSelector
 from .if_else import IfElse
 from .image_details import ImageDetails
+from .video_details import VideoDetails
 from .combine_images import CombineImages
 # from .pass_preview_image import PassPreviewImage
 from .text_scramble_character import ScramblerCharacter
@@ -61,6 +66,7 @@ from .loop_lora_selector import LoopLoraSelector
 from .loop_sequential_integer import LoopIntegerSequential
 from .loop_lines_sequential import LoopLinesSequential
 from .concat_videos import ConcatVideos
+from .concat_videos_from_list import ConcatVideosFromList
 from .combine_video_audio import CombineVideoAudio
 from .images_merger_horizontal import MergeImagesHorizontally
 from .images_merger_vertical import MergeImagesVertically
@@ -71,12 +77,22 @@ from .ollama_system_persona import OllamaSystemPersonaSelector
 from .ollama_system_job import OllamaSystemJobSelector
 from .speech_to_text import SpeechToText
 from .text_to_anything import TextToAnything
+from .anything_to_text import AnythingToText
 from .add_line_numbers import AddLineNumbers
+from .ffmpeg_convert import ConvertVideo
 
 NODE_CLASS_MAPPINGS = {
+    "Bjornulf_ShowInt": ShowInt, 
+    "Bjornulf_TextReplace" : TextReplace,
+    "Bjornulf_ShowFloat": ShowFloat,
+    "Bjornulf_ShowJson": ShowJson,
+    "Bjornulf_ShowStringText": ShowStringText,
     "Bjornulf_ollamaLoader": ollamaLoader,
+    "Bjornulf_FFmpegConfig": FFmpegConfig,
+    "Bjornulf_ConvertVideo": ConvertVideo,
     "Bjornulf_AddLineNumbers": AddLineNumbers,
     "Bjornulf_TextToAnything": TextToAnything,
+    "Bjornulf_AnythingToText": AnythingToText,
     "Bjornulf_SpeechToText": SpeechToText,
     "Bjornulf_OllamaConfig": OllamaConfig,
     "Bjornulf_OllamaSystemPersonaSelector": OllamaSystemPersonaSelector,
@@ -87,6 +103,7 @@ NODE_CLASS_MAPPINGS = {
     "Bjornulf_MergeImagesVertically": MergeImagesVertically,
     "Bjornulf_CombineVideoAudio": CombineVideoAudio,
     "Bjornulf_ConcatVideos": ConcatVideos,
+    "Bjornulf_ConcatVideosFromList": ConcatVideosFromList,
     "Bjornulf_LoopLinesSequential": LoopLinesSequential,
     "Bjornulf_LoopIntegerSequential": LoopIntegerSequential,
     "Bjornulf_LoopLoraSelector": LoopLoraSelector,
@@ -99,6 +116,7 @@ NODE_CLASS_MAPPINGS = {
     "Bjornulf_ScramblerCharacter": ScramblerCharacter,
     "Bjornulf_CombineImages": CombineImages,
     "Bjornulf_ImageDetails": ImageDetails,
+    "Bjornulf_VideoDetails": VideoDetails,
     "Bjornulf_IfElse": IfElse,
     "Bjornulf_RandomModelSelector": RandomModelSelector,
     "Bjornulf_SelectImageFromList": SelectImageFromList,
@@ -129,6 +147,7 @@ NODE_CLASS_MAPPINGS = {
     "Bjornulf_ShowText": ShowText,
     "Bjornulf_SaveText": SaveText,
     "Bjornulf_ResizeImage": ResizeImage,
+    "Bjornulf_ResizeImagePercentage": ResizeImagePercentage,
     "Bjornulf_SaveImageToFolder": SaveImageToFolder,
     "Bjornulf_SaveTmpImage": SaveTmpImage,
     "Bjornulf_SaveImagePath": SaveImagePath,
@@ -147,6 +166,10 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
+    "Bjornulf_ShowInt": "👁 Show (Int)", 
+    "Bjornulf_ShowFloat": "👁 Show (Float)",
+    "Bjornulf_ShowJson": "👁 Show (JSON)",
+    "Bjornulf_ShowStringText": "👁 Show (String/Text)",
     "Bjornulf_OllamaTalk": "🦙💬 Ollama Talk",
     "Bjornulf_OllamaImageVision": "🦙👁 Ollama Vision",
     "Bjornulf_OllamaConfig": "🦙 Ollama Configuration ⚙",
@@ -155,12 +178,18 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_SpeechToText": "🔊➜📝 STT - Speech to Text",
     "Bjornulf_TextToSpeech": "📝➜🔊 TTS - Text to Speech",
     "Bjornulf_TextToAnything": "📝➜✨ Text to Anything",
+    "Bjornulf_AnythingToText": "✨➜📝 Anything to Text",
+    "Bjornulf_TextReplace": "📝➜📝 Replace text",
     "Bjornulf_AddLineNumbers": "🔢 Add line numbers",
+    "Bjornulf_FFmpegConfig": "⚙📹 FFmpeg Configuration 📹⚙",
+    "Bjornulf_ConvertVideo": "📹➜📹 Convert Video",
+    "Bjornulf_VideoDetails": "📹🔍 Video details ⚙",
     "Bjornulf_WriteText": "✒ Write Text",
     "Bjornulf_MergeImagesHorizontally": "🖼🖼 Merge Images/Videos 📹📹 (Horizontally)",
     "Bjornulf_MergeImagesVertically": "🖼🖼 Merge Images/Videos 📹📹 (Vertically)",
     "Bjornulf_CombineVideoAudio": "📹🔊 Combine Video + Audio",
     "Bjornulf_ConcatVideos": "📹🔗 Concat Videos",
+    "Bjornulf_ConcatVideosFromList": "📹🔗 Concat Videos from list",
     "Bjornulf_LoopLinesSequential": "♻📝 Loop Sequential (input Lines)",
     "Bjornulf_LoopIntegerSequential": "♻📝 Loop Sequential (Integer)",
     "Bjornulf_LoopLoraSelector": "♻ Loop Lora Selector",
@@ -201,6 +230,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "Bjornulf_GrayscaleTransform": "🖼➜🔲 Image to grayscale (black & white)",
     "Bjornulf_RemoveTransparency": "▢➜⬛ Remove image Transparency (alpha)",
     "Bjornulf_ResizeImage": "📏 Resize Image",
+    "Bjornulf_ResizeImagePercentage": "📏 Resize Image Percentage",
     "Bjornulf_SaveImagePath": "💾🖼 Save Image (exact path, exact name) ⚠️💣",
     "Bjornulf_SaveImageToFolder": "💾🖼📁 Save Image(s) to a folder",
     "Bjornulf_SaveTmpImage": "💾🖼 Save Image (tmp_api.png) ⚠️💣",

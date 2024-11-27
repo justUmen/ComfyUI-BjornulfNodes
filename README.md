@@ -1,6 +1,6 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.60 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.61 🔗
 
-A list of 68 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
+A list of 79 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
 
 # Coffee : ☕☕☕☕☕ 5/5
@@ -19,6 +19,10 @@ You can manage looping operations, generate randomized content, trigger logical 
 `1.` [👁 Show (Text, Int, Float)](#1----show-text-int-float)  
 `49.` [📹👁 Video Preview](#49----video-preview)  
 `68.` [🔢 Add line numbers](#68----add-line-numbers)  
+`71.` [👁 Show (Int)](#)  
+`72.` [👁 Show (Float)](#)  
+`73.` [👁 Show (String/Text)](#)  
+`74.` [👁 Show (JSON)](#)  
 
 ## ✒ Text ✒
 `2.` [✒ Write Text](#2----write-text)  
@@ -29,7 +33,9 @@ You can manage looping operations, generate randomized content, trigger logical 
 `28.` [🔢🎲 Text with random Seed](#28----text-with-random-seed)  
 `32.` [🧑📝 Character Description Generator](#32----character-description-generator)  
 `48.` [🔀🎲 Text scrambler (🧑 Character)](#48----text-scrambler--character)  
-`67.` [📝➜✨ Text to Anything](67----text-to-anything)  
+`67.` [📝➜✨ Text to Anything](#)  
+`68.` [✨➜📝 Anything to Text](#)  
+`75.` [📝➜📝 Replace text](#)  
 
 ## ♻ Loop ♻
 `6.` [♻ Loop](#6----loop)  
@@ -87,6 +93,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60----merge-imagesvideos--horizontally)  
 `61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
 `62.` [🦙👁 Ollama Vision](#62----ollama-vision)  
+`69.` [📏 Resize Image Percentage](#69)  
 
 ## 🚀 Load checkpoints 🚀
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
@@ -109,6 +116,10 @@ You can manage looping operations, generate randomized content, trigger logical 
 `59.` [📹🔊 Combine Video + Audio](#59----combine-video--audio)  
 `60.` [🖼🖼 Merge Images/Videos 📹📹 (Horizontally)](#60----merge-imagesvideos--horizontally)  
 `61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
+`76.` [⚙📹 FFmpeg Configuration 📹⚙](#76)  
+`77.` [📹🔍 Video details ⚙](#77)  
+`78.` [📹➜📹 Convert Video](#78)  
+`79.` [📹🔗 Concat Videos from list](#79)  
 
 ## 🤖 AI 🤖
 `19.` [🦙💬 Ollama Talk](#19----ollama-talk)  
@@ -286,6 +297,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **0.58**: small fix in model selector default value. (Set to None by default)
 - **0.59**: A lot of Javascript fixing to avoid resizing and better properties mangement / recoveries
 - **0.60**: Revert changes from ollama_talk (implement _user mode later / another node)
+- **0.61**: Add/modify a bunch of Ffmpeg / video nodes. With a global configuration system and toggle python-ffmpeg / system.
 
 # 📝 Nodes descriptions
 
@@ -1034,6 +1046,7 @@ If you want to be able to predict the next line, you can use node 68, to Add lin
 
 **Description:**  
 Take two videos and concatenate them. (One after the other in the same video.)  
+Convert a video, can use FFMPEG_CONFIG_JSON. (From node 76 / 77)    
 
 ![concat video](screenshots/concat_video.png)  
 
@@ -1120,7 +1133,14 @@ Below is an example of that with my TTS node.
 
 ![text to anything](screenshots/text_to_anything.png)  
 
-### 68 - 🔢 Add line numbers
+### 68 - ✨➜📝 Anything to Text
+
+**Description:**  
+Sometimes you want to force something to be a STRING.  
+Most outputs are indeed text, even though they might be unusable.  
+This node ignore this fact and simply convert the input to a simple STRING.  
+
+### 69 - 🔢 Add line numbers
 
 **Description:**  
 
@@ -1128,3 +1148,76 @@ This node will just add line numbers to text.
 Useful when you want to use node 57 that will loop over input lines. (You can read/predict the next line.)  
 
 ![add line numbers](screenshots/add_line_numbers.png)  
+
+### 70 - 📏 Resize Image Percentage
+
+**Description:**  
+
+Resize an image by percentage.  
+
+![resize percentage](screenshots/resize_percentage.png)  
+
+### 71 - 👁 Show (Int)
+
+**Description:**  
+Basic node, show an INT. (You can simply drag any INT node and it will be recommended.)
+
+### 72 - 👁 Show (Float)
+
+**Description:**  
+Basic node, show a FLOAT. (You can simply drag any FLOAT node and it will be recommended.)
+
+### 73 - 👁 Show (String/Text)
+
+**Description:**  
+Basic node, show a STRING. (You can simply drag any STRING node and it will be recommended.)
+
+### 74 - 👁 Show (JSON)
+
+**Description:**  
+This node will take a STRING and format it as a readable JSON. (and pink)  
+
+![show json](screenshots/show_json.png)  
+![show json](screenshots/show_json2.png)  
+
+### 75 - 📝➜📝 Replace text
+
+**Description:**  
+Replace text with another text, allow regex and more options, check examples below :  
+
+![text replace](screenshots/text_replace_1.png)  
+![text replace](screenshots/text_replace_2.png)  
+![text replace](screenshots/text_replace_3.png)  
+
+### 76 - ⚙📹 FFmpeg Configuration 📹⚙
+
+**Description:**  
+Create a FFMPEG_CONFIG_JSON, it will contains a JSON that can be used by other nodes :
+- Convert video
+- Concat videos
+- Concat video from list
+
+![text replace](screenshots/ffmpeg_conf.png)  
+
+### 77 - 📹🔍 Video details ⚙
+
+**Description:**  
+Extract details from a video_path.  
+You can use the all-in-one FFMPEG_CONFIG_JSON with other nodes or just use the other variables as your want.  
+
+![video details](screenshots/video_details.png)  
+
+### 78 - 📹➜📹 Convert Video
+
+**Description:**  
+Convert a video, can use FFMPEG_CONFIG_JSON.  
+
+![convert video](screenshots/convert_video.png)  
+
+#### 79 - 📹🔗 Concat Videos from list
+
+**Description:**  
+Take a list of videos (one per line) and concatenate them. (One after the other in the same video.)  
+Can use FFMPEG_CONFIG_JSON. (From node 76 / 77)    
+
+![concat video list](screenshots/concat_video_list.png)  
