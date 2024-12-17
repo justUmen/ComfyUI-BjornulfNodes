@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Landscape_Realistic_Pro",
+        "model_id": 85137,
+        "base_model": "SD 2.0 768",
+        "image_path": "models/sd_2.0_768/Landscape_Realistic_Pro_2208745.jpeg",
+        "download_url": "https://civitai.com/api/download/models/148587"
+    }
+]

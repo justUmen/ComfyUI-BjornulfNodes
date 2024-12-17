@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Stable_Diffusion_3__SD3_",
+        "model_id": 497255,
+        "base_model": "SD 3",
+        "image_path": "models/sd_3/Stable_Diffusion_3__SD3__14714388.jpeg",
+        "download_url": "https://civitai.com/api/download/models/552771"
+    }
+]

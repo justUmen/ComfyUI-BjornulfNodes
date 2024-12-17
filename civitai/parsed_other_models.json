@@ -1,0 +1,135 @@
+[
+    {
+        "name": "Pastel-Mix__Stylized_Anime_Model_",
+        "model_id": 5414,
+        "base_model": "Other",
+        "image_path": "models/other/Pastel-Mix__Stylized_Anime_Model__55764.jpeg",
+        "download_url": "https://civitai.com/api/download/models/6297"
+    },
+    {
+        "name": "MIX-Pro-V4",
+        "model_id": 7241,
+        "base_model": "Other",
+        "image_path": "models/other/MIX-Pro-V4_394740.jpeg",
+        "download_url": "https://civitai.com/api/download/models/34559"
+    },
+    {
+        "name": "Three_Delicacy_Wonton__三餡馄饨Mix_",
+        "model_id": 20330,
+        "base_model": "Other",
+        "image_path": "models/other/Three_Delicacy_Wonton__三餡馄饨Mix__418204.jpeg",
+        "download_url": "https://civitai.com/api/download/models/36473"
+    },
+    {
+        "name": "9527",
+        "model_id": 6204,
+        "base_model": "Other",
+        "image_path": "models/other/9527_67246.jpeg",
+        "download_url": "https://civitai.com/api/download/models/7278"
+    },
+    {
+        "name": "MIX-Pro-V4.5_ColorBox",
+        "model_id": 14206,
+        "base_model": "Other",
+        "image_path": "models/other/MIX-Pro-V4.5_ColorBox_442684.jpeg",
+        "download_url": "https://civitai.com/api/download/models/39989"
+    },
+    {
+        "name": "Anime_Illust_Diffusion",
+        "model_id": 16828,
+        "base_model": "Other",
+        "image_path": "models/other/Anime_Illust_Diffusion_1532972.jpeg",
+        "download_url": "https://civitai.com/api/download/models/116468"
+    },
+    {
+        "name": "国风2_GuoFeng2",
+        "model_id": 8470,
+        "base_model": "Other",
+        "image_path": "models/other/国风2_GuoFeng2_915642.jpeg",
+        "download_url": "https://civitai.com/api/download/models/81482"
+    },
+    {
+        "name": "Roop_-_Video_Face_Replacement",
+        "model_id": 80324,
+        "base_model": "Other",
+        "image_path": "models/other/Roop_-_Video_Face_Replacement_963567.jpeg",
+        "download_url": "https://civitai.com/api/download/models/85159"
+    },
+    {
+        "name": "yden",
+        "model_id": 18616,
+        "base_model": "Other",
+        "image_path": "models/other/yden_543841.jpeg",
+        "download_url": "https://civitai.com/api/download/models/50483"
+    },
+    {
+        "name": "NijiV5style",
+        "model_id": 42402,
+        "base_model": "Other",
+        "image_path": "models/other/NijiV5style_508602.jpeg",
+        "download_url": "https://civitai.com/api/download/models/47075"
+    },
+    {
+        "name": "ouka_niji5",
+        "model_id": 85504,
+        "base_model": "Other",
+        "image_path": "models/other/ouka_niji5_1150460.jpeg",
+        "download_url": "https://civitai.com/api/download/models/90909"
+    },
+    {
+        "name": "VivCharMix",
+        "model_id": 29422,
+        "base_model": "Other",
+        "image_path": "models/other/VivCharMix_1136889.jpeg",
+        "download_url": "https://civitai.com/api/download/models/95319"
+    },
+    {
+        "name": "SilvermoonMix_Base_model",
+        "model_id": 54152,
+        "base_model": "Other",
+        "image_path": "models/other/SilvermoonMix_Base_model_3752899.jpeg",
+        "download_url": "https://civitai.com/api/download/models/231106?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "NineKeyMIX12",
+        "model_id": 77977,
+        "base_model": "Other",
+        "image_path": "models/other/NineKeyMIX12_1467601.jpeg",
+        "download_url": "https://civitai.com/api/download/models/113205"
+    },
+    {
+        "name": "_MAGIFACTORY__t-shirt_diffusion",
+        "model_id": 4694,
+        "base_model": "Other",
+        "image_path": "models/other/_MAGIFACTORY__t-shirt_diffusion_70770.jpeg",
+        "download_url": "https://civitai.com/api/download/models/7554"
+    },
+    {
+        "name": "Five_Nuts_Mixed_五仁月饼Mix",
+        "model_id": 21409,
+        "base_model": "Other",
+        "image_path": "models/other/Five_Nuts_Mixed_五仁月饼Mix_280238.jpeg",
+        "download_url": "https://civitai.com/api/download/models/25526"
+    },
+    {
+        "name": "Perfect_Sketchbook_完美草图",
+        "model_id": 27968,
+        "base_model": "Other",
+        "image_path": "models/other/Perfect_Sketchbook_完美草图_395029.jpeg",
+        "download_url": "https://civitai.com/api/download/models/34584"
+    },
+    {
+        "name": "Ekmix-Pastel",
+        "model_id": 6116,
+        "base_model": "Other",
+        "image_path": "models/other/Ekmix-Pastel_286024.jpeg",
+        "download_url": "https://civitai.com/api/download/models/26006"
+    },
+    {
+        "name": "siiNCeysMiX_V1___V2___Alternative_Version",
+        "model_id": 2457,
+        "base_model": "Other",
+        "image_path": "models/other/siiNCeysMiX_V1___V2___Alternative_Version_19637.jpeg",
+        "download_url": "https://civitai.com/api/download/models/2701"
+    }
+]

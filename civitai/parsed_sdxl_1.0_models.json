@@ -1,0 +1,716 @@
+[
+    {
+        "name": "Juggernaut_XL",
+        "model_id": 133005,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Juggernaut_XL_26700009.jpeg",
+        "download_url": "https://civitai.com/api/download/models/782002"
+    },
+    {
+        "name": "万象熔炉___Anything_XL",
+        "model_id": 9409,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/万象熔炉___Anything_XL_12622035.jpeg",
+        "download_url": "https://civitai.com/api/download/models/384264"
+    },
+    {
+        "name": "Animagine_XL_V3.1",
+        "model_id": 260267,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Animagine_XL_V3.1_8301359.jpeg",
+        "download_url": "https://civitai.com/api/download/models/403131"
+    },
+    {
+        "name": "LEOSAM_s_HelloWorld_XL",
+        "model_id": 43977,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/LEOSAM_s_HelloWorld_XL_15650061.jpeg",
+        "download_url": "https://civitai.com/api/download/models/570138"
+    },
+    {
+        "name": "SD_XL",
+        "model_id": 101055,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SD_XL_1777436.jpeg",
+        "download_url": "https://civitai.com/api/download/models/128078"
+    },
+    {
+        "name": "ZavyChromaXL",
+        "model_id": 119229,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/ZavyChromaXL_32530768.jpeg",
+        "download_url": "https://civitai.com/api/download/models/916744"
+    },
+    {
+        "name": "Game_icon_Institute_mode",
+        "model_id": 47800,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Game_icon_Institute_mode_12423101.jpeg",
+        "download_url": "https://civitai.com/api/download/models/505488"
+    },
+    {
+        "name": "SDXL_Unstable_Diffusers___YamerMIX",
+        "model_id": 84040,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDXL_Unstable_Diffusers___YamerMIX_8063881.jpeg",
+        "download_url": "https://civitai.com/api/download/models/395107"
+    },
+    {
+        "name": "DynaVision_XL_-_All-in-one_stylized_3D_SFW_and_NSFW_output__no_refiner_needed_",
+        "model_id": 122606,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/DynaVision_XL_-_All-in-one_stylized_3D_SFW_and_NSFW_output__no_refiner_needed__5462682.jpeg",
+        "download_url": "https://civitai.com/api/download/models/297740"
+    },
+    {
+        "name": "AlbedoBase_XL",
+        "model_id": 140737,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/AlbedoBase_XL_39093382.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1041855"
+    },
+    {
+        "name": "XXMix_9realisticSDXL",
+        "model_id": 124421,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/XXMix_9realisticSDXL_2528762.jpeg",
+        "download_url": "https://civitai.com/api/download/models/163192"
+    },
+    {
+        "name": "NightVisionXL",
+        "model_id": 128607,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/NightVisionXL_16068005.jpeg",
+        "download_url": "https://civitai.com/api/download/models/577919"
+    },
+    {
+        "name": "CounterfeitXL",
+        "model_id": 118406,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/CounterfeitXL_4647930.jpeg",
+        "download_url": "https://civitai.com/api/download/models/265012"
+    },
+    {
+        "name": "NoobAI-XL__NAI-XL_",
+        "model_id": 833294,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/NoobAI-XL__NAI-XL__44303743.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1140829"
+    },
+    {
+        "name": "Samaritan_3d_Cartoon",
+        "model_id": 81270,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Samaritan_3d_Cartoon_2117788.jpeg",
+        "download_url": "https://civitai.com/api/download/models/144566"
+    },
+    {
+        "name": "RealCartoon-XL",
+        "model_id": 125907,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/RealCartoon-XL_22187803.jpeg",
+        "download_url": "https://civitai.com/api/download/models/686204"
+    },
+    {
+        "name": "ProtoVision_XL_-_High_Fidelity_3D___Photorealism___Anime___hyperrealism_-_No_Refiner_Needed",
+        "model_id": 125703,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/ProtoVision_XL_-_High_Fidelity_3D___Photorealism___Anime___hyperrealism_-_No_Refiner_Needed_4665992.jpeg",
+        "download_url": "https://civitai.com/api/download/models/265938"
+    },
+    {
+        "name": "blue_pencil-XL",
+        "model_id": 119012,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/blue_pencil-XL_16849253.jpeg",
+        "download_url": "https://civitai.com/api/download/models/592322"
+    },
+    {
+        "name": "SDXL_Niji_Seven",
+        "model_id": 120765,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDXL_Niji_Seven_20802036.jpeg",
+        "download_url": "https://civitai.com/api/download/models/662395"
+    },
+    {
+        "name": "Realism_Engine_SDXL",
+        "model_id": 152525,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Realism_Engine_SDXL_5344273.jpeg",
+        "download_url": "https://civitai.com/api/download/models/293240"
+    },
+    {
+        "name": "_SDXL__RongHua___容华___国风大模型",
+        "model_id": 125634,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/_SDXL__RongHua___容华___国风大模型_10894281.jpeg",
+        "download_url": "https://civitai.com/api/download/models/471038"
+    },
+    {
+        "name": "t3",
+        "model_id": 110053,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/t3_43839013.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1132509"
+    },
+    {
+        "name": "AAM_XL__Anime_Mix_",
+        "model_id": 269232,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/AAM_XL__Anime_Mix__5626297.jpeg",
+        "download_url": "https://civitai.com/api/download/models/303526"
+    },
+    {
+        "name": "SDVN7-NijiStyleXL",
+        "model_id": 123307,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDVN7-NijiStyleXL_2367463.jpeg",
+        "download_url": "https://civitai.com/api/download/models/155870"
+    },
+    {
+        "name": "epiCRealism_XL",
+        "model_id": 277058,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/epiCRealism_XL_40958994.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1074830"
+    },
+    {
+        "name": "Anime_Illust_Diffusion_XL",
+        "model_id": 124189,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Anime_Illust_Diffusion_XL_7578514.jpeg",
+        "download_url": "https://civitai.com/api/download/models/372261"
+    },
+    {
+        "name": "SDXL_Yamer_s_Realistic_5_______",
+        "model_id": 127923,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDXL_Yamer_s_Realistic_5________5668521.jpeg",
+        "download_url": "https://civitai.com/api/download/models/299716"
+    },
+    {
+        "name": "Crystal_Clear_XL",
+        "model_id": 122822,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Crystal_Clear_XL_2317959.jpeg",
+        "download_url": "https://civitai.com/api/download/models/133832"
+    },
+    {
+        "name": "__SDXL_FaeTastic__",
+        "model_id": 129681,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/__SDXL_FaeTastic___5294181.jpeg",
+        "download_url": "https://civitai.com/api/download/models/291443"
+    },
+    {
+        "name": "Babes_By_Stable_Yogi",
+        "model_id": 174687,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Babes_By_Stable_Yogi_40965282.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1075478"
+    },
+    {
+        "name": "Better_than_words",
+        "model_id": 149359,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Better_than_words_3802012.jpeg",
+        "download_url": "https://civitai.com/api/download/models/233092"
+    },
+    {
+        "name": "Starlight_XL_星光_Animated",
+        "model_id": 143043,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Starlight_XL_星光_Animated_2937177.jpeg",
+        "download_url": "https://civitai.com/api/download/models/182077"
+    },
+    {
+        "name": "DucHaiten-AIart-SDXL",
+        "model_id": 118756,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/DucHaiten-AIart-SDXL_6528472.jpeg",
+        "download_url": "https://civitai.com/api/download/models/339195"
+    },
+    {
+        "name": "Jib_Mix_Realistic_XL",
+        "model_id": 194768,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Jib_Mix_Realistic_XL_38559535.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1031794"
+    },
+    {
+        "name": "Colossus_Project_XL__SFW_NSFW_",
+        "model_id": 147720,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Colossus_Project_XL__SFW_NSFW__23978103.jpeg",
+        "download_url": "https://civitai.com/api/download/models/714208"
+    },
+    {
+        "name": "ControlNetXL__CNXL_",
+        "model_id": 136070,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/ControlNetXL__CNXL__27936581.jpeg",
+        "download_url": "https://civitai.com/api/download/models/807420?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "SDXL_1.0_ArienMixXL_Asian_portrait_亚洲人像",
+        "model_id": 118913,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDXL_1.0_ArienMixXL_Asian_portrait_亚洲人像_12612947.jpeg",
+        "download_url": "https://civitai.com/api/download/models/448627"
+    },
+    {
+        "name": "SDVN6-RealXL",
+        "model_id": 118114,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDVN6-RealXL_1889585.jpeg",
+        "download_url": "https://civitai.com/api/download/models/134461"
+    },
+    {
+        "name": "SDXL_Yamer_s_Anime_____Unstable_Illustrator",
+        "model_id": 76489,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDXL_Yamer_s_Anime_____Unstable_Illustrator_7561093.jpeg",
+        "download_url": "https://civitai.com/api/download/models/377674"
+    },
+    {
+        "name": "anima_pencil-XL",
+        "model_id": 261336,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/anima_pencil-XL_17129585.jpeg",
+        "download_url": "https://civitai.com/api/download/models/597138"
+    },
+    {
+        "name": "Art_Universe",
+        "model_id": 123313,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Art_Universe_35199180.jpeg",
+        "download_url": "https://civitai.com/api/download/models/968318"
+    },
+    {
+        "name": "Reproduction___SDXL",
+        "model_id": 118729,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Reproduction___SDXL_3963302.jpeg",
+        "download_url": "https://civitai.com/api/download/models/240824"
+    },
+    {
+        "name": "Kohaku-XL_beta",
+        "model_id": 162577,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Kohaku-XL_beta_3078086.jpeg",
+        "download_url": "https://civitai.com/api/download/models/192804"
+    },
+    {
+        "name": "_CHEYENNE_",
+        "model_id": 198051,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/_CHEYENNE__42073184.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1099629"
+    },
+    {
+        "name": "WildCardX-XL-Fusion",
+        "model_id": 267728,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/WildCardX-XL-Fusion_6702952.jpeg",
+        "download_url": "https://civitai.com/api/download/models/345685"
+    },
+    {
+        "name": "BreakDomainXL",
+        "model_id": 126259,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/BreakDomainXL_3718024.jpeg",
+        "download_url": "https://civitai.com/api/download/models/229987"
+    },
+    {
+        "name": "Anime_Art_Diffusion_XL",
+        "model_id": 117259,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Anime_Art_Diffusion_XL_1792770.jpeg",
+        "download_url": "https://civitai.com/api/download/models/128592"
+    },
+    {
+        "name": "国风4_GuoFeng4_XL",
+        "model_id": 118009,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/国风4_GuoFeng4_XL_3174094.jpeg",
+        "download_url": "https://civitai.com/api/download/models/199325"
+    },
+    {
+        "name": "TalmendoXL_-_SDXL_Uncensored_Full_Model",
+        "model_id": 119202,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/TalmendoXL_-_SDXL_Uncensored_Full_Model_1846916.jpeg",
+        "download_url": "https://civitai.com/api/download/models/131960"
+    },
+    {
+        "name": "BAXL___Blue_Archive_Flat_Celluloid_Style_Fine-tune___碧蓝档案赛璐璐平涂画风__Kohaku_Δ___Animagine_XL_v3_",
+        "model_id": 212253,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/BAXL___Blue_Archive_Flat_Celluloid_Style_Fine-tune___碧蓝档案赛璐璐平涂画风__Kohaku_Δ___Animagine_XL_v3__9171232.jpeg",
+        "download_url": "https://civitai.com/api/download/models/426588"
+    },
+    {
+        "name": "CyberRealistic_XL",
+        "model_id": 312530,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/CyberRealistic_XL_35270713.jpeg",
+        "download_url": "https://civitai.com/api/download/models/969690"
+    },
+    {
+        "name": "RunDiffusion_XL",
+        "model_id": 120964,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/RunDiffusion_XL_1841032.jpeg",
+        "download_url": "https://civitai.com/api/download/models/131579"
+    },
+    {
+        "name": "XL6_-_HEPHAISTOS__SD_1.0XL__SFW_NSFW_",
+        "model_id": 119279,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/XL6_-_HEPHAISTOS__SD_1.0XL__SFW_NSFW__2441472.jpeg",
+        "download_url": "https://civitai.com/api/download/models/159123"
+    },
+    {
+        "name": "Pixel_Art_Diffusion_XL",
+        "model_id": 277680,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Pixel_Art_Diffusion_XL_7188038.jpeg",
+        "download_url": "https://civitai.com/api/download/models/364043"
+    },
+    {
+        "name": "Realistic_Freedom_-_SFW_and_NSFW",
+        "model_id": 138977,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Realistic_Freedom_-_SFW_and_NSFW_10548571.jpeg",
+        "download_url": "https://civitai.com/api/download/models/463276"
+    },
+    {
+        "name": "fuduki_mix",
+        "model_id": 129830,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/fuduki_mix_4673188.jpeg",
+        "download_url": "https://civitai.com/api/download/models/266180"
+    },
+    {
+        "name": "ThinkDiffusionXL",
+        "model_id": 169868,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/ThinkDiffusionXL_3062343.jpeg",
+        "download_url": "https://civitai.com/api/download/models/190908"
+    },
+    {
+        "name": "WyvernMix__1.5___XL_",
+        "model_id": 5273,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/WyvernMix__1.5___XL__20143382.jpeg",
+        "download_url": "https://civitai.com/api/download/models/650381"
+    },
+    {
+        "name": "PhotoPedia_XL",
+        "model_id": 189109,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/PhotoPedia_XL_4411800.jpeg",
+        "download_url": "https://civitai.com/api/download/models/259323"
+    },
+    {
+        "name": "OmnigenXL__NSFW___SFW_",
+        "model_id": 203014,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/OmnigenXL__NSFW___SFW__3688210.jpeg",
+        "download_url": "https://civitai.com/api/download/models/228559"
+    },
+    {
+        "name": "Acorn_Is_Spinning",
+        "model_id": 112013,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Acorn_Is_Spinning_23156103.jpeg",
+        "download_url": "https://civitai.com/api/download/models/703094"
+    },
+    {
+        "name": "GhostXL",
+        "model_id": 312431,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/GhostXL_6825114.jpeg",
+        "download_url": "https://civitai.com/api/download/models/350624"
+    },
+    {
+        "name": "WildCardX-XL",
+        "model_id": 239561,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/WildCardX-XL_5766136.jpeg",
+        "download_url": "https://civitai.com/api/download/models/308455"
+    },
+    {
+        "name": "ShikiAnimeXL",
+        "model_id": 119163,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/ShikiAnimeXL_1823017.jpeg",
+        "download_url": "https://civitai.com/api/download/models/129369"
+    },
+    {
+        "name": "Artium",
+        "model_id": 216439,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Artium_4939791.jpeg",
+        "download_url": "https://civitai.com/api/download/models/277071"
+    },
+    {
+        "name": "DevlishPhotoRealism_SDXL",
+        "model_id": 156061,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/DevlishPhotoRealism_SDXL_21156645.jpeg",
+        "download_url": "https://civitai.com/api/download/models/668630"
+    },
+    {
+        "name": "Hentai_Mix_XL_-_Road_to_freedom",
+        "model_id": 199554,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Hentai_Mix_XL_-_Road_to_freedom_5434319.jpeg",
+        "download_url": "https://civitai.com/api/download/models/296678"
+    },
+    {
+        "name": "Kohaku-XL_alpha",
+        "model_id": 136389,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Kohaku-XL_alpha_2632924.jpeg",
+        "download_url": "https://civitai.com/api/download/models/167926"
+    },
+    {
+        "name": "Project_Unreal_Engine_5",
+        "model_id": 4752,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Project_Unreal_Engine_5_12896798.jpeg",
+        "download_url": "https://civitai.com/api/download/models/515404"
+    },
+    {
+        "name": "9527_Detail_Realistic_XL",
+        "model_id": 176449,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/9527_Detail_Realistic_XL_32025258.jpeg",
+        "download_url": "https://civitai.com/api/download/models/906483"
+    },
+    {
+        "name": "9527_Detail_Realistic_XL",
+        "model_id": 176449,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/9527_Detail_Realistic_XL_32025258.jpeg",
+        "download_url": "https://civitai.com/api/download/models/906483"
+    },
+    {
+        "name": "Raemu_XL",
+        "model_id": 270336,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Raemu_XL_18123125.jpeg",
+        "download_url": "https://civitai.com/api/download/models/613928"
+    },
+    {
+        "name": "Kohaku-XL_Delta",
+        "model_id": 332076,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Kohaku-XL_Delta_7394558.jpeg",
+        "download_url": "https://civitai.com/api/download/models/372033"
+    },
+    {
+        "name": "Heart_of_Apple_XL___",
+        "model_id": 272440,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Heart_of_Apple_XL____13613289.jpeg",
+        "download_url": "https://civitai.com/api/download/models/530170?type=Training%20Data"
+    },
+    {
+        "name": "SDXL_YAMER_S_PERFECT_DESIGN__",
+        "model_id": 122922,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDXL_YAMER_S_PERFECT_DESIGN___6973466.jpeg",
+        "download_url": "https://civitai.com/api/download/models/354899"
+    },
+    {
+        "name": "_MOHAWK_",
+        "model_id": 144952,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/_MOHAWK__5164213.jpeg",
+        "download_url": "https://civitai.com/api/download/models/286100"
+    },
+    {
+        "name": "Halcyon_SDXL_-_Photorealism",
+        "model_id": 299933,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Halcyon_SDXL_-_Photorealism_23542875.jpeg",
+        "download_url": "https://civitai.com/api/download/models/709468"
+    },
+    {
+        "name": "BriXL___A_must_in_your_toolbox",
+        "model_id": 131703,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/BriXL___A_must_in_your_toolbox_3929499.jpeg",
+        "download_url": "https://civitai.com/api/download/models/239362"
+    },
+    {
+        "name": "Omnium",
+        "model_id": 194245,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Omnium_3844078.jpeg",
+        "download_url": "https://civitai.com/api/download/models/235598"
+    },
+    {
+        "name": "Tamarin_XL",
+        "model_id": 235746,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Tamarin_XL_4827271.jpeg",
+        "download_url": "https://civitai.com/api/download/models/265836?type=Config&format=Other"
+    },
+    {
+        "name": "AnimeXL-xuebiMIX",
+        "model_id": 129403,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/AnimeXL-xuebiMIX_4456416.jpeg",
+        "download_url": "https://civitai.com/api/download/models/259194"
+    },
+    {
+        "name": "DisneyRealCartoonMix",
+        "model_id": 212426,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/DisneyRealCartoonMix_3929056.jpeg",
+        "download_url": "https://civitai.com/api/download/models/239306"
+    },
+    {
+        "name": "ICBINP_XL",
+        "model_id": 229002,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/ICBINP_XL_14625687.jpeg",
+        "download_url": "https://civitai.com/api/download/models/551129"
+    },
+    {
+        "name": "BrightProtoNuke_BPN__-_No_refiner_needed",
+        "model_id": 148871,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/BrightProtoNuke_BPN__-_No_refiner_needed_4158368.jpeg",
+        "download_url": "https://civitai.com/api/download/models/248861"
+    },
+    {
+        "name": "Suzanne_s_XL_Mix",
+        "model_id": 246755,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Suzanne_s_XL_Mix_35986895.jpeg",
+        "download_url": "https://civitai.com/api/download/models/981979"
+    },
+    {
+        "name": "SDVN8-ArtXL",
+        "model_id": 189179,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDVN8-ArtXL_3387806.jpeg",
+        "download_url": "https://civitai.com/api/download/models/212479"
+    },
+    {
+        "name": "Moxie_Diffusion_XL",
+        "model_id": 260460,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Moxie_Diffusion_XL_20559989.jpeg",
+        "download_url": "https://civitai.com/api/download/models/657897"
+    },
+    {
+        "name": "Riot_Diffusion_XL___League_of_Legends_Splash_Art__Arcane__Valorant__Runeterra__Wild_Rift__Mobile_Legends__Artstation__Pixiv",
+        "model_id": 125151,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Riot_Diffusion_XL___League_of_Legends_Splash_Art__Arcane__Valorant__Runeterra__Wild_Rift__Mobile_Legends__Artstation__Pixiv_2927158.jpeg",
+        "download_url": "https://civitai.com/api/download/models/181589"
+    },
+    {
+        "name": "DucHaiten-Real3D-NSFW-XL",
+        "model_id": 247266,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/DucHaiten-Real3D-NSFW-XL_7348516.jpeg",
+        "download_url": "https://civitai.com/api/download/models/370289"
+    },
+    {
+        "name": "Kohaku-XL_Epsilon",
+        "model_id": 399873,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Kohaku-XL_Epsilon_14374493.jpeg",
+        "download_url": "https://civitai.com/api/download/models/546178"
+    },
+    {
+        "name": "FormulaXL_-_公式XL__ComfyUI_",
+        "model_id": 129922,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/FormulaXL_-_公式XL__ComfyUI__2474492.jpeg",
+        "download_url": "https://civitai.com/api/download/models/160525"
+    },
+    {
+        "name": "Stable-Diffusion-XL-Anime-Final",
+        "model_id": 121215,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Stable-Diffusion-XL-Anime-Final_20911680.jpeg",
+        "download_url": "https://civitai.com/api/download/models/660179"
+    },
+    {
+        "name": "Cinemax_Alpha___SDXL___Cinema___Filmic___NSFW",
+        "model_id": 131843,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Cinemax_Alpha___SDXL___Cinema___Filmic___NSFW_2127291.jpeg",
+        "download_url": "https://civitai.com/api/download/models/144968"
+    },
+    {
+        "name": "SDXL_Yamer_s_Realism__-_Realistic_Anime_3D",
+        "model_id": 136669,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDXL_Yamer_s_Realism__-_Realistic_Anime_3D_3795758.jpeg",
+        "download_url": "https://civitai.com/api/download/models/233197"
+    },
+    {
+        "name": "ArtiWaifu_Diffusion",
+        "model_id": 435207,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/ArtiWaifu_Diffusion_26736256.jpeg",
+        "download_url": "https://civitai.com/api/download/models/782125"
+    },
+    {
+        "name": "SDXL_fixedvae_fp16_Remove_Watermark_",
+        "model_id": 117188,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDXL_fixedvae_fp16_Remove_Watermark__1795012.jpeg",
+        "download_url": "https://civitai.com/api/download/models/129581"
+    },
+    {
+        "name": "ColorfulXL",
+        "model_id": 185258,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/ColorfulXL_19837134.jpeg",
+        "download_url": "https://civitai.com/api/download/models/636270"
+    },
+    {
+        "name": "Painter_s_Checkpoint__oil_paint___oil_painting_art_style_",
+        "model_id": 240154,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Painter_s_Checkpoint__oil_paint___oil_painting_art_style__5246942.jpeg",
+        "download_url": "https://civitai.com/api/download/models/289591"
+    },
+    {
+        "name": "Anime_Changeful_XL",
+        "model_id": 118545,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Anime_Changeful_XL_1853097.jpeg",
+        "download_url": "https://civitai.com/api/download/models/132486"
+    },
+    {
+        "name": "SDXL_HK",
+        "model_id": 128226,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/SDXL_HK_40265152.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1063954"
+    },
+    {
+        "name": "Dark_Pizza_XL_Origin_大个披萨XL_原味儿",
+        "model_id": 123008,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/Dark_Pizza_XL_Origin_大个披萨XL_原味儿_2198524.jpeg",
+        "download_url": "https://civitai.com/api/download/models/148171"
+    },
+    {
+        "name": "WildCardX-XL_ANIMATION",
+        "model_id": 297501,
+        "base_model": "SDXL 1.0",
+        "image_path": "models/sdxl_1.0/WildCardX-XL_ANIMATION_7398188.jpeg",
+        "download_url": "https://civitai.com/api/download/models/357959"
+    }
+]

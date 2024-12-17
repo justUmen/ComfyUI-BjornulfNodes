@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Bunny_Icy_Tail__Former_IceRealistic_",
+        "model_id": 51711,
+        "base_model": "SD 2.0",
+        "image_path": "models/sd_2.0/Bunny_Icy_Tail__Former_IceRealistic__646881.jpeg",
+        "download_url": "https://civitai.com/api/download/models/59253"
+    },
+    {
+        "name": "_texture_diffusion",
+        "model_id": 15873,
+        "base_model": "SD 2.0",
+        "image_path": "models/sd_2.0/_texture_diffusion_194576.jpeg",
+        "download_url": "https://civitai.com/api/download/models/18736"
+    }
+]

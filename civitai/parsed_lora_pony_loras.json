@@ -1,0 +1,805 @@
+[
+    {
+        "name": "Not_Artists_Styles_for_Pony_Diffusion_V6_XL",
+        "lora_id": 264290,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Not_Artists_Styles_for_Pony_Diffusion_V6_XL_30898667.jpeg",
+        "download_url": "https://civitai.com/api/download/models/882225",
+        "trained_words": [
+            "monochrome, greyscale,",
+            "sketch,"
+        ]
+    },
+    {
+        "name": "Incase_Style__PonyXL_",
+        "lora_id": 300005,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Incase_Style__PonyXL__9456522.jpeg",
+        "download_url": "https://civitai.com/api/download/models/436219",
+        "trained_words": []
+    },
+    {
+        "name": "Vixon_s_Pony_Styles_-_gothic_neon",
+        "lora_id": 888231,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Vixon_s_Pony_Styles_-_gothic_neon_38444153.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1029540",
+        "trained_words": [
+            "g0th1c, glowing, neon lights, glowing eyes,"
+        ]
+    },
+    {
+        "name": "Pony_Character_Concept_Art_XL___1.5_by_creativehotia",
+        "lora_id": 23167,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Pony_Character_Concept_Art_XL___1.5_by_creativehotia_7120986.jpeg",
+        "download_url": "https://civitai.com/api/download/models/361175",
+        "trained_words": [
+            "conceptart,multiple views,white background,simple background"
+        ]
+    },
+    {
+        "name": "NEW_ERA___LORA___PONY_DIFFUSION",
+        "lora_id": 28600,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/NEW_ERA___LORA___PONY_DIFFUSION_22458769.jpeg",
+        "download_url": "https://civitai.com/api/download/models/690993",
+        "trained_words": [
+            "2000s \\(style\\)",
+            "retro artstyle",
+            "1980s \\(style\\)",
+            "1990s \\(style\\)"
+        ]
+    },
+    {
+        "name": "Styles_For_Pony_Diffusion_V6_XL",
+        "lora_id": 297619,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Styles_For_Pony_Diffusion_V6_XL_27240302.jpeg",
+        "download_url": "https://civitai.com/api/download/models/794109",
+        "trained_words": []
+    },
+    {
+        "name": "_Pony__Geekpower_AI_Styles",
+        "lora_id": 315703,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/_Pony__Geekpower_AI_Styles_32989295.jpeg",
+        "download_url": "https://civitai.com/api/download/models/354128",
+        "trained_words": []
+    },
+    {
+        "name": "Vixon_s_Classic_Art_Styles_-_detailed_painting",
+        "lora_id": 888250,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Vixon_s_Classic_Art_Styles_-_detailed_painting_8187577.jpeg",
+        "download_url": "https://civitai.com/api/download/models/399443",
+        "trained_words": [
+            "portrait",
+            "1dk"
+        ]
+    },
+    {
+        "name": "STYLES___PONY___ANIMAGINE",
+        "lora_id": 456882,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/STYLES___PONY___ANIMAGINE_43329842.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1122647",
+        "trained_words": []
+    },
+    {
+        "name": "Popyay_s_Epic_Fantasy_Style___Pony___SDXL",
+        "lora_id": 470073,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Popyay_s_Epic_Fantasy_Style___Pony___SDXL_13338632.jpeg",
+        "download_url": "https://civitai.com/api/download/models/522995",
+        "trained_words": []
+    },
+    {
+        "name": "Pony_Amateur__",
+        "lora_id": 480835,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Pony_Amateur___23989618.jpeg",
+        "download_url": "https://civitai.com/api/download/models/717403",
+        "trained_words": [
+            "flash",
+            "grainy",
+            "2000s nostalgia",
+            "amateur",
+            "lowres",
+            "webcam photo",
+            "photo"
+        ]
+    },
+    {
+        "name": "Pony_Detail_Tweaker",
+        "lora_id": 383086,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Pony_Detail_Tweaker_9991726.jpeg",
+        "download_url": "https://civitai.com/api/download/models/449738",
+        "trained_words": []
+    },
+    {
+        "name": "Gwendolyn_Tennyson__Lucky_Girl__-_Ben_10",
+        "lora_id": 23594,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Gwendolyn_Tennyson__Lucky_Girl__-_Ben_10_13759808.jpeg",
+        "download_url": "https://civitai.com/api/download/models/533201",
+        "trained_words": [
+            "Gwendolyn_Tennyson"
+        ]
+    },
+    {
+        "name": "Age_Slider_LoRA___PonyXL_SDXL",
+        "lora_id": 402667,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Age_Slider_LoRA___PonyXL_SDXL_9957007.jpeg",
+        "download_url": "https://civitai.com/api/download/models/448977",
+        "trained_words": []
+    },
+    {
+        "name": "Real_Mechanical_Parts",
+        "lora_id": 64471,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Real_Mechanical_Parts_10427887.jpeg",
+        "download_url": "https://civitai.com/api/download/models/460254",
+        "trained_words": [
+            "reelmech, mechanical parts, cable, wires, machinery, joints, body suit"
+        ]
+    },
+    {
+        "name": "Detail_Slider_LoRA___PonyXL_SDXL",
+        "lora_id": 402462,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Detail_Slider_LoRA___PonyXL_SDXL_23721548.jpeg",
+        "download_url": "https://civitai.com/api/download/models/712947",
+        "trained_words": []
+    },
+    {
+        "name": "Ass_support_on_object",
+        "lora_id": 125498,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Ass_support_on_object_17006712.jpeg",
+        "download_url": "https://civitai.com/api/download/models/595215",
+        "trained_words": [
+            "ass support"
+        ]
+    },
+    {
+        "name": "BSS_-_Styles_for_Pony",
+        "lora_id": 550871,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/BSS_-_Styles_for_Pony_43976967.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1134711",
+        "trained_words": [
+            "KRKNK"
+        ]
+    },
+    {
+        "name": "CAT_-_Citron_Pony_Styles",
+        "lora_id": 362745,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/CAT_-_Citron_Pony_Styles_42235108.jpeg",
+        "download_url": "https://civitai.com/api/download/models/793937",
+        "trained_words": [
+            "big shoes, socks,"
+        ]
+    },
+    {
+        "name": "Osorubeshi_Pony_style_LORAs",
+        "lora_id": 350716,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Osorubeshi_Pony_style_LORAs_33827985.jpeg",
+        "download_url": "https://civitai.com/api/download/models/940705",
+        "trained_words": []
+    },
+    {
+        "name": "Pony_Pixel_Art_XL___1.5_By_creativehotia",
+        "lora_id": 43820,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Pony_Pixel_Art_XL___1.5_By_creativehotia_6990011.jpeg",
+        "download_url": "https://civitai.com/api/download/models/356467",
+        "trained_words": [
+            "pixelart,pixel"
+        ]
+    },
+    {
+        "name": "Mature_Female",
+        "lora_id": 133331,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Mature_Female_16577006.jpeg",
+        "download_url": "https://civitai.com/api/download/models/587439",
+        "trained_words": [
+            "motherly",
+            "mature female",
+            "milf"
+        ]
+    },
+    {
+        "name": "Pony_Custom_styles",
+        "lora_id": 366990,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Pony_Custom_styles_39505114.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1049817",
+        "trained_words": [
+            "digital art",
+            "OZRN"
+        ]
+    },
+    {
+        "name": "Spider_Gwen___Goofy_Ai",
+        "lora_id": 83816,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Spider_Gwen___Goofy_Ai_22926978.jpeg",
+        "download_url": "https://civitai.com/api/download/models/699197",
+        "trained_words": [
+            "gwen stacy",
+            "blonde hair,undercut,blue eyes"
+        ]
+    },
+    {
+        "name": "Control_LoRA_Collection",
+        "lora_id": 99619,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Control_LoRA_Collection_34169534.jpeg",
+        "download_url": "https://civitai.com/api/download/models/947620",
+        "trained_words": []
+    },
+    {
+        "name": "_Blacklight_",
+        "lora_id": 15898,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/_Blacklight__14636660.jpeg",
+        "download_url": "https://civitai.com/api/download/models/551366",
+        "trained_words": [
+            "blacklight"
+        ]
+    },
+    {
+        "name": "Carrying_person___Princess_carry",
+        "lora_id": 105328,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Carrying_person___Princess_carry_17121952.jpeg",
+        "download_url": "https://civitai.com/api/download/models/597103",
+        "trained_words": [
+            "princess carry"
+        ]
+    },
+    {
+        "name": "Vintage_1990s_Anime_SDXL_LoRA__Style__Pony",
+        "lora_id": 333041,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Vintage_1990s_Anime_SDXL_LoRA__Style__Pony_7419342.jpeg",
+        "download_url": "https://civitai.com/api/download/models/373076",
+        "trained_words": [
+            "Vintage",
+            "1990s \\(style\\)"
+        ]
+    },
+    {
+        "name": "Sinozick_Style___Style_Lora___Pony",
+        "lora_id": 432483,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Sinozick_Style___Style_Lora___Pony_11362154.jpeg",
+        "download_url": "https://civitai.com/api/download/models/481798",
+        "trained_words": [
+            "sinozick style",
+            "flat color, dark theme"
+        ]
+    },
+    {
+        "name": "Disgusted_Face__SD_1.5__Pony____Goofy_Ai",
+        "lora_id": 196908,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Disgusted_Face__SD_1.5__Pony____Goofy_Ai_12047698.jpeg",
+        "download_url": "https://civitai.com/api/download/models/497567",
+        "trained_words": [
+            "disgusted face"
+        ]
+    },
+    {
+        "name": "Kanroji_Mitsuri___Demon_Slayer____Goofy_Ai",
+        "lora_id": 7715,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Kanroji_Mitsuri___Demon_Slayer____Goofy_Ai_22641921.jpeg",
+        "download_url": "https://civitai.com/api/download/models/694289",
+        "trained_words": [
+            "kanroji-mitsuri ",
+            "green eyes, multicolored hair, twin_braids"
+        ]
+    },
+    {
+        "name": "Ohogao_SDXL_LoRA__Pony_",
+        "lora_id": 322121,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Ohogao_SDXL_LoRA__Pony__11464411.jpeg",
+        "download_url": "https://civitai.com/api/download/models/484190",
+        "trained_words": [
+            "frown, angry",
+            "open mouth",
+            "ohogao, teary-eyed, drool, half-closed eyes, trembling, rolling eyes",
+            "tongue out"
+        ]
+    },
+    {
+        "name": "Vixon_s_Pony_Styles_-_Dramatic_Lighting",
+        "lora_id": 888228,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Vixon_s_Pony_Styles_-_Dramatic_Lighting_9094697.jpeg",
+        "download_url": "https://civitai.com/api/download/models/426797",
+        "trained_words": [
+            "43stl1ght1ng, low light, dramatic lighting, darkness, ",
+            "glasses,",
+            "smoke,",
+            "red light,",
+            "neon,",
+            "water,",
+            "reflection, ",
+            "spotlight,",
+            "eye lighting, ",
+            "window lighting,"
+        ]
+    },
+    {
+        "name": "Gothic_Girl",
+        "lora_id": 248965,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Gothic_Girl_10501962.jpeg",
+        "download_url": "https://civitai.com/api/download/models/461295",
+        "trained_words": [
+            "Goth girl 1girl",
+            "Goth girl"
+        ]
+    },
+    {
+        "name": "Ariel__The_Little_Mermaid__Princess_Disney_-_SD_1.5___XL_PONY_-_by_YeiyeiArt",
+        "lora_id": 46315,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Ariel__The_Little_Mermaid__Princess_Disney_-_SD_1.5___XL_PONY_-_by_YeiyeiArt_7846210.jpeg",
+        "download_url": "https://civitai.com/api/download/models/388624",
+        "trained_words": [
+            "Blue eyes, red long hair, hair bow, hair band, blue dress, corset",
+            "blue eyes, shell bikini, red long hair, mermaid, mermaid tail, monster girl",
+            "ArielWaifu",
+            "Blue eyes, red long hair, pink dress, tiara, corset"
+        ]
+    },
+    {
+        "name": "Partially_underwater_shot___partially_submerged",
+        "lora_id": 133030,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Partially_underwater_shot___partially_submerged_13779822.jpeg",
+        "download_url": "https://civitai.com/api/download/models/533716",
+        "trained_words": [
+            "partially underwater shot"
+        ]
+    },
+    {
+        "name": "Vixon_s_Pony_Styles_-_Detailed_v1.0",
+        "lora_id": 888213,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Vixon_s_Pony_Styles_-_Detailed_v1.0_11570071.jpeg",
+        "download_url": "https://civitai.com/api/download/models/486749",
+        "trained_words": [
+            "d3t41l3d"
+        ]
+    },
+    {
+        "name": "Zheng__Allurmilk__-_Style_LoRA",
+        "lora_id": 11034,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Zheng__Allurmilk__-_Style_LoRA_40355316.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1066117",
+        "trained_words": []
+    },
+    {
+        "name": "character_sheet",
+        "lora_id": 368139,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/character_sheet_8576335.jpeg",
+        "download_url": "https://civitai.com/api/download/models/411375",
+        "trained_words": []
+    },
+    {
+        "name": "Krekkov_Style",
+        "lora_id": 311073,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Krekkov_Style_8340382.jpeg",
+        "download_url": "https://civitai.com/api/download/models/404253",
+        "trained_words": []
+    },
+    {
+        "name": "Megumin__KonoSuba_",
+        "lora_id": 9502,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Megumin__KonoSuba__7894504.jpeg",
+        "download_url": "https://civitai.com/api/download/models/384635",
+        "trained_words": [
+            "parka",
+            "Megumin",
+            "winter",
+            "alt outfit"
+        ]
+    },
+    {
+        "name": "Cartoon_style",
+        "lora_id": 45521,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Cartoon_style_15060882.jpeg",
+        "download_url": "https://civitai.com/api/download/models/558984",
+        "trained_words": []
+    },
+    {
+        "name": "Slavekini__aka_Slave_Princess_Leia_Outfit_-_Clothing_from_Star_Wars__SD_1.5__Pony__and_SDXL_",
+        "lora_id": 7913,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Slavekini__aka_Slave_Princess_Leia_Outfit_-_Clothing_from_Star_Wars__SD_1.5__Pony__and_SDXL__9017503.jpeg",
+        "download_url": "https://civitai.com/api/download/models/424375",
+        "trained_words": [
+            "slave leia outfit"
+        ]
+    },
+    {
+        "name": "Slavekini__aka_Slave_Princess_Leia_Outfit_-_Clothing_from_Star_Wars__SD_1.5__Pony__and_SDXL_",
+        "lora_id": 7913,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Slavekini__aka_Slave_Princess_Leia_Outfit_-_Clothing_from_Star_Wars__SD_1.5__Pony__and_SDXL__9017503.jpeg",
+        "download_url": "https://civitai.com/api/download/models/424375",
+        "trained_words": [
+            "slave leia outfit"
+        ]
+    },
+    {
+        "name": "Re_Zero_-__characters_pack____SD_1.5__PDXL_",
+        "lora_id": 80978,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Re_Zero_-__characters_pack____SD_1.5__PDXL__14022598.jpeg",
+        "download_url": "https://civitai.com/api/download/models/538783",
+        "trained_words": [
+            "Rem"
+        ]
+    },
+    {
+        "name": "_Pony_All_characters__Genshin_Impact___124_characters____原神全角色_124_位",
+        "lora_id": 357976,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/_Pony_All_characters__Genshin_Impact___124_characters____原神全角色_124_位_14593091.jpeg",
+        "download_url": "https://civitai.com/api/download/models/550532",
+        "trained_words": [
+            "raiden_shogun_mitake",
+            "sethos_(genshin_impact)",
+            "hina_(genshin_impact)"
+        ]
+    },
+    {
+        "name": "SOME_STYLES___PONY",
+        "lora_id": 629544,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/SOME_STYLES___PONY_34786841.jpeg",
+        "download_url": "https://civitai.com/api/download/models/960307",
+        "trained_words": [
+            "lms"
+        ]
+    },
+    {
+        "name": "_O.D.O.R.__-_feet_anime_pony_xl",
+        "lora_id": 308615,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/_O.D.O.R.__-_feet_anime_pony_xl_15569740.jpeg",
+        "download_url": "https://civitai.com/api/download/models/568727",
+        "trained_words": [
+            "feet"
+        ]
+    },
+    {
+        "name": "Rapunzel__Tangled__Disney_Princess_-_SD_1.5___XL_PONY_-_by_YeiyeiArt",
+        "lora_id": 39104,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Rapunzel__Tangled__Disney_Princess_-_SD_1.5___XL_PONY_-_by_YeiyeiArt_7897277.jpeg",
+        "download_url": "https://civitai.com/api/download/models/390297",
+        "trained_words": [
+            "RapunzelWaifu",
+            "purple dress, puffy sleeves, very long hair, blonde, green eyes"
+        ]
+    },
+    {
+        "name": "Good_Hands_for_Pony",
+        "lora_id": 450321,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Good_Hands_for_Pony_12230717.jpeg",
+        "download_url": "https://civitai.com/api/download/models/501402",
+        "trained_words": [
+            "good_hands"
+        ]
+    },
+    {
+        "name": "90s_Anime_Aesthetic",
+        "lora_id": 24188,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/90s_Anime_Aesthetic_19628453.jpeg",
+        "download_url": "https://civitai.com/api/download/models/640976",
+        "trained_words": []
+    },
+    {
+        "name": "90s_Anime_Aesthetic",
+        "lora_id": 24188,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/90s_Anime_Aesthetic_19628453.jpeg",
+        "download_url": "https://civitai.com/api/download/models/640976",
+        "trained_words": []
+    },
+    {
+        "name": "Shiny_Nai_style_for_pony___Goofy_AI",
+        "lora_id": 618752,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Shiny_Nai_style_for_pony___Goofy_AI_22495744.jpeg",
+        "download_url": "https://civitai.com/api/download/models/691705",
+        "trained_words": [
+            "shiny skin, shiny"
+        ]
+    },
+    {
+        "name": "_SD1.5___PONY__Honkai_Star_Rail_-_Fu_Xuan___符玄",
+        "lora_id": 60053,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/_SD1.5___PONY__Honkai_Star_Rail_-_Fu_Xuan___符玄_13217969.jpeg",
+        "download_url": "https://civitai.com/api/download/models/522029",
+        "trained_words": [
+            "fuxuan, white pantyhose, high heels"
+        ]
+    },
+    {
+        "name": "Ryuuou_no_Oshigoto_______complete_pack_PDXL_and__SD1.5_",
+        "lora_id": 56145,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Ryuuou_no_Oshigoto_______complete_pack_PDXL_and__SD1.5__10022623.jpeg",
+        "download_url": "https://civitai.com/api/download/models/444216",
+        "trained_words": [
+            "Keika Kiyotaki",
+            "Ika Sainokami",
+            "Yaichi Kuzuryuu",
+            "Ai Yashajin",
+            "Ginko Sora",
+            "Charlotte Izoard",
+            "Ayano Sadatou",
+            "Mio Mizukoshi",
+            "Ai Hinatsuru"
+        ]
+    },
+    {
+        "name": "Envy_Pony_Pretty_Eyes_01_-_Pretty_Anime_Eyes",
+        "lora_id": 393101,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Envy_Pony_Pretty_Eyes_01_-_Pretty_Anime_Eyes_9549867.jpeg",
+        "download_url": "https://civitai.com/api/download/models/438481",
+        "trained_words": []
+    },
+    {
+        "name": "PDV6XL_artist_tags",
+        "lora_id": 317578,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/PDV6XL_artist_tags_7888480.jpeg",
+        "download_url": "https://civitai.com/api/download/models/389962",
+        "trained_words": []
+    },
+    {
+        "name": "D-ART____18dart5_-_Style_LoRA__Flux_Pony_Diffusion_NAI_",
+        "lora_id": 213206,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/D-ART____18dart5_-_Style_LoRA__Flux_Pony_Diffusion_NAI__12678594.jpeg",
+        "download_url": "https://civitai.com/api/download/models/510284?type=Training%20Data",
+        "trained_words": [
+            "D-ART, D-ART Style, 18dart3, 18dart2, 18DART1, !!, ??,"
+        ]
+    },
+    {
+        "name": "MFCG_Style_-_PD",
+        "lora_id": 315758,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/MFCG_Style_-_PD_6924626.jpeg",
+        "download_url": "https://civitai.com/api/download/models/354187",
+        "trained_words": []
+    },
+    {
+        "name": "Jasmine__Aladdin__Disney_Princess_-_SD_1.5___XL_PONY_-_by_YeiyeiArt",
+        "lora_id": 48875,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Jasmine__Aladdin__Disney_Princess_-_SD_1.5___XL_PONY_-_by_YeiyeiArt_7899976.jpeg",
+        "download_url": "https://civitai.com/api/download/models/390371",
+        "trained_words": [
+            "JasmineWaifu",
+            " jewelry, very long hair, blue arabian clothes, pants, tiara",
+            "jewelry, very long hair, red arabian clothes, pants, straples"
+        ]
+    },
+    {
+        "name": "_PonyXL___1.5__Pokemon_-_Lillie",
+        "lora_id": 56025,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/_PonyXL___1.5__Pokemon_-_Lillie_12914175.jpeg",
+        "download_url": "https://civitai.com/api/download/models/515763",
+        "trained_words": [
+            "4ponytail4, ponytail, white shirt, white skirt, pink backpack, white socks, white footwear",
+            "2default2, twin braids, white sunhat, white dress, sleeveless dress, kneehighs, blue footwear",
+            "5newyear5, ponytail, print kimono, obi, sandals, socks, japanese clothes",
+            "6teatime6, green dress, apron, white sunhat, white pantyhose, black footwear",
+            "1lillie1, blonde hair, long hair, green eyes",
+            "3anniversary3, twin braids, blue dress, purple dress, white gloves, elbow gloves, blue footwear"
+        ]
+    },
+    {
+        "name": "Eromanga_sensei__Complete_Pack_____PDXL_PonyXL__and_SD1.5_models_in_versions",
+        "lora_id": 36619,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Eromanga_sensei__Complete_Pack_____PDXL_PonyXL__and_SD1.5_models_in_versions_10024478.jpeg",
+        "download_url": "https://civitai.com/api/download/models/437203",
+        "trained_words": [
+            "jinno megumi",
+            "senju muramasa",
+            "izumi sagiri",
+            "yamada chris",
+            "yamada elf",
+            "izumi masamune",
+            "manager-tyan",
+            "takasago tomoe"
+        ]
+    },
+    {
+        "name": "Maid",
+        "lora_id": 250430,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Maid_32558955.jpeg",
+        "download_url": "https://civitai.com/api/download/models/917323",
+        "trained_words": [
+            "maid apron, maid, maid headdress, thighhighs, wrist cuffs, 1girl, high heels,"
+        ]
+    },
+    {
+        "name": "Doll_joints",
+        "lora_id": 150513,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Doll_joints_16995010.jpeg",
+        "download_url": "https://civitai.com/api/download/models/594994",
+        "trained_words": [
+            "doll joints"
+        ]
+    },
+    {
+        "name": "Female_POV",
+        "lora_id": 427349,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Female_POV_34805617.jpeg",
+        "download_url": "https://civitai.com/api/download/models/960900",
+        "trained_words": [
+            " f3mp0v"
+        ]
+    },
+    {
+        "name": "Front-facing_Camera_Selfie",
+        "lora_id": 19746,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Front-facing_Camera_Selfie_13614835.jpeg",
+        "download_url": "https://civitai.com/api/download/models/530235",
+        "trained_words": [
+            "ffc selfie"
+        ]
+    },
+    {
+        "name": "Pony_XL___1.5_Helen_parr_-the_Incredibles",
+        "lora_id": 40570,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Pony_XL___1.5_Helen_parr_-the_Incredibles_9100818.jpeg",
+        "download_url": "https://civitai.com/api/download/models/426968",
+        "trained_words": [
+            "helen"
+        ]
+    },
+    {
+        "name": "Vixon_s_Anime_Manga_Styles_-_Gothic_Retro_Anime",
+        "lora_id": 888235,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Vixon_s_Anime_Manga_Styles_-_Gothic_Retro_Anime_12217153.jpeg",
+        "download_url": "https://civitai.com/api/download/models/501154",
+        "trained_words": [
+            "g4n1m3"
+        ]
+    },
+    {
+        "name": "Realist_Beuty_Model_N_1_XL_Realistic_Pony",
+        "lora_id": 339129,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Realist_Beuty_Model_N_1_XL_Realistic_Pony_8833589.jpeg",
+        "download_url": "https://civitai.com/api/download/models/383192",
+        "trained_words": [
+            "Beuty "
+        ]
+    },
+    {
+        "name": "_Style_Pony__RELSM_-_Semi_Realism_",
+        "lora_id": 454172,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/_Style_Pony__RELSM_-_Semi_Realism__12424338.jpeg",
+        "download_url": "https://civitai.com/api/download/models/505635",
+        "trained_words": []
+    },
+    {
+        "name": "Basement",
+        "lora_id": 91323,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Basement_29875417.jpeg",
+        "download_url": "https://civitai.com/api/download/models/859357",
+        "trained_words": [
+            "basement"
+        ]
+    },
+    {
+        "name": "Pear_-_Style",
+        "lora_id": 31085,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Pear_-_Style_13126734.jpeg",
+        "download_url": "https://civitai.com/api/download/models/520270",
+        "trained_words": []
+    },
+    {
+        "name": "Elsa__Frozen__Disney_Princess__by_YeiyeiArt",
+        "lora_id": 42668,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Elsa__Frozen__Disney_Princess__by_YeiyeiArt_9087850.jpeg",
+        "download_url": "https://civitai.com/api/download/models/426638",
+        "trained_words": [
+            "ElsaXPL",
+            "cleavage, blue dress, single braid over shoulder"
+        ]
+    },
+    {
+        "name": "Ratatatat74_style___Goofy_Ai",
+        "lora_id": 107474,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Ratatatat74_style___Goofy_Ai_31351234.jpeg",
+        "download_url": "https://civitai.com/api/download/models/892095",
+        "trained_words": []
+    },
+    {
+        "name": "Minecraft_NSFW_Style",
+        "lora_id": 63257,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Minecraft_NSFW_Style_11644217.jpeg",
+        "download_url": "https://civitai.com/api/download/models/488456",
+        "trained_words": []
+    },
+    {
+        "name": "Backgrounds_For_Pony",
+        "lora_id": 454079,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Backgrounds_For_Pony_14794497.jpeg",
+        "download_url": "https://civitai.com/api/download/models/554089",
+        "trained_words": [
+            " l4undrym4t, washing machine, scenery, indoors, tiles"
+        ]
+    },
+    {
+        "name": "_SDXL_Pony_SD1.5___Sono_Bisque_Doll_wa_Koi_wo_Suru_-_Marin_Kitagawa",
+        "lora_id": 362837,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/_SDXL_Pony_SD1.5___Sono_Bisque_Doll_wa_Koi_wo_Suru_-_Marin_Kitagawa_15389245.jpeg",
+        "download_url": "https://civitai.com/api/download/models/565547",
+        "trained_words": []
+    },
+    {
+        "name": "RizDraws_-_PonyDiffusionXLV6",
+        "lora_id": 294187,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/RizDraws_-_PonyDiffusionXLV6_6302928.jpeg",
+        "download_url": "https://civitai.com/api/download/models/330620",
+        "trained_words": []
+    },
+    {
+        "name": "Modern_Anime_Screencap__Style__-_Pony_XL",
+        "lora_id": 396772,
+        "base_model": "Pony",
+        "image_path": "loras/lora_pony/Modern_Anime_Screencap__Style__-_Pony_XL_9714420.jpeg",
+        "download_url": "https://civitai.com/api/download/models/442507",
+        "trained_words": [
+            "anime screencap"
+        ]
+    }
+]

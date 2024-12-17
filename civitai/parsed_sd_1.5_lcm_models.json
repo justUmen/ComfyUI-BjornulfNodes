@@ -1,0 +1,9 @@
+[
+    {
+        "name": "The_WonderMix",
+        "model_id": 71523,
+        "base_model": "SD 1.5 LCM",
+        "image_path": "models/sd_1.5_lcm/The_WonderMix_14209238.jpeg",
+        "download_url": "https://civitai.com/api/download/models/542777"
+    }
+]

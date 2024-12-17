@@ -1,0 +1,9 @@
+[
+    {
+        "name": "STOIQO_NewReality___FLUX__SD3.5__SDXL__SD1.5",
+        "model_id": 161068,
+        "base_model": "SD 3.5",
+        "image_path": "models/sd_3.5/STOIQO_NewReality___FLUX__SD3.5__SDXL__SD1.5_36708273.jpeg",
+        "download_url": "https://civitai.com/api/download/models/991248"
+    }
+]

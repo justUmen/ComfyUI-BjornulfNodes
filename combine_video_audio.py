@@ -32,7 +32,7 @@ class CombineVideoAudio:
     RETURN_TYPES = ("STRING", "FLOAT", "FLOAT", "INT")
     RETURN_NAMES = ("video_path", "video_duration", "fps", "number_of_frames")
     FUNCTION = "combine_audio_video"
-    CATEGORY = "video"
+    CATEGORY = "Bjornulf"
     
     def get_video_frame_count(self, video_path):
         try:

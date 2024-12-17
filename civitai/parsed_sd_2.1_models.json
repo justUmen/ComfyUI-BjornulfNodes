@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Sticker-art",
+        "model_id": 7507,
+        "base_model": "SD 2.1",
+        "image_path": "models/sd_2.1/Sticker-art_84352.jpeg",
+        "download_url": "https://civitai.com/api/download/models/8815?type=Config&format=Other"
+    }
+]

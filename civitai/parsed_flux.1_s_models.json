@@ -1,0 +1,16 @@
+[
+    {
+        "name": "FenrisXL___Flux",
+        "model_id": 122793,
+        "base_model": "Flux.1 S",
+        "image_path": "models/flux.1_s/FenrisXL___Flux_34402126.jpeg",
+        "download_url": "https://civitai.com/api/download/models/952353"
+    },
+    {
+        "name": "WoW__XL_PD_Flux_.",
+        "model_id": 147933,
+        "base_model": "Flux.1 S",
+        "image_path": "models/flux.1_s/WoW__XL_PD_Flux_._33921271.jpeg",
+        "download_url": "https://civitai.com/api/download/models/937721?type=Model&format=SafeTensor&size=full&fp=fp8"
+    }
+]

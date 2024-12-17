@@ -5,3 +5,9 @@ faster_whisper
 ffmpeg-python
 re
 subprocess
+civitai-py
+fal_client
+shutil
+hashlib
+importlib
+threading

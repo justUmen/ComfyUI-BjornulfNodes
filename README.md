@@ -1,11 +1,11 @@
-# 🔗 Comfyui : Bjornulf_custom_nodes v0.61 🔗
+# 🔗 Comfyui : Bjornulf_custom_nodes v0.62 🔗
 
-A list of 79 custom nodes for Comfyui : Display, manipulate, and edit text, images, videos, loras and more.  
+A list of 110 custom nodes for Comfyui : Display, manipulate, create and edit text, images, videos, loras, generate characters and more.  
 You can manage looping operations, generate randomized content, trigger logical conditions, pause and manually control your workflows and even work with external AI tools, like Ollama or Text To Speech.  
 
 # Coffee : ☕☕☕☕☕ 5/5
 
-❤️❤️❤️ <https://ko-fi.com/bjornulf> ❤️❤️❤️
+Support me and my work : ❤️❤️❤️ <https://ko-fi.com/bjornulf> ❤️❤️❤️
 
 # ☘ This project is part of my AI trio. ☘
 
@@ -37,6 +37,25 @@ You can manage looping operations, generate randomized content, trigger logical 
 `68.` [✨➜📝 Anything to Text](#68----anything-to-text)  
 `75.` [📝➜📝 Replace text](#75----replace-text)  
 
+## 🔥 Text Generator 🔥
+`81.` [🔥📝 Text Generator 📝🔥](#8)  
+`82.` [👩‍🦰📝 Text Generator (Character Female)](#8)  
+`83.` [👨‍🦰📝 Text Generator (Character Male)](#8)  
+`84.` [👾📝 Text Generator (Character Creature)](#8)  
+`85.` [💃🕺📝 Text Generator (Character Pose)](#8)  
+`86.` [🔧👨‍🔧📝 Text Generator (Object for Character)](#8)  
+`87.` [🌄📝 Text Generator (Scene)](#8)  
+`88.` [🎨📝 Text Generator (Style)](#8)  
+`89.` [👗 Text Generator (Outfit Female)](#8)  
+`90.` [👚 Text Generator (Outfit Male)](#8)  
+`91.` [♻🔥📝 List Looper (Text Generator)](#8)  
+`92.` [♻🌄📝 List Looper (Text Generator Scenes)](#8)  
+`93.` [♻🎨📝 List Looper (Text Generator Styles)](#8)  
+`94.` [♻💃🕺📝 List Looper (Text Generator Poses)](#8)  
+`95.` [♻👨‍🦰👩‍🦰👾 List Looper (Text Generator Characters)](#8)  
+`96.` [♻👚 List Looper (Text Generator Outfits Male)](#8)  
+`97.` [♻👗 List Looper (Text Generator Outfits Female)](#8)  
+
 ## ♻ Loop ♻
 `6.` [♻ Loop](#6----loop)  
 `7.` [♻ Loop Texts](#7----loop-texts)  
@@ -51,9 +70,16 @@ You can manage looping operations, generate randomized content, trigger logical 
 `39.` [♻ Loop (✒🗔 Advanced Write Text + 🅰️ variables)](#39----loop--advanced-write-text)  
 `42.` [♻ Loop (Model+Clip+Vae) - aka Checkpoint / Model](#42----loop-modelclipvae---aka-checkpoint--model)  
 `53.` [♻ Loop Load checkpoint (Model Selector)](#53----loop-load-checkpoint-model-selector)  
-`54.` [♻ Loop Lora Selector](#54----loop-lora-selector)  
+`54.` [♻👑 Loop Lora Selector](#54----loop-lora-selector)  
 `56.` [♻📝 Loop Sequential (Integer)](#56----loop-sequential-integer)  
 `57.` [♻📝 Loop Sequential (input Lines)](#57----loop-sequential-input-lines)  
+`90.` [♻🔥📝 List Looper (Text Generator)](#8)  
+`91.` [♻🌄📝 List Looper (Text Generator Scenes)](#8)  
+`92.` [♻🎨📝 List Looper (Text Generator Styles)](#8)  
+`93.` [♻💃🕺📝 List Looper (Text Generator Poses)](#8)  
+`94.` [♻👨‍🦰👩‍🦰📝 List Looper (Text Generator Characters)](#8)  
+`95.` [♻👚 List Looper (Text Generator Outfits Male)](#8)  
+`96.` [♻👗 List Looper (Text Generator Outfits Female)](#8)  
 
 ## 🎲 Randomization 🎲
 `3.` [✒🗔 Advanced Write Text (+ 🎲 random selection and 🅰️ variables)](#3----advanced-write-text---random-selection-and-🅰%EF%B8%8F-variables)  
@@ -64,7 +90,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
 `41.` [🎲 Random Load checkpoint (Model Selector)](#41----random-load-checkpoint-model-selector)  
 `48.` [🔀🎲 Text scrambler (🧑 Character)](#48----text-scrambler--character)  
-`55.` [🎲 Random Lora Selector](#55----random-lora-selector)  
+`55.` [🎲👑 Random Lora Selector](#55----random-lora-selector)  
 
 ## 🖼💾 Image Save 💾🖼
 `16.` [💾🖼💬 Save image for Bjornulf LobeChat](#16----save-image-for-bjornulf-lobechat-for-my-custom-lobe-chat)  
@@ -94,6 +120,7 @@ You can manage looping operations, generate randomized content, trigger logical 
 `61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
 `62.` [🦙👁 Ollama Vision](#62----ollama-vision)  
 `70.` [📏 Resize Image Percentage](#70----resize-image-percentage)  
+`80.` [🩷 Empty Latent Selector](#)  
 
 ## 🚀 Load checkpoints 🚀
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
@@ -103,7 +130,24 @@ You can manage looping operations, generate randomized content, trigger logical 
 
 ## 🚀 Load loras 🚀
 `54.` [♻ Loop Lora Selector](#54----loop-lora-selector)  
-`55.` [🎲 Random Lora Selector](#55----random-lora-selector)  
+`55.` [🎲 Random Lora@ Selector](#55----random-lora-selector)  
+
+## ☁ Image Creation : API / cloud / remote ☁
+`106.` [☁🎨 API Image Generator (FalAI) ☁](#10)  
+`107.` [☁🎨 API Image Generator (CivitAI) ☁](#10)  
+`108.` [☁👑 Add Lora (API ONLY - CivitAI) 👑☁](#10)  
+`109.` [☁🎨 API Image Generator (Black Forest Labs - Flux) ☁](#10)  
+`110.` [☁🎨 API Image Generator (Stability - Stable Diffusion) ☁](#10)  
+
+## 📥 Take from CivitAI 📥
+`98.` [📥 Load checkpoint SD1.5 (+Download from CivitAi)](#10)  
+`99.` [📥 Load checkpoint SDXL (+Download from CivitAi)](#10)  
+`100.` [📥 Load checkpoint Pony (+Download from CivitAi)](#10)  
+`101.` [📥 Load checkpoint FLUX Dev (+Download from CivitAi)](#10)  
+`102.` [📥 Load checkpoint FLUX Schnell (+Download from CivitAi)](#10)  
+`103.` [📥👑 Load Lora SD1.5 (+Download from CivitAi)](#10)  
+`104.` [📥👑 Load Lora SDXL (+Download from CivitAi)](#10)  
+`105.` [📥👑 Load Lora Pony (+Download from CivitAi)](#10)  
 
 ## 📹 Video 📹
 `20.` [📹 Video Ping Pong](#20----video-ping-pong)  
@@ -155,7 +199,7 @@ My referal link for Runpod : <https://runpod.io?ref=tkowk7g5> (If you use that i
 If you want to use my nodes and comfyui in the cloud (and can install more stuff), I'm managing an optimized ready-to-use template on runpod : <https://runpod.io/console/deploy?template=r32dtr35u1&ref=tkowk7g5>  
 Template name : `bjornulf-comfyui-allin-workspace`, can be operational in ~3 minutes. (Depending on your pod, setup and download of extra models or whatever not included.)  
 You need to create and select a network volume before using that, size is up to you, i have 50Gb Storage because i use cloud only for Flux or lora training on a 4090. (~0.7$/hour)  
-⚠️ When pod is ready, you need to open a terminal in browser (After clicking on `connect` from your pod) and use this to launch ComfyUI manually : `cd /workspace/ComfyUI && python main.py --listen 0.0.0.0 --port 3000` (Much better to control it with a terminal, check logs, etc...)  
+⚠️ When pod is ready, you need to open a terminal in browser (After clicking on `connect` from your pod) and use this to launch ComfyUI manually : `cd /workspace/ComfyUI && python main.py --listen 0.0.0.0 --port 3000` or the alias `start_-_comfy` (Much better to control it with a terminal, check logs, etc...)  
 After that you can just click on the `Connect to port 3000` button.  
 As file manager, you can use the included `JupyterLab` on port 8888.  
 If you have any issues with it, please let me know.  
@@ -189,6 +233,8 @@ cd /workspace/ComfyUI/output && tar -czvf /workspace/output.tar.gz .
 ```
 
 Then you can download it from the file manager JupyterLab.  
+
+If you want to start the XTTS server, just use the alias `start_xtts`.  
 
 If you have any issues with this template from Runpod, please let me know, I'm here to help. 😊   
 
@@ -298,6 +344,7 @@ cd /where/you/installed/ComfyUI && python main.py
 - **0.59**: A lot of Javascript fixing to avoid resizing and better properties mangement / recoveries
 - **0.60**: Revert changes from ollama_talk (implement _user mode later / another node)
 - **0.61**: Add/modify a bunch of Ffmpeg / video nodes. With a global configuration system and toggle python-ffmpeg / system.
+- **0.62**: MASSIVE update, Text Generator nodes. (15 nodes), API nodes generate (civitai / black forest labs / fal.ai), API civit ai download models nodes, lora
 
 # 📝 Nodes descriptions
 
@@ -306,6 +353,9 @@ cd /where/you/installed/ComfyUI && python main.py
 **Description:**  
 The show node will only display text, or a list of several texts. (read only node)  
 3 types are managed : Green is for STRING type, Orange is for FLOAT type and blue is for INT type. I put colors so I/you don't try to edit them. 🤣  
+
+Update 0.61 : You now also have 4 other nodes to display format specific values : INT, FLOAT, STRING and JSON (STRING)  
+These are convenient because these are automatically recommended on drag and drop.  
 
 ![Show Text](screenshots/show.png)
 
@@ -1228,3 +1278,300 @@ Take a list of videos (one per line) and concatenate them. (One after the other 
 Can use FFMPEG_CONFIG_JSON. (From node 76 / 77)    
 
 ![concat video list](screenshots/concat_video_list.png)  
+
+#### 80 - 🩷 Empty Latent Selector
+
+**Description:**  
+Tired of setting up latent space manually ?  
+Select one from my custom list of formats.  
+Just connect that to your KSampler.  
+
+![empty_latent](screenshots/empty_latent.png)  
+
+#### 81 - 🔥📝 Text Generator 📝🔥
+
+**Description:**  
+Main node to generate content, doesn't really do much by itself, just `camera angle` and `multicharacter action`. (For example : `... eat picnic, view from above.`)  
+BUT, you can connect others `Text Generator Nodes` to it.  
+
+⚠️ Warning for "Text Generator" : This node is JUST writing text, text is then interpreted by a checkpoint (SD1.5, SDXL, Flux...) to generate an image.  
+Some models are very bad at doing some things, so DON'T EXPECT for everything you do to work properly all the time with every checkpoints or loras. (This node was made with FLUX in mind.)  
+
+Below is a Tutorial on how to use all my `Text Generator nodes`. I did that small tutorial in 8 steps:  
+
+Step 1 : You use the main Text Generator node, it will write general details about the image (here `camera_angle` and `shot_type`) - For now I just combine the text to a simple "write text" that will send `swamp monster` :  
+![textgen](screenshots/textgen.png)  
+
+Step 2 : Add a specific style to your image :  
+![textgen_style](screenshots/textgen_style.png)  
+
+Step 3 : Add scene/background to your image :  
+![textgen_scene](screenshots/textgen_scene.png)  
+
+Step 4 : Add a character to the scene using a character node, instead of the Write text Node.  
+I will remove the "swamp monster" from the "write text node" and use my Character Node instead, I will use it to create an agressive dragon with lighting powers :  
+![textgen_char](screenshots/textgen_char.png)  
+
+Step 5 : Character nodes (Male/Female and creatures) can contain more than one character. (But they will share the same characteristics)  
+Below I removed the dragon and I created 2 "Character male" fighting by using the `multi_char_action` from the main node. (You can set it to CUSTOM and write your own action too.)  
+![textgen_2chars](screenshots/textgen_2chars.png)  
+
+Step 5 : Let's try to add a location for the character, I want to put it on the left of the image. Here is a failure with the SDXL model I have been using all along :    
+![textgen_charposition_FAIL_sdxl](screenshots/textgen_charposition_FAIL_sdxl.png)  
+
+Step 6 : Switch to FLUX to test the `location_on_image` feature (which is working) :  
+![textgen_location_on_image_flux](screenshots/textgen_location_on_image_flux.png)  
+
+Step 7 : Switch to API black Forest Lab with FLUX Ultra, using my API custom node 109.  
+If you want several characters with different characteristics (like `location_on_image` or whatever), you can chain several Character Nodes together by connecting them to each other.  
+You can see below that I asked for 2 tiny dragons on the left and a zombie on the right.  
+![textgen_Complex_ULTRA](screenshots/textgen_Complex_ULTRA.png)  
+
+Step 8 : And to end this tutorial, I will disable the Zombie, I will add an outfit (here a `floral armor`), I will also add a `pose` node for the character and also connect this pose node to an `object` node. (They will together make the character `hold a book` and put his `hand on chin`)  
+![textgen_final](screenshots/textgen_final.png)  
+
+#### 82 - 👩‍🦰📝 Text Generator (Character Female)
+
+**Description:**  
+Generate text related to female characters.  
+Need to be connected to "Text Generator" main node.  
+
+⚠️ For "Text Generator" tutorial see node 81.  
+
+#### 83 - 👨‍🦰📝 Text Generator (Character Male)
+
+**Description:**  
+Generate text related to male characters.  
+
+⚠️ For "Text Generator" tutorial see node 81.  
+
+#### 84 - 👾📝 Text Generator (Character Creature)
+
+**Description:**  
+Generate text related to creatures. (characters)  
+
+⚠️ For "Text Generator" tutorial see node 81.  
+
+#### 85 - 💃🕺📝 Text Generator (Character Pose)
+
+**Description:**  
+Generate text related to the pose of characters.  
+
+⚠️ For "Text Generator" tutorial see node 81.  
+
+#### 86 - 🔧👨‍🔧📝 Text Generator (Object for Character)
+
+**Description:**  
+Generate text related to an object connected to a pose, that is connected to a character.  
+
+⚠️ For "Text Generator" tutorial see node 81.  
+
+#### 87 - 🌄📝 Text Generator (Scene)
+
+**Description:**  
+Generate text related to a specific scene, connects directly to the main text generator.  
+
+⚠️ For "Text Generator" tutorial see node 81.  
+
+#### 88 - 🎨📝 Text Generator (Style)
+
+**Description:**  
+Generate text related to a specific style, connects directly to the main text generator.  
+
+⚠️ For "Text Generator" tutorial see node 81.  
+
+#### 89 - 👗 Text Generator (Outfit Female)
+
+**Description:**  
+Generate text related to a specific female outfit.  
+
+⚠️ For "Text Generator" tutorial see node 81.  
+
+#### 90 - 👚 Text Generator (Outfit Male)
+
+**Description:**  
+Generate text related to a specific male outfit.  
+
+⚠️ For "Text Generator" tutorial see node 81.  
+
+#### 91 - ♻🔥📝 List Looper (Text Generator)
+
+**Description:**  
+Loop made to loop over elements for the main node text generator.  
+
+All the `List Looper` nodes have the same logic, you should be able to use them all the same way.  
+Here is an example with node 92 (list looper scenes), looping over all the different `weather_condition` :  
+
+![listlooper_USE](screenshots/listlooper_USE.png)  
+
+⚠️ Note, if you want to Loop over the elements `One by One`, Not all-in one, DO NOT use this `list looper nodes` !!  
+You can just convert the element you want as input and double click to create a new node that you can set to "increment".  
+
+Example, here you can see that the value was "incremented", aka changed to the next from the list, the next run will then have the next value from the list (and so on) :  
+![listlooper_notUSE](screenshots/listlooper_notUSE.png)  
+
+#### 92 - ♻🌄📝 List Looper (Text Generator Scenes)
+
+**Description:**  
+Loop made to loop over elements for the node scenes.  
+
+⚠️ For "List Looper" tutorial see node 91.  
+
+#### 93 - ♻🎨📝 List Looper (Text Generator Styles)
+
+**Description:**  
+Loop made to loop over elements for the node style.  
+
+⚠️ For "List Looper" tutorial see node 91.  
+
+#### 94 - ♻💃🕺📝 List Looper (Text Generator Poses)
+
+**Description:**  
+Loop made to loop over elements for the node poses.  
+
+⚠️ For "List Looper" tutorial see node 91.  
+
+#### 95 - ♻👨‍🦰👩‍🦰👾 List Looper (Text Generator Characters)
+
+**Description:**  
+Loop made to loop over elements for the node charceter (male/female/creature).  
+
+⚠️ For "List Looper" tutorial see node 91.  
+
+#### 96 - ♻👚 List Looper (Text Generator Outfits Male)
+
+**Description:**  
+Loop made to loop over elements for the node for male outfits.  
+
+⚠️ For "List Looper" tutorial see node 91.  
+
+#### 97 - ♻👗 List Looper (Text Generator Outfits Female)
+
+**Description:**  
+Loop made to loop over elements for the node for female outfits.  
+
+⚠️ For "List Looper" tutorial see node 91.  
+
+#### 98 - 📥 Load checkpoint SD1.5 (+Download from CivitAi)
+
+**Description:**  
+This is the same as a basic "Load checkpoint" node, but the list is from civitai (not your local folder).  
+It will also download the file from civitai if you don't have it on your computer yet. (You need an api token from your account. - Find yours on civitai.com settings. -)  
+This is the `sd1.5` version, it will download the models in : `ComfyUI/models/checkpoints/Bjornulf_civitAI/sd1.5`  
+After downloading, you can keep using this node as is to load your checkpoint, or use the downloaded model from a basic "Load checkpoint" node.  
+
+![civitai_load_sd15](screenshots/civitai_load_sd15.png)  
+
+#### 99 - 📥 Load checkpoint SDXL (+Download from CivitAi)
+
+**Description:**  
+This is the same as a basic "Load checkpoint" node, but the list is from civitai (not your local folder).  
+It will also download the file from civitai if you don't have it on your computer yet. (You need an api token from your account. - Find yours on civitai.com settings. -)  
+This is the `sdxl_1.0` version, it will download the models in : `ComfyUI/models/checkpoints/Bjornulf_civitAI/sdxl_1.0`  
+After downloading, you can keep using this node as is to load your checkpoint, or use the downloaded model from a basic "Load checkpoint" node.  
+
+![civitai_load_sdxl](screenshots/civitai_load_sdxl.png)  
+
+#### 100 - 📥 Load checkpoint Pony (+Download from CivitAi)
+
+**Description:**  
+This is the same as a basic "Load checkpoint" node, but the list is from civitai (not your local folder).  
+It will also download the file from civitai if you don't have it on your computer yet. (You need an api token from your account. - Find yours on civitai.com settings. -)  
+This is the `pony` version, it will download the models in : `ComfyUI/models/checkpoints/Bjornulf_civitAI/pony`  
+After downloading, you can keep using this node as is to load your checkpoint, or use the downloaded model from a basic "Load checkpoint" node.  
+
+![civitai_load_pony](screenshots/civitai_load_pony.png)  
+
+#### 101 - 📥 Load checkpoint FLUX Dev (+Download from CivitAi)
+
+**Description:**  
+This is the same as a basic "Load checkpoint" node, but the list is from civitai (not your local folder).  
+It will also download the file from civitai if you don't have it on your computer yet. (You need an api token from your account. - Find yours on civitai.com settings. -)  
+This is the `flux_d` version, it will download the models in : `ComfyUI/models/checkpoints/Bjornulf_civitAI/flux_d`  
+After downloading, you can keep using this node as is to load your checkpoint, or use the downloaded model from a basic "Load checkpoint" node.  
+
+🚧 Work in progress, need to manually clean up list, diffusers, etc.. ? 🚧
+
+#### 102 - 📥 Load checkpoint FLUX Schnell (+Download from CivitAi)
+
+**Description:**  
+This is the same as a basic "Load checkpoint" node, but the list is from civitai (not your local folder).  
+It will also download the file from civitai if you don't have it on your computer yet. (You need an api token from your account. - Find yours on civitai.com settings. -)  
+This is the `flux_s` version, it will download the models in : `ComfyUI/models/checkpoints/Bjornulf_civitAI/flux_s`  
+After downloading, you can keep using this node as is to load your checkpoint, or use the downloaded model from a basic "Load checkpoint" node.  
+
+🚧 Work in progress, need to manually clean up list, diffusers, etc.. ? 🚧
+
+#### 103 - 📥👑 Load Lora SD1.5 (+Download from CivitAi)
+
+**Description:**  
+This is the same as a basic "Load lora" node, but the list is from civitai (not your local folder).  
+It will also download the file from civitai if you don't have it on your computer yet. (You need an api token from your account. - Find yours on civitai.com settings. -)  
+This is the `sd_1.5` version, it will download the lora in : `ComfyUI/models/loras/Bjornulf_civitAI/sd_1.5`  
+After downloading, you can keep using this node as is to load your lora, or use the downloaded lora from a basic "Load lora" node.  
+
+Below is an example with Lora "Colorize" :  
+
+![civitai_lora_sd15](screenshots/civitai_lora_sd15.png)  
+
+#### 104 - 📥👑 Load Lora SDXL (+Download from CivitAi)
+
+**Description:**  
+This is the same as a basic "Load lora" node, but the list is from civitai (not your local folder).  
+It will also download the file from civitai if you don't have it on your computer yet. (You need an api token from your account. - Find yours on civitai.com settings. -)  
+This is the `sdxl_1.0` version, it will download the lora in : `ComfyUI/models/loras/Bjornulf_civitAI/sdxl_1.0`  
+After downloading, you can keep using this node as is to load your lora, or use the downloaded lora from a basic "Load lora" node.  
+
+Below is an example with Lora "Better faces" :  
+
+![civitai_lora_sdxl](screenshots/civitai_lora_sdxl.png)  
+
+#### 105 - 📥👑 Load Lora Pony (+Download from CivitAi)
+
+**Description:**  
+This is the same as a basic "Load lora" node, but the list is from civitai (not your local folder).  
+It will also download the file from civitai if you don't have it on your computer yet. (You need an api token from your account. - Find yours on civitai.com settings. -)  
+This is the `pony` version, it will download the lora in : `ComfyUI/models/loras/Bjornulf_civitAI/pony`  
+After downloading, you can keep using this node as is to load your lora, or use the downloaded lora from a basic "Load lora" node.  
+
+![civitai_lora_pony](screenshots/civitai_lora_pony.png)  
+
+#### 106 - ☁🎨 API Image Generator (FalAI) 🎨☁
+
+**Description:**  
+Generate images with only a token.  
+This is the `fal.ai` version and will save the image in `ComfyUI/output/API/CivitAI/`
+
+![api falai](screenshots/api_falai.png)  
+
+#### 107 - ☁🎨 API Image Generator (CivitAI) 🎨☁
+
+**Description:**  
+Generate images with only a token.  
+This is the `civit.ai` version and will save the image in `ComfyUI/output/API/CivitAI/`  
+⚠️ Warning : Civitai isn't the best reliable API, sometimes it doesn't answer, or take long time to answer, some urn don't answer as well as others, etc...  
+Use it at your own risks, I do not recommend running anything "costly" using their API, like Flux Ultra, etc... (Use the website instead with blue buzz)  
+API requests (like from this node) are using yellow buzz.  
+
+![api civitai](screenshots/api_civitai.png)  
+
+#### 108 - ☁👑 Add Lora (API ONLY - CivitAI) 👑☁
+
+**Description:**  
+Use lora with the API, below is an example to see clearly with the same seed the different with/without/lora.  
+
+![api civitai lora](screenshots/api_civitai_lora.png)  
+
+#### 109 - ☁🎨 API Image Generator (Black Forest Labs - Flux) 🎨☁
+
+**Description:**  
+Generate an image with the Black Forest Labs API. (flux)  
+
+![api black forest](screenshots/api_black_forest.png)  
+
+#### 110 - ☁🎨 API Image Generator (Stability - Stable Diffusion) 🎨☁
+
+**Description:**  
+Generate an image with the Stability API. (sd3)  
+
+![api stability](screenshots/api_stability.png)  

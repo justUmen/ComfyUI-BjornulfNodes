@@ -1,0 +1,328 @@
+[
+    {
+        "name": "Hands_XL___SD_1.5___FLUX.1-dev",
+        "lora_id": 200255,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Hands_XL___SD_1.5___FLUX.1-dev_27706512.jpeg",
+        "download_url": "https://civitai.com/api/download/models/804967",
+        "trained_words": [
+            "Detailed hand",
+            "Perfect hand",
+            "Hand"
+        ]
+    },
+    {
+        "name": "娜乌斯嘉nwsj_realistic",
+        "lora_id": 53601,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/娜乌斯嘉nwsj_realistic_31090762.jpeg",
+        "download_url": "https://civitai.com/api/download/models/886251",
+        "trained_words": []
+    },
+    {
+        "name": "Sinfully_Stylish__dramatic_lighting_",
+        "lora_id": 340248,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Sinfully_Stylish__dramatic_lighting__25915255.jpeg",
+        "download_url": "https://civitai.com/api/download/models/755549",
+        "trained_words": []
+    },
+    {
+        "name": "Gundam_RX78-2_outfit_style_高达RX78-2外观风格",
+        "lora_id": 22470,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Gundam_RX78-2_outfit_style_高达RX78-2外观风格_27167926.jpeg",
+        "download_url": "https://civitai.com/api/download/models/790870",
+        "trained_words": [
+            "RX-78",
+            "gundam"
+        ]
+    },
+    {
+        "name": "zyd232_s_Ink_Style",
+        "lora_id": 73305,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/zyd232_s_Ink_Style_31597242.jpeg",
+        "download_url": "https://civitai.com/api/download/models/890482",
+        "trained_words": [
+            "zydInk"
+        ]
+    },
+    {
+        "name": "Perfect_Round_Ass_SD1.5_SDXL_FLUX___olaz",
+        "lora_id": 131822,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Perfect_Round_Ass_SD1.5_SDXL_FLUX___olaz_39093030.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1041921",
+        "trained_words": [
+            "This is a photograph of a young woman captured from behind.",
+            "She has a round ass.",
+            "round ass",
+            "This is a photograph of a young woman captured from the side."
+        ]
+    },
+    {
+        "name": "Hourglass_Body_Shape_SD1.5_SDXL_PONY_FLUX___olaz",
+        "lora_id": 129130,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Hourglass_Body_Shape_SD1.5_SDXL_PONY_FLUX___olaz_33342563.jpeg",
+        "download_url": "https://civitai.com/api/download/models/932199",
+        "trained_words": [
+            "hourglass body shape"
+        ]
+    },
+    {
+        "name": "Satoshi_Urushihara_style",
+        "lora_id": 7227,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Satoshi_Urushihara_style_27070903.jpeg",
+        "download_url": "https://civitai.com/api/download/models/790696",
+        "trained_words": []
+    },
+    {
+        "name": "Feet_XL___SD_1.5___FLUX.1-dev",
+        "lora_id": 200251,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Feet_XL___SD_1.5___FLUX.1-dev_41125339.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1081295",
+        "trained_words": []
+    },
+    {
+        "name": "Cyberpunk_Anime_Style",
+        "lora_id": 128568,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Cyberpunk_Anime_Style_25310672.jpeg",
+        "download_url": "https://civitai.com/api/download/models/747534",
+        "trained_words": [
+            "anime",
+            "cyberpunk"
+        ]
+    },
+    {
+        "name": "Midjourney_V6.1_meets_FLUX______SDXL_",
+        "lora_id": 646411,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Midjourney_V6.1_meets_FLUX______SDXL__35866969.jpeg",
+        "download_url": "https://civitai.com/api/download/models/981456",
+        "trained_words": [
+            "aidmaMJ6.1"
+        ]
+    },
+    {
+        "name": "FLUX_Image_Upgrader___Detail_Maximizer___Contrast_Fix_for_low_CFG___SDXL___SD_1.5_",
+        "lora_id": 562866,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/FLUX_Image_Upgrader___Detail_Maximizer___Contrast_Fix_for_low_CFG___SDXL___SD_1.5__36032393.jpeg",
+        "download_url": "https://civitai.com/api/download/models/984672",
+        "trained_words": [
+            "aidmaimageupgrader"
+        ]
+    },
+    {
+        "name": "Velvet_s_Mythic_Fantasy_Styles___Flux___Pony",
+        "lora_id": 599757,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Velvet_s_Mythic_Fantasy_Styles___Flux___Pony_25533323.jpeg",
+        "download_url": "https://civitai.com/api/download/models/753053",
+        "trained_words": [
+            "mythp0rt"
+        ]
+    },
+    {
+        "name": "Detailed_Perfection_style_XL___F1D___SD1.5__Hands___Feet___Face___Body___All_in_one_",
+        "lora_id": 411088,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Detailed_Perfection_style_XL___F1D___SD1.5__Hands___Feet___Face___Body___All_in_one__33301077.jpeg",
+        "download_url": "https://civitai.com/api/download/models/931225",
+        "trained_words": [
+            "perfection style"
+        ]
+    },
+    {
+        "name": "Amateur_Photography__Flux_Dev_",
+        "lora_id": 652699,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Amateur_Photography__Flux_Dev__36532454.jpeg",
+        "download_url": "https://civitai.com/api/download/models/993999",
+        "trained_words": []
+    },
+    {
+        "name": "Granblue_fantasy_style",
+        "lora_id": 22800,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Granblue_fantasy_style_26587798.jpeg",
+        "download_url": "https://civitai.com/api/download/models/779278",
+        "trained_words": []
+    },
+    {
+        "name": "DreamART_Style_LORA",
+        "lora_id": 105491,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/DreamART_Style_LORA_26272318.jpeg",
+        "download_url": "https://civitai.com/api/download/models/766438",
+        "trained_words": [
+            "DreamArt"
+        ]
+    },
+    {
+        "name": "SDXL___Flux.1_D_-_Matte__Vanta_Black_-_Experiment",
+        "lora_id": 263107,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/SDXL___Flux.1_D_-_Matte__Vanta_Black_-_Experiment_27526677.jpeg",
+        "download_url": "https://civitai.com/api/download/models/801005",
+        "trained_words": [
+            "vantablack"
+        ]
+    },
+    {
+        "name": "UltraRealistic_Lora_Project",
+        "lora_id": 796382,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/UltraRealistic_Lora_Project_38865933.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1026423",
+        "trained_words": [
+            "smeared foreground",
+            "low lighting",
+            "underexposed",
+            "overexposed",
+            "smeared background",
+            "in motion",
+            "amateurish photo",
+            "GoPro lens",
+            "eerie atmosphere"
+        ]
+    },
+    {
+        "name": "Furry_Enhancer",
+        "lora_id": 310964,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Furry_Enhancer_43352196.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1122991",
+        "trained_words": []
+    },
+    {
+        "name": "Hand_Detail_XL_Lora",
+        "lora_id": 260852,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Hand_Detail_XL_Lora_37036908.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1003317",
+        "trained_words": [
+            "detailed hands"
+        ]
+    },
+    {
+        "name": "Sci-fi_Environments",
+        "lora_id": 105945,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Sci-fi_Environments_27505926.jpeg",
+        "download_url": "https://civitai.com/api/download/models/800592",
+        "trained_words": []
+    },
+    {
+        "name": "Realistic_Skin_Texture_style_XL__Detailed_Skin____SD1.5___Flux1D",
+        "lora_id": 580857,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Realistic_Skin_Texture_style_XL__Detailed_Skin____SD1.5___Flux1D_41132230.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1081450",
+        "trained_words": [
+            "skin texture style",
+            "detailed",
+            "realism"
+        ]
+    },
+    {
+        "name": "Flat_Colour_Anime",
+        "lora_id": 180891,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Flat_Colour_Anime_29267436.jpeg",
+        "download_url": "https://civitai.com/api/download/models/838667",
+        "trained_words": [
+            "Flat colour anime style image showing"
+        ]
+    },
+    {
+        "name": "Graphic_portrait",
+        "lora_id": 170039,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Graphic_portrait_28153351.jpeg",
+        "download_url": "https://civitai.com/api/download/models/813900",
+        "trained_words": [
+            "Drawing",
+            "raw illustration",
+            "red cheeks",
+            "pink cheeks",
+            "pop art",
+            "pencil drawing",
+            "Raw drawing",
+            "pattern art",
+            "pattern",
+            "sketch"
+        ]
+    },
+    {
+        "name": "XLabs_Flux_Realism_LoRA",
+        "lora_id": 631986,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/XLabs_Flux_Realism_LoRA_23346089.jpeg",
+        "download_url": "https://civitai.com/api/download/models/706528",
+        "trained_words": []
+    },
+    {
+        "name": "FLUX__FaeTastic_Details",
+        "lora_id": 643886,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/FLUX__FaeTastic_Details_24159332.jpeg",
+        "download_url": "https://civitai.com/api/download/models/720252",
+        "trained_words": []
+    },
+    {
+        "name": "Retro_Anime_Flux_-_Style",
+        "lora_id": 721039,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Retro_Anime_Flux_-_Style_27763004.jpeg",
+        "download_url": "https://civitai.com/api/download/models/806265",
+        "trained_words": []
+    },
+    {
+        "name": "better_faces_cultures_sdxl_FLUX",
+        "lora_id": 119376,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/better_faces_cultures_sdxl_FLUX_38513472.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1030926",
+        "trained_words": [
+            "freckles",
+            "yo"
+        ]
+    },
+    {
+        "name": "Fantasy_Wizard___Witches",
+        "lora_id": 308147,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Fantasy_Wizard___Witches_30785243.jpeg",
+        "download_url": "https://civitai.com/api/download/models/880134",
+        "trained_words": [
+            "hkmagic"
+        ]
+    },
+    {
+        "name": "PAseer所喜爱的风格-moxin_assist_for_adding_colorful",
+        "lora_id": 15452,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/PAseer所喜爱的风格-moxin_assist_for_adding_colorful_33766268.jpeg",
+        "download_url": "https://civitai.com/api/download/models/935477",
+        "trained_words": [
+            "shenhai",
+            "liquid particles glowing"
+        ]
+    },
+    {
+        "name": "Li_Yitong_CN_actress_李一桐_SD15___FLUX",
+        "lora_id": 44324,
+        "base_model": "Flux.1 D",
+        "image_path": "loras/lora_flux.1_d/Li_Yitong_CN_actress_李一桐_SD15___FLUX_30506936.jpeg",
+        "download_url": "https://civitai.com/api/download/models/873844",
+        "trained_words": [
+            "LYT"
+        ]
+    }
+]

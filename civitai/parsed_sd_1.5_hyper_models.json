@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Realistic_Vision_V6.0_B1",
+        "model_id": 4201,
+        "base_model": "SD 1.5 Hyper",
+        "image_path": "models/sd_1.5_hyper/Realistic_Vision_V6.0_B1_12221824.jpeg",
+        "download_url": "https://civitai.com/api/download/models/501240?type=Model&format=SafeTensor&size=full&fp=fp16"
+    }
+]

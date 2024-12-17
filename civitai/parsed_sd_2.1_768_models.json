@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Illuminati_Diffusion_v1.1",
+        "model_id": 11193,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/Illuminati_Diffusion_v1.1_160242.jpeg",
+        "download_url": "https://civitai.com/api/download/models/13259"
+    },
+    {
+        "name": "Realism_Engine",
+        "model_id": 17277,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/Realism_Engine_216332.jpeg",
+        "download_url": "https://civitai.com/api/download/models/20414"
+    },
+    {
+        "name": "Classic_Negative__SD_2.1_768px_",
+        "model_id": 4488,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/Classic_Negative__SD_2.1_768px__68853.jpeg",
+        "download_url": "https://civitai.com/api/download/models/7388"
+    },
+    {
+        "name": "Replicant-V3.0",
+        "model_id": 10701,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/Replicant-V3.0_845115.jpeg",
+        "download_url": "https://civitai.com/api/download/models/75540"
+    },
+    {
+        "name": "PIXHELL",
+        "model_id": 21276,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/PIXHELL_327135.jpeg",
+        "download_url": "https://civitai.com/api/download/models/28985"
+    },
+    {
+        "name": "vector-art",
+        "model_id": 4618,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/vector-art_61832.jpeg",
+        "download_url": "https://civitai.com/api/download/models/5265?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "rMada_Merge_-_SD_2.1_768",
+        "model_id": 15303,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/rMada_Merge_-_SD_2.1_768_500465.jpeg",
+        "download_url": "https://civitai.com/api/download/models/46259?type=Config&format=Other"
+    },
+    {
+        "name": "dvMech",
+        "model_id": 6055,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/dvMech_145501.jpeg",
+        "download_url": "https://civitai.com/api/download/models/14872?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "NijiDiffusion",
+        "model_id": 55495,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/NijiDiffusion_1140790.jpeg",
+        "download_url": "https://civitai.com/api/download/models/59885?type=Config&format=Other"
+    },
+    {
+        "name": "coloring-book",
+        "model_id": 5153,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/coloring-book_50959.jpeg",
+        "download_url": "https://civitai.com/api/download/models/5978"
+    },
+    {
+        "name": "Illuminutty_Diffusion",
+        "model_id": 36152,
+        "base_model": "SD 2.1 768",
+        "image_path": "models/sd_2.1_768/Illuminutty_Diffusion_464503.jpeg",
+        "download_url": "https://civitai.com/api/download/models/42304?type=Config&format=Other"
+    }
+]

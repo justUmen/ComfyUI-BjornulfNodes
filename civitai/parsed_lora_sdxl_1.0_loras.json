@@ -1,0 +1,508 @@
+[
+    {
+        "name": "Detail_Tweaker_XL",
+        "lora_id": 122359,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Detail_Tweaker_XL_1917130.jpeg",
+        "download_url": "https://civitai.com/api/download/models/135867",
+        "trained_words": []
+    },
+    {
+        "name": "All_Disney_Princess_XL_LoRA_Model_from_Ralph_Breaks_the_Internet",
+        "lora_id": 212532,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/All_Disney_Princess_XL_LoRA_Model_from_Ralph_Breaks_the_Internet_4058459.jpeg",
+        "download_url": "https://civitai.com/api/download/models/244808",
+        "trained_words": []
+    },
+    {
+        "name": "xl_more_art-full___xl_real___Enhancer",
+        "lora_id": 124347,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/xl_more_art-full___xl_real___Enhancer_2287991.jpeg",
+        "download_url": "https://civitai.com/api/download/models/152309",
+        "trained_words": []
+    },
+    {
+        "name": "extremely_detailed__no_trigger__-_sliders.ntcai.xyz",
+        "lora_id": 229213,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/extremely_detailed__no_trigger__-_sliders.ntcai.xyz_7703460.jpeg",
+        "download_url": "https://civitai.com/api/download/models/383563",
+        "trained_words": []
+    },
+    {
+        "name": "Pixel_Art_XL",
+        "lora_id": 120096,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Pixel_Art_XL_1918193.jpeg",
+        "download_url": "https://civitai.com/api/download/models/135931",
+        "trained_words": []
+    },
+    {
+        "name": "Perfect_Eyes_XL",
+        "lora_id": 118427,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Perfect_Eyes_XL_1772388.jpeg",
+        "download_url": "https://civitai.com/api/download/models/128461",
+        "trained_words": [
+            "perfecteyes",
+            "brown eyes",
+            "blue eyes",
+            "green eyes"
+        ]
+    },
+    {
+        "name": "Midjourney_mimic",
+        "lora_id": 251417,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Midjourney_mimic_21727039.jpeg",
+        "download_url": "https://civitai.com/api/download/models/678485",
+        "trained_words": []
+    },
+    {
+        "name": "Logo.Redmond_-_Logo_Lora_for_SD_XL_1.0",
+        "lora_id": 124609,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Logo.Redmond_-_Logo_Lora_for_SD_XL_1.0_2828404.jpeg",
+        "download_url": "https://civitai.com/api/download/models/177492",
+        "trained_words": [
+            "logo",
+            "logoredmaf"
+        ]
+    },
+    {
+        "name": "Glass_Sculptures",
+        "lora_id": 11203,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Glass_Sculptures_2837951.jpeg",
+        "download_url": "https://civitai.com/api/download/models/177888",
+        "trained_words": [
+            "transparent",
+            "translucent"
+        ]
+    },
+    {
+        "name": "DetailedEyes_XL",
+        "lora_id": 120723,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/DetailedEyes_XL_2148743.jpeg",
+        "download_url": "https://civitai.com/api/download/models/145907",
+        "trained_words": []
+    },
+    {
+        "name": "LCM-LoRA_Weights_-_Stable_Diffusion_Acceleration_Module",
+        "lora_id": 195519,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/LCM-LoRA_Weights_-_Stable_Diffusion_Acceleration_Module_9026061.jpeg",
+        "download_url": "https://civitai.com/api/download/models/424720",
+        "trained_words": []
+    },
+    {
+        "name": "学校_School_Building_Scenery_LoRA",
+        "lora_id": 20289,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/学校_School_Building_Scenery_LoRA_2115523.jpeg",
+        "download_url": "https://civitai.com/api/download/models/142000",
+        "trained_words": [
+            "rouka",
+            "kyoshitsu",
+            "kaidan"
+        ]
+    },
+    {
+        "name": "Harrlogos_XL_-_Finally__custom_text_generation_in_SD_",
+        "lora_id": 176555,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Harrlogos_XL_-_Finally__custom_text_generation_in_SD__3423003.jpeg",
+        "download_url": "https://civitai.com/api/download/models/214296",
+        "trained_words": [
+            "text logo"
+        ]
+    },
+    {
+        "name": "SDXL_FaeTastic_Details",
+        "lora_id": 134338,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/SDXL_FaeTastic_Details_5361646.jpeg",
+        "download_url": "https://civitai.com/api/download/models/293991",
+        "trained_words": []
+    },
+    {
+        "name": "pantyhose",
+        "lora_id": 26760,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/pantyhose_3883648.jpeg",
+        "download_url": "https://civitai.com/api/download/models/237275",
+        "trained_words": [
+            "white pantyhose",
+            "panntyhose",
+            "black pantyhose"
+        ]
+    },
+    {
+        "name": "Juggernaut_Cinematic_XL_LoRA",
+        "lora_id": 120663,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Juggernaut_Cinematic_XL_LoRA_1844260.jpeg",
+        "download_url": "https://civitai.com/api/download/models/131991",
+        "trained_words": [
+            "Cinematic Shot",
+            "Cinematic Lighting",
+            "Movie Still",
+            "Cinematic",
+            "Film Still"
+        ]
+    },
+    {
+        "name": "Hitori_Gotoh__Bocchi_the_Rock__",
+        "lora_id": 7624,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Hitori_Gotoh__Bocchi_the_Rock___2927520.jpeg",
+        "download_url": "https://civitai.com/api/download/models/181674",
+        "trained_words": []
+    },
+    {
+        "name": "_Lah__Cute_Social___SDXL___SD1.5",
+        "lora_id": 132578,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/_Lah__Cute_Social___SDXL___SD1.5_3050046.jpeg",
+        "download_url": "https://civitai.com/api/download/models/190859",
+        "trained_words": [
+            "cute doodle"
+        ]
+    },
+    {
+        "name": "Ingrid__Taimanin_Series__Hell_Knight_Ingrid__NoobAI-XL__IllustriousXL____PonyXL___SD_1.5",
+        "lora_id": 92671,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Ingrid__Taimanin_Series__Hell_Knight_Ingrid__NoobAI-XL__IllustriousXL____PonyXL___SD_1.5_39043944.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1040887",
+        "trained_words": [
+            "bare shoulders",
+            "helloutfit, high collar, underboob, elbow gloves, highleg panties, thigh boots, midriff, cape,",
+            "short hair, single hair bun, glasses,striped jacked, striped skirt, fishnet pantyhose, high heels",
+            "wedding dress, bridal veil, bridal gauntlets, high heels",
+            "black blazer, no bra, pencil skirt, black miniskirt, high heels",
+            "Ingrid, 1girl, mature female, dark skinned female, pink hair, long hair, hair intakes, lipstick, purple lips, makeup, yellow eyes, mole under mouth,",
+            "bridal lingerie"
+        ]
+    },
+    {
+        "name": "Pokemon_Trainer_Sprite_PixelArt",
+        "lora_id": 159333,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Pokemon_Trainer_Sprite_PixelArt_9737398.jpeg",
+        "download_url": "https://civitai.com/api/download/models/443092",
+        "trained_words": []
+    },
+    {
+        "name": "LineAniRedmond-_Linear_Manga_Style_for_SD_XL_-_Anime_Style.",
+        "lora_id": 127018,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/LineAniRedmond-_Linear_Manga_Style_for_SD_XL_-_Anime_Style._2829304.jpeg",
+        "download_url": "https://civitai.com/api/download/models/177544",
+        "trained_words": [
+            "lineart",
+            "LineAniAF"
+        ]
+    },
+    {
+        "name": "LeLo_-_LEGO_LoRA_for_XL___SD1.5",
+        "lora_id": 92444,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/LeLo_-_LEGO_LoRA_for_XL___SD1.5_6016204.jpeg",
+        "download_url": "https://civitai.com/api/download/models/318915",
+        "trained_words": [
+            "LEGO Creator",
+            "LEGO BrickHeadz",
+            "LEGO MiniFig"
+        ]
+    },
+    {
+        "name": "Dissolve_Style__LoRA_1.5_SDXL_",
+        "lora_id": 245889,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Dissolve_Style__LoRA_1.5_SDXL__4949284.jpeg",
+        "download_url": "https://civitai.com/api/download/models/277389",
+        "trained_words": [
+            "ral-dissolve"
+        ]
+    },
+    {
+        "name": "SXZ_Texture_Bringer___Concept__",
+        "lora_id": 53858,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/SXZ_Texture_Bringer___Concept___14198896.jpeg",
+        "download_url": "https://civitai.com/api/download/models/542604",
+        "trained_words": [
+            "texture of"
+        ]
+    },
+    {
+        "name": "ParchartXL",
+        "lora_id": 141471,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/ParchartXL_9626613.jpeg",
+        "download_url": "https://civitai.com/api/download/models/440425",
+        "trained_words": [
+            "on parchment"
+        ]
+    },
+    {
+        "name": "LCM_TurboMix_LoRA__Only_12MB__8-step_sampling_Effect_is_superior_to_using_LCM_or_Turbo_alone__",
+        "lora_id": 216190,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/LCM_TurboMix_LoRA__Only_12MB__8-step_sampling_Effect_is_superior_to_using_LCM_or_Turbo_alone___4132354.jpeg",
+        "download_url": "https://civitai.com/api/download/models/246747",
+        "trained_words": []
+    },
+    {
+        "name": "ClassipeintXL__oil_paint___oil_painting_style_",
+        "lora_id": 127139,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/ClassipeintXL__oil_paint___oil_painting_style__6998858.jpeg",
+        "download_url": "https://civitai.com/api/download/models/356771",
+        "trained_words": [
+            "oil painting"
+        ]
+    },
+    {
+        "name": "XL_Fantasy_Knights_-_by_HailoKnight",
+        "lora_id": 126751,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/XL_Fantasy_Knights_-_by_HailoKnight_39896310.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1057477",
+        "trained_words": [
+            "hkstyle"
+        ]
+    },
+    {
+        "name": "riding_on_a_",
+        "lora_id": 82397,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/riding_on_a__7764010.jpeg",
+        "download_url": "https://civitai.com/api/download/models/385845",
+        "trained_words": [
+            "riding on a"
+        ]
+    },
+    {
+        "name": "Zavy_s_Dark_Atmospheric_Contrast_-_SDXL",
+        "lora_id": 295530,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Zavy_s_Dark_Atmospheric_Contrast_-_SDXL_6341888.jpeg",
+        "download_url": "https://civitai.com/api/download/models/332071",
+        "trained_words": [
+            "dark",
+            "low-key",
+            "chiaroscuro"
+        ]
+    },
+    {
+        "name": "_SDXL___SD_1.5__Simple_pointed_toe_stiletto_heels_without_ankle_strap__尖头高跟鞋_",
+        "lora_id": 81600,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/_SDXL___SD_1.5__Simple_pointed_toe_stiletto_heels_without_ankle_strap__尖头高跟鞋__10066707.jpeg",
+        "download_url": "https://civitai.com/api/download/models/451519",
+        "trained_words": [
+            "ptheels",
+            "high heels"
+        ]
+    },
+    {
+        "name": "Greg_Rutkowski_Inspired_Style_LoRA__SDXL_",
+        "lora_id": 117635,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Greg_Rutkowski_Inspired_Style_LoRA__SDXL__1752535.jpeg",
+        "download_url": "https://civitai.com/api/download/models/127510",
+        "trained_words": [
+            "greg rutkowski"
+        ]
+    },
+    {
+        "name": "Detailers_By_Stable_Yogi",
+        "lora_id": 178167,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Detailers_By_Stable_Yogi_40642030.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1071060",
+        "trained_words": [
+            "perfect eyes,",
+            "detailed eyes,",
+            "perfect skin texture",
+            "photorealistic eyes,",
+            "freckles,"
+        ]
+    },
+    {
+        "name": "Cinematic_Shot_",
+        "lora_id": 432586,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Cinematic_Shot__11368089.jpeg",
+        "download_url": "https://civitai.com/api/download/models/481917",
+        "trained_words": []
+    },
+    {
+        "name": "Concept__Perfect_Eyes",
+        "lora_id": 119399,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Concept__Perfect_Eyes_1797816.jpeg",
+        "download_url": "https://civitai.com/api/download/models/129711",
+        "trained_words": [
+            "perfecteyes"
+        ]
+    },
+    {
+        "name": "Aesthetic_Anime_LoRA",
+        "lora_id": 295100,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Aesthetic_Anime_LoRA_6328373.jpeg",
+        "download_url": "https://civitai.com/api/download/models/331598",
+        "trained_words": []
+    },
+    {
+        "name": "WowifierXL",
+        "lora_id": 117041,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/WowifierXL_3482296.jpeg",
+        "download_url": "https://civitai.com/api/download/models/217866",
+        "trained_words": [
+            "art by mooncryptowow"
+        ]
+    },
+    {
+        "name": "Voxel_XL",
+        "lora_id": 118536,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Voxel_XL_1996739.jpeg",
+        "download_url": "https://civitai.com/api/download/models/128609",
+        "trained_words": [
+            "voxel style"
+        ]
+    },
+    {
+        "name": "Stylized_Setting__Isometric__SDXL___SD1.5",
+        "lora_id": 118775,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Stylized_Setting__Isometric__SDXL___SD1.5_5179048.jpeg",
+        "download_url": "https://civitai.com/api/download/models/255347",
+        "trained_words": [
+            "Isometric_Setting"
+        ]
+    },
+    {
+        "name": "Envy_Zoom_Slider_XL_01",
+        "lora_id": 213307,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Envy_Zoom_Slider_XL_01_3949708.jpeg",
+        "download_url": "https://civitai.com/api/download/models/240274",
+        "trained_words": []
+    },
+    {
+        "name": "GlowNeon_XL_LoRA",
+        "lora_id": 310235,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/GlowNeon_XL_LoRA_6762990.jpeg",
+        "download_url": "https://civitai.com/api/download/models/348189",
+        "trained_words": [
+            "sparks",
+            "glowing",
+            "lightning",
+            "glowneon"
+        ]
+    },
+    {
+        "name": "Papercut_SDXL",
+        "lora_id": 122567,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Papercut_SDXL_1871648.jpeg",
+        "download_url": "https://civitai.com/api/download/models/133503",
+        "trained_words": [
+            "papercut"
+        ]
+    },
+    {
+        "name": "SDXL_MS_Paint_Portraits",
+        "lora_id": 183354,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/SDXL_MS_Paint_Portraits_3272136.jpeg",
+        "download_url": "https://civitai.com/api/download/models/205793",
+        "trained_words": [
+            "MSPaint portrait",
+            "MSPaint drawing"
+        ]
+    },
+    {
+        "name": "RMSDXL_Enhance_XL__tool_",
+        "lora_id": 238442,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/RMSDXL_Enhance_XL__tool__4738085.jpeg",
+        "download_url": "https://civitai.com/api/download/models/268857",
+        "trained_words": []
+    },
+    {
+        "name": "カラオケ_karaokeroom",
+        "lora_id": 9504,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/カラオケ_karaokeroom_10813387.jpeg",
+        "download_url": "https://civitai.com/api/download/models/142211",
+        "trained_words": [
+            "karaokeroom",
+            "denmoku",
+            "WM-610, microphone",
+            "joypad",
+            "AT-CLM7000TX, microphone"
+        ]
+    },
+    {
+        "name": "gmic_icon_food_category",
+        "lora_id": 81308,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/gmic_icon_food_category_41063875.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1080225",
+        "trained_words": [
+            "gmic \\(2dguofeng\\)"
+        ]
+    },
+    {
+        "name": "Better_Faces_LoRA",
+        "lora_id": 301988,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Better_Faces_LoRA_6525174.jpeg",
+        "download_url": "https://civitai.com/api/download/models/339112",
+        "trained_words": [
+            "4ng3l face"
+        ]
+    },
+    {
+        "name": "Alphonse_Mucha_Style",
+        "lora_id": 63072,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/Alphonse_Mucha_Style_2321034.jpeg",
+        "download_url": "https://civitai.com/api/download/models/153680",
+        "trained_words": [
+            "Alphonse Mucha Style page"
+        ]
+    },
+    {
+        "name": "_SDXL_chinese_style_illustration_--_国风插画",
+        "lora_id": 120206,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/_SDXL_chinese_style_illustration_--_国风插画_1817595.jpeg",
+        "download_url": "https://civitai.com/api/download/models/130709",
+        "trained_words": [
+            "guofeng",
+            "chinese style"
+        ]
+    },
+    {
+        "name": "YameroYandere",
+        "lora_id": 48579,
+        "base_model": "SDXL 1.0",
+        "image_path": "loras/lora_sdxl_1.0/YameroYandere_37916039.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1019672",
+        "trained_words": [
+            "yameroyandere"
+        ]
+    }
+]

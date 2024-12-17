@@ -1,0 +1,4279 @@
+[
+    {
+        "name": "majicMIX_realistic_麦橘写实",
+        "model_id": 43331,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/majicMIX_realistic_麦橘写实_2805533.jpeg",
+        "download_url": "https://civitai.com/api/download/models/176425"
+    },
+    {
+        "name": "DreamShaper",
+        "model_id": 4384,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DreamShaper_1777043.jpeg",
+        "download_url": "https://civitai.com/api/download/models/128713"
+    },
+    {
+        "name": "Counterfeit-V3.0",
+        "model_id": 4468,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Counterfeit-V3.0_625765.jpeg",
+        "download_url": "https://civitai.com/api/download/models/57618?type=Model&format=SafeTensor&size=pruned&fp=fp32"
+    },
+    {
+        "name": "MeinaMix",
+        "model_id": 7240,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MeinaMix_34463585.jpeg",
+        "download_url": "https://civitai.com/api/download/models/948574"
+    },
+    {
+        "name": "ReV_Animated",
+        "model_id": 7371,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ReV_Animated_9038033.jpeg",
+        "download_url": "https://civitai.com/api/download/models/425083"
+    },
+    {
+        "name": "Cetus-Mix",
+        "model_id": 6755,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Cetus-Mix_1322390.jpeg",
+        "download_url": "https://civitai.com/api/download/models/105924"
+    },
+    {
+        "name": "GhostMix",
+        "model_id": 36520,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/GhostMix_862136.jpeg",
+        "download_url": "https://civitai.com/api/download/models/76907"
+    },
+    {
+        "name": "epiCRealism",
+        "model_id": 25694,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/epiCRealism_2103034.jpeg",
+        "download_url": "https://civitai.com/api/download/models/143906"
+    },
+    {
+        "name": "XXMix_9realistic",
+        "model_id": 47274,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/XXMix_9realistic_4755487.jpeg",
+        "download_url": "https://civitai.com/api/download/models/102222"
+    },
+    {
+        "name": "Beautiful_Realistic_Asians",
+        "model_id": 25494,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Beautiful_Realistic_Asians_2822492.jpeg",
+        "download_url": "https://civitai.com/api/download/models/177164"
+    },
+    {
+        "name": "CyberRealistic",
+        "model_id": 15003,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CyberRealistic_29558860.jpeg",
+        "download_url": "https://civitai.com/api/download/models/846876?type=Model&format=SafeTensor&size=pruned&fp=fp32"
+    },
+    {
+        "name": "Dark_Sushi_Mix_大颗寿司Mix",
+        "model_id": 24779,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Dark_Sushi_Mix_大颗寿司Mix_1099587.jpeg",
+        "download_url": "https://civitai.com/api/download/models/93208"
+    },
+    {
+        "name": "AnyLoRA_-_Checkpoint",
+        "model_id": 23900,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AnyLoRA_-_Checkpoint_1136424.jpeg",
+        "download_url": "https://civitai.com/api/download/models/95489"
+    },
+    {
+        "name": "国风3_GuoFeng3",
+        "model_id": 10415,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/国风3_GuoFeng3_1329102.jpeg",
+        "download_url": "https://civitai.com/api/download/models/106289"
+    },
+    {
+        "name": "ToonYou",
+        "model_id": 30240,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ToonYou_1726591.jpeg",
+        "download_url": "https://civitai.com/api/download/models/125771"
+    },
+    {
+        "name": "NeverEnding_Dream__NED_",
+        "model_id": 10028,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/NeverEnding_Dream__NED__707744.jpeg",
+        "download_url": "https://civitai.com/api/download/models/64094"
+    },
+    {
+        "name": "AbsoluteReality",
+        "model_id": 81458,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AbsoluteReality_1858744.jpeg",
+        "download_url": "https://civitai.com/api/download/models/132760"
+    },
+    {
+        "name": "LEOSAM_s_FilmGirl_Ultra_胶片风",
+        "model_id": 33208,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/LEOSAM_s_FilmGirl_Ultra_胶片风_7273802.jpeg",
+        "download_url": "https://civitai.com/api/download/models/367245"
+    },
+    {
+        "name": "_Checkpoint_YesMix",
+        "model_id": 9139,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/_Checkpoint_YesMix_20076184.jpeg",
+        "download_url": "https://civitai.com/api/download/models/649010"
+    },
+    {
+        "name": "Lyriel",
+        "model_id": 22922,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Lyriel_808323.jpeg",
+        "download_url": "https://civitai.com/api/download/models/72396"
+    },
+    {
+        "name": "MeinaPastel",
+        "model_id": 11866,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MeinaPastel_1364342.jpeg",
+        "download_url": "https://civitai.com/api/download/models/108289?type=Model&format=SafeTensor&size=pruned&fp=fp32"
+    },
+    {
+        "name": "Analog_Madness_-_Realistic_model",
+        "model_id": 8030,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Analog_Madness_-_Realistic_model_4558937.jpeg",
+        "download_url": "https://civitai.com/api/download/models/261539?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "A-Zovya_RPG_Artist_Tools",
+        "model_id": 8124,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/A-Zovya_RPG_Artist_Tools_8391325.jpeg",
+        "download_url": "https://civitai.com/api/download/models/251729"
+    },
+    {
+        "name": "RealCartoon3D",
+        "model_id": 94809,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealCartoon3D_19407879.jpeg",
+        "download_url": "https://civitai.com/api/download/models/637156"
+    },
+    {
+        "name": "epiCPhotoGasm",
+        "model_id": 132632,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/epiCPhotoGasm_9230454.jpeg",
+        "download_url": "https://civitai.com/api/download/models/429454"
+    },
+    {
+        "name": "RealDosMix",
+        "model_id": 6925,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealDosMix_76860.jpeg",
+        "download_url": "https://civitai.com/api/download/models/8137"
+    },
+    {
+        "name": "PerfectDeliberate",
+        "model_id": 24350,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/PerfectDeliberate_4264354.jpeg",
+        "download_url": "https://civitai.com/api/download/models/253055?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "AniVerse",
+        "model_id": 107842,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AniVerse_18126163.jpeg",
+        "download_url": "https://civitai.com/api/download/models/614262"
+    },
+    {
+        "name": "TMND-Mix",
+        "model_id": 27259,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/TMND-Mix_3544500.jpeg",
+        "download_url": "https://civitai.com/api/download/models/221220"
+    },
+    {
+        "name": "Flat-2D_Animerge",
+        "model_id": 35960,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Flat-2D_Animerge_4677852.jpeg",
+        "download_url": "https://civitai.com/api/download/models/266360"
+    },
+    {
+        "name": "CuteYukiMix_特化可爱风格adorable_style_",
+        "model_id": 28169,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CuteYukiMix_特化可爱风格adorable_style__5120821.jpeg",
+        "download_url": "https://civitai.com/api/download/models/265102"
+    },
+    {
+        "name": "DivineEleganceMix",
+        "model_id": 6174,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DivineEleganceMix_9296323.jpeg",
+        "download_url": "https://civitai.com/api/download/models/432048"
+    },
+    {
+        "name": "Realisian",
+        "model_id": 47130,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Realisian_6197005.jpeg",
+        "download_url": "https://civitai.com/api/download/models/325142"
+    },
+    {
+        "name": "Photon",
+        "model_id": 84728,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Photon_1044343.jpeg",
+        "download_url": "https://civitai.com/api/download/models/90072"
+    },
+    {
+        "name": "DosMix",
+        "model_id": 6250,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DosMix_67938.jpeg",
+        "download_url": "https://civitai.com/api/download/models/7328"
+    },
+    {
+        "name": "RPG",
+        "model_id": 1116,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RPG_3602723.jpeg",
+        "download_url": "https://civitai.com/api/download/models/124626"
+    },
+    {
+        "name": "Night_Sky_YOZORA_Style_Model",
+        "model_id": 12262,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Night_Sky_YOZORA_Style_Model_165982.jpeg",
+        "download_url": "https://civitai.com/api/download/models/14459"
+    },
+    {
+        "name": "Clarity",
+        "model_id": 5062,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Clarity_2062809.jpeg",
+        "download_url": "https://civitai.com/api/download/models/142125?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "MeinaUnreal",
+        "model_id": 18798,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MeinaUnreal_16714725.jpeg",
+        "download_url": "https://civitai.com/api/download/models/589833"
+    },
+    {
+        "name": "LOFI",
+        "model_id": 9052,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/LOFI_12504680.jpeg",
+        "download_url": "https://civitai.com/api/download/models/507319"
+    },
+    {
+        "name": "ICBINP_-__I_Can_t_Believe_It_s_Not_Photography_",
+        "model_id": 28059,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ICBINP_-__I_Can_t_Believe_It_s_Not_Photography__21094612.jpeg",
+        "download_url": "https://civitai.com/api/download/models/667760"
+    },
+    {
+        "name": "Disney_Pixar_Cartoon_Type_A",
+        "model_id": 65203,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Disney_Pixar_Cartoon_Type_A_780165.jpeg",
+        "download_url": "https://civitai.com/api/download/models/69832"
+    },
+    {
+        "name": "majicMIX_sombre_麦橘唯美",
+        "model_id": 62778,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/majicMIX_sombre_麦橘唯美_841116.jpeg",
+        "download_url": "https://civitai.com/api/download/models/75209"
+    },
+    {
+        "name": "majicMIX_fantasy_麦橘幻想",
+        "model_id": 41865,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/majicMIX_fantasy_麦橘幻想_4367812.jpeg",
+        "download_url": "https://civitai.com/api/download/models/256869"
+    },
+    {
+        "name": "Dark_Sushi_2.5D_大颗寿司2.5D",
+        "model_id": 48671,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Dark_Sushi_2.5D_大颗寿司2.5D_2056498.jpeg",
+        "download_url": "https://civitai.com/api/download/models/141866"
+    },
+    {
+        "name": "Nyan_Mix",
+        "model_id": 14373,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Nyan_Mix_186595.jpeg",
+        "download_url": "https://civitai.com/api/download/models/18151?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "majicMIX_lux_麦橘辉耀",
+        "model_id": 56967,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/majicMIX_lux_麦橘辉耀_5165866.jpeg",
+        "download_url": "https://civitai.com/api/download/models/286238"
+    },
+    {
+        "name": "RealCartoon-Realistic",
+        "model_id": 97744,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealCartoon-Realistic_21329878.jpeg",
+        "download_url": "https://civitai.com/api/download/models/671503"
+    },
+    {
+        "name": "A-Zovya_Photoreal",
+        "model_id": 57319,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/A-Zovya_Photoreal_11041816.jpeg",
+        "download_url": "https://civitai.com/api/download/models/474400?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Experience",
+        "model_id": 5952,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Experience_1944538.jpeg",
+        "download_url": "https://civitai.com/api/download/models/137204?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "Protogen_v2.2__Anime__Official_Release",
+        "model_id": 3627,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Protogen_v2.2__Anime__Official_Release_25063.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4007?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Ether_Blu_Mix",
+        "model_id": 17427,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Ether_Blu_Mix_7139554.jpeg",
+        "download_url": "https://civitai.com/api/download/models/361779"
+    },
+    {
+        "name": "啥玩意完犊子_大概是一种古早画风_-_old_fish",
+        "model_id": 14978,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/啥玩意完犊子_大概是一种古早画风_-_old_fish_1150365.jpeg",
+        "download_url": "https://civitai.com/api/download/models/96369"
+    },
+    {
+        "name": "Cheese_Daddy_s_Landscapes_mix",
+        "model_id": 5041,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Cheese_Daddy_s_Landscapes_mix_471002.jpeg",
+        "download_url": "https://civitai.com/api/download/models/42985"
+    },
+    {
+        "name": "Ether_Real_Mix",
+        "model_id": 18207,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Ether_Real_Mix_14238628.jpeg",
+        "download_url": "https://civitai.com/api/download/models/538928?type=Model&format=SafeTensor&size=pruned&fp=fp32"
+    },
+    {
+        "name": "Indigo_Furry_mix",
+        "model_id": 34469,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Indigo_Furry_mix_11327553.jpeg",
+        "download_url": "https://civitai.com/api/download/models/480978?type=Config&format=Other"
+    },
+    {
+        "name": "Protogen_x3.4__Photorealism__Official_Release",
+        "model_id": 3666,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Protogen_x3.4__Photorealism__Official_Release_25380.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4048?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Manmaru_mix",
+        "model_id": 86277,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Manmaru_mix_3017806.jpeg",
+        "download_url": "https://civitai.com/api/download/models/188171"
+    },
+    {
+        "name": "AingDiffusion",
+        "model_id": 34553,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AingDiffusion_8891481.jpeg",
+        "download_url": "https://civitai.com/api/download/models/420724"
+    },
+    {
+        "name": "PrimeMix",
+        "model_id": 28779,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/PrimeMix_748819.jpeg",
+        "download_url": "https://civitai.com/api/download/models/67388"
+    },
+    {
+        "name": "OrangeChillMix",
+        "model_id": 9486,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/OrangeChillMix_1802984.jpeg",
+        "download_url": "https://civitai.com/api/download/models/129974"
+    },
+    {
+        "name": "Dreamlike_Diffusion_1.0",
+        "model_id": 1274,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Dreamlike_Diffusion_1.0_11480.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1356"
+    },
+    {
+        "name": "Art___Eros__aEros__-_A_tribute_to_beauty",
+        "model_id": 3950,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Art___Eros__aEros__-_A_tribute_to_beauty_39078.jpeg",
+        "download_url": "https://civitai.com/api/download/models/5180?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "AAM_-_AnyLoRA_Anime_Mix_-_Anime_Screencap_Style_Model",
+        "model_id": 84586,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AAM_-_AnyLoRA_Anime_Mix_-_Anime_Screencap_Style_Model_1707960.jpeg",
+        "download_url": "https://civitai.com/api/download/models/89927"
+    },
+    {
+        "name": "Juggernaut",
+        "model_id": 46422,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Juggernaut_4863187.jpeg",
+        "download_url": "https://civitai.com/api/download/models/274039"
+    },
+    {
+        "name": "Colorful",
+        "model_id": 7279,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Colorful_5502058.jpeg",
+        "download_url": "https://civitai.com/api/download/models/299029"
+    },
+    {
+        "name": "RealCartoon-Pixar",
+        "model_id": 107289,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealCartoon-Pixar_27746679.jpeg",
+        "download_url": "https://civitai.com/api/download/models/805914?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "AniMerge",
+        "model_id": 144249,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AniMerge_11948680.jpeg",
+        "download_url": "https://civitai.com/api/download/models/495273"
+    },
+    {
+        "name": "AniMerge",
+        "model_id": 144249,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AniMerge_11948680.jpeg",
+        "download_url": "https://civitai.com/api/download/models/495273"
+    },
+    {
+        "name": "Corneo_s_7th_Heaven_Mix",
+        "model_id": 4669,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Corneo_s_7th_Heaven_Mix_62863.jpeg",
+        "download_url": "https://civitai.com/api/download/models/6878?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Arthemy_Comics",
+        "model_id": 54073,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Arthemy_Comics_9676738.jpeg",
+        "download_url": "https://civitai.com/api/download/models/441591"
+    },
+    {
+        "name": "DarkSun",
+        "model_id": 58431,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DarkSun_3888857.jpeg",
+        "download_url": "https://civitai.com/api/download/models/237459?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "maturemalemix",
+        "model_id": 50882,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/maturemalemix_843887.jpeg",
+        "download_url": "https://civitai.com/api/download/models/75441"
+    },
+    {
+        "name": "QGO_-_PromptingReal",
+        "model_id": 4188,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/QGO_-_PromptingReal_981950.jpeg",
+        "download_url": "https://civitai.com/api/download/models/86329?type=Model&format=PickleTensor&size=pruned&fp=fp16"
+    },
+    {
+        "name": "Inkpunk_Diffusion",
+        "model_id": 1087,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Inkpunk_Diffusion_9243.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1138"
+    },
+    {
+        "name": "Anime_Pastel_Dream",
+        "model_id": 23521,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Anime_Pastel_Dream_316170.jpeg",
+        "download_url": "https://civitai.com/api/download/models/28100?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "Kizuki_-_Anime___Hentai_Checkpoint",
+        "model_id": 22364,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Kizuki_-_Anime___Hentai_Checkpoint_10971806.jpeg",
+        "download_url": "https://civitai.com/api/download/models/472864"
+    },
+    {
+        "name": "AnythingElse_V4",
+        "model_id": 4855,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AnythingElse_V4_44683.jpeg",
+        "download_url": "https://civitai.com/api/download/models/5581?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "AbyssOrangeMix2_-_SFW_Soft_NSFW",
+        "model_id": 4437,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AbyssOrangeMix2_-_SFW_Soft_NSFW_79544.jpeg",
+        "download_url": "https://civitai.com/api/download/models/5021"
+    },
+    {
+        "name": "DDosMix",
+        "model_id": 8437,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DDosMix_132965.jpeg",
+        "download_url": "https://civitai.com/api/download/models/12183"
+    },
+    {
+        "name": "CamelliaMIx_2.5D",
+        "model_id": 44219,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CamelliaMIx_2.5D_2491264.jpeg",
+        "download_url": "https://civitai.com/api/download/models/161429"
+    },
+    {
+        "name": "Aniflatmix_-_Anime_Flat_Color_Style_Mix__平涂り風_平涂风_",
+        "model_id": 24387,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Aniflatmix_-_Anime_Flat_Color_Style_Mix__平涂り風_平涂风__450815.jpeg",
+        "download_url": "https://civitai.com/api/download/models/40816"
+    },
+    {
+        "name": "BeautyProMix",
+        "model_id": 16599,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BeautyProMix_213367.jpeg",
+        "download_url": "https://civitai.com/api/download/models/19597"
+    },
+    {
+        "name": "Comic_Babes",
+        "model_id": 20294,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Comic_Babes_5130570.jpeg",
+        "download_url": "https://civitai.com/api/download/models/283209"
+    },
+    {
+        "name": "Anything_V3",
+        "model_id": 66,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Anything_V3_517.jpeg",
+        "download_url": "https://civitai.com/api/download/models/75"
+    },
+    {
+        "name": "Fantasy_World",
+        "model_id": 11031,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Fantasy_World_125986.jpeg",
+        "download_url": "https://civitai.com/api/download/models/13069"
+    },
+    {
+        "name": "Realistic_Stock_Photo",
+        "model_id": 139565,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Realistic_Stock_Photo_13316323.jpeg",
+        "download_url": "https://civitai.com/api/download/models/524032"
+    },
+    {
+        "name": "AniMesh",
+        "model_id": 90642,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AniMesh_3674768.jpeg",
+        "download_url": "https://civitai.com/api/download/models/224732"
+    },
+    {
+        "name": "CuriousMerge_2.5D",
+        "model_id": 79070,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CuriousMerge_2.5D_1200576.jpeg",
+        "download_url": "https://civitai.com/api/download/models/99101"
+    },
+    {
+        "name": "OnlyRealistic____唯___超高清真人写实",
+        "model_id": 112756,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/OnlyRealistic____唯___超高清真人写实_1990168.jpeg",
+        "download_url": "https://civitai.com/api/download/models/139087"
+    },
+    {
+        "name": "AstrAnime",
+        "model_id": 248011,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AstrAnime_6403786.jpeg",
+        "download_url": "https://civitai.com/api/download/models/334482"
+    },
+    {
+        "name": "SakushiMix__finished_",
+        "model_id": 78056,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SakushiMix__finished__1869281.jpeg",
+        "download_url": "https://civitai.com/api/download/models/133274?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "RealCartoon-Anime",
+        "model_id": 96629,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealCartoon-Anime_7075708.jpeg",
+        "download_url": "https://civitai.com/api/download/models/359428"
+    },
+    {
+        "name": "AWPainting",
+        "model_id": 84476,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AWPainting_18731362.jpeg",
+        "download_url": "https://civitai.com/api/download/models/624939"
+    },
+    {
+        "name": "BlueberryMix",
+        "model_id": 14323,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BlueberryMix_430427.jpeg",
+        "download_url": "https://civitai.com/api/download/models/16859"
+    },
+    {
+        "name": "SeekYou",
+        "model_id": 60572,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SeekYou_827283.jpeg",
+        "download_url": "https://civitai.com/api/download/models/74057"
+    },
+    {
+        "name": "Disney_Pixar_Cartoon_type_B",
+        "model_id": 75650,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Disney_Pixar_Cartoon_type_B_902862.jpeg",
+        "download_url": "https://civitai.com/api/download/models/80409"
+    },
+    {
+        "name": "Color_Box_Model",
+        "model_id": 21200,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Color_Box_Model_276605.jpeg",
+        "download_url": "https://civitai.com/api/download/models/25230"
+    },
+    {
+        "name": "UnstableInkDream",
+        "model_id": 1540,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/UnstableInkDream_10643162.jpeg",
+        "download_url": "https://civitai.com/api/download/models/463516"
+    },
+    {
+        "name": "CosplayMix",
+        "model_id": 34502,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CosplayMix_1242325.jpeg",
+        "download_url": "https://civitai.com/api/download/models/101461"
+    },
+    {
+        "name": "HARD",
+        "model_id": 6431,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HARD_2180791.jpeg",
+        "download_url": "https://civitai.com/api/download/models/147336"
+    },
+    {
+        "name": "Blazing_Drive",
+        "model_id": 121083,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Blazing_Drive_5305186.jpeg",
+        "download_url": "https://civitai.com/api/download/models/291921"
+    },
+    {
+        "name": "Noosphere",
+        "model_id": 36538,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Noosphere_4656364.jpeg",
+        "download_url": "https://civitai.com/api/download/models/265285"
+    },
+    {
+        "name": "国风武侠_Chosen_Chinese_style_nsfw_涩涩_hentai_大模型",
+        "model_id": 95643,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/国风武侠_Chosen_Chinese_style_nsfw_涩涩_hentai_大模型_3519711.jpeg",
+        "download_url": "https://civitai.com/api/download/models/219960"
+    },
+    {
+        "name": "_M4RV3LS___DUNGEONS_-_NEW__v4.0_-__COMICS___FANTASY_MODEL__",
+        "model_id": 30711,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/_M4RV3LS___DUNGEONS_-_NEW__v4.0_-__COMICS___FANTASY_MODEL___1997468.jpeg",
+        "download_url": "https://civitai.com/api/download/models/139417?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Kenshi",
+        "model_id": 3850,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Kenshi_261941.jpeg",
+        "download_url": "https://civitai.com/api/download/models/6792"
+    },
+    {
+        "name": "Koji",
+        "model_id": 41916,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Koji_1054503.jpeg",
+        "download_url": "https://civitai.com/api/download/models/90674"
+    },
+    {
+        "name": "MeinaAlter",
+        "model_id": 20945,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MeinaAlter_1459657.jpeg",
+        "download_url": "https://civitai.com/api/download/models/112825"
+    },
+    {
+        "name": "DucHaitenAIart",
+        "model_id": 3079,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DucHaitenAIart_564966.jpeg",
+        "download_url": "https://civitai.com/api/download/models/50724"
+    },
+    {
+        "name": "Children_s_Stories_Toolkit",
+        "model_id": 64544,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Children_s_Stories_Toolkit_1325953.jpeg",
+        "download_url": "https://civitai.com/api/download/models/106092"
+    },
+    {
+        "name": "CarDos_Anime",
+        "model_id": 25399,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CarDos_Anime_491502.jpeg",
+        "download_url": "https://civitai.com/api/download/models/43825?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "majicMIX_reverie_麦橘梦幻",
+        "model_id": 65055,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/majicMIX_reverie_麦橘梦幻_778310.jpeg",
+        "download_url": "https://civitai.com/api/download/models/69687"
+    },
+    {
+        "name": "QteaMix_通用Q版模型",
+        "model_id": 50696,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/QteaMix_通用Q版模型_1220407.jpeg",
+        "download_url": "https://civitai.com/api/download/models/94654"
+    },
+    {
+        "name": "viewer-mix_v1.7",
+        "model_id": 7813,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/viewer-mix_v1.7_284153.jpeg",
+        "download_url": "https://civitai.com/api/download/models/25845"
+    },
+    {
+        "name": "CalicoMix",
+        "model_id": 49567,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CalicoMix_27245112.jpeg",
+        "download_url": "https://civitai.com/api/download/models/794475"
+    },
+    {
+        "name": "CarDos_Animated",
+        "model_id": 22220,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CarDos_Animated_2236930.jpeg",
+        "download_url": "https://civitai.com/api/download/models/101966"
+    },
+    {
+        "name": "ToonYou_-_JP",
+        "model_id": 92834,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ToonYou_-_JP_1197201.jpeg",
+        "download_url": "https://civitai.com/api/download/models/98960"
+    },
+    {
+        "name": "Sci-Fi_Diffusion_v1.0",
+        "model_id": 4404,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Sci-Fi_Diffusion_v1.0_36078.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4980"
+    },
+    {
+        "name": "dvArch_-_Multi-Prompt_Architecture_Tuned_Model",
+        "model_id": 8552,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/dvArch_-_Multi-Prompt_Architecture_Tuned_Model_98306.jpeg",
+        "download_url": "https://civitai.com/api/download/models/10081?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Store_Bought_Gyoza__餃子Mix_",
+        "model_id": 14734,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Store_Bought_Gyoza__餃子Mix__3736614.jpeg",
+        "download_url": "https://civitai.com/api/download/models/230869"
+    },
+    {
+        "name": "BlueBoys_2D",
+        "model_id": 22441,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BlueBoys_2D_778482.jpeg",
+        "download_url": "https://civitai.com/api/download/models/69725"
+    },
+    {
+        "name": "RaemuMix",
+        "model_id": 113362,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RaemuMix_13050870.jpeg",
+        "download_url": "https://civitai.com/api/download/models/518595"
+    },
+    {
+        "name": "CitrineDreamMix",
+        "model_id": 18116,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CitrineDreamMix_1169231.jpeg",
+        "download_url": "https://civitai.com/api/download/models/97394"
+    },
+    {
+        "name": "Goofball_Mix",
+        "model_id": 53761,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Goofball_Mix_5162941.jpeg",
+        "download_url": "https://civitai.com/api/download/models/285757"
+    },
+    {
+        "name": "cartoonish",
+        "model_id": 18569,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/cartoonish_238085.jpeg",
+        "download_url": "https://civitai.com/api/download/models/22031"
+    },
+    {
+        "name": "CyberRealistic_Classic",
+        "model_id": 71185,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CyberRealistic_Classic_37010334.jpeg",
+        "download_url": "https://civitai.com/api/download/models/945512"
+    },
+    {
+        "name": "Edge_Of_Realism",
+        "model_id": 21813,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Edge_Of_Realism_559443.jpeg",
+        "download_url": "https://civitai.com/api/download/models/51913"
+    },
+    {
+        "name": "Edge_Of_Realism",
+        "model_id": 21813,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Edge_Of_Realism_559443.jpeg",
+        "download_url": "https://civitai.com/api/download/models/51913"
+    },
+    {
+        "name": "Level4",
+        "model_id": 17449,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Level4_277507.jpeg",
+        "download_url": "https://civitai.com/api/download/models/25295"
+    },
+    {
+        "name": "Consistent_Factor__Euclid_",
+        "model_id": 9114,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Consistent_Factor__Euclid__1947001.jpeg",
+        "download_url": "https://civitai.com/api/download/models/137207"
+    },
+    {
+        "name": "3D_Animation_Diffusion",
+        "model_id": 118086,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/3D_Animation_Diffusion_1763923.jpeg",
+        "download_url": "https://civitai.com/api/download/models/128046"
+    },
+    {
+        "name": "Ligne_Claire_Anime",
+        "model_id": 3852,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Ligne_Claire_Anime_28073.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4279"
+    },
+    {
+        "name": "Dreamlike_Photoreal_2.0",
+        "model_id": 3811,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Dreamlike_Photoreal_2.0_27543.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4224?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Liberty",
+        "model_id": 5935,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Liberty_123962.jpeg",
+        "download_url": "https://civitai.com/api/download/models/6908?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "AniDosMix",
+        "model_id": 6437,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AniDosMix_129993.jpeg",
+        "download_url": "https://civitai.com/api/download/models/7559"
+    },
+    {
+        "name": "Cornflower_-_Stylized_Anime_and_Hentai_Model",
+        "model_id": 5415,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Cornflower_-_Stylized_Anime_and_Hentai_Model_8053022.jpeg",
+        "download_url": "https://civitai.com/api/download/models/393426?type=Model&format=PickleTensor&size=pruned&fp=fp16"
+    },
+    {
+        "name": "richyrichMix",
+        "model_id": 105653,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/richyrichMix_1470707.jpeg",
+        "download_url": "https://civitai.com/api/download/models/113391"
+    },
+    {
+        "name": "merongmix__",
+        "model_id": 10106,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/merongmix___121017.jpeg",
+        "download_url": "https://civitai.com/api/download/models/12552"
+    },
+    {
+        "name": "ProFantasy",
+        "model_id": 52298,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ProFantasy_787945.jpeg",
+        "download_url": "https://civitai.com/api/download/models/70453?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "endlessReality",
+        "model_id": 25573,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/endlessReality_8317160.jpeg",
+        "download_url": "https://civitai.com/api/download/models/403617"
+    },
+    {
+        "name": "WinterMoonMix_冬之月",
+        "model_id": 12433,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/WinterMoonMix_冬之月_157025.jpeg",
+        "download_url": "https://civitai.com/api/download/models/15708"
+    },
+    {
+        "name": "PastelBoys_2D",
+        "model_id": 22730,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/PastelBoys_2D_28839178.jpeg",
+        "download_url": "https://civitai.com/api/download/models/829544"
+    },
+    {
+        "name": "SynthwavePunk",
+        "model_id": 1102,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SynthwavePunk_9304.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1144"
+    },
+    {
+        "name": "AIOMonsterGirls",
+        "model_id": 21728,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AIOMonsterGirls_4174109.jpeg",
+        "download_url": "https://civitai.com/api/download/models/249427"
+    },
+    {
+        "name": "The_Truality_Engine",
+        "model_id": 158621,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/The_Truality_Engine_5226530.jpeg",
+        "download_url": "https://civitai.com/api/download/models/288888"
+    },
+    {
+        "name": "Protogen_x5.8_Rebuilt__Scifi_Anime__Official_Release",
+        "model_id": 3867,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Protogen_x5.8_Rebuilt__Scifi_Anime__Official_Release_28334.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4298?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "ThisIsReal",
+        "model_id": 93529,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ThisIsReal_30990529.jpeg",
+        "download_url": "https://civitai.com/api/download/models/884401"
+    },
+    {
+        "name": "Dungeons_N_Waifu_s_-_v2.2_-__2.5D_FANTASY_MODEL_",
+        "model_id": 11718,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Dungeons_N_Waifu_s_-_v2.2_-__2.5D_FANTASY_MODEL__293422.jpeg",
+        "download_url": "https://civitai.com/api/download/models/20937?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "DivineAnimeMix",
+        "model_id": 95587,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DivineAnimeMix_2901084.jpeg",
+        "download_url": "https://civitai.com/api/download/models/180448"
+    },
+    {
+        "name": "KayWaii",
+        "model_id": 88184,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/KayWaii_5480730.jpeg",
+        "download_url": "https://civitai.com/api/download/models/298273"
+    },
+    {
+        "name": "DarkRevPikas",
+        "model_id": 53215,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DarkRevPikas_1314463.jpeg",
+        "download_url": "https://civitai.com/api/download/models/105511"
+    },
+    {
+        "name": "ArchitectureRealMix",
+        "model_id": 84958,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ArchitectureRealMix_9700489.jpeg",
+        "download_url": "https://civitai.com/api/download/models/431755"
+    },
+    {
+        "name": "Puffy",
+        "model_id": 31262,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Puffy_1189926.jpeg",
+        "download_url": "https://civitai.com/api/download/models/98242"
+    },
+    {
+        "name": "seizaMix",
+        "model_id": 116279,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/seizaMix_1722377.jpeg",
+        "download_url": "https://civitai.com/api/download/models/125903"
+    },
+    {
+        "name": "knollingcase",
+        "model_id": 1092,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/knollingcase_8853.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1093"
+    },
+    {
+        "name": "Kakarot_2.8D",
+        "model_id": 182723,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Kakarot_2.8D_10371052.jpeg",
+        "download_url": "https://civitai.com/api/download/models/458684"
+    },
+    {
+        "name": "NextPhoto",
+        "model_id": 84335,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/NextPhoto_1834505.jpeg",
+        "download_url": "https://civitai.com/api/download/models/131530"
+    },
+    {
+        "name": "NabiMix",
+        "model_id": 47127,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/NabiMix_890297.jpeg",
+        "download_url": "https://civitai.com/api/download/models/79337"
+    },
+    {
+        "name": "BeautyFool",
+        "model_id": 101888,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BeautyFool_3455761.jpeg",
+        "download_url": "https://civitai.com/api/download/models/215628"
+    },
+    {
+        "name": "SDVN5-3DCuteWave",
+        "model_id": 103178,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SDVN5-3DCuteWave_1411701.jpeg",
+        "download_url": "https://civitai.com/api/download/models/110455"
+    },
+    {
+        "name": "CamelliaMix_Line",
+        "model_id": 44195,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CamelliaMix_Line_525208.jpeg",
+        "download_url": "https://civitai.com/api/download/models/48881"
+    },
+    {
+        "name": "fCAnimeMix_-_fC__动漫__Anime_",
+        "model_id": 64548,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/fCAnimeMix_-_fC__动漫__Anime__8378109.jpeg",
+        "download_url": "https://civitai.com/api/download/models/405386"
+    },
+    {
+        "name": "BeenYou_Lite",
+        "model_id": 34440,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BeenYou_Lite_1543567.jpeg",
+        "download_url": "https://civitai.com/api/download/models/117019"
+    },
+    {
+        "name": "Protogen_x5.3__Photorealism__Official_Release",
+        "model_id": 3816,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Protogen_x5.3__Photorealism__Official_Release_27601.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4229?type=Pruned%20Model&format=PickleTensor&size=pruned&fp=fp16"
+    },
+    {
+        "name": "Product_Design__minimalism-eddiemauro_",
+        "model_id": 23893,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Product_Design__minimalism-eddiemauro__1708688.jpeg",
+        "download_url": "https://civitai.com/api/download/models/85831"
+    },
+    {
+        "name": "DisillusionMix_幻灭",
+        "model_id": 16052,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DisillusionMix_幻灭_225037.jpeg",
+        "download_url": "https://civitai.com/api/download/models/21229"
+    },
+    {
+        "name": "Elegance",
+        "model_id": 5564,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Elegance_2018601.jpeg",
+        "download_url": "https://civitai.com/api/download/models/140255?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "AnyLoraCleanLinearMix-ClearVAE",
+        "model_id": 107677,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AnyLoraCleanLinearMix-ClearVAE_4024162.jpeg",
+        "download_url": "https://civitai.com/api/download/models/115828"
+    },
+    {
+        "name": "526Mix_V1.5",
+        "model_id": 15022,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/526Mix_V1.5_1844593.jpeg",
+        "download_url": "https://civitai.com/api/download/models/132011"
+    },
+    {
+        "name": "Rabbit",
+        "model_id": 121696,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Rabbit_2877712.jpeg",
+        "download_url": "https://civitai.com/api/download/models/179525"
+    },
+    {
+        "name": "HimawariMix",
+        "model_id": 131611,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HimawariMix_7254229.jpeg",
+        "download_url": "https://civitai.com/api/download/models/367026"
+    },
+    {
+        "name": "Pika_s_New_Generation",
+        "model_id": 47067,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Pika_s_New_Generation_1059088.jpeg",
+        "download_url": "https://civitai.com/api/download/models/71733"
+    },
+    {
+        "name": "Mistoon_Sapphire",
+        "model_id": 32022,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Mistoon_Sapphire_1535137.jpeg",
+        "download_url": "https://civitai.com/api/download/models/116574"
+    },
+    {
+        "name": "ZemiHR",
+        "model_id": 44290,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ZemiHR_605166.jpeg",
+        "download_url": "https://civitai.com/api/download/models/55803"
+    },
+    {
+        "name": "Midjourney_Papercut",
+        "model_id": 80,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Midjourney_Papercut_631.jpeg",
+        "download_url": "https://civitai.com/api/download/models/90"
+    },
+    {
+        "name": "FeelYou",
+        "model_id": 44177,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/FeelYou_1848592.jpeg",
+        "download_url": "https://civitai.com/api/download/models/132208"
+    },
+    {
+        "name": "Falkons__Anime_and_Hentai_",
+        "model_id": 38795,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Falkons__Anime_and_Hentai__1060567.jpeg",
+        "download_url": "https://civitai.com/api/download/models/91001"
+    },
+    {
+        "name": "FaeTastic",
+        "model_id": 14065,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/FaeTastic_1339903.jpeg",
+        "download_url": "https://civitai.com/api/download/models/105796"
+    },
+    {
+        "name": "XSarchitectural-InteriorDesign-ForXSLora",
+        "model_id": 28112,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/XSarchitectural-InteriorDesign-ForXSLora_545559.jpeg",
+        "download_url": "https://civitai.com/api/download/models/50722"
+    },
+    {
+        "name": "animatrix",
+        "model_id": 21916,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/animatrix_487267.jpeg",
+        "download_url": "https://civitai.com/api/download/models/44827?type=Model&format=PickleTensor&size=pruned&fp=fp16"
+    },
+    {
+        "name": "Dream2Reality",
+        "model_id": 105573,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Dream2Reality_1468996.jpeg",
+        "download_url": "https://civitai.com/api/download/models/113269"
+    },
+    {
+        "name": "Exquisite_details极致华彩",
+        "model_id": 118495,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Exquisite_details极致华彩_2094069.jpeg",
+        "download_url": "https://civitai.com/api/download/models/140315"
+    },
+    {
+        "name": "BeenYou",
+        "model_id": 27688,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BeenYou_971498.jpeg",
+        "download_url": "https://civitai.com/api/download/models/85614"
+    },
+    {
+        "name": "Cheese_Daddy_s_Landscapes_mix___OFFSET_NOISE",
+        "model_id": 15037,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Cheese_Daddy_s_Landscapes_mix___OFFSET_NOISE_191430.jpeg",
+        "download_url": "https://civitai.com/api/download/models/18512"
+    },
+    {
+        "name": "Kawaii_Realistic_Anime_Mix",
+        "model_id": 104100,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Kawaii_Realistic_Anime_Mix_29214718.jpeg",
+        "download_url": "https://civitai.com/api/download/models/837260"
+    },
+    {
+        "name": "XenoGASM__NSFW_Semi-Real_Portraits_and_Fetishes_",
+        "model_id": 111376,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/XenoGASM__NSFW_Semi-Real_Portraits_and_Fetishes__3552485.jpeg",
+        "download_url": "https://civitai.com/api/download/models/221614"
+    },
+    {
+        "name": "Sudachi",
+        "model_id": 85909,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Sudachi_1066543.jpeg",
+        "download_url": "https://civitai.com/api/download/models/91337"
+    },
+    {
+        "name": "Kawaii_Realistic_European_Mix",
+        "model_id": 90694,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Kawaii_Realistic_European_Mix_18815147.jpeg",
+        "download_url": "https://civitai.com/api/download/models/626582"
+    },
+    {
+        "name": "Pirsus_Epic_Realism",
+        "model_id": 56383,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Pirsus_Epic_Realism_4370117.jpeg",
+        "download_url": "https://civitai.com/api/download/models/257549"
+    },
+    {
+        "name": "IP_DESIGN___3D可爱化",
+        "model_id": 89804,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/IP_DESIGN___3D可爱化_4654467.jpeg",
+        "download_url": "https://civitai.com/api/download/models/265392"
+    },
+    {
+        "name": "RunDiffusion_FX_Photorealistic",
+        "model_id": 82972,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RunDiffusion_FX_Photorealistic_1099148.jpeg",
+        "download_url": "https://civitai.com/api/download/models/88158"
+    },
+    {
+        "name": "DucHaiten-GODofSIMP",
+        "model_id": 46144,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DucHaiten-GODofSIMP_5225343.jpeg",
+        "download_url": "https://civitai.com/api/download/models/288798"
+    },
+    {
+        "name": "Openjourney",
+        "model_id": 86,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Openjourney_301521.jpeg",
+        "download_url": "https://civitai.com/api/download/models/27392"
+    },
+    {
+        "name": "Lawlas_s_Yiffymix_2.0__furry_model_",
+        "model_id": 12979,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Lawlas_s_Yiffymix_2.0__furry_model__154059.jpeg",
+        "download_url": "https://civitai.com/api/download/models/15460"
+    },
+    {
+        "name": "Lawlas_s_Yiffymix_2.0__furry_model_",
+        "model_id": 12979,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Lawlas_s_Yiffymix_2.0__furry_model__154059.jpeg",
+        "download_url": "https://civitai.com/api/download/models/15460"
+    },
+    {
+        "name": "MengX_Mix_Real",
+        "model_id": 142467,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MengX_Mix_Real_4019749.jpeg",
+        "download_url": "https://civitai.com/api/download/models/238630"
+    },
+    {
+        "name": "0001SoftRealistic",
+        "model_id": 85731,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/0001SoftRealistic_8101456.jpeg",
+        "download_url": "https://civitai.com/api/download/models/396524"
+    },
+    {
+        "name": "Ambientmix_-_An_Anime_Style_Mix",
+        "model_id": 26622,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Ambientmix_-_An_Anime_Style_Mix_362738.jpeg",
+        "download_url": "https://civitai.com/api/download/models/31866"
+    },
+    {
+        "name": "StablyDiffused_s_Aesthetic_Mix",
+        "model_id": 4443,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/StablyDiffused_s_Aesthetic_Mix_55079.jpeg",
+        "download_url": "https://civitai.com/api/download/models/6266?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Xpero_End1ess_Model",
+        "model_id": 6231,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Xpero_End1ess_Model_67595.jpeg",
+        "download_url": "https://civitai.com/api/download/models/7307?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "DucHaitenDarkside",
+        "model_id": 5426,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DucHaitenDarkside_696700.jpeg",
+        "download_url": "https://civitai.com/api/download/models/63193"
+    },
+    {
+        "name": "Dorayakimix",
+        "model_id": 32355,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Dorayakimix_619358.jpeg",
+        "download_url": "https://civitai.com/api/download/models/57060"
+    },
+    {
+        "name": "SPYBG_s_Toolkit_for_Digital_Artists_",
+        "model_id": 4118,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SPYBG_s_Toolkit_for_Digital_Artists__175893.jpeg",
+        "download_url": "https://civitai.com/api/download/models/17292?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "DucHaitenNiji",
+        "model_id": 70921,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DucHaitenNiji_905310.jpeg",
+        "download_url": "https://civitai.com/api/download/models/80635"
+    },
+    {
+        "name": "Fantassified_Icons",
+        "model_id": 4713,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Fantassified_Icons_830612.jpeg",
+        "download_url": "https://civitai.com/api/download/models/67584"
+    },
+    {
+        "name": "Diffusion_Brush___Everything___-_SFW___NSFW-_All_Purpose_Checkpoint_-___Nuclear_Diffusion___-___Anime_Hybrid___",
+        "model_id": 46294,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Diffusion_Brush___Everything___-_SFW___NSFW-_All_Purpose_Checkpoint_-___Nuclear_Diffusion___-___Anime_Hybrid____604987.jpeg",
+        "download_url": "https://civitai.com/api/download/models/50908"
+    },
+    {
+        "name": "MothMix",
+        "model_id": 50041,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MothMix_952561.jpeg",
+        "download_url": "https://civitai.com/api/download/models/84143"
+    },
+    {
+        "name": "UniverseStable",
+        "model_id": 102001,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/UniverseStable_3459303.jpeg",
+        "download_url": "https://civitai.com/api/download/models/216487"
+    },
+    {
+        "name": "CleanLinearMix",
+        "model_id": 42433,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CleanLinearMix_2996348.jpeg",
+        "download_url": "https://civitai.com/api/download/models/186152"
+    },
+    {
+        "name": "yayoi_mix",
+        "model_id": 83096,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/yayoi_mix_2858268.jpeg",
+        "download_url": "https://civitai.com/api/download/models/178711"
+    },
+    {
+        "name": "CamelliaMix",
+        "model_id": 44165,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CamelliaMix_1634452.jpeg",
+        "download_url": "https://civitai.com/api/download/models/121494"
+    },
+    {
+        "name": "ExpMix_Line",
+        "model_id": 44150,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ExpMix_Line_802337.jpeg",
+        "download_url": "https://civitai.com/api/download/models/71779"
+    },
+    {
+        "name": "Cute_RichStyle_1.5",
+        "model_id": 4701,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Cute_RichStyle_1.5_42159.jpeg",
+        "download_url": "https://civitai.com/api/download/models/5373"
+    },
+    {
+        "name": "Aurora",
+        "model_id": 40199,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Aurora_505049.jpeg",
+        "download_url": "https://civitai.com/api/download/models/45601?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "Western_Animation_Diffusion",
+        "model_id": 86546,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Western_Animation_Diffusion_1078708.jpeg",
+        "download_url": "https://civitai.com/api/download/models/92044"
+    },
+    {
+        "name": "AICE冰可___KawAICE_幼态特化模型_",
+        "model_id": 51057,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AICE冰可___KawAICE_幼态特化模型__739747.jpeg",
+        "download_url": "https://civitai.com/api/download/models/65092"
+    },
+    {
+        "name": "graphic-art",
+        "model_id": 7884,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/graphic-art_1499099.jpeg",
+        "download_url": "https://civitai.com/api/download/models/114805?type=Model&format=PickleTensor&size=pruned&fp=fp16"
+    },
+    {
+        "name": "FuwaFuwaMix",
+        "model_id": 61766,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/FuwaFuwaMix_937384.jpeg",
+        "download_url": "https://civitai.com/api/download/models/83169"
+    },
+    {
+        "name": "Samdoesarts_Ultmerge",
+        "model_id": 68,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Samdoesarts_Ultmerge_796.jpeg",
+        "download_url": "https://civitai.com/api/download/models/77"
+    },
+    {
+        "name": "endlessMix",
+        "model_id": 27973,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/endlessMix_919360.jpeg",
+        "download_url": "https://civitai.com/api/download/models/81831"
+    },
+    {
+        "name": "JIM_EIDOMODE",
+        "model_id": 10720,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/JIM_EIDOMODE_122765.jpeg",
+        "download_url": "https://civitai.com/api/download/models/12720?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "NeatNess_Fluffy_Fur_Mix",
+        "model_id": 29819,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/NeatNess_Fluffy_Fur_Mix_32760996.jpeg",
+        "download_url": "https://civitai.com/api/download/models/920872"
+    },
+    {
+        "name": "Based64",
+        "model_id": 31472,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Based64_419361.jpeg",
+        "download_url": "https://civitai.com/api/download/models/37919?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Pixar_Style_Model",
+        "model_id": 15773,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Pixar_Style_Model_192867.jpeg",
+        "download_url": "https://civitai.com/api/download/models/18617?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "oriental_mix_v2",
+        "model_id": 16390,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/oriental_mix_v2_754834.jpeg",
+        "download_url": "https://civitai.com/api/download/models/67894?type=Model&format=PickleTensor&size=pruned&fp=fp16"
+    },
+    {
+        "name": "DeepBoys_2.5D",
+        "model_id": 35309,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DeepBoys_2.5D_746373.jpeg",
+        "download_url": "https://civitai.com/api/download/models/67215"
+    },
+    {
+        "name": "realspice",
+        "model_id": 158734,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/realspice_21496339.jpeg",
+        "download_url": "https://civitai.com/api/download/models/674517"
+    },
+    {
+        "name": "Kawaii_Realistic_Asian_Mix",
+        "model_id": 83766,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Kawaii_Realistic_Asian_Mix_6398234.jpeg",
+        "download_url": "https://civitai.com/api/download/models/334282"
+    },
+    {
+        "name": "helloYoung25d",
+        "model_id": 134442,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloYoung25d_7176708.jpeg",
+        "download_url": "https://civitai.com/api/download/models/363767"
+    },
+    {
+        "name": "ouka_star",
+        "model_id": 104453,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ouka_star_1488904.jpeg",
+        "download_url": "https://civitai.com/api/download/models/111969"
+    },
+    {
+        "name": "HomoFidelis",
+        "model_id": 126654,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HomoFidelis_34680047.jpeg",
+        "download_url": "https://civitai.com/api/download/models/958003"
+    },
+    {
+        "name": "AnyOrangeMix_-_Anything___AbyssOrangeMix",
+        "model_id": 21503,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AnyOrangeMix_-_Anything___AbyssOrangeMix_6417222.jpeg",
+        "download_url": "https://civitai.com/api/download/models/335092"
+    },
+    {
+        "name": "OnlyAnime___唯___炫彩动漫",
+        "model_id": 105955,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/OnlyAnime___唯___炫彩动漫_1621262.jpeg",
+        "download_url": "https://civitai.com/api/download/models/119804"
+    },
+    {
+        "name": "blue_pencil",
+        "model_id": 79083,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/blue_pencil_1355450.jpeg",
+        "download_url": "https://civitai.com/api/download/models/107812"
+    },
+    {
+        "name": "Dreamscapes___Dragonfire_-_NEW__-_V2.0__-__SEMI-REALISM_FANTASY_MODEL_",
+        "model_id": 50294,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Dreamscapes___Dragonfire_-_NEW__-_V2.0__-__SEMI-REALISM_FANTASY_MODEL__1056867.jpeg",
+        "download_url": "https://civitai.com/api/download/models/90587?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "CoffeeMix",
+        "model_id": 40630,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CoffeeMix_578214.jpeg",
+        "download_url": "https://civitai.com/api/download/models/53475"
+    },
+    {
+        "name": "AnythingQingMix",
+        "model_id": 85676,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AnythingQingMix_2440134.jpeg",
+        "download_url": "https://civitai.com/api/download/models/117582"
+    },
+    {
+        "name": "ouka_gufeng",
+        "model_id": 95718,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ouka_gufeng_1256497.jpeg",
+        "download_url": "https://civitai.com/api/download/models/102214"
+    },
+    {
+        "name": "counterfeit-V2.5_2.5d_tweak",
+        "model_id": 10443,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/counterfeit-V2.5_2.5d_tweak_119490.jpeg",
+        "download_url": "https://civitai.com/api/download/models/12408?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Async_s_MIX",
+        "model_id": 114807,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Async_s_MIX_6665275.jpeg",
+        "download_url": "https://civitai.com/api/download/models/344634"
+    },
+    {
+        "name": "Photo_style_小红书纯欲风格自拍_CNvtuberMix",
+        "model_id": 68691,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Photo_style_小红书纯欲风格自拍_CNvtuberMix_819648.jpeg",
+        "download_url": "https://civitai.com/api/download/models/73382"
+    },
+    {
+        "name": "epiC2.5D",
+        "model_id": 46745,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/epiC2.5D_553155.jpeg",
+        "download_url": "https://civitai.com/api/download/models/51342"
+    },
+    {
+        "name": "Agelesnate",
+        "model_id": 91263,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Agelesnate_10393167.jpeg",
+        "download_url": "https://civitai.com/api/download/models/459342"
+    },
+    {
+        "name": "MechaMix",
+        "model_id": 69438,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MechaMix_828114.jpeg",
+        "download_url": "https://civitai.com/api/download/models/74096"
+    },
+    {
+        "name": "ArteYou",
+        "model_id": 83429,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ArteYou_1019904.jpeg",
+        "download_url": "https://civitai.com/api/download/models/88669"
+    },
+    {
+        "name": "VinteProtogenMix",
+        "model_id": 5657,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/VinteProtogenMix_256859.jpeg",
+        "download_url": "https://civitai.com/api/download/models/23690?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Project_AIO",
+        "model_id": 18428,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Project_AIO_4085379.jpeg",
+        "download_url": "https://civitai.com/api/download/models/245967?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "Furryrock",
+        "model_id": 71432,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Furryrock_3234179.jpeg",
+        "download_url": "https://civitai.com/api/download/models/203021"
+    },
+    {
+        "name": "3D_Thick_coated",
+        "model_id": 13747,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/3D_Thick_coated_378538.jpeg",
+        "download_url": "https://civitai.com/api/download/models/25080"
+    },
+    {
+        "name": "CityEdgeMix",
+        "model_id": 38464,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CityEdgeMix_484113.jpeg",
+        "download_url": "https://civitai.com/api/download/models/44398"
+    },
+    {
+        "name": "COCOtiFaMix",
+        "model_id": 83231,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/COCOtiFaMix_1506894.jpeg",
+        "download_url": "https://civitai.com/api/download/models/115201"
+    },
+    {
+        "name": "FantasticChix-HR",
+        "model_id": 60933,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/FantasticChix-HR_751242.jpeg",
+        "download_url": "https://civitai.com/api/download/models/66857"
+    },
+    {
+        "name": "RunDiffusion_FX_2.5D",
+        "model_id": 82981,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RunDiffusion_FX_2.5D_1027082.jpeg",
+        "download_url": "https://civitai.com/api/download/models/88167"
+    },
+    {
+        "name": "hellokid2d",
+        "model_id": 101254,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/hellokid2d_3067136.jpeg",
+        "download_url": "https://civitai.com/api/download/models/192071"
+    },
+    {
+        "name": "Yuzu",
+        "model_id": 67120,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Yuzu_1484403.jpeg",
+        "download_url": "https://civitai.com/api/download/models/114059"
+    },
+    {
+        "name": "Kakigori",
+        "model_id": 100505,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Kakigori_3065185.jpeg",
+        "download_url": "https://civitai.com/api/download/models/191903"
+    },
+    {
+        "name": "PornVision",
+        "model_id": 41636,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/PornVision_598759.jpeg",
+        "download_url": "https://civitai.com/api/download/models/55319"
+    },
+    {
+        "name": "Anime_Screencap_Style",
+        "model_id": 185015,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Anime_Screencap_Style_9433675.jpeg",
+        "download_url": "https://civitai.com/api/download/models/435570"
+    },
+    {
+        "name": "schoolmax_2.5d",
+        "model_id": 4836,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/schoolmax_2.5d_44234.jpeg",
+        "download_url": "https://civitai.com/api/download/models/5557"
+    },
+    {
+        "name": "OccidentalMix",
+        "model_id": 63920,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/OccidentalMix_5054135.jpeg",
+        "download_url": "https://civitai.com/api/download/models/281294"
+    },
+    {
+        "name": "LusterMix",
+        "model_id": 85201,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/LusterMix_2112769.jpeg",
+        "download_url": "https://civitai.com/api/download/models/129612"
+    },
+    {
+        "name": "_𝕴𝖑𝖑𝖚𝖘𝖙𝖗𝖔_-_3RD_Ed._NEW__-__ILLUSTRO_PHOTOREAL_FANTASY_MODEL__",
+        "model_id": 96101,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/_𝕴𝖑𝖑𝖚𝖘𝖙𝖗𝖔_-_3RD_Ed._NEW__-__ILLUSTRO_PHOTOREAL_FANTASY_MODEL___2270624.jpeg",
+        "download_url": "https://civitai.com/api/download/models/151490?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Mistoon_Amethyst",
+        "model_id": 33707,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Mistoon_Amethyst_614963.jpeg",
+        "download_url": "https://civitai.com/api/download/models/56710"
+    },
+    {
+        "name": "Pastel_lines_mix",
+        "model_id": 12551,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Pastel_lines_mix_147680.jpeg",
+        "download_url": "https://civitai.com/api/download/models/15030"
+    },
+    {
+        "name": "school_anime",
+        "model_id": 7189,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/school_anime_80222.jpeg",
+        "download_url": "https://civitai.com/api/download/models/8450"
+    },
+    {
+        "name": "PornMaster-Fantasy_色情大师",
+        "model_id": 75095,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/PornMaster-Fantasy_色情大师_34336198.jpeg",
+        "download_url": "https://civitai.com/api/download/models/950927"
+    },
+    {
+        "name": "ALLBoyMix",
+        "model_id": 44430,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ALLBoyMix_28846012.jpeg",
+        "download_url": "https://civitai.com/api/download/models/829702"
+    },
+    {
+        "name": "Epic_Diffusion",
+        "model_id": 3855,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Epic_Diffusion_46247.jpeg",
+        "download_url": "https://civitai.com/api/download/models/5677?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "AyoniMix",
+        "model_id": 4550,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AyoniMix_233747.jpeg",
+        "download_url": "https://civitai.com/api/download/models/21877"
+    },
+    {
+        "name": "BoyFusion",
+        "model_id": 20113,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BoyFusion_6344071.jpeg",
+        "download_url": "https://civitai.com/api/download/models/332163"
+    },
+    {
+        "name": "CookieCutter",
+        "model_id": 107315,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CookieCutter_3502944.jpeg",
+        "download_url": "https://civitai.com/api/download/models/219055"
+    },
+    {
+        "name": "Pika_s_Animated_Mix",
+        "model_id": 32739,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Pika_s_Animated_Mix_455397.jpeg",
+        "download_url": "https://civitai.com/api/download/models/41291"
+    },
+    {
+        "name": "RealBiter",
+        "model_id": 16592,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealBiter_205878.jpeg",
+        "download_url": "https://civitai.com/api/download/models/19590"
+    },
+    {
+        "name": "kidsMIX",
+        "model_id": 93028,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/kidsMIX_1201541.jpeg",
+        "download_url": "https://civitai.com/api/download/models/99169"
+    },
+    {
+        "name": "天空之境___苍玄NullStyle",
+        "model_id": 44605,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/天空之境___苍玄NullStyle_1447490.jpeg",
+        "download_url": "https://civitai.com/api/download/models/112251"
+    },
+    {
+        "name": "Toon_Babes",
+        "model_id": 122022,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Toon_Babes_1859401.jpeg",
+        "download_url": "https://civitai.com/api/download/models/132828"
+    },
+    {
+        "name": "BrickAndMortarMix",
+        "model_id": 83867,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BrickAndMortarMix_2861760.jpeg",
+        "download_url": "https://civitai.com/api/download/models/178879"
+    },
+    {
+        "name": "XSarchitecturalV3Commercialbuildingrendering",
+        "model_id": 49516,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/XSarchitecturalV3Commercialbuildingrendering_1412072.jpeg",
+        "download_url": "https://civitai.com/api/download/models/110528"
+    },
+    {
+        "name": "EnvyMix",
+        "model_id": 39217,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/EnvyMix_977385.jpeg",
+        "download_url": "https://civitai.com/api/download/models/86027?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "POPE2.5",
+        "model_id": 46190,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/POPE2.5_1754336.jpeg",
+        "download_url": "https://civitai.com/api/download/models/127587"
+    },
+    {
+        "name": "Anything_and_Everything",
+        "model_id": 7118,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Anything_and_Everything_579450.jpeg",
+        "download_url": "https://civitai.com/api/download/models/53539"
+    },
+    {
+        "name": "pop-popcorn-mix",
+        "model_id": 17399,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/pop-popcorn-mix_217719.jpeg",
+        "download_url": "https://civitai.com/api/download/models/20570?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "LibMix",
+        "model_id": 20158,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/LibMix_298583.jpeg",
+        "download_url": "https://civitai.com/api/download/models/27081"
+    },
+    {
+        "name": "rMadArt",
+        "model_id": 18208,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/rMadArt_4154202.jpeg",
+        "download_url": "https://civitai.com/api/download/models/248717"
+    },
+    {
+        "name": "Analog_Diffusion",
+        "model_id": 1265,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Analog_Diffusion_11321.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1344"
+    },
+    {
+        "name": "AniToon",
+        "model_id": 200945,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AniToon_13130503.jpeg",
+        "download_url": "https://civitai.com/api/download/models/520346"
+    },
+    {
+        "name": "Vela-Mix",
+        "model_id": 21367,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Vela-Mix_943076.jpeg",
+        "download_url": "https://civitai.com/api/download/models/83548"
+    },
+    {
+        "name": "Guilingao",
+        "model_id": 11427,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Guilingao_131415.jpeg",
+        "download_url": "https://civitai.com/api/download/models/13587"
+    },
+    {
+        "name": "majicMIX_alpha_麦橘男团",
+        "model_id": 114260,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/majicMIX_alpha_麦橘男团_3564383.jpeg",
+        "download_url": "https://civitai.com/api/download/models/222240"
+    },
+    {
+        "name": "Stygian_Mix",
+        "model_id": 27096,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Stygian_Mix_43233498.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1120808"
+    },
+    {
+        "name": "verisimilitude",
+        "model_id": 10540,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/verisimilitude_636826.jpeg",
+        "download_url": "https://civitai.com/api/download/models/58485"
+    },
+    {
+        "name": "All_in_one_Pixel_Model",
+        "model_id": 34,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/All_in_one_Pixel_Model_384.jpeg",
+        "download_url": "https://civitai.com/api/download/models/41"
+    },
+    {
+        "name": "ChickMixFlat",
+        "model_id": 62638,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ChickMixFlat_747089.jpeg",
+        "download_url": "https://civitai.com/api/download/models/67206"
+    },
+    {
+        "name": "dual_personality",
+        "model_id": 13740,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/dual_personality_968677.jpeg",
+        "download_url": "https://civitai.com/api/download/models/85514"
+    },
+    {
+        "name": "epiCBabes_Realistic",
+        "model_id": 130181,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/epiCBabes_Realistic_2079838.jpeg",
+        "download_url": "https://civitai.com/api/download/models/142779"
+    },
+    {
+        "name": "DucHaitenDreamWorld",
+        "model_id": 7039,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DucHaitenDreamWorld_349112.jpeg",
+        "download_url": "https://civitai.com/api/download/models/30741"
+    },
+    {
+        "name": "sketch_style_for_img2img__pruned_update_",
+        "model_id": 12628,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/sketch_style_for_img2img__pruned_update__167526.jpeg",
+        "download_url": "https://civitai.com/api/download/models/16605"
+    },
+    {
+        "name": "HeavenOrangeMix",
+        "model_id": 14305,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HeavenOrangeMix_170201.jpeg",
+        "download_url": "https://civitai.com/api/download/models/16836"
+    },
+    {
+        "name": "RaesanMix",
+        "model_id": 141122,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RaesanMix_6662820.jpeg",
+        "download_url": "https://civitai.com/api/download/models/344569"
+    },
+    {
+        "name": "Roboetic_s_mix",
+        "model_id": 3738,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Roboetic_s_mix_160290.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4132"
+    },
+    {
+        "name": "XSMix",
+        "model_id": 31473,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/XSMix_450389.jpeg",
+        "download_url": "https://civitai.com/api/download/models/40760"
+    },
+    {
+        "name": "国风瑞融_GuoFengRealMix",
+        "model_id": 77650,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/国风瑞融_GuoFengRealMix_1856008.jpeg",
+        "download_url": "https://civitai.com/api/download/models/132647"
+    },
+    {
+        "name": "StingerMix",
+        "model_id": 78843,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/StingerMix_2027335.jpeg",
+        "download_url": "https://civitai.com/api/download/models/140550"
+    },
+    {
+        "name": "GalaxyTimeMachine_s_GTM_UltimateBlend_v3",
+        "model_id": 4884,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/GalaxyTimeMachine_s_GTM_UltimateBlend_v3_341031.jpeg",
+        "download_url": "https://civitai.com/api/download/models/30062"
+    },
+    {
+        "name": "CityEdge_ToonMix",
+        "model_id": 45616,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CityEdge_ToonMix_641525.jpeg",
+        "download_url": "https://civitai.com/api/download/models/58840"
+    },
+    {
+        "name": "2DN",
+        "model_id": 4807,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/2DN_1518641.jpeg",
+        "download_url": "https://civitai.com/api/download/models/115775?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "Fantasy_Background",
+        "model_id": 5536,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Fantasy_Background_57969.jpeg",
+        "download_url": "https://civitai.com/api/download/models/6449"
+    },
+    {
+        "name": "DreamS_Archive",
+        "model_id": 77408,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DreamS_Archive_3329759.jpeg",
+        "download_url": "https://civitai.com/api/download/models/209035"
+    },
+    {
+        "name": "Real_Moon",
+        "model_id": 67192,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Real_Moon_5011521.jpeg",
+        "download_url": "https://civitai.com/api/download/models/279607"
+    },
+    {
+        "name": "Incursio_s_Meme_Diffusion",
+        "model_id": 100402,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Incursio_s_Meme_Diffusion_6385360.jpeg",
+        "download_url": "https://civitai.com/api/download/models/333686"
+    },
+    {
+        "name": "Stable_Video_Diffusion_-_SVD",
+        "model_id": 207992,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Stable_Video_Diffusion_-_SVD_6298188.jpeg",
+        "download_url": "https://civitai.com/api/download/models/329995"
+    },
+    {
+        "name": "FurryToonMix",
+        "model_id": 97479,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/FurryToonMix_1292135.jpeg",
+        "download_url": "https://civitai.com/api/download/models/104198"
+    },
+    {
+        "name": "Nigi3D",
+        "model_id": 44329,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Nigi3D_554562.jpeg",
+        "download_url": "https://civitai.com/api/download/models/50888"
+    },
+    {
+        "name": "Refined",
+        "model_id": 8392,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Refined_840625.jpeg",
+        "download_url": "https://civitai.com/api/download/models/75169?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "HRA_hyperrealism_art",
+        "model_id": 80515,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HRA_hyperrealism_art_2026093.jpeg",
+        "download_url": "https://civitai.com/api/download/models/140540"
+    },
+    {
+        "name": "AnReal",
+        "model_id": 162161,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AnReal_5163418.jpeg",
+        "download_url": "https://civitai.com/api/download/models/286153"
+    },
+    {
+        "name": "mineMix",
+        "model_id": 18011,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/mineMix_781597.jpeg",
+        "download_url": "https://civitai.com/api/download/models/69972"
+    },
+    {
+        "name": "Noble_Mix_Fix",
+        "model_id": 65480,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Noble_Mix_Fix_5022696.jpeg",
+        "download_url": "https://civitai.com/api/download/models/279964"
+    },
+    {
+        "name": "KuromiMix",
+        "model_id": 21412,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/KuromiMix_281063.jpeg",
+        "download_url": "https://civitai.com/api/download/models/25578"
+    },
+    {
+        "name": "Ra-render_Architecture_render_建筑渲染效果",
+        "model_id": 52953,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Ra-render_Architecture_render_建筑渲染效果_11421674.jpeg",
+        "download_url": "https://civitai.com/api/download/models/483031"
+    },
+    {
+        "name": "Kuroneko_animemix_v10",
+        "model_id": 70199,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Kuroneko_animemix_v10_836225.jpeg",
+        "download_url": "https://civitai.com/api/download/models/74845?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "NotSoXJBMix-1",
+        "model_id": 28200,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/NotSoXJBMix-1_928489.jpeg",
+        "download_url": "https://civitai.com/api/download/models/69392"
+    },
+    {
+        "name": "Good_Asian_Girl_Face",
+        "model_id": 5726,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Good_Asian_Girl_Face_174700.jpeg",
+        "download_url": "https://civitai.com/api/download/models/17211"
+    },
+    {
+        "name": "Waifu_s_N_Dungeons_-_v2.0_-__ANIME_FANTASY_MODEL_",
+        "model_id": 23681,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Waifu_s_N_Dungeons_-_v2.0_-__ANIME_FANTASY_MODEL__708434.jpeg",
+        "download_url": "https://civitai.com/api/download/models/64121?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Cute_Cartoon_Illustration",
+        "model_id": 85547,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Cute_Cartoon_Illustration_1060007.jpeg",
+        "download_url": "https://civitai.com/api/download/models/90963"
+    },
+    {
+        "name": "MFCG_Doll_Mix",
+        "model_id": 208491,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MFCG_Doll_Mix_5112246.jpeg",
+        "download_url": "https://civitai.com/api/download/models/283712"
+    },
+    {
+        "name": "Life_Like_Diffusion__Ethnicities_supported_-_Native_American__Desi_Indian__Arab__Hispanic__Latino__South_Asian__Black___African__Turkish__Korean___Chinese__",
+        "model_id": 16804,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Life_Like_Diffusion__Ethnicities_supported_-_Native_American__Desi_Indian__Arab__Hispanic__Latino__South_Asian__Black___African__Turkish__Korean___Chinese___1923023.jpeg",
+        "download_url": "https://civitai.com/api/download/models/136151"
+    },
+    {
+        "name": "Elegant_Entropy",
+        "model_id": 78341,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Elegant_Entropy_3227708.jpeg",
+        "download_url": "https://civitai.com/api/download/models/202798"
+    },
+    {
+        "name": "Protogen_Infinity_Official_Release",
+        "model_id": 4398,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Protogen_Infinity_Official_Release_36015.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4974?type=Pruned%20Model&format=PickleTensor&size=pruned&fp=fp16"
+    },
+    {
+        "name": "SDHK",
+        "model_id": 82813,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SDHK_1339897.jpeg",
+        "download_url": "https://civitai.com/api/download/models/106905"
+    },
+    {
+        "name": "FiaMix_Reboot_H__NSFW_",
+        "model_id": 176353,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/FiaMix_Reboot_H__NSFW__5484161.jpeg",
+        "download_url": "https://civitai.com/api/download/models/298393"
+    },
+    {
+        "name": "MUSE_v1",
+        "model_id": 13564,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MUSE_v1_160921.jpeg",
+        "download_url": "https://civitai.com/api/download/models/15980"
+    },
+    {
+        "name": "Cartoon_Arcadia_____SDXL___SD_1.5",
+        "model_id": 136113,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Cartoon_Arcadia_____SDXL___SD_1.5_5765768.jpeg",
+        "download_url": "https://civitai.com/api/download/models/308524"
+    },
+    {
+        "name": "Avalon_TRUvision",
+        "model_id": 13020,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Avalon_TRUvision_4354665.jpeg",
+        "download_url": "https://civitai.com/api/download/models/256774"
+    },
+    {
+        "name": "AingEXP",
+        "model_id": 52780,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AingEXP_5854175.jpeg",
+        "download_url": "https://civitai.com/api/download/models/311406"
+    },
+    {
+        "name": "helloRealistic",
+        "model_id": 105245,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloRealistic_1506997.jpeg",
+        "download_url": "https://civitai.com/api/download/models/115184"
+    },
+    {
+        "name": "MoistMix",
+        "model_id": 3450,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MoistMix_50578.jpeg",
+        "download_url": "https://civitai.com/api/download/models/5955?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "PhotoMaxUltraV1",
+        "model_id": 15659,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/PhotoMaxUltraV1_327009.jpeg",
+        "download_url": "https://civitai.com/api/download/models/18472"
+    },
+    {
+        "name": "Taureal_Mix",
+        "model_id": 63323,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Taureal_Mix_1122590.jpeg",
+        "download_url": "https://civitai.com/api/download/models/94697"
+    },
+    {
+        "name": "V3",
+        "model_id": 62602,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/V3_746449.jpeg",
+        "download_url": "https://civitai.com/api/download/models/67167"
+    },
+    {
+        "name": "V3",
+        "model_id": 62602,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/V3_746449.jpeg",
+        "download_url": "https://civitai.com/api/download/models/67167"
+    },
+    {
+        "name": "WesternComicMix_by_Mr_Monster___Model",
+        "model_id": 151774,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/WesternComicMix_by_Mr_Monster___Model_6415707.jpeg",
+        "download_url": "https://civitai.com/api/download/models/334734"
+    },
+    {
+        "name": "DonutHoleMix_甜甜圈",
+        "model_id": 78433,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DonutHoleMix_甜甜圈_938709.jpeg",
+        "download_url": "https://civitai.com/api/download/models/83231"
+    },
+    {
+        "name": "RoboeticInkpunkDreamShaperChromaV5",
+        "model_id": 4978,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RoboeticInkpunkDreamShaperChromaV5_47155.jpeg",
+        "download_url": "https://civitai.com/api/download/models/5738?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "VisionGen_-_Realism_Reborn",
+        "model_id": 4834,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/VisionGen_-_Realism_Reborn_147419.jpeg",
+        "download_url": "https://civitai.com/api/download/models/15011?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "helloFlatArt",
+        "model_id": 183884,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloFlatArt_16103383.jpeg",
+        "download_url": "https://civitai.com/api/download/models/578507"
+    },
+    {
+        "name": "Oil_painting",
+        "model_id": 20184,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Oil_painting_260924.jpeg",
+        "download_url": "https://civitai.com/api/download/models/23979"
+    },
+    {
+        "name": "Modern_Disney",
+        "model_id": 24,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Modern_Disney_9415.jpeg",
+        "download_url": "https://civitai.com/api/download/models/26"
+    },
+    {
+        "name": "PastelDiffusedMix",
+        "model_id": 67994,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/PastelDiffusedMix_1496098.jpeg",
+        "download_url": "https://civitai.com/api/download/models/114585"
+    },
+    {
+        "name": "FeiWu废物",
+        "model_id": 76645,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/FeiWu废物_1033052.jpeg",
+        "download_url": "https://civitai.com/api/download/models/89314"
+    },
+    {
+        "name": "NijiDiffusedMix",
+        "model_id": 76447,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/NijiDiffusedMix_5838560.jpeg",
+        "download_url": "https://civitai.com/api/download/models/248721"
+    },
+    {
+        "name": "betterMix_Anime",
+        "model_id": 15426,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/betterMix_Anime_5405973.jpeg",
+        "download_url": "https://civitai.com/api/download/models/295740"
+    },
+    {
+        "name": "AniThing",
+        "model_id": 257219,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AniThing_11056530.jpeg",
+        "download_url": "https://civitai.com/api/download/models/474741"
+    },
+    {
+        "name": "DucHaiten-StyleLikeMe",
+        "model_id": 26069,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DucHaiten-StyleLikeMe_508740.jpeg",
+        "download_url": "https://civitai.com/api/download/models/47085"
+    },
+    {
+        "name": "Paragon_V1.0",
+        "model_id": 82984,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Paragon_V1.0_1013552.jpeg",
+        "download_url": "https://civitai.com/api/download/models/88171"
+    },
+    {
+        "name": "AnRealSpiceMix",
+        "model_id": 204962,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AnRealSpiceMix_5561997.jpeg",
+        "download_url": "https://civitai.com/api/download/models/301292"
+    },
+    {
+        "name": "Real_Hot_Mix",
+        "model_id": 63482,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Real_Hot_Mix_1335344.jpeg",
+        "download_url": "https://civitai.com/api/download/models/68036"
+    },
+    {
+        "name": "AngrA_RealFlex",
+        "model_id": 50088,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AngrA_RealFlex_12480228.jpeg",
+        "download_url": "https://civitai.com/api/download/models/506270"
+    },
+    {
+        "name": "Alstroemeria_Mix",
+        "model_id": 38606,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Alstroemeria_Mix_485067.jpeg",
+        "download_url": "https://civitai.com/api/download/models/44530"
+    },
+    {
+        "name": "epiCDream",
+        "model_id": 125189,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/epiCDream_1936666.jpeg",
+        "download_url": "https://civitai.com/api/download/models/136739"
+    },
+    {
+        "name": "Honey_2D",
+        "model_id": 92949,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Honey_2D_4352272.jpeg",
+        "download_url": "https://civitai.com/api/download/models/256661"
+    },
+    {
+        "name": "COCOtiFaCute",
+        "model_id": 93191,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/COCOtiFaCute_1816123.jpeg",
+        "download_url": "https://civitai.com/api/download/models/130630"
+    },
+    {
+        "name": "RealCartoon_-_2.5D",
+        "model_id": 218376,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealCartoon_-_2.5D_7145759.jpeg",
+        "download_url": "https://civitai.com/api/download/models/362377"
+    },
+    {
+        "name": "AgainMix",
+        "model_id": 167100,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AgainMix_43901931.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1133706"
+    },
+    {
+        "name": "DreamLikeSamKuvshinov",
+        "model_id": 1473,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DreamLikeSamKuvshinov_14322.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1574"
+    },
+    {
+        "name": "Cartoon_Style",
+        "model_id": 78306,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Cartoon_Style_958355.jpeg",
+        "download_url": "https://civitai.com/api/download/models/83109"
+    },
+    {
+        "name": "WolfBoys_2D",
+        "model_id": 45092,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/WolfBoys_2D_763525.jpeg",
+        "download_url": "https://civitai.com/api/download/models/68509"
+    },
+    {
+        "name": "Orion-Mix",
+        "model_id": 14712,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Orion-Mix_288712.jpeg",
+        "download_url": "https://civitai.com/api/download/models/26245"
+    },
+    {
+        "name": "Vixon_s_Fantasy_Mix",
+        "model_id": 234898,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Vixon_s_Fantasy_Mix_5715254.jpeg",
+        "download_url": "https://civitai.com/api/download/models/306781"
+    },
+    {
+        "name": "拇指姑娘_Thumbelina_",
+        "model_id": 68177,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/拇指姑娘_Thumbelina__3685308.jpeg",
+        "download_url": "https://civitai.com/api/download/models/228392"
+    },
+    {
+        "name": "MsceneMix_卡通景景大模型",
+        "model_id": 75879,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MsceneMix_卡通景景大模型_913789.jpeg",
+        "download_url": "https://civitai.com/api/download/models/81322"
+    },
+    {
+        "name": "Locs_China_Landscapes_v2",
+        "model_id": 25086,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Locs_China_Landscapes_v2_377621.jpeg",
+        "download_url": "https://civitai.com/api/download/models/30536"
+    },
+    {
+        "name": "PrismaBoysMix",
+        "model_id": 74186,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/PrismaBoysMix_2077015.jpeg",
+        "download_url": "https://civitai.com/api/download/models/142679"
+    },
+    {
+        "name": "epi_2.5Dphotogodess",
+        "model_id": 26761,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/epi_2.5Dphotogodess_418626.jpeg",
+        "download_url": "https://civitai.com/api/download/models/36352"
+    },
+    {
+        "name": "JasminiqueMix",
+        "model_id": 22027,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/JasminiqueMix_1415910.jpeg",
+        "download_url": "https://civitai.com/api/download/models/110728"
+    },
+    {
+        "name": "7PAG_-_NSFW_Merged_Model",
+        "model_id": 17143,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/7PAG_-_NSFW_Merged_Model_2257139.jpeg",
+        "download_url": "https://civitai.com/api/download/models/150906"
+    },
+    {
+        "name": "MCBS_-_MachineCode_s_Comic_Book_Style",
+        "model_id": 71404,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MCBS_-_MachineCode_s_Comic_Book_Style_16218412.jpeg",
+        "download_url": "https://civitai.com/api/download/models/580779"
+    },
+    {
+        "name": "chosen_Irises-mix",
+        "model_id": 60196,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/chosen_Irises-mix_1711360.jpeg",
+        "download_url": "https://civitai.com/api/download/models/125300"
+    },
+    {
+        "name": "Synergix",
+        "model_id": 54592,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Synergix_642987.jpeg",
+        "download_url": "https://civitai.com/api/download/models/58959"
+    },
+    {
+        "name": "DiscoMix__anime_",
+        "model_id": 5635,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DiscoMix__anime__59434.jpeg",
+        "download_url": "https://civitai.com/api/download/models/6558"
+    },
+    {
+        "name": "Based65",
+        "model_id": 31546,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Based65_420064.jpeg",
+        "download_url": "https://civitai.com/api/download/models/37994"
+    },
+    {
+        "name": "Lawlas_s_yiffymix__furry_model_",
+        "model_id": 4698,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Lawlas_s_yiffymix__furry_model__155453.jpeg",
+        "download_url": "https://civitai.com/api/download/models/15584"
+    },
+    {
+        "name": "Kakarot_2.5D_Cozy",
+        "model_id": 193275,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Kakarot_2.5D_Cozy_3472041.jpeg",
+        "download_url": "https://civitai.com/api/download/models/217212"
+    },
+    {
+        "name": "DucHaitenSuperCute",
+        "model_id": 11080,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DucHaitenSuperCute_487536.jpeg",
+        "download_url": "https://civitai.com/api/download/models/44812"
+    },
+    {
+        "name": "LimeREmix_sweet",
+        "model_id": 85131,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/LimeREmix_sweet_3848316.jpeg",
+        "download_url": "https://civitai.com/api/download/models/235842"
+    },
+    {
+        "name": "Disney_Style_v1",
+        "model_id": 114413,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Disney_Style_v1_1679360.jpeg",
+        "download_url": "https://civitai.com/api/download/models/123684"
+    },
+    {
+        "name": "HASDX",
+        "model_id": 3758,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HASDX_27058.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4167?type=Pruned%20Model&format=PickleTensor&size=pruned&fp=fp16"
+    },
+    {
+        "name": "BismuthMix",
+        "model_id": 23629,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BismuthMix_2162475.jpeg",
+        "download_url": "https://civitai.com/api/download/models/146483"
+    },
+    {
+        "name": "Real_Doll",
+        "model_id": 63943,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Real_Doll_763941.jpeg",
+        "download_url": "https://civitai.com/api/download/models/68540"
+    },
+    {
+        "name": "咸鱼mix-_fish_mix",
+        "model_id": 15745,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/咸鱼mix-_fish_mix_301788.jpeg",
+        "download_url": "https://civitai.com/api/download/models/27424"
+    },
+    {
+        "name": "Detail_Asian_Realistic",
+        "model_id": 150169,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Detail_Asian_Realistic_42362972.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1104550"
+    },
+    {
+        "name": "Project-K__Kawai_",
+        "model_id": 21138,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Project-K__Kawai__2027098.jpeg",
+        "download_url": "https://civitai.com/api/download/models/140576"
+    },
+    {
+        "name": "AziibPixelMix",
+        "model_id": 195730,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AziibPixelMix_3522441.jpeg",
+        "download_url": "https://civitai.com/api/download/models/220049"
+    },
+    {
+        "name": "Alpha_Lyrae_",
+        "model_id": 88895,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Alpha_Lyrae__1231247.jpeg",
+        "download_url": "https://civitai.com/api/download/models/100825"
+    },
+    {
+        "name": "hellomecha",
+        "model_id": 110768,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/hellomecha_16687256.jpeg",
+        "download_url": "https://civitai.com/api/download/models/589415"
+    },
+    {
+        "name": "Serenity",
+        "model_id": 110426,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Serenity_7101007.jpeg",
+        "download_url": "https://civitai.com/api/download/models/360311"
+    },
+    {
+        "name": "niji3Dstyle",
+        "model_id": 46898,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/niji3Dstyle_554575.jpeg",
+        "download_url": "https://civitai.com/api/download/models/51482?type=Config&format=Other"
+    },
+    {
+        "name": "MinaiMix",
+        "model_id": 46200,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MinaiMix_2018973.jpeg",
+        "download_url": "https://civitai.com/api/download/models/139881"
+    },
+    {
+        "name": "whiteMIXrealistic",
+        "model_id": 100030,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/whiteMIXrealistic_2988729.jpeg",
+        "download_url": "https://civitai.com/api/download/models/180179"
+    },
+    {
+        "name": "DuelComicMix",
+        "model_id": 23385,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DuelComicMix_369165.jpeg",
+        "download_url": "https://civitai.com/api/download/models/30018?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "BrainDance",
+        "model_id": 102753,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BrainDance_1767210.jpeg",
+        "download_url": "https://civitai.com/api/download/models/128189"
+    },
+    {
+        "name": "Neurogen_v1.1",
+        "model_id": 21616,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Neurogen_v1.1_335859.jpeg",
+        "download_url": "https://civitai.com/api/download/models/29681"
+    },
+    {
+        "name": "Westmix_V.1__Photo_Realistic_Model_for_Beautiful_Western_Girl",
+        "model_id": 117463,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Westmix_V.1__Photo_Realistic_Model_for_Beautiful_Western_Girl_1748648.jpeg",
+        "download_url": "https://civitai.com/api/download/models/127305"
+    },
+    {
+        "name": "DucHaitenJourney",
+        "model_id": 20261,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DucHaitenJourney_5829279.jpeg",
+        "download_url": "https://civitai.com/api/download/models/310630"
+    },
+    {
+        "name": "fantasy-art-style",
+        "model_id": 3164,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/fantasy-art-style_257808.jpeg",
+        "download_url": "https://civitai.com/api/download/models/23286"
+    },
+    {
+        "name": "XenoEngine_-_ArtStyle_Mega_Model",
+        "model_id": 46049,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/XenoEngine_-_ArtStyle_Mega_Model_7312848.jpeg",
+        "download_url": "https://civitai.com/api/download/models/338287"
+    },
+    {
+        "name": "hellonijicute25d",
+        "model_id": 129896,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/hellonijicute25d_4580157.jpeg",
+        "download_url": "https://civitai.com/api/download/models/262414"
+    },
+    {
+        "name": "snapdd00",
+        "model_id": 21601,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/snapdd00_283300.jpeg",
+        "download_url": "https://civitai.com/api/download/models/25772"
+    },
+    {
+        "name": "Anime-Babes-Bigger__ABB_",
+        "model_id": 56275,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Anime-Babes-Bigger__ABB__691349.jpeg",
+        "download_url": "https://civitai.com/api/download/models/62799"
+    },
+    {
+        "name": "MixTape_____Blues",
+        "model_id": 114795,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MixTape_____Blues_2834695.jpeg",
+        "download_url": "https://civitai.com/api/download/models/124223?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "月光mix___Summer_Solstice",
+        "model_id": 107061,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/月光mix___Summer_Solstice_9925755.jpeg",
+        "download_url": "https://civitai.com/api/download/models/115098"
+    },
+    {
+        "name": "明快_CrispMix",
+        "model_id": 38864,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/明快_CrispMix_487103.jpeg",
+        "download_url": "https://civitai.com/api/download/models/44786"
+    },
+    {
+        "name": "ForgottenMix_-_Cartoon_2.5D",
+        "model_id": 73649,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ForgottenMix_-_Cartoon_2.5D_879060.jpeg",
+        "download_url": "https://civitai.com/api/download/models/78365"
+    },
+    {
+        "name": "Anime3D_Mix",
+        "model_id": 112214,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Anime3D_Mix_1628302.jpeg",
+        "download_url": "https://civitai.com/api/download/models/121126"
+    },
+    {
+        "name": "HIJKLMix",
+        "model_id": 127898,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HIJKLMix_6671864.jpeg",
+        "download_url": "https://civitai.com/api/download/models/344854"
+    },
+    {
+        "name": "Mistoon_Emerald",
+        "model_id": 28322,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Mistoon_Emerald_5549158.jpeg",
+        "download_url": "https://civitai.com/api/download/models/300774"
+    },
+    {
+        "name": "DnD_Map_Generator",
+        "model_id": 5012,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DnD_Map_Generator_205000.jpeg",
+        "download_url": "https://civitai.com/api/download/models/19517"
+    },
+    {
+        "name": "helloYoung2D",
+        "model_id": 143739,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloYoung2D_3723673.jpeg",
+        "download_url": "https://civitai.com/api/download/models/230238"
+    },
+    {
+        "name": "CuteFurryMix",
+        "model_id": 51467,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CuteFurryMix_766586.jpeg",
+        "download_url": "https://civitai.com/api/download/models/68456"
+    },
+    {
+        "name": "Super_invincible_and_cute_",
+        "model_id": 147422,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Super_invincible_and_cute__2910281.jpeg",
+        "download_url": "https://civitai.com/api/download/models/180803"
+    },
+    {
+        "name": "Dungeons_and_Diffusion_v3",
+        "model_id": 90,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Dungeons_and_Diffusion_v3_82019.jpeg",
+        "download_url": "https://civitai.com/api/download/models/8615"
+    },
+    {
+        "name": "T-shirt_print_designs__test_model_",
+        "model_id": 5256,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/T-shirt_print_designs__test_model__52675.jpeg",
+        "download_url": "https://civitai.com/api/download/models/6098"
+    },
+    {
+        "name": "Fleeting-Radiance_Mix_流光",
+        "model_id": 34187,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Fleeting-Radiance_Mix_流光_1097093.jpeg",
+        "download_url": "https://civitai.com/api/download/models/93088"
+    },
+    {
+        "name": "DuelAnimeMix",
+        "model_id": 28477,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DuelAnimeMix_390221.jpeg",
+        "download_url": "https://civitai.com/api/download/models/34157"
+    },
+    {
+        "name": "IrisMix_可爱的模特_",
+        "model_id": 130165,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/IrisMix_可爱的模特__6205321.jpeg",
+        "download_url": "https://civitai.com/api/download/models/326660"
+    },
+    {
+        "name": "Tsubaki",
+        "model_id": 58557,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Tsubaki_2744347.jpeg",
+        "download_url": "https://civitai.com/api/download/models/173636"
+    },
+    {
+        "name": "Andromeda-Mix",
+        "model_id": 6408,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Andromeda-Mix_71978.jpeg",
+        "download_url": "https://civitai.com/api/download/models/7671"
+    },
+    {
+        "name": "K-main",
+        "model_id": 87906,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/K-main_20608624.jpeg",
+        "download_url": "https://civitai.com/api/download/models/658527"
+    },
+    {
+        "name": "DREAD_V5",
+        "model_id": 14722,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DREAD_V5_1288748.jpeg",
+        "download_url": "https://civitai.com/api/download/models/104018"
+    },
+    {
+        "name": "XXMix_Petrichor",
+        "model_id": 110810,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/XXMix_Petrichor_1596024.jpeg",
+        "download_url": "https://civitai.com/api/download/models/119495"
+    },
+    {
+        "name": "DDicon",
+        "model_id": 38511,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DDicon_484589.jpeg",
+        "download_url": "https://civitai.com/api/download/models/44457"
+    },
+    {
+        "name": "MixTape_____Bossa_Nova",
+        "model_id": 90991,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MixTape_____Bossa_Nova_1284621.jpeg",
+        "download_url": "https://civitai.com/api/download/models/96993?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "InteriorDesignSuperMix",
+        "model_id": 85691,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/InteriorDesignSuperMix_1098340.jpeg",
+        "download_url": "https://civitai.com/api/download/models/93152"
+    },
+    {
+        "name": "ChillyMix",
+        "model_id": 58772,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ChillyMix_959555.jpeg",
+        "download_url": "https://civitai.com/api/download/models/83785"
+    },
+    {
+        "name": "NextGenMix",
+        "model_id": 77751,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/NextGenMix_1992274.jpeg",
+        "download_url": "https://civitai.com/api/download/models/139168"
+    },
+    {
+        "name": "Mistoon_Ruby",
+        "model_id": 26332,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Mistoon_Ruby_4765918.jpeg",
+        "download_url": "https://civitai.com/api/download/models/270046"
+    },
+    {
+        "name": "RealLife",
+        "model_id": 171814,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealLife_5163862.jpeg",
+        "download_url": "https://civitai.com/api/download/models/286170"
+    },
+    {
+        "name": "BlazingRealDrive",
+        "model_id": 137909,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BlazingRealDrive_4950671.jpeg",
+        "download_url": "https://civitai.com/api/download/models/277445"
+    },
+    {
+        "name": "Deliberate_for_Invoke",
+        "model_id": 5585,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Deliberate_for_Invoke_71384.jpeg",
+        "download_url": "https://civitai.com/api/download/models/6500"
+    },
+    {
+        "name": "Jucy666",
+        "model_id": 29578,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Jucy666_15449811.jpeg",
+        "download_url": "https://civitai.com/api/download/models/566659"
+    },
+    {
+        "name": "Nordrin_诺德琳_",
+        "model_id": 113781,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Nordrin_诺德琳__1973829.jpeg",
+        "download_url": "https://civitai.com/api/download/models/138467"
+    },
+    {
+        "name": "Deep_Space_Diffusion",
+        "model_id": 32,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Deep_Space_Diffusion_32550.jpeg",
+        "download_url": "https://civitai.com/api/download/models/39"
+    },
+    {
+        "name": "Incredible_World",
+        "model_id": 143386,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Incredible_World_3059729.jpeg",
+        "download_url": "https://civitai.com/api/download/models/191538"
+    },
+    {
+        "name": "kisaragi_mix",
+        "model_id": 45757,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/kisaragi_mix_1165471.jpeg",
+        "download_url": "https://civitai.com/api/download/models/97186"
+    },
+    {
+        "name": "Real_Moon_-_Anime",
+        "model_id": 75431,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Real_Moon_-_Anime_5040087.jpeg",
+        "download_url": "https://civitai.com/api/download/models/280744"
+    },
+    {
+        "name": "FurWorld___Furry-Yiff-NSFW_SDXL___1.5",
+        "model_id": 122918,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/FurWorld___Furry-Yiff-NSFW_SDXL___1.5_6684443.jpeg",
+        "download_url": "https://civitai.com/api/download/models/345127"
+    },
+    {
+        "name": "MeichiLight_Mix",
+        "model_id": 134215,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MeichiLight_Mix_3608454.jpeg",
+        "download_url": "https://civitai.com/api/download/models/224422"
+    },
+    {
+        "name": "Famous_People",
+        "model_id": 59622,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Famous_People_7104388.jpeg",
+        "download_url": "https://civitai.com/api/download/models/360465"
+    },
+    {
+        "name": "AbyssHellMaple",
+        "model_id": 16727,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AbyssHellMaple_207895.jpeg",
+        "download_url": "https://civitai.com/api/download/models/19752"
+    },
+    {
+        "name": "Impressionism__Oil_painting_",
+        "model_id": 28068,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Impressionism__Oil_painting__836396.jpeg",
+        "download_url": "https://civitai.com/api/download/models/74821"
+    },
+    {
+        "name": "TheAlly_s_Mix_IV__Verisimilar",
+        "model_id": 40369,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/TheAlly_s_Mix_IV__Verisimilar_522937.jpeg",
+        "download_url": "https://civitai.com/api/download/models/45669"
+    },
+    {
+        "name": "VividOrangeMix",
+        "model_id": 196585,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/VividOrangeMix_4214268.jpeg",
+        "download_url": "https://civitai.com/api/download/models/221033"
+    },
+    {
+        "name": "SweetBoys_2D",
+        "model_id": 46809,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SweetBoys_2D_772932.jpeg",
+        "download_url": "https://civitai.com/api/download/models/69283"
+    },
+    {
+        "name": "Asian_Mix_",
+        "model_id": 27256,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Asian_Mix__3309135.jpeg",
+        "download_url": "https://civitai.com/api/download/models/207904"
+    },
+    {
+        "name": "Comic_Diffusion",
+        "model_id": 13,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Comic_Diffusion_245.jpeg",
+        "download_url": "https://civitai.com/api/download/models/46"
+    },
+    {
+        "name": "helloFlatAnime",
+        "model_id": 102893,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloFlatAnime_7208868.jpeg",
+        "download_url": "https://civitai.com/api/download/models/364876"
+    },
+    {
+        "name": "Ivory",
+        "model_id": 21703,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Ivory_782390.jpeg",
+        "download_url": "https://civitai.com/api/download/models/70040"
+    },
+    {
+        "name": "NavelOrange",
+        "model_id": 6160,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/NavelOrange_805725.jpeg",
+        "download_url": "https://civitai.com/api/download/models/72162"
+    },
+    {
+        "name": "Find_ForgetYou",
+        "model_id": 135602,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Find_ForgetYou_3861033.jpeg",
+        "download_url": "https://civitai.com/api/download/models/236401"
+    },
+    {
+        "name": "Featureless_Mix",
+        "model_id": 65202,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Featureless_Mix_5027444.jpeg",
+        "download_url": "https://civitai.com/api/download/models/279972"
+    },
+    {
+        "name": "ULTRA-ILLUSI0N_2D",
+        "model_id": 18650,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ULTRA-ILLUSI0N_2D_242712.jpeg",
+        "download_url": "https://civitai.com/api/download/models/22551"
+    },
+    {
+        "name": "CalicoMix_DangerousCute",
+        "model_id": 89225,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CalicoMix_DangerousCute_4900819.jpeg",
+        "download_url": "https://civitai.com/api/download/models/275438"
+    },
+    {
+        "name": "HoloKuki",
+        "model_id": 17598,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HoloKuki_220224.jpeg",
+        "download_url": "https://civitai.com/api/download/models/20803"
+    },
+    {
+        "name": "Ether_Moonlight_Mix",
+        "model_id": 125637,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Ether_Moonlight_Mix_9080836.jpeg",
+        "download_url": "https://civitai.com/api/download/models/426265"
+    },
+    {
+        "name": "HIJKLMix_Anime",
+        "model_id": 134594,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HIJKLMix_Anime_7103051.jpeg",
+        "download_url": "https://civitai.com/api/download/models/360383"
+    },
+    {
+        "name": "T-anime-v4__pruned_",
+        "model_id": 69552,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/T-anime-v4__pruned__2914280.jpeg",
+        "download_url": "https://civitai.com/api/download/models/105780"
+    },
+    {
+        "name": "Coma",
+        "model_id": 91103,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Coma_1299819.jpeg",
+        "download_url": "https://civitai.com/api/download/models/104648"
+    },
+    {
+        "name": "RealisticMix",
+        "model_id": 272697,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealisticMix_14492439.jpeg",
+        "download_url": "https://civitai.com/api/download/models/547268"
+    },
+    {
+        "name": "LRM_-_Liangyiu_s_Realistic_Mix",
+        "model_id": 81304,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/LRM_-_Liangyiu_s_Realistic_Mix_1418226.jpeg",
+        "download_url": "https://civitai.com/api/download/models/109892"
+    },
+    {
+        "name": "Nostalgia-clear",
+        "model_id": 17461,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Nostalgia-clear_218384.jpeg",
+        "download_url": "https://civitai.com/api/download/models/20640"
+    },
+    {
+        "name": "SEX_Sexy_Eastern_Experience_v3____Realistic_Asian_女",
+        "model_id": 55828,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SEX_Sexy_Eastern_Experience_v3____Realistic_Asian_女_822278.jpeg",
+        "download_url": "https://civitai.com/api/download/models/73601"
+    },
+    {
+        "name": "High_quality_CGMIX",
+        "model_id": 22294,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/High_quality_CGMIX_293341.jpeg",
+        "download_url": "https://civitai.com/api/download/models/26620"
+    },
+    {
+        "name": "Neon_Isometric",
+        "model_id": 12349,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Neon_Isometric_142576.jpeg",
+        "download_url": "https://civitai.com/api/download/models/14565"
+    },
+    {
+        "name": "BlueMix_TMND_Enhanced",
+        "model_id": 38754,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BlueMix_TMND_Enhanced_488580.jpeg",
+        "download_url": "https://civitai.com/api/download/models/44686"
+    },
+    {
+        "name": "MengX_Mix_Fantasy",
+        "model_id": 145378,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MengX_Mix_Fantasy_5755059.jpeg",
+        "download_url": "https://civitai.com/api/download/models/308194"
+    },
+    {
+        "name": "comi-noir_v2",
+        "model_id": 16325,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/comi-noir_v2_1458735.jpeg",
+        "download_url": "https://civitai.com/api/download/models/112777"
+    },
+    {
+        "name": "大头可爱风___BH_ink-prt",
+        "model_id": 108882,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/大头可爱风___BH_ink-prt_1576821.jpeg",
+        "download_url": "https://civitai.com/api/download/models/117289"
+    },
+    {
+        "name": "Muses_-_Erato",
+        "model_id": 79077,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Muses_-_Erato_3202676.jpeg",
+        "download_url": "https://civitai.com/api/download/models/201126"
+    },
+    {
+        "name": "randomizer89merge",
+        "model_id": 49608,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/randomizer89merge_3455725.jpeg",
+        "download_url": "https://civitai.com/api/download/models/54175"
+    },
+    {
+        "name": "helloObjects",
+        "model_id": 121716,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloObjects_7088176.jpeg",
+        "download_url": "https://civitai.com/api/download/models/359847"
+    },
+    {
+        "name": "hellokid25D",
+        "model_id": 95137,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/hellokid25D_3118752.jpeg",
+        "download_url": "https://civitai.com/api/download/models/195589"
+    },
+    {
+        "name": "chilloutmix_koreanDoll",
+        "model_id": 39252,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/chilloutmix_koreanDoll_490124.jpeg",
+        "download_url": "https://civitai.com/api/download/models/45169"
+    },
+    {
+        "name": "chilloutmix_koreanDoll",
+        "model_id": 39252,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/chilloutmix_koreanDoll_490124.jpeg",
+        "download_url": "https://civitai.com/api/download/models/45169"
+    },
+    {
+        "name": "fennfoto",
+        "model_id": 153869,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/fennfoto_4219648.jpeg",
+        "download_url": "https://civitai.com/api/download/models/251207"
+    },
+    {
+        "name": "AniHelloy2d",
+        "model_id": 147548,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AniHelloy2d_4081730.jpeg",
+        "download_url": "https://civitai.com/api/download/models/245511"
+    },
+    {
+        "name": "Elldreth_s_StolenDreams_Mix",
+        "model_id": 2540,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Elldreth_s_StolenDreams_Mix_66313.jpeg",
+        "download_url": "https://civitai.com/api/download/models/2828?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "DucHaiten-DarkNiji",
+        "model_id": 88173,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DucHaiten-DarkNiji_5521891.jpeg",
+        "download_url": "https://civitai.com/api/download/models/299670"
+    },
+    {
+        "name": "Realism_CE_Revolution",
+        "model_id": 108302,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Realism_CE_Revolution_1534764.jpeg",
+        "download_url": "https://civitai.com/api/download/models/116555"
+    },
+    {
+        "name": "AniMics",
+        "model_id": 209564,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AniMics_13136701.jpeg",
+        "download_url": "https://civitai.com/api/download/models/520462"
+    },
+    {
+        "name": "Fortyfour_oilpainting_V1",
+        "model_id": 93262,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Fortyfour_oilpainting_V1_1205699.jpeg",
+        "download_url": "https://civitai.com/api/download/models/99440"
+    },
+    {
+        "name": "Eris",
+        "model_id": 21952,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Eris_288376.jpeg",
+        "download_url": "https://civitai.com/api/download/models/26217?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "RestlessExistence",
+        "model_id": 111379,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RestlessExistence_3088967.jpeg",
+        "download_url": "https://civitai.com/api/download/models/193447"
+    },
+    {
+        "name": "Simply_Beautiful",
+        "model_id": 49037,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Simply_Beautiful_580759.jpeg",
+        "download_url": "https://civitai.com/api/download/models/53632"
+    },
+    {
+        "name": "architecture_Exterior_SDlife_Chiasedamme",
+        "model_id": 114612,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/architecture_Exterior_SDlife_Chiasedamme_2436038.jpeg",
+        "download_url": "https://civitai.com/api/download/models/123908"
+    },
+    {
+        "name": "CityEdge_2dToonMix",
+        "model_id": 57703,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CityEdge_2dToonMix_802038.jpeg",
+        "download_url": "https://civitai.com/api/download/models/71794"
+    },
+    {
+        "name": "Arcane_Diffusion",
+        "model_id": 23,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Arcane_Diffusion_127.jpeg",
+        "download_url": "https://civitai.com/api/download/models/25"
+    },
+    {
+        "name": "Milky_Wonderland",
+        "model_id": 130417,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Milky_Wonderland_10008030.jpeg",
+        "download_url": "https://civitai.com/api/download/models/449096"
+    },
+    {
+        "name": "JIM_JORCRAF",
+        "model_id": 12334,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/JIM_JORCRAF_142280.jpeg",
+        "download_url": "https://civitai.com/api/download/models/14545?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "PPP_Animix",
+        "model_id": 271293,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/PPP_Animix_39179549.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1037140"
+    },
+    {
+        "name": "Realistic-Digital-Genius",
+        "model_id": 139300,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Realistic-Digital-Genius_3876260.jpeg",
+        "download_url": "https://civitai.com/api/download/models/236963"
+    },
+    {
+        "name": "XXMixUnreal",
+        "model_id": 119860,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/XXMixUnreal_1808138.jpeg",
+        "download_url": "https://civitai.com/api/download/models/130273"
+    },
+    {
+        "name": "Amixx",
+        "model_id": 30526,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Amixx_2041576.jpeg",
+        "download_url": "https://civitai.com/api/download/models/141190"
+    },
+    {
+        "name": "helloAsian",
+        "model_id": 162935,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloAsian_4680838.jpeg",
+        "download_url": "https://civitai.com/api/download/models/266482"
+    },
+    {
+        "name": "s1dlxBrew",
+        "model_id": 4717,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/s1dlxBrew_127297.jpeg",
+        "download_url": "https://civitai.com/api/download/models/13166?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Blessing_Mix__aka._Bracing_Evo_Mix_clone_",
+        "model_id": 94179,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Blessing_Mix__aka._Bracing_Evo_Mix_clone__1446018.jpeg",
+        "download_url": "https://civitai.com/api/download/models/101605"
+    },
+    {
+        "name": "Cine_Diffusion",
+        "model_id": 50000,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Cine_Diffusion_590248.jpeg",
+        "download_url": "https://civitai.com/api/download/models/54534"
+    },
+    {
+        "name": "Kakarot_2.5D_ChiChi",
+        "model_id": 209030,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Kakarot_2.5D_ChiChi_10373989.jpeg",
+        "download_url": "https://civitai.com/api/download/models/458834"
+    },
+    {
+        "name": "ForgottenMix",
+        "model_id": 56941,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ForgottenMix_674028.jpeg",
+        "download_url": "https://civitai.com/api/download/models/61355"
+    },
+    {
+        "name": "LandscapeSuperMix",
+        "model_id": 86963,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/LandscapeSuperMix_1525289.jpeg",
+        "download_url": "https://civitai.com/api/download/models/116095"
+    },
+    {
+        "name": "SHM_Realistic",
+        "model_id": 223261,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SHM_Realistic_16569122.jpeg",
+        "download_url": "https://civitai.com/api/download/models/587319"
+    },
+    {
+        "name": "Tang_Yuan__汤圆Mix_",
+        "model_id": 47464,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Tang_Yuan__汤圆Mix__1142879.jpeg",
+        "download_url": "https://civitai.com/api/download/models/95919"
+    },
+    {
+        "name": "KawaiiMix__Niji_V5_Cute_",
+        "model_id": 47893,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/KawaiiMix__Niji_V5_Cute__565897.jpeg",
+        "download_url": "https://civitai.com/api/download/models/52490"
+    },
+    {
+        "name": "SCMix",
+        "model_id": 19809,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SCMix_255056.jpeg",
+        "download_url": "https://civitai.com/api/download/models/23515"
+    },
+    {
+        "name": "ZavyMix",
+        "model_id": 89381,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ZavyMix_1726411.jpeg",
+        "download_url": "https://civitai.com/api/download/models/126079"
+    },
+    {
+        "name": "ZHMix-Realistic",
+        "model_id": 150322,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ZHMix-Realistic_4595700.jpeg",
+        "download_url": "https://civitai.com/api/download/models/263043"
+    },
+    {
+        "name": "helloJPLassie",
+        "model_id": 100254,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloJPLassie_5376006.jpeg",
+        "download_url": "https://civitai.com/api/download/models/294648"
+    },
+    {
+        "name": "SSSSLLDDLL__shiny_sissy_luxury_latex_dress_for_doll_",
+        "model_id": 28080,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SSSSLLDDLL__shiny_sissy_luxury_latex_dress_for_doll__945930.jpeg",
+        "download_url": "https://civitai.com/api/download/models/83824"
+    },
+    {
+        "name": "hellopure",
+        "model_id": 88202,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/hellopure_4216683.jpeg",
+        "download_url": "https://civitai.com/api/download/models/251099"
+    },
+    {
+        "name": "WonderMix",
+        "model_id": 15666,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/WonderMix_190925.jpeg",
+        "download_url": "https://civitai.com/api/download/models/18480?type=Model&format=SafeTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "Cardology_Mix",
+        "model_id": 91604,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Cardology_Mix_1176847.jpeg",
+        "download_url": "https://civitai.com/api/download/models/97642"
+    },
+    {
+        "name": "3moon_REAL_Ko",
+        "model_id": 15334,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/3moon_REAL_Ko_242886.jpeg",
+        "download_url": "https://civitai.com/api/download/models/22567"
+    },
+    {
+        "name": "FantasticAnimeChix-HR",
+        "model_id": 64635,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/FantasticAnimeChix-HR_790372.jpeg",
+        "download_url": "https://civitai.com/api/download/models/70739"
+    },
+    {
+        "name": "Furnace_47",
+        "model_id": 24553,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Furnace_47_333149.jpeg",
+        "download_url": "https://civitai.com/api/download/models/29368"
+    },
+    {
+        "name": "Somman",
+        "model_id": 153374,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Somman_2712133.jpeg",
+        "download_url": "https://civitai.com/api/download/models/171746"
+    },
+    {
+        "name": "Handpainted_RPG_Icons_",
+        "model_id": 4052,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Handpainted_RPG_Icons__30907.jpeg",
+        "download_url": "https://civitai.com/api/download/models/4525?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "HighRiseMix",
+        "model_id": 7443,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HighRiseMix_102627.jpeg",
+        "download_url": "https://civitai.com/api/download/models/10565"
+    },
+    {
+        "name": "EDG_Nendo",
+        "model_id": 80752,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/EDG_Nendo_2085173.jpeg",
+        "download_url": "https://civitai.com/api/download/models/143003"
+    },
+    {
+        "name": "YetAnotherAnimeMix",
+        "model_id": 104943,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/YetAnotherAnimeMix_3603382.jpeg",
+        "download_url": "https://civitai.com/api/download/models/224244"
+    },
+    {
+        "name": "helloComic",
+        "model_id": 112857,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloComic_5904019.jpeg",
+        "download_url": "https://civitai.com/api/download/models/314122"
+    },
+    {
+        "name": "fCBlendMix_-_fC__现实主义__Realism_",
+        "model_id": 64541,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/fCBlendMix_-_fC__现实主义__Realism__4004070.jpeg",
+        "download_url": "https://civitai.com/api/download/models/242609"
+    },
+    {
+        "name": "BlueMoonMix_蓝月",
+        "model_id": 19978,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BlueMoonMix_蓝月_257399.jpeg",
+        "download_url": "https://civitai.com/api/download/models/23726"
+    },
+    {
+        "name": "Bambi_Eyes",
+        "model_id": 143396,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Bambi_Eyes_2441250.jpeg",
+        "download_url": "https://civitai.com/api/download/models/159133"
+    },
+    {
+        "name": "Project_KR4X_-_2.5D___AaYMix",
+        "model_id": 75088,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Project_KR4X_-_2.5D___AaYMix_895727.jpeg",
+        "download_url": "https://civitai.com/api/download/models/79841"
+    },
+    {
+        "name": "Basil_Korea",
+        "model_id": 35544,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Basil_Korea_1610009.jpeg",
+        "download_url": "https://civitai.com/api/download/models/120196"
+    },
+    {
+        "name": "Fruit_Fusion",
+        "model_id": 18742,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Fruit_Fusion_238811.jpeg",
+        "download_url": "https://civitai.com/api/download/models/22240"
+    },
+    {
+        "name": "SleeplessMix",
+        "model_id": 37097,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SleeplessMix_473585.jpeg",
+        "download_url": "https://civitai.com/api/download/models/43121"
+    },
+    {
+        "name": "a7b3",
+        "model_id": 43804,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/a7b3_520614.jpeg",
+        "download_url": "https://civitai.com/api/download/models/48442"
+    },
+    {
+        "name": "Ghibli_style_mix",
+        "model_id": 83071,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Ghibli_style_mix_1015633.jpeg",
+        "download_url": "https://civitai.com/api/download/models/88276"
+    },
+    {
+        "name": "MooMooFusion",
+        "model_id": 133364,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MooMooFusion_15070137.jpeg",
+        "download_url": "https://civitai.com/api/download/models/559098"
+    },
+    {
+        "name": "blue_pencil_realistic",
+        "model_id": 88941,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/blue_pencil_realistic_1417690.jpeg",
+        "download_url": "https://civitai.com/api/download/models/110838"
+    },
+    {
+        "name": "C3",
+        "model_id": 39044,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/C3_1461701.jpeg",
+        "download_url": "https://civitai.com/api/download/models/112913"
+    },
+    {
+        "name": "Anime-CHIBI4.5",
+        "model_id": 116025,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Anime-CHIBI4.5_6239783.jpeg",
+        "download_url": "https://civitai.com/api/download/models/327929"
+    },
+    {
+        "name": "helloIP3D_盲盒IP",
+        "model_id": 191542,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloIP3D_盲盒IP_3802353.jpeg",
+        "download_url": "https://civitai.com/api/download/models/233790"
+    },
+    {
+        "name": "SLDR__Realism__Photography_",
+        "model_id": 42855,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SLDR__Realism__Photography__964325.jpeg",
+        "download_url": "https://civitai.com/api/download/models/85198"
+    },
+    {
+        "name": "hello25DVintageAnime",
+        "model_id": 98018,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/hello25DVintageAnime_2698985.jpeg",
+        "download_url": "https://civitai.com/api/download/models/171449"
+    },
+    {
+        "name": "Yotta_Mix",
+        "model_id": 96397,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Yotta_Mix_3172074.jpeg",
+        "download_url": "https://civitai.com/api/download/models/199224"
+    },
+    {
+        "name": "XXMix_2.5D",
+        "model_id": 54416,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/XXMix_2.5D_778721.jpeg",
+        "download_url": "https://civitai.com/api/download/models/58896"
+    },
+    {
+        "name": "2D_Game_Icon_Skill_Equipment",
+        "model_id": 75116,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/2D_Game_Icon_Skill_Equipment_1038557.jpeg",
+        "download_url": "https://civitai.com/api/download/models/89656"
+    },
+    {
+        "name": "seek.art_MEGA",
+        "model_id": 1315,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/seek.art_MEGA_279710.jpeg",
+        "download_url": "https://civitai.com/api/download/models/22808?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "mixProYuki77mi",
+        "model_id": 13039,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/mixProYuki77mi_152818.jpeg",
+        "download_url": "https://civitai.com/api/download/models/15363"
+    },
+    {
+        "name": "SamDoesSexy_Blend__Legacy_Model_",
+        "model_id": 1180,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SamDoesSexy_Blend__Legacy_Model__8747010.jpeg",
+        "download_url": "https://civitai.com/api/download/models/416391"
+    },
+    {
+        "name": "HomoVeritas",
+        "model_id": 129842,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HomoVeritas_35785098.jpeg",
+        "download_url": "https://civitai.com/api/download/models/979902"
+    },
+    {
+        "name": "FiaMix_Reboot",
+        "model_id": 161341,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/FiaMix_Reboot_7049331.jpeg",
+        "download_url": "https://civitai.com/api/download/models/358510?type=Model&format=SafeTensor&size=full&fp=fp32"
+    },
+    {
+        "name": "cineMaErosPG_V4",
+        "model_id": 74426,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/cineMaErosPG_V4_1220307.jpeg",
+        "download_url": "https://civitai.com/api/download/models/100272"
+    },
+    {
+        "name": "helloCartoonFilm",
+        "model_id": 93812,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloCartoonFilm_3969806.jpeg",
+        "download_url": "https://civitai.com/api/download/models/241143"
+    },
+    {
+        "name": "ZHMix-Dramatic",
+        "model_id": 148158,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ZHMix-Dramatic_3811206.jpeg",
+        "download_url": "https://civitai.com/api/download/models/234270"
+    },
+    {
+        "name": "line_and_light",
+        "model_id": 42930,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/line_and_light_513126.jpeg",
+        "download_url": "https://civitai.com/api/download/models/47602"
+    },
+    {
+        "name": "BestQuality-PastelMix",
+        "model_id": 22045,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BestQuality-PastelMix_289851.jpeg",
+        "download_url": "https://civitai.com/api/download/models/26321"
+    },
+    {
+        "name": "hello25D_Anime",
+        "model_id": 94661,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/hello25D_Anime_5221311.jpeg",
+        "download_url": "https://civitai.com/api/download/models/288685"
+    },
+    {
+        "name": "ouka_horror-_中式恐怖_",
+        "model_id": 123697,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ouka_horror-_中式恐怖__1898730.jpeg",
+        "download_url": "https://civitai.com/api/download/models/134896"
+    },
+    {
+        "name": "AsianRealistic_SDLife_ChiasedammeV6.0",
+        "model_id": 117238,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AsianRealistic_SDLife_ChiasedammeV6.0_1743066.jpeg",
+        "download_url": "https://civitai.com/api/download/models/127016"
+    },
+    {
+        "name": "comi-noir-classic_v2",
+        "model_id": 16376,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/comi-noir-classic_v2_358501.jpeg",
+        "download_url": "https://civitai.com/api/download/models/31502"
+    },
+    {
+        "name": "lametta",
+        "model_id": 158643,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/lametta_2849916.jpeg",
+        "download_url": "https://civitai.com/api/download/models/178337"
+    },
+    {
+        "name": "CityEdge_DollyMix",
+        "model_id": 78407,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CityEdge_DollyMix_938030.jpeg",
+        "download_url": "https://civitai.com/api/download/models/83209"
+    },
+    {
+        "name": "AnythingQingMix-Realistic",
+        "model_id": 126404,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AnythingQingMix-Realistic_1967148.jpeg",
+        "download_url": "https://civitai.com/api/download/models/138180"
+    },
+    {
+        "name": "EthernalDope",
+        "model_id": 163825,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/EthernalDope_2986588.jpeg",
+        "download_url": "https://civitai.com/api/download/models/184580"
+    },
+    {
+        "name": "Complex_Lineart",
+        "model_id": 65,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Complex_Lineart_515.jpeg",
+        "download_url": "https://civitai.com/api/download/models/74"
+    },
+    {
+        "name": "ByteOil_v2",
+        "model_id": 50718,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ByteOil_v2_597526.jpeg",
+        "download_url": "https://civitai.com/api/download/models/55228"
+    },
+    {
+        "name": "Real_Goofball",
+        "model_id": 72488,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Real_Goofball_866029.jpeg",
+        "download_url": "https://civitai.com/api/download/models/77225"
+    },
+    {
+        "name": "Japanese_Style_Realistic__JSR_",
+        "model_id": 56287,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Japanese_Style_Realistic__JSR__1217809.jpeg",
+        "download_url": "https://civitai.com/api/download/models/85426"
+    },
+    {
+        "name": "Diabolique_Merges",
+        "model_id": 20825,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Diabolique_Merges_607819.jpeg",
+        "download_url": "https://civitai.com/api/download/models/41048?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "XSMerge-RealisticVisionV3-ForArchitectural",
+        "model_id": 102895,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/XSMerge-RealisticVisionV3-ForArchitectural_1411984.jpeg",
+        "download_url": "https://civitai.com/api/download/models/110520"
+    },
+    {
+        "name": "Prefix_Real_Cart",
+        "model_id": 114544,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Prefix_Real_Cart_1681900.jpeg",
+        "download_url": "https://civitai.com/api/download/models/123832"
+    },
+    {
+        "name": "gy动漫003",
+        "model_id": 129513,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/gy动漫003_2065576.jpeg",
+        "download_url": "https://civitai.com/api/download/models/141969"
+    },
+    {
+        "name": "ChameleonAI__RPG__Mix",
+        "model_id": 37986,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ChameleonAI__RPG__Mix_479912.jpeg",
+        "download_url": "https://civitai.com/api/download/models/43958"
+    },
+    {
+        "name": "AARG-Architecture-Res",
+        "model_id": 24236,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AARG-Architecture-Res_327362.jpeg",
+        "download_url": "https://civitai.com/api/download/models/28973"
+    },
+    {
+        "name": "LemonPastelMix",
+        "model_id": 13097,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/LemonPastelMix_185164.jpeg",
+        "download_url": "https://civitai.com/api/download/models/18051"
+    },
+    {
+        "name": "xRicaMix",
+        "model_id": 73086,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/xRicaMix_930597.jpeg",
+        "download_url": "https://civitai.com/api/download/models/82658"
+    },
+    {
+        "name": "helloFlatColorful2D",
+        "model_id": 113447,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/helloFlatColorful2D_17373722.jpeg",
+        "download_url": "https://civitai.com/api/download/models/601089"
+    },
+    {
+        "name": "MasterAnime",
+        "model_id": 129218,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/MasterAnime_3255847.jpeg",
+        "download_url": "https://civitai.com/api/download/models/204697?type=Model&format=SafeTensor&size=pruned&fp=fp32"
+    },
+    {
+        "name": "Lunar_Radiance__月光Mix_",
+        "model_id": 89145,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Lunar_Radiance__月光Mix__1785435.jpeg",
+        "download_url": "https://civitai.com/api/download/models/129079"
+    },
+    {
+        "name": "Glow_2.5D",
+        "model_id": 62520,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Glow_2.5D_744821.jpeg",
+        "download_url": "https://civitai.com/api/download/models/67071"
+    },
+    {
+        "name": "ColorMagination",
+        "model_id": 97331,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ColorMagination_1638011.jpeg",
+        "download_url": "https://civitai.com/api/download/models/120830"
+    },
+    {
+        "name": "Lunar_Diffusion",
+        "model_id": 26870,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Lunar_Diffusion_1288502.jpeg",
+        "download_url": "https://civitai.com/api/download/models/104047"
+    },
+    {
+        "name": "Everlasting",
+        "model_id": 51306,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Everlasting_756790.jpeg",
+        "download_url": "https://civitai.com/api/download/models/67945"
+    },
+    {
+        "name": "Western_Cartoon_Type_A",
+        "model_id": 62060,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Western_Cartoon_Type_A_739595.jpeg",
+        "download_url": "https://civitai.com/api/download/models/66582"
+    },
+    {
+        "name": "AmanoMix",
+        "model_id": 28400,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AmanoMix_549427.jpeg",
+        "download_url": "https://civitai.com/api/download/models/51038"
+    },
+    {
+        "name": "RealCartoon_-_Special",
+        "model_id": 194244,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealCartoon_-_Special_3504490.jpeg",
+        "download_url": "https://civitai.com/api/download/models/218329"
+    },
+    {
+        "name": "Onigiri_Mix",
+        "model_id": 146434,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Onigiri_Mix_2525945.jpeg",
+        "download_url": "https://civitai.com/api/download/models/163077"
+    },
+    {
+        "name": "DollyMix",
+        "model_id": 148895,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DollyMix_2595113.jpeg",
+        "download_url": "https://civitai.com/api/download/models/166193"
+    },
+    {
+        "name": "RealSciFi",
+        "model_id": 9388,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RealSciFi_166893.jpeg",
+        "download_url": "https://civitai.com/api/download/models/15844"
+    },
+    {
+        "name": "DucHaiten-MindBreak",
+        "model_id": 84237,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/DucHaiten-MindBreak_1069923.jpeg",
+        "download_url": "https://civitai.com/api/download/models/89539"
+    },
+    {
+        "name": "PixelStyleCKPT_像素画",
+        "model_id": 85953,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/PixelStyleCKPT_像素画_1071060.jpeg",
+        "download_url": "https://civitai.com/api/download/models/91384"
+    },
+    {
+        "name": "RaekanaMix_2.5D",
+        "model_id": 193551,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/RaekanaMix_2.5D_5343378.jpeg",
+        "download_url": "https://civitai.com/api/download/models/293271"
+    },
+    {
+        "name": "Tutu_s_Photo_Deception_图图的照骗_チュチュの写真の偽り",
+        "model_id": 100369,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Tutu_s_Photo_Deception_图图的照骗_チュチュの写真の偽り_6672130.jpeg",
+        "download_url": "https://civitai.com/api/download/models/344844"
+    },
+    {
+        "name": "mixedmixedmixed_v2",
+        "model_id": 7660,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/mixedmixedmixed_v2_86080.jpeg",
+        "download_url": "https://civitai.com/api/download/models/8994"
+    },
+    {
+        "name": "SaluteMix",
+        "model_id": 19238,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SaluteMix_246811.jpeg",
+        "download_url": "https://civitai.com/api/download/models/22828?type=Model&format=PickleTensor&size=full&fp=fp16"
+    },
+    {
+        "name": "BetterBoys2.5D",
+        "model_id": 107657,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/BetterBoys2.5D_2163537.jpeg",
+        "download_url": "https://civitai.com/api/download/models/146520"
+    },
+    {
+        "name": "Realistic_Comic_Book",
+        "model_id": 240267,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Realistic_Comic_Book_4792618.jpeg",
+        "download_url": "https://civitai.com/api/download/models/271085"
+    },
+    {
+        "name": "SDS_FILM___胶片摄影",
+        "model_id": 183133,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/SDS_FILM___胶片摄影_10449650.jpeg",
+        "download_url": "https://civitai.com/api/download/models/460785"
+    },
+    {
+        "name": "Redwater",
+        "model_id": 160293,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Redwater_2897697.jpeg",
+        "download_url": "https://civitai.com/api/download/models/180346"
+    },
+    {
+        "name": "3moon_REAL_cartoon_most_detail_skin_texture_",
+        "model_id": 15325,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/3moon_REAL_cartoon_most_detail_skin_texture__185244.jpeg",
+        "download_url": "https://civitai.com/api/download/models/18055"
+    },
+    {
+        "name": "LimitlessVision",
+        "model_id": 141348,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/LimitlessVision_7761005.jpeg",
+        "download_url": "https://civitai.com/api/download/models/385719"
+    },
+    {
+        "name": "CoffeeBreak",
+        "model_id": 94098,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/CoffeeBreak_1732363.jpeg",
+        "download_url": "https://civitai.com/api/download/models/100380"
+    },
+    {
+        "name": "Perceptron",
+        "model_id": 25516,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Perceptron_450028.jpeg",
+        "download_url": "https://civitai.com/api/download/models/40695"
+    },
+    {
+        "name": "ForgeSaga_Landscape",
+        "model_id": 84200,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/ForgeSaga_Landscape_1035228.jpeg",
+        "download_url": "https://civitai.com/api/download/models/89497"
+    },
+    {
+        "name": "Anyfetus",
+        "model_id": 16481,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/Anyfetus_206629.jpeg",
+        "download_url": "https://civitai.com/api/download/models/19635"
+    },
+    {
+        "name": "WWanime",
+        "model_id": 84840,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/WWanime_1046320.jpeg",
+        "download_url": "https://civitai.com/api/download/models/90196"
+    },
+    {
+        "name": "HotaruBreed_AnimeMix",
+        "model_id": 197504,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/HotaruBreed_AnimeMix_7574553.jpeg",
+        "download_url": "https://civitai.com/api/download/models/379221"
+    },
+    {
+        "name": "AnimeKawa",
+        "model_id": 87661,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/AnimeKawa_1103346.jpeg",
+        "download_url": "https://civitai.com/api/download/models/93295"
+    },
+    {
+        "name": "古风_GuFeng",
+        "model_id": 12903,
+        "base_model": "SD 1.5",
+        "image_path": "models/sd_1.5/古风_GuFeng_469430.jpeg",
+        "download_url": "https://civitai.com/api/download/models/42796"
+    }
+]

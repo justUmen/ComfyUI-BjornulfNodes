@@ -64,7 +64,7 @@ IMPORTANT : DO NOT Include information about the overall style or artistic techn
     RETURN_TYPES = ("OLLAMA_JOB", "STRING",)
     RETURN_NAMES = ("OLLAMA_JOB", "prompt_text")
     FUNCTION = "get_system_prompt"
-    CATEGORY = "ollama"
+    CATEGORY = "Bjornulf"
 
     def get_system_prompt(self, selected_prompt, custom_prompt_prefix, OLLAMA_PERSONA=None):
         # Combine OLLAMA_PERSONA, custom_prompt_prefix, and selected system job

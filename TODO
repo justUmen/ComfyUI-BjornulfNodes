@@ -1,0 +1,5 @@
+- Combine Loop + text random ?
+- Allow all ffmpeg code to use FFMPEG_CONFIG_JSON
+- video preview, allow list of IMAGES as a video ?
+Add options to video preview : autoplay, audio toggle
+- try to make all in one face fix...

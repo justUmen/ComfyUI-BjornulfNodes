@@ -1,0 +1,30 @@
+[
+    {
+        "name": "RealVisXL_V5.0",
+        "model_id": 139562,
+        "base_model": "SDXL Lightning",
+        "image_path": "models/sdxl_lightning/RealVisXL_V5.0_27392608.jpeg",
+        "download_url": "https://civitai.com/api/download/models/798204"
+    },
+    {
+        "name": "ForRealXL___V1.0",
+        "model_id": 432244,
+        "base_model": "SDXL Lightning",
+        "image_path": "models/sdxl_lightning/ForRealXL___V1.0_23695901.jpeg",
+        "download_url": "https://civitai.com/api/download/models/712530"
+    },
+    {
+        "name": "WildCardX-XL_LIGHTNING___",
+        "model_id": 321320,
+        "base_model": "SDXL Lightning",
+        "image_path": "models/sdxl_lightning/WildCardX-XL_LIGHTNING____7123736.jpeg",
+        "download_url": "https://civitai.com/api/download/models/360292"
+    },
+    {
+        "name": "MoonRide_Mixes",
+        "model_id": 22511,
+        "base_model": "SDXL Lightning",
+        "image_path": "models/sdxl_lightning/MoonRide_Mixes_8346185.jpeg",
+        "download_url": "https://civitai.com/api/download/models/404439"
+    }
+]

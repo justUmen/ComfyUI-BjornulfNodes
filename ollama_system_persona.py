@@ -43,7 +43,7 @@ class OllamaSystemPersonaSelector:
     RETURN_TYPES = ("OLLAMA_PERSONA", "STRING",)
     RETURN_NAMES = ("OLLAMA_PERSONA", "prompt_text")
     FUNCTION = "get_system_prompt"
-    CATEGORY = "ollama"
+    CATEGORY = "Bjornulf"
 
     def get_system_prompt(self, selected_prompt, custom_prompt_prefix):
         # space only if self.SYSTEM_PERSONAS[selected_prompt] isn't empty

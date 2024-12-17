@@ -1,0 +1,58 @@
+[
+    {
+        "name": "DreamShaper_XL",
+        "model_id": 112902,
+        "base_model": "SDXL Turbo",
+        "image_path": "models/sdxl_turbo/DreamShaper_XL_6840669.jpeg",
+        "download_url": "https://civitai.com/api/download/models/351306"
+    },
+    {
+        "name": "MagMix",
+        "model_id": 18523,
+        "base_model": "SDXL Turbo",
+        "image_path": "models/sdxl_turbo/MagMix_14124033.jpeg",
+        "download_url": "https://civitai.com/api/download/models/540977"
+    },
+    {
+        "name": "____Realities_Edge_XL_____LIGHTNING___Turbo_",
+        "model_id": 129666,
+        "base_model": "SDXL Turbo",
+        "image_path": "models/sdxl_turbo/____Realities_Edge_XL_____LIGHTNING___Turbo__6991224.jpeg",
+        "download_url": "https://civitai.com/api/download/models/356472"
+    },
+    {
+        "name": "TurboVisionXL_-_Super_Fast_XL_based_on_new_SDXL_Turbo_-_3_-_5_step_quality_output_at_high_resolutions_",
+        "model_id": 215418,
+        "base_model": "SDXL Turbo",
+        "image_path": "models/sdxl_turbo/TurboVisionXL_-_Super_Fast_XL_based_on_new_SDXL_Turbo_-_3_-_5_step_quality_output_at_high_resolutions__4835549.jpeg",
+        "download_url": "https://civitai.com/api/download/models/273102"
+    },
+    {
+        "name": "Ultraspice",
+        "model_id": 229392,
+        "base_model": "SDXL Turbo",
+        "image_path": "models/sdxl_turbo/Ultraspice_18795215.jpeg",
+        "download_url": "https://civitai.com/api/download/models/626054"
+    },
+    {
+        "name": "fitCorderMix_-_TurboSDXL",
+        "model_id": 55036,
+        "base_model": "SDXL Turbo",
+        "image_path": "models/sdxl_turbo/fitCorderMix_-_TurboSDXL_4827128.jpeg",
+        "download_url": "https://civitai.com/api/download/models/272693"
+    },
+    {
+        "name": "WildCardX-XL_TURBO",
+        "model_id": 293331,
+        "base_model": "SDXL Turbo",
+        "image_path": "models/sdxl_turbo/WildCardX-XL_TURBO_6288452.jpeg",
+        "download_url": "https://civitai.com/api/download/models/329685"
+    },
+    {
+        "name": "RMSDXL_-_Hybrid_Turbo_XL__base_model_",
+        "model_id": 236754,
+        "base_model": "SDXL Turbo",
+        "image_path": "models/sdxl_turbo/RMSDXL_-_Hybrid_Turbo_XL__base_model__5808889.jpeg",
+        "download_url": "https://civitai.com/api/download/models/309889"
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "name": "FLUX",
+        "model_id": 618692,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/FLUX_22496037.jpeg",
+        "download_url": "https://civitai.com/api/download/models/691639"
+    },
+    {
+        "name": "Copax_TimeLess",
+        "model_id": 118111,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/Copax_TimeLess_43942459.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1134093?type=Model&format=SafeTensor&size=pruned&fp=fp8"
+    },
+    {
+        "name": "_Lah__Mysterious___Flux_update",
+        "model_id": 118441,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/_Lah__Mysterious___Flux_update_30465956.jpeg",
+        "download_url": "https://civitai.com/api/download/models/872820"
+    },
+    {
+        "name": "PixelWave",
+        "model_id": 141592,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/PixelWave_36472754.jpeg",
+        "download_url": "https://civitai.com/api/download/models/992642?type=Model&format=GGUF&size=full&fp=nf4"
+    },
+    {
+        "name": "Flux_Unchained_by_SCG",
+        "model_id": 645943,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/Flux_Unchained_by_SCG_26124677.jpeg",
+        "download_url": "https://civitai.com/api/download/models/768009"
+    },
+    {
+        "name": "Flux.1-Dev_Hyper_NF4___Flux.1-Dev_BNB_NF4___Flux.1-Schnell_BNB_NF4",
+        "model_id": 638187,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/Flux.1-Dev_Hyper_NF4___Flux.1-Dev_BNB_NF4___Flux.1-Schnell_BNB_NF4_28351013.jpeg",
+        "download_url": "https://civitai.com/api/download/models/819165"
+    },
+    {
+        "name": "Acorn_Is_Spinning_FLUX",
+        "model_id": 673188,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/Acorn_Is_Spinning_FLUX_39630458.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1052470"
+    },
+    {
+        "name": "绪儿-红蓝幻想_Red-blue_fantasy",
+        "model_id": 313098,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/绪儿-红蓝幻想_Red-blue_fantasy_44214652.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1138590"
+    },
+    {
+        "name": "Sexy_Toons_feat._Pipa",
+        "model_id": 35549,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/Sexy_Toons_feat._Pipa_38378319.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1027630"
+    },
+    {
+        "name": "Copax_StyleMix",
+        "model_id": 94620,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/Copax_StyleMix_33174667.jpeg",
+        "download_url": "https://civitai.com/api/download/models/928804"
+    },
+    {
+        "name": "Flux_Realistic",
+        "model_id": 652009,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/Flux_Realistic_34946133.jpeg",
+        "download_url": "https://civitai.com/api/download/models/963489"
+    },
+    {
+        "name": "FLUX.1__dev_",
+        "model_id": 617609,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/FLUX.1__dev__35931538.jpeg",
+        "download_url": "https://civitai.com/api/download/models/690425"
+    },
+    {
+        "name": "DEMON_CORE__SFW_NSFW_",
+        "model_id": 155977,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/DEMON_CORE__SFW_NSFW__39927830.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1048219"
+    },
+    {
+        "name": "Flux_Fusion_V2__4_steps___GGUF____NF4___FP8_FP16_",
+        "model_id": 630820,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/Flux_Fusion_V2__4_steps___GGUF____NF4___FP8_FP16__34324641.jpeg",
+        "download_url": "https://civitai.com/api/download/models/936309"
+    },
+    {
+        "name": "Real_Horny_Pro_V3",
+        "model_id": 684924,
+        "base_model": "Flux.1 D",
+        "image_path": "models/flux.1_d/Real_Horny_Pro_V3_36642364.jpeg",
+        "download_url": "https://civitai.com/api/download/models/994561"
+    }
+]

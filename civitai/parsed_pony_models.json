@@ -1,0 +1,534 @@
+[
+    {
+        "name": "Pony_Diffusion_V6_XL",
+        "model_id": 257749,
+        "base_model": "Pony",
+        "image_path": "models/pony/Pony_Diffusion_V6_XL_5706937.jpeg",
+        "download_url": "https://civitai.com/api/download/models/290640"
+    },
+    {
+        "name": "AutismMix_SDXL",
+        "model_id": 288584,
+        "base_model": "Pony",
+        "image_path": "models/pony/AutismMix_SDXL_6339637.jpeg",
+        "download_url": "https://civitai.com/api/download/models/324619"
+    },
+    {
+        "name": "Pony_Realism__",
+        "model_id": 372465,
+        "base_model": "Pony",
+        "image_path": "models/pony/Pony_Realism___32426778.jpeg",
+        "download_url": "https://civitai.com/api/download/models/914390"
+    },
+    {
+        "name": "Mistoon_Anime",
+        "model_id": 24149,
+        "base_model": "Pony",
+        "image_path": "models/pony/Mistoon_Anime_22543183.jpeg",
+        "download_url": "https://civitai.com/api/download/models/692489"
+    },
+    {
+        "name": "Prefect_Pony_XL",
+        "model_id": 439889,
+        "base_model": "Pony",
+        "image_path": "models/pony/Prefect_Pony_XL_39371940.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1047139"
+    },
+    {
+        "name": "Babes",
+        "model_id": 2220,
+        "base_model": "Pony",
+        "image_path": "models/pony/Babes_43172682.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1118499"
+    },
+    {
+        "name": "DucHaiten-Pony-XL__no-score_",
+        "model_id": 376450,
+        "base_model": "Pony",
+        "image_path": "models/pony/DucHaiten-Pony-XL__no-score__34885001.jpeg",
+        "download_url": "https://civitai.com/api/download/models/962170"
+    },
+    {
+        "name": "WAI-ANI-NSFW-PONYXL",
+        "model_id": 404154,
+        "base_model": "Pony",
+        "image_path": "models/pony/WAI-ANI-NSFW-PONYXL_41341984.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1085338"
+    },
+    {
+        "name": "SXZ_Luma",
+        "model_id": 25831,
+        "base_model": "Pony",
+        "image_path": "models/pony/SXZ_Luma_24436547.jpeg",
+        "download_url": "https://civitai.com/api/download/models/725032"
+    },
+    {
+        "name": "Real_Dream",
+        "model_id": 153568,
+        "base_model": "Pony",
+        "image_path": "models/pony/Real_Dream_28961712.jpeg",
+        "download_url": "https://civitai.com/api/download/models/832353"
+    },
+    {
+        "name": "CyberRealistic_Pony",
+        "model_id": 443821,
+        "base_model": "Pony",
+        "image_path": "models/pony/CyberRealistic_Pony_34450037.jpeg",
+        "download_url": "https://civitai.com/api/download/models/953264"
+    },
+    {
+        "name": "iNiverse_Mix_SFW___NSFW_",
+        "model_id": 226533,
+        "base_model": "Pony",
+        "image_path": "models/pony/iNiverse_Mix_SFW___NSFW__43364532.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1123062?type=Model&format=SafeTensor&size=full&fp=bf16"
+    },
+    {
+        "name": "Everclear_PNY_by_Zovya",
+        "model_id": 341433,
+        "base_model": "Pony",
+        "image_path": "models/pony/Everclear_PNY_by_Zovya_24167058.jpeg",
+        "download_url": "https://civitai.com/api/download/models/720342"
+    },
+    {
+        "name": "WAI-REAL_CN",
+        "model_id": 469902,
+        "base_model": "Pony",
+        "image_path": "models/pony/WAI-REAL_CN_35087967.jpeg",
+        "download_url": "https://civitai.com/api/download/models/966009"
+    },
+    {
+        "name": "Anime_Model_OtakuReliableEnable__AMORE_",
+        "model_id": 54867,
+        "base_model": "Pony",
+        "image_path": "models/pony/Anime_Model_OtakuReliableEnable__AMORE__21772169.jpeg",
+        "download_url": "https://civitai.com/api/download/models/583459"
+    },
+    {
+        "name": "Pony__FaeTality",
+        "model_id": 331116,
+        "base_model": "Pony",
+        "image_path": "models/pony/Pony__FaeTality_10614224.jpeg",
+        "download_url": "https://civitai.com/api/download/models/464939"
+    },
+    {
+        "name": "DucHaiten-Pony-Real",
+        "model_id": 477851,
+        "base_model": "Pony",
+        "image_path": "models/pony/DucHaiten-Pony-Real_29091916.jpeg",
+        "download_url": "https://civitai.com/api/download/models/834838"
+    },
+    {
+        "name": "Toonify",
+        "model_id": 36281,
+        "base_model": "Pony",
+        "image_path": "models/pony/Toonify_8547273.jpeg",
+        "download_url": "https://civitai.com/api/download/models/410539"
+    },
+    {
+        "name": "NEW_ERA__New_Esthetic_Retro_Anime_",
+        "model_id": 137781,
+        "base_model": "Pony",
+        "image_path": "models/pony/NEW_ERA__New_Esthetic_Retro_Anime__37848420.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1015542"
+    },
+    {
+        "name": "Incursio_s_Meme_Diffusion__SDXL__Pony_",
+        "model_id": 314404,
+        "base_model": "Pony",
+        "image_path": "models/pony/Incursio_s_Meme_Diffusion__SDXL__Pony__23705325.jpeg",
+        "download_url": "https://civitai.com/api/download/models/712408"
+    },
+    {
+        "name": "_PVC_Style_Model_Movable_figure_model_Pony",
+        "model_id": 400329,
+        "base_model": "Pony",
+        "image_path": "models/pony/_PVC_Style_Model_Movable_figure_model_Pony_32382240.jpeg",
+        "download_url": "https://civitai.com/api/download/models/719243"
+    },
+    {
+        "name": "real_pony",
+        "model_id": 365041,
+        "base_model": "Pony",
+        "image_path": "models/pony/real_pony_34877374.jpeg",
+        "download_url": "https://civitai.com/api/download/models/962060"
+    },
+    {
+        "name": "2DN-Pony",
+        "model_id": 520661,
+        "base_model": "Pony",
+        "image_path": "models/pony/2DN-Pony_33386798.jpeg",
+        "download_url": "https://civitai.com/api/download/models/933040"
+    },
+    {
+        "name": "MFCG_PDXL",
+        "model_id": 314840,
+        "base_model": "Pony",
+        "image_path": "models/pony/MFCG_PDXL_6901951.jpeg",
+        "download_url": "https://civitai.com/api/download/models/353166"
+    },
+    {
+        "name": "GODDESS_of_Realism",
+        "model_id": 212737,
+        "base_model": "Pony",
+        "image_path": "models/pony/GODDESS_of_Realism_41494604.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1087831"
+    },
+    {
+        "name": "boleromix_Pony_",
+        "model_id": 448716,
+        "base_model": "Pony",
+        "image_path": "models/pony/boleromix_Pony__32730479.jpeg",
+        "download_url": "https://civitai.com/api/download/models/920368"
+    },
+    {
+        "name": "Persona_Style_Checkpoint",
+        "model_id": 31771,
+        "base_model": "Pony",
+        "image_path": "models/pony/Persona_Style_Checkpoint_32278933.jpeg",
+        "download_url": "https://civitai.com/api/download/models/911873"
+    },
+    {
+        "name": "BlenderMix",
+        "model_id": 359876,
+        "base_model": "Pony",
+        "image_path": "models/pony/BlenderMix_14150629.jpeg",
+        "download_url": "https://civitai.com/api/download/models/541561"
+    },
+    {
+        "name": "PD_for_Anime",
+        "model_id": 315596,
+        "base_model": "Pony",
+        "image_path": "models/pony/PD_for_Anime_10009050.jpeg",
+        "download_url": "https://civitai.com/api/download/models/450146"
+    },
+    {
+        "name": "WAI-REALMIX",
+        "model_id": 393905,
+        "base_model": "Pony",
+        "image_path": "models/pony/WAI-REALMIX_30277514.jpeg",
+        "download_url": "https://civitai.com/api/download/models/868204"
+    },
+    {
+        "name": "PinkiePie_pony_mix",
+        "model_id": 457669,
+        "base_model": "Pony",
+        "image_path": "models/pony/PinkiePie_pony_mix_22494657.jpeg",
+        "download_url": "https://civitai.com/api/download/models/691683"
+    },
+    {
+        "name": "Luminaverse__Pony_XL_",
+        "model_id": 348302,
+        "base_model": "Pony",
+        "image_path": "models/pony/Luminaverse__Pony_XL__7887139.jpeg",
+        "download_url": "https://civitai.com/api/download/models/389670"
+    },
+    {
+        "name": "MomoiroPony",
+        "model_id": 316882,
+        "base_model": "Pony",
+        "image_path": "models/pony/MomoiroPony_24694321.jpeg",
+        "download_url": "https://civitai.com/api/download/models/731767"
+    },
+    {
+        "name": "Sym-Pony_World",
+        "model_id": 565749,
+        "base_model": "Pony",
+        "image_path": "models/pony/Sym-Pony_World_40073675.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1060748"
+    },
+    {
+        "name": "Model-EX",
+        "model_id": 60638,
+        "base_model": "Pony",
+        "image_path": "models/pony/Model-EX_30738355.jpeg",
+        "download_url": "https://civitai.com/api/download/models/619956"
+    },
+    {
+        "name": "Deep_Dark_Hentai_Mix_-_NSFW_Anime",
+        "model_id": 221751,
+        "base_model": "Pony",
+        "image_path": "models/pony/Deep_Dark_Hentai_Mix_-_NSFW_Anime_22177854.jpeg",
+        "download_url": "https://civitai.com/api/download/models/634653"
+    },
+    {
+        "name": "SnowPony",
+        "model_id": 522596,
+        "base_model": "Pony",
+        "image_path": "models/pony/SnowPony_30032312.jpeg",
+        "download_url": "https://civitai.com/api/download/models/862763"
+    },
+    {
+        "name": "SnowPony",
+        "model_id": 522596,
+        "base_model": "Pony",
+        "image_path": "models/pony/SnowPony_30032312.jpeg",
+        "download_url": "https://civitai.com/api/download/models/862763"
+    },
+    {
+        "name": "7th_anime_XL-Pony_A",
+        "model_id": 395554,
+        "base_model": "Pony",
+        "image_path": "models/pony/7th_anime_XL-Pony_A_9661309.jpeg",
+        "download_url": "https://civitai.com/api/download/models/441236"
+    },
+    {
+        "name": "Hoseki_-_LustrousMix__Pony_XL_",
+        "model_id": 534425,
+        "base_model": "Pony",
+        "image_path": "models/pony/Hoseki_-_LustrousMix__Pony_XL__25353146.jpeg",
+        "download_url": "https://civitai.com/api/download/models/748555"
+    },
+    {
+        "name": "AniVerse_-_Pony_XL",
+        "model_id": 594253,
+        "base_model": "Pony",
+        "image_path": "models/pony/AniVerse_-_Pony_XL_32595117.jpeg",
+        "download_url": "https://civitai.com/api/download/models/918032"
+    },
+    {
+        "name": "JitQ",
+        "model_id": 132246,
+        "base_model": "Pony",
+        "image_path": "models/pony/JitQ_24045682.jpeg",
+        "download_url": "https://civitai.com/api/download/models/718280"
+    },
+    {
+        "name": "CashMoney__Anime_",
+        "model_id": 484571,
+        "base_model": "Pony",
+        "image_path": "models/pony/CashMoney__Anime__36077112.jpeg",
+        "download_url": "https://civitai.com/api/download/models/985240"
+    },
+    {
+        "name": "WAI-CUTE",
+        "model_id": 451486,
+        "base_model": "Pony",
+        "image_path": "models/pony/WAI-CUTE_32443611.jpeg",
+        "download_url": "https://civitai.com/api/download/models/915200"
+    },
+    {
+        "name": "Hadrian_DeliceXL___Pony",
+        "model_id": 402492,
+        "base_model": "Pony",
+        "image_path": "models/pony/Hadrian_DeliceXL___Pony_29879436.jpeg",
+        "download_url": "https://civitai.com/api/download/models/856413"
+    },
+    {
+        "name": "Atomix_Pony_Anime_XL",
+        "model_id": 340158,
+        "base_model": "Pony",
+        "image_path": "models/pony/Atomix_Pony_Anime_XL_17823182.jpeg",
+        "download_url": "https://civitai.com/api/download/models/608850"
+    },
+    {
+        "name": "Speciosa_2.5D",
+        "model_id": 560402,
+        "base_model": "Pony",
+        "image_path": "models/pony/Speciosa_2.5D_19251833.jpeg",
+        "download_url": "https://civitai.com/api/download/models/634767"
+    },
+    {
+        "name": "Indigo_Furry_Mix_XL",
+        "model_id": 579632,
+        "base_model": "Pony",
+        "image_path": "models/pony/Indigo_Furry_Mix_XL_42895292.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1114399"
+    },
+    {
+        "name": "Speciosa_Realistica",
+        "model_id": 488361,
+        "base_model": "Pony",
+        "image_path": "models/pony/Speciosa_Realistica_18668933.jpeg",
+        "download_url": "https://civitai.com/api/download/models/623784"
+    },
+    {
+        "name": "Omega_Pony_XL_anime_style",
+        "model_id": 402544,
+        "base_model": "Pony",
+        "image_path": "models/pony/Omega_Pony_XL_anime_style_12338468.jpeg",
+        "download_url": "https://civitai.com/api/download/models/503710"
+    },
+    {
+        "name": "ONE_FOR_ALL__Pony_Fantasy__DPO_VAE",
+        "model_id": 349062,
+        "base_model": "Pony",
+        "image_path": "models/pony/ONE_FOR_ALL__Pony_Fantasy__DPO_VAE_11908003.jpeg",
+        "download_url": "https://civitai.com/api/download/models/494387"
+    },
+    {
+        "name": "4th_tail__anime_hentai_",
+        "model_id": 282341,
+        "base_model": "Pony",
+        "image_path": "models/pony/4th_tail__anime_hentai__28697888.jpeg",
+        "download_url": "https://civitai.com/api/download/models/826474"
+    },
+    {
+        "name": "RealMixPony",
+        "model_id": 489668,
+        "base_model": "Pony",
+        "image_path": "models/pony/RealMixPony_43791674.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1131473"
+    },
+    {
+        "name": "MugenMaluMix_SDXL",
+        "model_id": 345933,
+        "base_model": "Pony",
+        "image_path": "models/pony/MugenMaluMix_SDXL_12039353.jpeg",
+        "download_url": "https://civitai.com/api/download/models/497396"
+    },
+    {
+        "name": "MFCG_Paintjob",
+        "model_id": 346204,
+        "base_model": "Pony",
+        "image_path": "models/pony/MFCG_Paintjob_14897457.jpeg",
+        "download_url": "https://civitai.com/api/download/models/555687"
+    },
+    {
+        "name": "RainPonyXL",
+        "model_id": 464387,
+        "base_model": "Pony",
+        "image_path": "models/pony/RainPonyXL_18480566.jpeg",
+        "download_url": "https://civitai.com/api/download/models/620364"
+    },
+    {
+        "name": "VividPDXL",
+        "model_id": 381088,
+        "base_model": "Pony",
+        "image_path": "models/pony/VividPDXL_10505307.jpeg",
+        "download_url": "https://civitai.com/api/download/models/462031"
+    },
+    {
+        "name": "TUNIX___3D_Stylized_Pony_",
+        "model_id": 558362,
+        "base_model": "Pony",
+        "image_path": "models/pony/TUNIX___3D_Stylized_Pony__24339625.jpeg",
+        "download_url": "https://civitai.com/api/download/models/621563"
+    },
+    {
+        "name": "Osorubeshi-Pony-Real",
+        "model_id": 402800,
+        "base_model": "Pony",
+        "image_path": "models/pony/Osorubeshi-Pony-Real_24312079.jpeg",
+        "download_url": "https://civitai.com/api/download/models/722938"
+    },
+    {
+        "name": "WAI-ANI-HENTAI-PONYXL",
+        "model_id": 553648,
+        "base_model": "Pony",
+        "image_path": "models/pony/WAI-ANI-HENTAI-PONYXL_34422981.jpeg",
+        "download_url": "https://civitai.com/api/download/models/952743"
+    },
+    {
+        "name": "CuteCandyMix",
+        "model_id": 192045,
+        "base_model": "Pony",
+        "image_path": "models/pony/CuteCandyMix_18805337.jpeg",
+        "download_url": "https://civitai.com/api/download/models/626300"
+    },
+    {
+        "name": "RealCartoon-Pony",
+        "model_id": 618329,
+        "base_model": "Pony",
+        "image_path": "models/pony/RealCartoon-Pony_37412995.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1010525"
+    },
+    {
+        "name": "WildCardX-_XL_PONY____",
+        "model_id": 333134,
+        "base_model": "Pony",
+        "image_path": "models/pony/WildCardX-_XL_PONY_____7623573.jpeg",
+        "download_url": "https://civitai.com/api/download/models/373176"
+    },
+    {
+        "name": "Anime_Confetti_Comrade_Mix",
+        "model_id": 311817,
+        "base_model": "Pony",
+        "image_path": "models/pony/Anime_Confetti_Comrade_Mix_8054976.jpeg",
+        "download_url": "https://civitai.com/api/download/models/395263"
+    },
+    {
+        "name": "Babes_Kissable_Lips",
+        "model_id": 26566,
+        "base_model": "Pony",
+        "image_path": "models/pony/Babes_Kissable_Lips_42274640.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1102930"
+    },
+    {
+        "name": "Babes_Kissable_Lips",
+        "model_id": 26566,
+        "base_model": "Pony",
+        "image_path": "models/pony/Babes_Kissable_Lips_42274640.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1102930"
+    },
+    {
+        "name": "Copycat",
+        "model_id": 316174,
+        "base_model": "Pony",
+        "image_path": "models/pony/Copycat_29100436.jpeg",
+        "download_url": "https://civitai.com/api/download/models/835096"
+    },
+    {
+        "name": "Yesmix_XL",
+        "model_id": 316783,
+        "base_model": "Pony",
+        "image_path": "models/pony/Yesmix_XL_17005804.jpeg",
+        "download_url": "https://civitai.com/api/download/models/595069"
+    },
+    {
+        "name": "Sevenof9_pony_real_mix",
+        "model_id": 341631,
+        "base_model": "Pony",
+        "image_path": "models/pony/Sevenof9_pony_real_mix_43461799.jpeg",
+        "download_url": "https://civitai.com/api/download/models/1124699"
+    },
+    {
+        "name": "Featureless_Mix_Pony",
+        "model_id": 466145,
+        "base_model": "Pony",
+        "image_path": "models/pony/Featureless_Mix_Pony_18133867.jpeg",
+        "download_url": "https://civitai.com/api/download/models/614228"
+    },
+    {
+        "name": "SkibidiMix",
+        "model_id": 452757,
+        "base_model": "Pony",
+        "image_path": "models/pony/SkibidiMix_12357087.jpeg",
+        "download_url": "https://civitai.com/api/download/models/504095"
+    },
+    {
+        "name": "AniMerge_-_Pony_XL",
+        "model_id": 613147,
+        "base_model": "Pony",
+        "image_path": "models/pony/AniMerge_-_Pony_XL_33646598.jpeg",
+        "download_url": "https://civitai.com/api/download/models/937249"
+    },
+    {
+        "name": "reweik_PonyXL",
+        "model_id": 404802,
+        "base_model": "Pony",
+        "image_path": "models/pony/reweik_PonyXL_23572280.jpeg",
+        "download_url": "https://civitai.com/api/download/models/710339"
+    },
+    {
+        "name": "AnimeBoysXL_V3",
+        "model_id": 351170,
+        "base_model": "Pony",
+        "image_path": "models/pony/AnimeBoysXL_V3_8818466.jpeg",
+        "download_url": "https://civitai.com/api/download/models/392786"
+    },
+    {
+        "name": "Mistoon_XL_Copper",
+        "model_id": 319650,
+        "base_model": "Pony",
+        "image_path": "models/pony/Mistoon_XL_Copper_22408776.jpeg",
+        "download_url": "https://civitai.com/api/download/models/689888"
+    },
+    {
+        "name": "Rev_Engine_PonyXL",
+        "model_id": 502370,
+        "base_model": "Pony",
+        "image_path": "models/pony/Rev_Engine_PonyXL_15027463.jpeg",
+        "download_url": "https://civitai.com/api/download/models/558377"
+    }
+]
