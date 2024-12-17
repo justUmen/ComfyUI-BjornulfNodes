@@ -38,23 +38,23 @@ Support me and my work : ❤️❤️❤️ <https://ko-fi.com/bjornulf> ❤️�
 `75.` [📝➜📝 Replace text](#75----replace-text)  
 
 ## 🔥 Text Generator 🔥
-`81.` [🔥📝 Text Generator 📝🔥](#8)  
-`82.` [👩‍🦰📝 Text Generator (Character Female)](#8)  
-`83.` [👨‍🦰📝 Text Generator (Character Male)](#8)  
-`84.` [👾📝 Text Generator (Character Creature)](#8)  
-`85.` [💃🕺📝 Text Generator (Character Pose)](#8)  
-`86.` [🔧👨‍🔧📝 Text Generator (Object for Character)](#8)  
-`87.` [🌄📝 Text Generator (Scene)](#8)  
-`88.` [🎨📝 Text Generator (Style)](#8)  
-`89.` [👗 Text Generator (Outfit Female)](#8)  
-`90.` [👚 Text Generator (Outfit Male)](#8)  
-`91.` [♻🔥📝 List Looper (Text Generator)](#8)  
-`92.` [♻🌄📝 List Looper (Text Generator Scenes)](#8)  
-`93.` [♻🎨📝 List Looper (Text Generator Styles)](#8)  
-`94.` [♻💃🕺📝 List Looper (Text Generator Poses)](#8)  
-`95.` [♻👨‍🦰👩‍🦰👾 List Looper (Text Generator Characters)](#8)  
-`96.` [♻👚 List Looper (Text Generator Outfits Male)](#8)  
-`97.` [♻👗 List Looper (Text Generator Outfits Female)](#8)  
+`81.` [🔥📝 Text Generator 📝🔥](#81----text-generator-)  
+`82.` [👩‍🦰📝 Text Generator (Character Female)](#82----text-generator-character-female)  
+`83.` [👨‍🦰📝 Text Generator (Character Male)](#83----text-generator-character-male)  
+`84.` [👾📝 Text Generator (Character Creature)](#84----text-generator-character-creature)  
+`85.` [💃🕺📝 Text Generator (Character Pose)](#85----text-generator-character-pose)  
+`86.` [🔧👨‍🔧📝 Text Generator (Object for Character)](#86----text-generator-object-for-character)  
+`87.` [🌄📝 Text Generator (Scene)](#87----text-generator-scene)  
+`88.` [🎨📝 Text Generator (Style)](#88----text-generator-style)  
+`89.` [👗 Text Generator (Outfit Female)](#89----text-generator-outfit-female)  
+`90.` [👚 Text Generator (Outfit Male)](#90----text-generator-outfit-male)  
+`91.` [♻🔥📝 List Looper (Text Generator)](#91----list-looper-text-generator)  
+`92.` [♻🌄📝 List Looper (Text Generator Scenes)](#92----list-looper-text-generator-scenes)  
+`93.` [♻🎨📝 List Looper (Text Generator Styles)](#93----list-looper-text-generator-styles)  
+`94.` [♻💃🕺📝 List Looper (Text Generator Poses)](#94----list-looper-text-generator-poses)  
+`95.` [♻👨‍🦰👩‍🦰👾 List Looper (Text Generator Characters)](#95----list-looper-text-generator-characters)  
+`96.` [♻👚 List Looper (Text Generator Outfits Male)](#96----list-looper-text-generator-outfits-male)  
+`97.` [♻👗 List Looper (Text Generator Outfits Female)](#97----list-looper-text-generator-outfits-female)  
 
 ## ♻ Loop ♻
 `6.` [♻ Loop](#6----loop)  
@@ -120,7 +120,7 @@ Support me and my work : ❤️❤️❤️ <https://ko-fi.com/bjornulf> ❤️�
 `61.` [🖼🖼 Merge Images/Videos 📹📹 (Vertically)](#61----merge-imagesvideos--vertically)  
 `62.` [🦙👁 Ollama Vision](#62----ollama-vision)  
 `70.` [📏 Resize Image Percentage](#70----resize-image-percentage)  
-`80.` [🩷 Empty Latent Selector](#)  
+`80.` [🩷 Empty Latent Selector](#80----empty-latent-selector)  
 
 ## 🚀 Load checkpoints 🚀
 `40.` [🎲 Random (Model+Clip+Vae) - aka Checkpoint / Model](#40----random-modelclipvae---aka-checkpoint--model)  
@@ -140,14 +140,14 @@ Support me and my work : ❤️❤️❤️ <https://ko-fi.com/bjornulf> ❤️�
 `110.` [☁🎨 API Image Generator (Stability - Stable Diffusion) ☁](#10)  
 
 ## 📥 Take from CivitAI 📥
-`98.` [📥 Load checkpoint SD1.5 (+Download from CivitAi)](#10)  
-`99.` [📥 Load checkpoint SDXL (+Download from CivitAi)](#10)  
-`100.` [📥 Load checkpoint Pony (+Download from CivitAi)](#10)  
-`101.` [📥 Load checkpoint FLUX Dev (+Download from CivitAi)](#10)  
-`102.` [📥 Load checkpoint FLUX Schnell (+Download from CivitAi)](#10)  
-`103.` [📥👑 Load Lora SD1.5 (+Download from CivitAi)](#10)  
-`104.` [📥👑 Load Lora SDXL (+Download from CivitAi)](#10)  
-`105.` [📥👑 Load Lora Pony (+Download from CivitAi)](#10)  
+`98.` [📥 Load checkpoint SD1.5 (+Download from CivitAi)](#98----load-checkpoint-sd15-download-from-civitai)  
+`99.` [📥 Load checkpoint SDXL (+Download from CivitAi)](#99----load-checkpoint-sdxl-download-from-civitai)  
+`100.` [📥 Load checkpoint Pony (+Download from CivitAi)](#100----load-checkpoint-pony-download-from-civitai)  
+`101.` [📥 Load checkpoint FLUX Dev (+Download from CivitAi)](#101----load-checkpoint-flux-dev-download-from-civitai)  
+`102.` [📥 Load checkpoint FLUX Schnell (+Download from CivitAi)](#102----load-checkpoint-flux-schnell-download-from-civitai)  
+`103.` [📥👑 Load Lora SD1.5 (+Download from CivitAi)](#103----load-lora-sd15-download-from-civitai)  
+`104.` [📥👑 Load Lora SDXL (+Download from CivitAi)](#104----load-lora-sdxl-download-from-civitai)  
+`105.` [📥👑 Load Lora Pony (+Download from CivitAi)](#105----load-lora-pony-download-from-civitai)  
 
 ## 📹 Video 📹
 `20.` [📹 Video Ping Pong](#20----video-ping-pong)  
@@ -199,7 +199,7 @@ My referal link for Runpod : <https://runpod.io?ref=tkowk7g5> (If you use that i
 If you want to use my nodes and comfyui in the cloud (and can install more stuff), I'm managing an optimized ready-to-use template on runpod : <https://runpod.io/console/deploy?template=r32dtr35u1&ref=tkowk7g5>  
 Template name : `bjornulf-comfyui-allin-workspace`, can be operational in ~3 minutes. (Depending on your pod, setup and download of extra models or whatever not included.)  
 You need to create and select a network volume before using that, size is up to you, i have 50Gb Storage because i use cloud only for Flux or lora training on a 4090. (~0.7$/hour)  
-⚠️ When pod is ready, you need to open a terminal in browser (After clicking on `connect` from your pod) and use this to launch ComfyUI manually : `cd /workspace/ComfyUI && python main.py --listen 0.0.0.0 --port 3000` or the alias `start_-_comfy` (Much better to control it with a terminal, check logs, etc...)  
+⚠️ When pod is ready, you need to open a terminal in browser (After clicking on `connect` from your pod) and use this to launch ComfyUI manually : `cd /workspace/ComfyUI && python main.py --listen 0.0.0.0 --port 3000` or the alias `start_comfy` (Much better to control it with a terminal, check logs, etc...)  
 After that you can just click on the `Connect to port 3000` button.  
 As file manager, you can use the included `JupyterLab` on port 8888.  
 If you have any issues with it, please let me know.  
@@ -234,9 +234,7 @@ cd /workspace/ComfyUI/output && tar -czvf /workspace/output.tar.gz .
 
 Then you can download it from the file manager JupyterLab.  
 
-If you want to start the XTTS server, just use the alias `start_xtts`.  
-
-If you have any issues with this template from Runpod, please let me know, I'm here to help. 😊   
+If you have any issues with this template from Runpod, please let me know, I'm here to help. 😊  
 
 # 🏗 Dependencies (nothing to do for runpod ☁)
 
